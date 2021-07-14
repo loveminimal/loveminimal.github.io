@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<!-- 2021-05-18 Tue 15:54 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scroll Bar</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Jack Liu">
+<link rel="shortcut icon" href="themes/assets/virgo.png" type="image/x-icon" />
+           <link rel="stylesheet" href="themes/style.css" type="text/css"  />
+           <script type="module" src="themes/main.js" defer></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Scroll Bar</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org33e8a68">简介</a></li>
+<li><a href="#org2997a3a">修改某个元素的滚动条</a></li>
+<li><a href="#orgbd304e7">修改浏览器默认滚动条样式</a></li>
+<li><a href="#orgf1a379b">总结</a></li>
+</ul>
+</div>
+</div>
+<p>
+→ 参考 <a href="https://www.cnblogs.com/wjw1014/p/13564175.html">https://www.cnblogs.com/wjw1014/p/13564175.html</a>
+</p>
+
+<div id="outline-container-org33e8a68" class="outline-2">
+<h2 id="org33e8a68">简介</h2>
+<div class="outline-text-2" id="text-org33e8a68">
+<p>
+浏览器的默认滚动条往往都不怎么好看…… 让我们对它来做一些调整吧！
+</p>
+
+<p>
+假如我们页面的页面是这样的：
+</p>
+
+<div class="org-src-container">
+<pre class="src src-html"><span class="linenr"> 1: </span><span style="color: #50a14f;">&lt;!DOCTYPE html&gt;</span>
+<span class="linenr"> 2: </span>&lt;<span style="color: #0184bc;">html</span> <span style="color: #8b4513;">lang</span>=<span style="color: #50a14f;">"en"</span>&gt;
+<span class="linenr"> 3: </span>    &lt;<span style="color: #0184bc;">head</span>&gt;
+<span class="linenr"> 4: </span>        &lt;<span style="color: #0184bc;">meta</span> <span style="color: #8b4513;">charset</span>=<span style="color: #50a14f;">"UTF-8"</span> /&gt;
+<span class="linenr"> 5: </span>        &lt;<span style="color: #0184bc;">title</span>&gt;<span style="font-weight: bold; text-decoration: underline;">&#28378;&#21160;&#26465;&#26679;&#24335;</span>&lt;/<span style="color: #0184bc;">title</span>&gt;
+<span class="linenr"> 6: </span>    &lt;/<span style="color: #0184bc;">head</span>&gt;
+<span class="linenr"> 7: </span>    &lt;<span style="color: #0184bc;">body</span>&gt;
+<span class="linenr"> 8: </span>        &lt;<span style="color: #0184bc;">div</span> <span style="color: #8b4513;">id</span>=<span style="color: #50a14f;">"div__scroll-bar"</span>&gt;...&lt;/<span style="color: #0184bc;">div</span>&gt;
+<span class="linenr"> 9: </span>        &lt;<span style="color: #0184bc;">div</span>&gt;...&lt;/<span style="color: #0184bc;">div</span>&gt;
+<span class="linenr">10: </span>    &lt;/<span style="color: #0184bc;">body</span>&gt;
+<span class="linenr">11: </span>&lt;/<span style="color: #0184bc;">html</span>&gt;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2997a3a" class="outline-2">
+<h2 id="org2997a3a">修改某个元素的滚动条</h2>
+<div class="outline-text-2" id="text-org2997a3a">
+<div class="org-src-container">
+<pre class="src src-css"><span class="linenr"> 1: </span><span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">&#35774;&#32622;&#19968;&#20010;&#20803;&#32032;&#30340;&#23485;&#39640;&#65288;&#20197;&#20351;&#20854;&#20869;&#23481;&#28378;&#21160;&#65289; </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr"> 2: </span><span style="color: #0184bc;">#div__scroll-bar </span><span style="color: #707183;">{</span>
+<span class="linenr"> 3: </span>    <span style="color: #a626a4;">width</span>: 300px;
+<span class="linenr"> 4: </span>    <span style="color: #a626a4;">height</span>: 200px;
+<span class="linenr"> 5: </span>    <span style="color: #a626a4;">border</span>: 1px solid <span style="color: #ffffff; background-color: #ff0000;">red</span>;
+<span class="linenr"> 6: </span>
+<span class="linenr"> 7: </span>    <span style="color: #a626a4;">overflow</span>: scroll;
+<span class="linenr"> 8: </span><span style="color: #707183;">}</span>
+<span class="linenr"> 9: </span>
+<span class="linenr">10: </span><span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">&#28378;&#21160;&#26465;&#25972;&#20307;&#37096;&#20998;&#65288;width &#32437;&#21521;&#28378;&#21160;&#26465;  height &#27178;&#21521;&#28378;&#21160;&#26465;&#65289; </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr">11: </span>#div__scroll-bar::-webkit-scrollbar <span style="color: #707183;">{</span>
+<span class="linenr">12: </span>    <span style="color: #a626a4;">width</span>: 10px;
+<span class="linenr">13: </span>    <span style="color: #a626a4;">height</span>: 10px;
+<span class="linenr">14: </span><span style="color: #707183;">}</span>
+<span class="linenr">15: </span><span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">&#28378;&#21160;&#26465;&#30340;&#36712;&#36947;&#65288;&#37324;&#38754;&#35013;&#26377; Thumb&#65289; </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr">16: </span>#div__scroll-bar::-webkit-scrollbar-track <span style="color: #707183;">{</span>
+<span class="linenr">17: </span>    <span style="color: #a626a4;">background-color</span>: <span style="color: #000000; background-color: #afa;">#afa</span>;
+<span class="linenr">18: </span><span style="color: #707183;">}</span>
+<span class="linenr">19: </span><span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">&#20869;&#23618;&#36712;&#36947;&#65292;&#28378;&#21160;&#26465;&#20013;&#38388;&#37096;&#20998;&#65288;&#38500;&#21435;&#20004;&#20391;&#29992;&#20110;&#24494;&#35843;&#30340; button &#21644;&#20132;&#27719;&#21306;&#65289; </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr">20: </span>#div__scroll-bar::-webkit-scrollbar-track-piece <span style="color: #707183;">{</span>
+<span class="linenr">21: </span>    <span style="color: #a626a4;">background-color</span>: <span style="color: #ffffff; background-color: #f00;">#f00</span>;
+<span class="linenr">22: </span><span style="color: #707183;">}</span>
+<span class="linenr">23: </span><span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">&#28378;&#21160;&#26465;&#37324;&#38754;&#30340;&#23567;&#26041;&#22359; </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr">24: </span>#div__scroll-bar::-webkit-scrollbar-thumb <span style="color: #707183;">{</span>
+<span class="linenr">25: </span>    <span style="color: #a626a4;">background-color</span>: <span style="color: #000000; background-color: #ffc0cb;">pink</span>;
+<span class="linenr">26: </span>    <span style="color: #a626a4;">border-radius</span>: 10%;
+<span class="linenr">27: </span>    <span style="color: #a626a4; text-decoration: underline;">-webkit-box-shadow</span>: inset 0 0 5px <span style="color: #ffffff; background-color: #880d0d;">#880d0d</span>;
+<span class="linenr">28: </span><span style="color: #707183;">}</span>
+<span class="linenr">29: </span>
+<span class="linenr">30: </span>#div__scroll-bar::-webkit-scrollbar-thumb:hover <span style="color: #707183;">{</span>
+<span class="linenr">31: </span>    <span style="color: #a626a4;">background</span>: <span style="color: #ffffff; background-color: #333;">#333</span>;
+<span class="linenr">32: </span><span style="color: #707183;">}</span>
+<span class="linenr">33: </span><span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">&#28378;&#21160;&#26465;&#30340;&#36712;&#36947;&#30340;&#20004;&#31471;&#25353;&#38062;&#65292;&#20801;&#35768;&#36890;&#36807;&#28857;&#20987;&#24494;&#35843;&#23567;&#26041;&#22359;&#30340;&#20301;&#32622; </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr">34: </span>#div__scroll-bar::-webkit-scrollbar-button <span style="color: #707183;">{</span>
+<span class="linenr">35: </span>    <span style="color: #a626a4;">background-color</span>: <span style="color: #ffffff; background-color: #16b61b;">rgb(22, 182, 27)</span>;
+<span class="linenr">36: </span>    <span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">display: none; </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr">37: </span><span style="color: #707183;">}</span>
+<span class="linenr">38: </span><span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">&#36793;&#35282;&#65292;&#21363;&#20004;&#20010;&#28378;&#21160;&#26465;&#30340;&#20132;&#27719;&#22788; </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr">39: </span>#div__scroll-bar::-webkit-scrollbar-corner <span style="color: #707183;">{</span>
+<span class="linenr">40: </span>    <span style="color: #a626a4;">background</span>: <span style="color: #ffffff; background-color: #179a16;">#179a16</span>;
+<span class="linenr">41: </span><span style="color: #707183;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbd304e7" class="outline-2">
+<h2 id="orgbd304e7">修改浏览器默认滚动条样式</h2>
+<div class="outline-text-2" id="text-orgbd304e7">
+<div class="org-src-container">
+<pre class="src src-css"><span class="linenr"> 1: </span><span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">&#25972;&#20010;&#28378;&#21160;&#26465; </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr"> 2: </span>::-webkit-scrollbar <span style="color: #707183;">{</span>
+<span class="linenr"> 3: </span>  <span style="color: #a626a4;">width</span>: 5px;
+<span class="linenr"> 4: </span>  <span style="color: #a626a4;">height</span>: 5px;
+<span class="linenr"> 5: </span><span style="color: #707183;">}</span>
+<span class="linenr"> 6: </span>
+<span class="linenr"> 7: </span><span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">&#28378;&#21160;&#26465;&#26377;&#28369;&#22359;&#30340;&#36712;&#36947;&#37096;&#20998; </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr"> 8: </span>::-webkit-scrollbar-track-piece <span style="color: #707183;">{</span>
+<span class="linenr"> 9: </span>  <span style="color: #a626a4;">background-color</span>: transparent;
+<span class="linenr">10: </span>  <span style="color: #a626a4;">border-radius</span>: 5px;
+<span class="linenr">11: </span><span style="color: #707183;">}</span>
+<span class="linenr">12: </span>
+<span class="linenr">13: </span><span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">&#28378;&#21160;&#26465;&#28369;&#22359;(&#31446;&#21521;:vertical &#27178;&#21521;:horizontal) </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr">14: </span>::-webkit-scrollbar-thumb <span style="color: #707183;">{</span>
+<span class="linenr">15: </span>  <span style="color: #a626a4;">cursor</span>: pointer;
+<span class="linenr">16: </span>  <span style="color: #a626a4;">background-color</span>:<span style="color: #ffffff; background-color: #bbb;">#bbb</span>;
+<span class="linenr">17: </span>  <span style="color: #a626a4;">border-radius</span>: 5px;
+<span class="linenr">18: </span><span style="color: #707183;">}</span>
+<span class="linenr">19: </span>
+<span class="linenr">20: </span><span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">&#28378;&#21160;&#26465;&#28369;&#22359;hover </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr">21: </span>::-webkit-scrollbar-thumb:hover <span style="color: #707183;">{</span>
+<span class="linenr">22: </span>  <span style="color: #a626a4;">background-color</span>: <span style="color: #ffffff; background-color: #999;">#999</span>;
+<span class="linenr">23: </span><span style="color: #707183;">}</span>
+<span class="linenr">24: </span>
+<span class="linenr">25: </span><span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">&#21516;&#26102;&#26377;&#22402;&#30452;&#21644;&#27700;&#24179;&#28378;&#21160;&#26465;&#26102;&#20132;&#27719;&#30340;&#37096;&#20998; </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr">26: </span>::-webkit-scrollbar-corner <span style="color: #707183;">{</span>
+<span class="linenr">27: </span>  <span style="color: #a626a4;">display</span>: block;    <span style="color: #a0a1a7; font-weight: bold;">/* </span><span style="color: #a0a1a7;">&#20462;&#22797;&#20132;&#27719;&#26102;&#20986;&#29616;&#30340;&#30333;&#22359; </span><span style="color: #a0a1a7; font-weight: bold;">*/</span>
+<span class="linenr">28: </span><span style="color: #707183;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf1a379b" class="outline-2">
+<h2 id="orgf1a379b">总结</h2>
+<div class="outline-text-2" id="text-orgf1a379b">
+<table>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">参数</th>
+<th scope="col" class="org-left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>::-webkit-scrollbar</code></td>
+<td class="org-left">滚动条整体部分</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>::-webkit-scrollbar-track</code></td>
+<td class="org-left">滚动条的轨道</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>::-webkit-scrollbar-thumb</code></td>
+<td class="org-left">滚动条里面的小方块</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>::-webkit-scrollbar-button</code></td>
+<td class="org-left">滚动条的轨道的两端微调按钮</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>::-webkit-scrollbar-track-piece</code></td>
+<td class="org-left">内层轨道，滚动条中间部分</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>::-webkit-scrollbar-corner</code></td>
+<td class="org-left">边角，即两个滚动条的交汇处</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>::-webkit-resizer</code></td>
+<td class="org-left">两个滚动条的交汇处上用于通过拖动调整元素大小的小控件</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2021-03-09 Tue 09:48</p>
+<p class="author">Author: Jack Liu</p>
+<p class="date">Created: 2021-05-18 Tue 15:54</p>
+<p class="validation"><a href="http://beian.miit.gov.cn/">豫ICP备19025929号</a></p>
+</div>
+</body>
+</html>
