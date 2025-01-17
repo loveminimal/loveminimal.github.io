@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on 爱涂鸦啊</title>
+    <link>https://aituyaa.com/tags/java/</link>
+    <description>Recent content in Java on 爱涂鸦啊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java 那些事儿</title>
+      <link>https://aituyaa.com/java-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/java-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;code&gt;&amp;gt; Hello, Java!&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;![[assets/Obsidian 调整透明度.png]]&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>枚举</title>
+      <link>https://aituyaa.com/%E6%9E%9A%E4%B8%BE/</link>
+      <pubDate>Wed, 01 Nov 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%9E%9A%E4%B8%BE/</guid>
+      <description>Java 使用 `enum` 定义枚举类型，它被编译器编译为 `final class Xxx extends Enum { … }`； - 通过 `name()` 获取常量定义的字符串，注意不要使用 `toString()`； - 通过 `ordinal()` 返回常量定义的顺序（无实质</description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>https://aituyaa.com/spring/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/spring/</guid>
+      <description>&lt;p&gt;🔔 摘录自 &lt;a href=&#34;http://c.biancheng.net/spring/&#34;&gt;http://c.biancheng.net/spring/&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;虽然我们在生产环境中基本上使用 &lt;a href=&#34;http://localhost:1313/posts/spring-boot/&#34;&gt;Spring Boot&lt;/a&gt; 了，但是深入了解 Spring 是非常必要的，因为它是“地基”。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Spring Boot</title>
+      <link>https://aituyaa.com/spring-boot/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/spring-boot/</guid>
+      <description>&lt;p&gt;🔔 相关内容请参阅 &lt;a href=&#34;https://www.liaoxuefeng.com/wiki/1252599548343744/1266265175882464&#34;&gt;https://www.liaoxuefeng.com/wiki/1252599548343744/1266265175882464&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Spring Boot 是什么？它是一个基于 &lt;a href=&#34;../spring/&#34;&gt;Spring&lt;/a&gt; 的套件，它帮助我们预组装了一系列组件，以便以尽可能少的代码和配置来开发基于 Spring 的 Java 应用程序。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web 开发</title>
+      <link>https://aituyaa.com/web-%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/web-%E5%BC%80%E5%8F%91/</guid>
+      <description>&lt;p&gt;开个坑，大点的……&lt;/p&gt;
+&lt;p&gt;🔔 摘录自 &lt;a href=&#34;https://www.liaoxuefeng.com/wiki/1252599548343744/1255945497738400&#34;&gt;廖雪峰老师的 Java 教程&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>反射与泛型</title>
+      <link>https://aituyaa.com/%E5%8F%8D%E5%B0%84%E4%B8%8E%E6%B3%9B%E5%9E%8B/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%8F%8D%E5%B0%84%E4%B8%8E%E6%B3%9B%E5%9E%8B/</guid>
+      <description>&lt;p&gt;i.e. Reflection and Generic&lt;/p&gt;
+&lt;p&gt;反射与泛型那些事儿……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>注解</title>
+      <link>https://aituyaa.com/%E6%B3%A8%E8%A7%A3/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%B3%A8%E8%A7%A3/</guid>
+      <description>&lt;p&gt;🔔 以下内容主要摘录自 &lt;a href=&#34;https://www.liaoxuefeng.com/wiki/1252599548343744/1255945389098144&#34;&gt;廖雪峰老师的博客&lt;/a&gt;，具体示例请跳到原文参考。&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20230525163525.png]]&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: 好吧，廖老师配图一直可以的。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

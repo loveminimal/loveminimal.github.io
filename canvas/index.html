@@ -1,0 +1,2388 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Canvas - https://aituyaa.com/canvas/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>Canvas</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">Canvas</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/javascript/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：JavaScript <sup>20</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/ajax/">Ajax</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/callapply-%E5%92%8C-bind/">call、apply 和 bind</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/canvas/">Canvas</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/js-%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE/">JS 中的拖放</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/js-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%91%98%E5%BD%95/">JS 高级程序设计·摘录</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/react/">React</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/react-%E5%9F%BA%E7%A1%80%E8%84%9A%E6%89%8B%E6%9E%B6%E7%A4%BA%E4%BE%8B/">React 基础脚手架示例</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/source-map/">Source Map</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E-fetch/">关于 fetch</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E-promise/">关于 Promise</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2/">文件转换</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/">模块化编程</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8/">浏览器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BD%8D%E7%BD%AE/">浏览器中的尺寸大小和位置</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%B8%B2%E6%9F%93%E8%BF%87%E7%A8%8B/">浏览器的渲染过程</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/">滚动条样式</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%94%9F%E6%88%90%E5%99%A8/">生成器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%BD%91%E9%A1%B5%E4%B8%AD%E7%9A%84%E9%94%9A%E7%82%B9%E8%B7%B3%E8%BD%AC/">网页中的锚点跳转</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E8%B7%A8%E5%9F%9F/">跨域</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/">防抖与节流</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2023-05-25&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2023-09-07&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            7905 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            16 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/javascript">JavaScript</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#基本使用">基本使用</a></li>
+    <li><a href="#绘制形状">绘制形状</a></li>
+    <li><a href="#绘制路径">绘制路径</a></li>
+    <li><a href="#添加样式和颜色">添加样式和颜色</a></li>
+    <li><a href="#绘制文本">绘制文本</a></li>
+    <li><a href="#绘制图片">绘制图片</a></li>
+    <li><a href="#状态的保存和恢复">状态的保存和恢复</a></li>
+    <li><a href="#变形">变形</a></li>
+    <li><a href="#合成">合成</a></li>
+    <li><a href="#裁剪路径">裁剪路径</a></li>
+    <li><a href="#动画">动画</a></li>
+    <li><a href="#结语">结语</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p><code>&gt; 近来要开发一个手写板程序，顺便来系统回顾一下 Canvas 这个东东……</code></p>
+<p>🔔 本篇摘录自 <a href="https://www.runoob.com/w3cnote/html5-canvas-intro.html">《学习 HTML5 Canvas 这一篇文章就够了》</a> ，写的真不错。</p>
+<p><code>&lt;canvas&gt;</code> 是 HTML5 新增的一个可以使用脚本（通常为 JavaScript）在其中绘制图像的 HTML 元素。</p>
+<p>![[assets/Pasted image 20230525170231.png|400]]</p>
+<p><code>&gt; 上图就是使用 canvas 绘制出来的</code></p>
+<p>Canvas 是由 HTML 代码配合高度和宽度属性而定义出的可绘制区域。JavaScript 代码可以访问该区域，类似于其他通用的二维 API，通过一套完整的绘图函数来动态生成图形。</p>
+<h2 id="基本使用">基本使用</h2>
+<p><strong>1. <code>&lt;canvas&gt;</code> 元素</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#000080">canvas</span> <span style="color:#008080">id</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;tutorial&#34;</span> <span style="color:#008080">width</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;300&#34;</span> <span style="color:#008080">height</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;300&#34;</span>&gt;&lt;/<span style="color:#000080">canvas</span>&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>&lt;canvas&gt;</code> 标签只有两个可选的属性 <code>width</code> 和 <code>height</code> ，如果省略，则默认 <code>width</code> 为 300 ，<code>height</code> 为 150 ，单位是 <code>px</code> 。也可以使用 CSS 属性来设置宽高，但是如宽高属性和初始比例不一致，会出现扭曲（强烈不推荐 ❌）。</p>
+<p><strong>2. 渲染上下文 Context</strong></p>
+<p><code>&lt;canvas&gt;</code> 会创建一个固定大小的画布，会公开一个或多个渲染上下文（<code>画笔</code>），使用渲染上下文来绘制和处理要展示的内容。</p>
+<p>​我们重点研究 2D 渲染上下文。如何获取它呢？</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span>(<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;	    <span style="color:#998;font-style:italic">// 检测支持性
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);	<span style="color:#998;font-style:italic">// 获得 2D 上下文对象
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="绘制形状">绘制形状</h2>
+<p><strong>1. 栅格（grid）和坐标空间</strong></p>
+<p>​如下图所示，canvas 元素默认被网格所覆盖。通常来说网格中的一个单元相当于 canvas 元素中的一像素。栅格的起点为左上角，坐标为 <code>(0,0)</code> 。所有元素的位置都相对于原点来定位。所以图中蓝色方形左上角的坐标为距离左边（X 轴）x 像素，距离上边（Y 轴）y 像素，坐标为 <code>(x,y)</code>。</p>
+<p>![[assets/Pasted image 20230525170309.png]]</p>
+<p>​后面我们会涉及到坐标原点的平移、网格的旋转以及缩放等。</p>
+<p><strong>2. 绘制矩形</strong></p>
+<p><code>&lt;canvas&gt;</code> 只支持一种原生的图形绘制：矩形。</p>
+<p><code>&gt; 所有其他图形都至少需要生成一种路径 (path)。</code></p>
+<p>Canvas 提供了有三种方法绘制矩形：</p>
+<pre tabindex="0"><code>// 绘制一个填充的矩形
+1. fillRect(x, y, width, height)
+
+// 绘制一个矩形的边框
+2. strokeRect(x, y, width, height)
+
+// 清除指定的矩形区域，然后这块区域会变的完全透明
+3. clearRect(x, y, widh, height)
+</code></pre><p>这 3 个方法具有相同的参数。其中， <code>x, y</code> 指矩形左上角的坐标， <code>width, height</code> 指绘制的矩形的宽高。</p>
+<p>上 🌰 ，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span>(<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    ctx.fillRect(<span style="color:#099">10</span>, <span style="color:#099">10</span>, <span style="color:#099">100</span>, <span style="color:#099">50</span>);	    <span style="color:#998;font-style:italic">//绘制矩形，填充的默认颜色为黑色
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.strokeRect(<span style="color:#099">10</span>, <span style="color:#099">70</span>, <span style="color:#099">100</span>, <span style="color:#099">50</span>);	<span style="color:#998;font-style:italic">//绘制矩形边框
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	ctx.clearRect(<span style="color:#099">15</span>, <span style="color:#099">15</span>, <span style="color:#099">50</span>, <span style="color:#099">25</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525170332.png|300]]</p>
+<h2 id="绘制路径">绘制路径</h2>
+<p>图形的基本元素是路径。</p>
+<p>路径是通过不同颜色和宽度的线段或曲线相连形成的不同形状的点的集合。</p>
+<p><strong>一个路径，甚至一个子路径，都是闭合的。</strong></p>
+<p>使用路径绘制图形需要一些额外的步骤：</p>
+<ul>
+<li>创建路径起始点；</li>
+<li>调用绘制方法去绘制出路径；</li>
+<li>把路径封闭；</li>
+<li>一旦路径生成，通过描边或填充路径区域来渲染图形。</li>
+</ul>
+<p>下面是需要用到的方法：</p>
+<pre tabindex="0"><code>beginPath()
+- 新建一条路径，路径一旦创建成功，图形绘制命令被指向到路径上生成路径
+
+moveTo(x, y)
+- 把画笔移动到指定的坐标 (x, y)，相当于设置路径的起始点坐标
+
+lineTo(x, y)
+- 添加一个新点，然后创建从该点到画面中最后指定点的线条
+
+closePath()
+- 闭合路径之后，图形绘制命令又重新指向到上下文中
+
+stroke()
+- 通过线条来绘制图形轮廓
+
+fill()
+- 通过填充路径的内容区域生成实心的图形
+</code></pre><p><strong>1. 绘制线段</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ctx.beginPath();		<span style="color:#998;font-style:italic">// 新建一条 path
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.moveTo(<span style="color:#099">50</span>, <span style="color:#099">50</span>);		<span style="color:#998;font-style:italic">// 把画笔移动到指定的坐标
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.lineTo(<span style="color:#099">200</span>, <span style="color:#099">50</span>);	<span style="color:#998;font-style:italic">// 绘制一条从当前位置到指定坐标 (200, 50) 的直线
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#998;font-style:italic">// 闭合路径
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#998;font-style:italic">// 会拉一条从当前点到 path 起始点的直线，
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#998;font-style:italic">// 如果当前点与起始点重合，则什么都不做
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.closePath();
+</span></span><span style="display:flex;"><span>    ctx.stroke(); 			<span style="color:#998;font-style:italic">//绘制路径
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>2. 绘制三角形边框</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.moveTo(<span style="color:#099">50</span>, <span style="color:#099">50</span>);
+</span></span><span style="display:flex;"><span>    ctx.lineTo(<span style="color:#099">200</span>, <span style="color:#099">50</span>);
+</span></span><span style="display:flex;"><span>    ctx.lineTo(<span style="color:#099">200</span>, <span style="color:#099">200</span>);
+</span></span><span style="display:flex;"><span>  	ctx.closePath();	<span style="color:#998;font-style:italic">//虽然我们只绘制了两条线段，但是 closePath 会自动闭合，仍然是一个 3 角形
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.stroke();		<span style="color:#998;font-style:italic">//描边，stroke 不会自动 closePath()
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525170400.png|250]]</p>
+<p><strong>3. 填充三角形</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.moveTo(<span style="color:#099">50</span>, <span style="color:#099">50</span>);
+</span></span><span style="display:flex;"><span>    ctx.lineTo(<span style="color:#099">200</span>, <span style="color:#099">50</span>);
+</span></span><span style="display:flex;"><span>    ctx.lineTo(<span style="color:#099">200</span>, <span style="color:#099">200</span>);
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>    ctx.fill();	<span style="color:#998;font-style:italic">//填充闭合区域，如果 path 没有闭合，则 fill() 会自动闭合路径。
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525170432.png|205]]</p>
+<p><strong>4. 绘制圆弧</strong></p>
+<p>有两个方法可以绘制圆弧：</p>
+<pre tabindex="0"><code>1. arc(x, y, r, startAngle, endAngle, anticlockwise)
+
+- 以 (x, y) 为圆心，以 r 为半径，从 startAngle 弧度开始到 endAngle 弧度结束，
+- anticlosewise 是布尔值，true 表示逆时针，false 表示顺时针（默认是顺时针）
+
+* 这里的度数都是弧度，0 弧度是指 x 轴正向
+* radias = (Math.PI/180)*degrees    // 角度转换成弧度
+
+2. arcTo(x1, y1, x2, y2, radius)
+
+- 根据给定的控制点和半径画一段圆弧，最后再以直线连接两个控制点
+
+* 这个方法可以这样理解，绘制的弧形是由两条切线所决定
+* - 第 1 条切线：起始点和控制点 1 决定的直线
+* - 第 2 条切线：控制点 1 和控制点 2 决定的直线
+* - ​其实绘制的圆弧就是与这两条直线相切的圆弧
+</code></pre><p>来看几个示例 🍩</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.arc(<span style="color:#099">50</span>, <span style="color:#099">50</span>, <span style="color:#099">40</span>, <span style="color:#099">0</span>, <span style="color:#0086b3">Math</span>.PI <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">2</span>, <span style="color:#000;font-weight:bold">false</span>);
+</span></span><span style="display:flex;"><span>    ctx.stroke();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.arc(<span style="color:#099">150</span>, <span style="color:#099">50</span>, <span style="color:#099">40</span>, <span style="color:#099">0</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#0086b3">Math</span>.PI <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">2</span>, <span style="color:#000;font-weight:bold">true</span>);
+</span></span><span style="display:flex;"><span>    ctx.closePath();
+</span></span><span style="display:flex;"><span>    ctx.stroke();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.arc(<span style="color:#099">50</span>, <span style="color:#099">150</span>, <span style="color:#099">40</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#0086b3">Math</span>.PI <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">2</span>, <span style="color:#0086b3">Math</span>.PI <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">2</span>, <span style="color:#000;font-weight:bold">false</span>);
+</span></span><span style="display:flex;"><span>    ctx.fill();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.arc(<span style="color:#099">150</span>, <span style="color:#099">150</span>, <span style="color:#099">40</span>, <span style="color:#099">0</span>, <span style="color:#0086b3">Math</span>.PI, <span style="color:#000;font-weight:bold">false</span>);
+</span></span><span style="display:flex;"><span>    ctx.fill();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525170500.png|250]]</p>
+<p>再来看一下关于 <code>arcTo</code> 的方法示例如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.moveTo(<span style="color:#099">50</span>, <span style="color:#099">50</span>);
+</span></span><span style="display:flex;"><span>  	<span style="color:#998;font-style:italic">//参数 1、2：控制点 1 坐标   参数 3、4：控制点 2 坐标  参数 5：圆弧半径
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.arcTo(<span style="color:#099">200</span>, <span style="color:#099">50</span>, <span style="color:#099">200</span>, <span style="color:#099">200</span>, <span style="color:#099">100</span>);
+</span></span><span style="display:flex;"><span>    ctx.lineTo(<span style="color:#099">200</span>, <span style="color:#099">200</span>)
+</span></span><span style="display:flex;"><span>    ctx.stroke();
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.rect(<span style="color:#099">50</span>, <span style="color:#099">50</span>, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.rect(<span style="color:#099">200</span>, <span style="color:#099">50</span>, <span style="color:#099">10</span>, <span style="color:#099">10</span>)
+</span></span><span style="display:flex;"><span>    ctx.rect(<span style="color:#099">200</span>, <span style="color:#099">200</span>, <span style="color:#099">10</span>, <span style="color:#099">10</span>)
+</span></span><span style="display:flex;"><span>    ctx.fill()
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525170528.png|400]]</p>
+<p><strong>5. 绘制贝塞尔曲线</strong></p>
+<p>贝塞尔曲线 (Bézier curve)，又称贝兹曲线或贝济埃曲线，是应用于二维图形应用程序的数学曲线。</p>
+<p>一般的矢量图形软件通过它来精确画出曲线，贝兹曲线由线段与节点组成，节点是可拖动的支点，线段像可伸缩的皮筋，我们在绘图工具上看到的钢笔工具就是来做这种矢量曲线的。</p>
+<p>贝塞尔曲线是计算机图形学中相当重要的参数曲线，在一些比较成熟的位图软件中也有贝塞尔曲线工具如 PhotoShop 等。在 Flash4 中还没有完整的曲线工具，而在 Flash5 里面已经提供出贝塞尔曲线工具。</p>
+<p>贝塞尔曲线于 1962，由法国工程师皮埃尔·贝塞尔（Pierre Bézier）所广泛发表，他运用贝塞尔曲线来为汽车的主体进行设计。贝塞尔曲线最初由 Paul de Casteljau 于 1959 年运用 de Casteljau 演算法开发，以稳定数值的方法求出贝兹曲线。</p>
+<p>一次贝塞尔曲线其实是一条直线</p>
+<p>![[assets/bazier1.gif|260]]</p>
+<p>二次贝塞尔曲线</p>
+<p>![[assets/b2.gif]] ![[assets/Pasted image 20230525170848.png|193]]</p>
+<p>三次贝塞尔曲线</p>
+<p>![[assets/b3.gif]] ![[assets/Pasted image 20230525170936.png|250]]</p>
+<p>好的，我们已初步了解了贝塞尔曲线是什么东东，那么如何绘制它呢？</p>
+<pre tabindex="0"><code>// 二次贝塞尔曲线
+quadraticCurveTo(cp1x, cp1y, x, y)
+
+- 参数 1 和 2：控制点坐标
+- 参数 3 和 4：结束点坐标
+
+// 三次贝塞尔曲线
+bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)
+
+- ​ 参数 1 和 2：控制点 1 的坐标
+- ​ 参数 3 和 4：控制点 2 的坐标
+- ​ 参数 5 和 6：结束点的坐标
+</code></pre><p>像下面这样：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.moveTo(<span style="color:#099">10</span>, <span style="color:#099">200</span>);        <span style="color:#998;font-style:italic">// 起始点
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">var</span> cp1x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">40</span>, cp1y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">100</span>;  <span style="color:#998;font-style:italic">// 控制点
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">200</span>, y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">200</span>;       <span style="color:#998;font-style:italic">// 结束点
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#998;font-style:italic">//绘制二次贝塞尔曲线
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.quadraticCurveTo(cp1x, cp1y, x, y);
+</span></span><span style="display:flex;"><span>    ctx.stroke();
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.rect(<span style="color:#099">10</span>, <span style="color:#099">200</span>, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.rect(cp1x, cp1y, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.rect(x, y, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.fill();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.moveTo(<span style="color:#099">40</span>, <span style="color:#099">200</span>);        <span style="color:#998;font-style:italic">// 起始点
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">var</span> cp1x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">20</span>, cp1y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">100</span>;  <span style="color:#998;font-style:italic">// 控制点 1
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">var</span> cp2x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">100</span>, cp2y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">120</span>; <span style="color:#998;font-style:italic">// 控制点 2
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">200</span>, y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">200</span>;       <span style="color:#998;font-style:italic">// 结束点
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#998;font-style:italic">//绘制三次贝塞尔曲线
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);
+</span></span><span style="display:flex;"><span>    ctx.stroke();
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.rect(<span style="color:#099">40</span>, <span style="color:#099">200</span>, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.rect(cp1x, cp1y, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.rect(cp2x, cp2y, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.rect(x, y, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.fill();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>好的，我们已初步了解了 贝塞尔曲线 是什么东东，那么如何绘制它呢？</p>
+<pre tabindex="0"><code>// 二次贝塞尔曲线
+quadraticCurveTo(cp1x, cp1y, x, y)
+
+- 参数 1 和 2：控制点坐标
+- 参数 3 和 4：结束点坐标
+
+// 三次贝塞尔曲线
+bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)
+
+- ​ 参数 1 和 2：控制点 1 的坐标
+- ​ 参数 3 和 4：控制点 2 的坐标
+- ​ 参数 5 和 6：结束点的坐标
+</code></pre><p>像下面这样：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.moveTo(<span style="color:#099">10</span>, <span style="color:#099">200</span>);        <span style="color:#998;font-style:italic">// 起始点
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">var</span> cp1x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">40</span>, cp1y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">100</span>;  <span style="color:#998;font-style:italic">// 控制点
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">200</span>, y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">200</span>;       <span style="color:#998;font-style:italic">// 结束点
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#998;font-style:italic">//绘制二次贝塞尔曲线
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.quadraticCurveTo(cp1x, cp1y, x, y);
+</span></span><span style="display:flex;"><span>    ctx.stroke();
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.rect(<span style="color:#099">10</span>, <span style="color:#099">200</span>, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.rect(cp1x, cp1y, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.rect(x, y, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.fill();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.moveTo(<span style="color:#099">40</span>, <span style="color:#099">200</span>);        <span style="color:#998;font-style:italic">// 起始点
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">var</span> cp1x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">20</span>, cp1y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">100</span>;  <span style="color:#998;font-style:italic">// 控制点 1
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">var</span> cp2x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">100</span>, cp2y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">120</span>; <span style="color:#998;font-style:italic">// 控制点 2
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">200</span>, y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">200</span>;       <span style="color:#998;font-style:italic">// 结束点
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#998;font-style:italic">//绘制三次贝塞尔曲线
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);
+</span></span><span style="display:flex;"><span>    ctx.stroke();
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.rect(<span style="color:#099">40</span>, <span style="color:#099">200</span>, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.rect(cp1x, cp1y, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.rect(cp2x, cp2y, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.rect(x, y, <span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>    ctx.fill();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525171235.png|300]] ![[assets/Pasted image 20230525171244.png|300]]</p>
+<h2 id="添加样式和颜色">添加样式和颜色</h2>
+<p>​在前面的绘制矩形章节中，只用到了默认的线条和颜色。</p>
+<p>​如果想要给图形上色，有两个重要的属性可以做到：</p>
+<pre tabindex="0"><code>1. fillStyle = color        // 设置图形的填充颜色
+2. strokeStyle = color      // 设置图形轮廓的颜色
+
+备注：
+- color 可以是表示 css 颜色值的字符串、渐变对象或者图案对象
+- 默认情况下，线条和填充颜色都是黑色
+- 一旦您设置了 strokeStyle 或者 fillStyle 的值，那么这个新值就会成为新绘制的图形的默认值，
+- 如果你要给每个图形上不同的颜色，你需要重新设置 fillStyle 或 strokeStyle 的值
+</code></pre><p><strong>1. fillStyle</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> (<span style="color:#000;font-weight:bold">var</span> i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>; i <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">6</span>; i<span style="color:#000;font-weight:bold">++</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">for</span> (<span style="color:#000;font-weight:bold">var</span> j <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>; j <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">6</span>; j<span style="color:#000;font-weight:bold">++</span>){
+</span></span><span style="display:flex;"><span>        ctx.fillStyle <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;rgb(&#39;</span> <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">Math</span>.floor(<span style="color:#099">255</span> <span style="color:#000;font-weight:bold">-</span> <span style="color:#099">42.5</span> <span style="color:#000;font-weight:bold">*</span> i) <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;,&#39;</span> <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">Math</span>.floor(<span style="color:#099">255</span> <span style="color:#000;font-weight:bold">-</span> <span style="color:#099">42.5</span> <span style="color:#000;font-weight:bold">*</span> j) <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#d14">&#39;,0)&#39;</span>;
+</span></span><span style="display:flex;"><span>        ctx.fillRect(j <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">50</span>, i <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">50</span>, <span style="color:#099">50</span>, <span style="color:#099">50</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525171310.png|450]]</p>
+<p><strong>2. strokeStyle</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> (<span style="color:#000;font-weight:bold">var</span> i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>; i <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">6</span>; i<span style="color:#000;font-weight:bold">++</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">for</span> (<span style="color:#000;font-weight:bold">var</span> j <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>; j <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">6</span>; j<span style="color:#000;font-weight:bold">++</span>){
+</span></span><span style="display:flex;"><span>            ctx.strokeStyle <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">`rgb(
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">                </span><span style="color:#d14">${</span>randomInt(<span style="color:#099">0</span>, <span style="color:#099">255</span>)<span style="color:#d14">}</span><span style="color:#d14">,
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">                </span><span style="color:#d14">${</span>randomInt(<span style="color:#099">0</span>, <span style="color:#099">255</span>)<span style="color:#d14">}</span><span style="color:#d14">
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">            )`</span>;
+</span></span><span style="display:flex;"><span>            ctx.strokeRect(j <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">50</span>, i <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">50</span>, <span style="color:#099">40</span>, <span style="color:#099">40</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"> * 返回随机的 [from, to] 之间的整数（包括 from，也包括 to)
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> randomInt(from, to){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> <span style="color:#0086b3">parseInt</span>(<span style="color:#0086b3">Math</span>.random() <span style="color:#000;font-weight:bold">*</span> (to <span style="color:#000;font-weight:bold">-</span> from <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">1</span>) <span style="color:#000;font-weight:bold">+</span> from);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525171331.png|186]]</p>
+<p><strong>3. Transparency （透明度）</strong></p>
+<pre tabindex="0"><code>globalAlpha = transparencyValue
+
+- 这个属性影响到 canvas 里所有图形的透明度
+- 有效的值范围是 0.0 （完全透明）到 1.0（完全不透明），默认是 1.0
+- globalAlpha 属性在需要绘制大量拥有相同透明度的图形时候相当高效，
+- 不过，我认为使用 rgba() 设置透明度更加好一些
+</code></pre><p><strong>4. line style</strong></p>
+<ol>
+<li>线宽</li>
+</ol>
+<pre tabindex="0"><code>lineWidth = value
+
+关于 value ：
+- 只能是正值，默认是 1.0
+- 起始点和终点的连线为中心，上下各占线宽的一半
+</code></pre><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>ctx.beginPath();
+</span></span><span style="display:flex;"><span>ctx.moveTo(<span style="color:#099">10</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>ctx.lineTo(<span style="color:#099">100</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>ctx.lineWidth <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>;
+</span></span><span style="display:flex;"><span>ctx.stroke();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ctx.beginPath();
+</span></span><span style="display:flex;"><span>ctx.moveTo(<span style="color:#099">110</span>, <span style="color:#099">10</span>);
+</span></span><span style="display:flex;"><span>ctx.lineTo(<span style="color:#099">160</span>, <span style="color:#099">10</span>)
+</span></span><span style="display:flex;"><span>ctx.lineWidth <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">20</span>;
+</span></span><span style="display:flex;"><span>ctx.stroke()
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525171356.png|275]]</p>
+<ol start="2">
+<li>线条末端样式</li>
+</ol>
+<pre tabindex="0"><code>lineCap = type
+
+关于 type ：
+- butt：线段末端以方形结束
+- round：线段末端以圆形结束
+- square：线段末端以方形结束，但是增加了一个宽度和线段相同，高度是线段厚度一半的矩形区域
+</code></pre><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> lineCaps <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#34;butt&#34;</span>, <span style="color:#d14">&#34;round&#34;</span>, <span style="color:#d14">&#34;square&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> (<span style="color:#000;font-weight:bold">var</span> i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>; i <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">3</span>; i<span style="color:#000;font-weight:bold">++</span>){
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.moveTo(<span style="color:#099">20</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">30</span> <span style="color:#000;font-weight:bold">*</span> i, <span style="color:#099">30</span>);
+</span></span><span style="display:flex;"><span>    ctx.lineTo(<span style="color:#099">20</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">30</span> <span style="color:#000;font-weight:bold">*</span> i, <span style="color:#099">100</span>);
+</span></span><span style="display:flex;"><span>    ctx.lineWidth <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">20</span>;
+</span></span><span style="display:flex;"><span>    ctx.lineCap <span style="color:#000;font-weight:bold">=</span> lineCaps[i];
+</span></span><span style="display:flex;"><span>    ctx.stroke();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ctx.beginPath();
+</span></span><span style="display:flex;"><span>ctx.moveTo(<span style="color:#099">0</span>, <span style="color:#099">30</span>);
+</span></span><span style="display:flex;"><span>ctx.lineTo(<span style="color:#099">300</span>, <span style="color:#099">30</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ctx.moveTo(<span style="color:#099">0</span>, <span style="color:#099">100</span>);
+</span></span><span style="display:flex;"><span>ctx.lineTo(<span style="color:#099">300</span>, <span style="color:#099">100</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ctx.strokeStyle <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;red&#34;</span>;
+</span></span><span style="display:flex;"><span>ctx.lineWidth <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span>ctx.stroke();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525171419.png|300]]</p>
+<ol start="3">
+<li>同一个 path 内，设定线条与线条间接合处的样式</li>
+</ol>
+<pre tabindex="0"><code>lineJoin = type
+
+关于 type ：
+- round ：通过填充一个额外的，圆心在相连部分末端的扇形，绘制拐角的形状。 圆角的半径是线段的宽度
+- bevel ：在相连部分的末端填充一个额外的以三角形为底的区域， 每个部分都有各自独立的矩形拐角
+- miter（默认） ：通过延伸相连部分的外边缘，使其相交于一点，形成一个额外的菱形区域
+</code></pre><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> lineJoin <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;round&#39;</span>, <span style="color:#d14">&#39;bevel&#39;</span>, <span style="color:#d14">&#39;miter&#39;</span>];
+</span></span><span style="display:flex;"><span>    ctx.lineWidth <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">20</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> (<span style="color:#000;font-weight:bold">var</span> i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>; i <span style="color:#000;font-weight:bold">&lt;</span> lineJoin.length; i<span style="color:#000;font-weight:bold">++</span>){
+</span></span><span style="display:flex;"><span>        ctx.lineJoin <span style="color:#000;font-weight:bold">=</span> lineJoin[i];
+</span></span><span style="display:flex;"><span>        ctx.beginPath();
+</span></span><span style="display:flex;"><span>        ctx.moveTo(<span style="color:#099">50</span>, <span style="color:#099">50</span> <span style="color:#000;font-weight:bold">+</span> i <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">50</span>);
+</span></span><span style="display:flex;"><span>        ctx.lineTo(<span style="color:#099">100</span>, <span style="color:#099">100</span> <span style="color:#000;font-weight:bold">+</span> i <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">50</span>);
+</span></span><span style="display:flex;"><span>        ctx.lineTo(<span style="color:#099">150</span>, <span style="color:#099">50</span> <span style="color:#000;font-weight:bold">+</span> i <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">50</span>);
+</span></span><span style="display:flex;"><span>        ctx.lineTo(<span style="color:#099">200</span>, <span style="color:#099">100</span> <span style="color:#000;font-weight:bold">+</span> i <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">50</span>);
+</span></span><span style="display:flex;"><span>        ctx.lineTo(<span style="color:#099">250</span>, <span style="color:#099">50</span> <span style="color:#000;font-weight:bold">+</span> i <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">50</span>);
+</span></span><span style="display:flex;"><span>        ctx.stroke();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525171441.png|300]]</p>
+<p><strong>4. 虚线</strong></p>
+<p>用 <code>setLineDash</code> 方法和 <code>lineDashOffset</code> 属性来制定虚线样式，如下：</p>
+<ul>
+<li><code>setLineDash</code> 方法接受一个数组，来指定线段与间隙的交替；</li>
+<li><code>lineDashOffset</code> 属性设置起始偏移量。</li>
+</ul>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    ctx.setLineDash([<span style="color:#099">20</span>, <span style="color:#099">5</span>]);  <span style="color:#998;font-style:italic">// [实线长度，间隙长度]
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.lineDashOffset <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>    ctx.strokeRect(<span style="color:#099">50</span>, <span style="color:#099">50</span>, <span style="color:#099">210</span>, <span style="color:#099">210</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// ​getLineDash(): 返回一个包含当前虚线样式，长度为非负偶数的数组
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525171512.png|300]]</p>
+<h2 id="绘制文本">绘制文本</h2>
+<p>canvas 提供了两种方法来渲染文本：</p>
+<pre tabindex="0"><code>fillText(text, x, y [, maxWidth])
+- 在指定的 (x,y) 位置填充指定的文本，绘制的最大宽度是可选的
+
+strokeText(text, x, y [, maxWidth])
+- 在指定的 (x,y) 位置绘制文本边框，绘制的最大宽度是可选的
+</code></pre><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> ctx;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    ctx.font <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;100px sans-serif&#34;</span>
+</span></span><span style="display:flex;"><span>    ctx.fillText(<span style="color:#d14">&#34;天若有情&#34;</span>, <span style="color:#099">10</span>, <span style="color:#099">100</span>);
+</span></span><span style="display:flex;"><span>    ctx.strokeText(<span style="color:#d14">&#34;天若有情&#34;</span>, <span style="color:#099">10</span>, <span style="color:#099">200</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525171536.png|300]]</p>
+<p>我们都可以给文本添加哪些样式呢？</p>
+<pre tabindex="0"><code>1. 绘制文本的样式
+font = value
+- 这个字符串使用和 CSS font 属性相同的语法
+- 默认的字体是 10px sans-serif
+
+2. 文本对齐选项
+textAlign = value
+- 可选的值包括：start, end, left, right or center
+- 默认值是 start。
+
+3. 基线对齐选项
+textBaseline = value
+- 可选的值包括：top, hanging, middle, alphabetic, ideographic, bottom
+- 默认值是 alphabetic
+
+4. 文本方向
+direction = value
+- 可能的值包括：ltr, rtl, inherit
+- 默认值是 inherit
+</code></pre><h2 id="绘制图片">绘制图片</h2>
+<p>我们也可以在 canvas 上直接绘制图片。</p>
+<p><strong>1. 由零开始创建图片</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> img <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Image();      <span style="color:#998;font-style:italic">// 创建 img 元素
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>img.src <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;myImage.png&#39;</span>;    <span style="color:#998;font-style:italic">// 设置图片源地址
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>img.onload <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// 参数 1：要绘制的 img  
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#998;font-style:italic">// 参数 2、3：绘制的 img 在 canvas 中的坐标
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.drawImage(img, <span style="color:#099">0</span>, <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 关于 onload
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// - 考虑到图片是从网络加载，如果 drawImage 的时候图片还没有完全加载完成，则什么都不做，个别浏览器会抛异常，
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// - 所以我们应该保证在 img 绘制完成之后再 drawImage
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>2. 绘制 img 标签元素中的图片</strong></p>
+<p><code>img</code> 可以 <code>new</code> 也可以来源于我们页面的 <code>&lt;img&gt;</code> 标签。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#000080">img</span> <span style="color:#008080">src</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;./美女。jpg&#34;</span> <span style="color:#008080">alt</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;&#34;</span> <span style="color:#008080">width</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;300&#34;</span>&gt;&lt;<span style="color:#000080">br</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#000080">canvas</span> <span style="color:#008080">id</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;tutorial&#34;</span> <span style="color:#008080">width</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;600&#34;</span> <span style="color:#008080">height</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;400&#34;</span>&gt;&lt;/<span style="color:#000080">canvas</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#000080">script</span> <span style="color:#008080">type</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;text/javascript&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">var</span> img <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.querySelector(<span style="color:#d14">&#34;img&#34;</span>);
+</span></span><span style="display:flex;"><span>        ctx.drawImage(img, <span style="color:#099">0</span>, <span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">document</span>.querySelector(<span style="color:#d14">&#34;img&#34;</span>).onclick <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (){
+</span></span><span style="display:flex;"><span>        draw();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#000080">script</span>&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525171704.png]]</p>
+<p><code>&gt; 上图就是页面中的 &lt;img&gt; 标签</code></p>
+<p>![[assets/Pasted image 20230525171724.png]]</p>
+<p><strong>3. 缩放图片</strong></p>
+<p><code>drawImage()</code> 也可以再添加两个参数：</p>
+<pre tabindex="0"><code>drawImage(image, x, y, width, height)
+- width 和 height，这两个参数用来控制 当像 canvas 画入时应该缩放的大小
+</code></pre><p>![[assets/Pasted image 20230525171741.png]]</p>
+<p><strong>4. 切片</strong></p>
+<pre tabindex="0"><code>drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight)
+
+- 第一个参数和其它的是相同的，都是一个图像或者另一个 canvas 的引用
+
+其他 8 个参数：
+- 前 4 个是定义图像源的切片位置和大小
+- 后 4 个则是定义切片的目标显示位置和大小
+</code></pre><p>![[assets/Pasted image 20230525171756.png]]</p>
+<h2 id="状态的保存和恢复">状态的保存和恢复</h2>
+<p>Canvas 的状态就是当前画面应用的所有样式和变形的一个快照，状态的保存和恢复是绘制复杂图形时必不可少的操作。<code>save()</code> 和 <code>restore()</code> 方法是用来保存和恢复 canvas 状态的，都没有参数。</p>
+<p><strong>1. <code>save()</code></strong></p>
+<p>Canvas 状态存储在栈中，每当 <code>save()</code> 方法被调用后，当前的状态就被推送到栈中保存。</p>
+<p><code>&gt; Canvas 都有哪些状态呢？</code></p>
+<p>一个绘画状态包括：</p>
+<ul>
+<li>当前应用的变形（即移动，旋转和缩放）；</li>
+<li><code>strokeStyle, fillStyle, globalAlpha, lineWidth, lineCap, lineJoin, miterLimit, shadowOffsetX, shadowOffsetY, shadowBlur, shadowColor, globalCompositeOperation</code> 的值；</li>
+<li>当前的裁切路径（clipping path）。</li>
+</ul>
+<p>可以调用任意多次 save 方法（类似数组的 <code>push()</code>）。</p>
+<p><strong>2. <code>restore()</code></strong></p>
+<p>每一次调用 restore 方法，上一个保存的状态就从栈中弹出，所有设定都恢复（类似数组的 <code>pop()</code>）。</p>
+<p>上个例子吧 🍩</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> ctx;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ctx.fillRect(<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">150</span>, <span style="color:#099">150</span>);   <span style="color:#998;font-style:italic">// 使用默认设置绘制一个矩形
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.save();                     <span style="color:#998;font-style:italic">// 保存默认状态
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>    ctx.fillStyle <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;red&#39;</span>           <span style="color:#998;font-style:italic">// 在原有配置基础上对颜色做改变
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.fillRect(<span style="color:#099">15</span>, <span style="color:#099">15</span>, <span style="color:#099">120</span>, <span style="color:#099">120</span>); <span style="color:#998;font-style:italic">// 使用新的设置绘制一个矩形
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>    ctx.save();                     <span style="color:#998;font-style:italic">// 保存当前状态
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.fillStyle <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;#FFF&#39;</span>          <span style="color:#998;font-style:italic">// 再次改变颜色配置
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.fillRect(<span style="color:#099">30</span>, <span style="color:#099">30</span>, <span style="color:#099">90</span>, <span style="color:#099">90</span>);   <span style="color:#998;font-style:italic">// 使用新的配置绘制一个矩形
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>    ctx.restore();                  <span style="color:#998;font-style:italic">// 重新加载之前的颜色状态
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.fillRect(<span style="color:#099">45</span>, <span style="color:#099">45</span>, <span style="color:#099">60</span>, <span style="color:#099">60</span>);   <span style="color:#998;font-style:italic">// 使用上一次的配置绘制一个矩形
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>    ctx.restore();                  <span style="color:#998;font-style:italic">// 加载默认颜色配置
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.fillRect(<span style="color:#099">60</span>, <span style="color:#099">60</span>, <span style="color:#099">30</span>, <span style="color:#099">30</span>);   <span style="color:#998;font-style:italic">// 使用加载的配置绘制一个矩形
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="变形">变形</h2>
+<p><strong>1. translate</strong></p>
+<pre tabindex="0"><code>translate(x, y)
+
+- 用来移动 canvas 的原点到指定的位置
+- 接受两个参数，x 是左右偏移量，y 是上下偏移量
+</code></pre><p>![[assets/Pasted image 20230525171817.png]]</p>
+<p><code>&gt; ​注意：translate 移动的是 canvas 的坐标原点（坐标变换）。</code></p>
+<p>在做变形之前先保存状态是一个良好的习惯。大多数情况下，调用 <code>restore()</code> 方法比手动恢复原先的状态要简单得多。又如果你是在一个循环中做位移但没有保存和恢复 canvas 的状态，很可能到最后会发现怎么有些东西不见了，那是因为它很可能已经超出 canvas 范围以外了。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> ctx;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial1&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    ctx.save();                     <span style="color:#998;font-style:italic">//保存坐原点平移之前的状态
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.translate(<span style="color:#099">100</span>, <span style="color:#099">100</span>);
+</span></span><span style="display:flex;"><span>    ctx.strokeRect(<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">100</span>, <span style="color:#099">100</span>);
+</span></span><span style="display:flex;"><span>    ctx.restore();                  <span style="color:#998;font-style:italic">//恢复到最初状态
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.translate(<span style="color:#099">220</span>, <span style="color:#099">220</span>);
+</span></span><span style="display:flex;"><span>    ctx.fillRect(<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">100</span>, <span style="color:#099">100</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525171833.png|300]]</p>
+<p><strong>2. rotate</strong></p>
+<pre tabindex="0"><code>rotate(angle)
+
+- 旋转坐标轴， 旋转的中心是坐标原点
+- 这个方法只接受一个参数：旋转的角度 (angle)，它是顺时针方向的，以弧度为单位的值
+</code></pre><p>![[assets/Pasted image 20230525171855.png]]</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> ctx;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial1&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    ctx.fillStyle <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;red&#34;</span>;
+</span></span><span style="display:flex;"><span>    ctx.save();
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    ctx.translate(<span style="color:#099">100</span>, <span style="color:#099">100</span>);
+</span></span><span style="display:flex;"><span>    ctx.rotate(<span style="color:#0086b3">Math</span>.PI <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">180</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">45</span>);
+</span></span><span style="display:flex;"><span>    ctx.fillStyle <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;blue&#34;</span>;
+</span></span><span style="display:flex;"><span>    ctx.fillRect(<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">100</span>, <span style="color:#099">100</span>);
+</span></span><span style="display:flex;"><span>    ctx.restore();
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    ctx.save();
+</span></span><span style="display:flex;"><span>    ctx.translate(<span style="color:#099">0</span>, <span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>    ctx.fillRect(<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">50</span>, <span style="color:#099">50</span>)
+</span></span><span style="display:flex;"><span>    ctx.restore();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525171911.png|300]]</p>
+<p><strong>3. scale</strong></p>
+<p>我们用它来增减图形在 canvas 中的像素数目，对形状，位图进行缩小或者放大。</p>
+<pre tabindex="0"><code>scale(x, y)
+
+- scale 方法接受两个参数。x,y 分别是横轴和纵轴的缩放因子，它们都必须是正值
+- 值比 1.0 小表示缩 小，比 1.0 大则表示放大，值为 1.0 时什么效果都没有
+</code></pre><p>默认情况下，canvas 的 1 单位就是 1 个像素。举例说，如果我们设置缩放因子是 0.5，1 个单位就变成对应 0.5 个像素，这样绘制出来的形状就会是原先的一半。同理，设置为 2.0 时，1 个单位就对应变成了 2 像素，绘制的结果就是图形放大了 2 倍。</p>
+<p><strong>4. transform（变形矩阵）</strong></p>
+<pre tabindex="0"><code>transform(a, b, c, d, e, f)
+
+- a (m11): Horizontal scaling.
+- b (m12): Horizontal skewing.
+- c (m21):​ Vertical skewing.
+- d (m22):​ Vertical scaling.
+- e (dx):​ Horizontal moving.
+- f (dy):​ Vertical moving.
+</code></pre><p>![[assets/Pasted image 20230525171934.png]]</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> ctx;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial1&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    ctx.transform(<span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">0</span>, <span style="color:#099">1</span>, <span style="color:#099">0</span>, <span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>    ctx.fillRect(<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">100</span>, <span style="color:#099">100</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/Pasted image 20230525171948.png|300]]</p>
+<h2 id="合成">合成</h2>
+<p>在前面的所有例子中、，我们总是将一个图形画在另一个之上，对于其他更多的情况，仅仅这样是远远不够的。比如，对合成的图形来说，绘制顺序会有限制。不过，我们可以利用 <code>globalCompositeOperation</code> 属性来改变这种状况。</p>
+<pre tabindex="0"><code>globalCompositeOperation = type
+
+其中 type 值有 13 个，如下：
+- source-over （默认值）, source-in, source-out, source-atop
+- destination-over, destination-in, destination-out, destination-atop
+- lighter, darken, lighten
+- xor, copy
+</code></pre><p>下面我们分别来看一下这些值的表示。</p>
+<p><strong>1. source-over</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> ctx;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial1&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    ctx.fillStyle <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;blue&#34;</span>;
+</span></span><span style="display:flex;"><span>    ctx.fillRect(<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">200</span>, <span style="color:#099">200</span>);
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    ctx.globalCompositeOperation <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;source-over&#34;</span>; <span style="color:#998;font-style:italic">//全局合成操作
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.fillStyle <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;red&#34;</span>;
+</span></span><span style="display:flex;"><span>    ctx.fillRect(<span style="color:#099">100</span>, <span style="color:#099">100</span>, <span style="color:#099">200</span>, <span style="color:#099">200</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注：下面的展示中，蓝色是原有的，红色是新的。</p>
+<p>这是默认设置，新图像会覆盖在原有图像。</p>
+<p>![[assets/Pasted image 20230525172011.png|300]]</p>
+<p><strong>2. source-in</strong></p>
+<p>仅仅会出现新图像与原来图像重叠的部分，其他区域都变成透明的。（包括其他的老图像区域也会透明）</p>
+<p>![[assets/Pasted image 20230525172027.png|300]]</p>
+<p><strong>3. source-out</strong></p>
+<p>仅仅显示新图像与老图像没有重叠的部分，其余部分全部透明。（老图像也不显示）</p>
+<p>![[assets/Pasted image 20230525172058.png|300]]</p>
+<p><strong>4. source-atop</strong></p>
+<p>新图像仅仅显示与老图像重叠区域。（老图像仍然可以显示）</p>
+<p>![[assets/Pasted image 20230525172114.png|300]]</p>
+<p><strong>5. destination-over</strong></p>
+<p>新图像会在老图像的下面。</p>
+<p>![[assets/Pasted image 20230525172131.png|300]]</p>
+<p><strong>6. destination-in</strong></p>
+<p>仅仅新老图像重叠部分的老图像被显示，其他区域全部透明。</p>
+<p>![[assets/Pasted image 20230525172147.png|300]]</p>
+<p><strong>7. destination-out</strong></p>
+<p>仅仅老图像与新图像没有重叠的部分。 （注意显示的是老图像的部分区域）</p>
+<p>![[assets/Pasted image 20230525172207.png|300]]</p>
+<p><strong>8. destination-atop</strong></p>
+<p>老图像仅仅仅仅显示重叠部分，新图像会显示在老图像的下面。</p>
+<p>![[assets/Pasted image 20230525172228.png|300]]</p>
+<p><strong>9. lighter</strong></p>
+<p>新老图像都显示，但是重叠区域的颜色做加处理。</p>
+<p>![[assets/Pasted image 20230525172247.png|300]]</p>
+<p><strong>10. darken</strong></p>
+<p>保留重叠部分最黑的像素。（每个颜色位进行比较，得到最小的）</p>
+<pre tabindex="0"><code>blue: #0000ff
+red:  #ff0000
+
+// 所以重叠部分的颜色：#000000
+</code></pre><p>![[assets/Pasted image 20230525172305.png|300]]</p>
+<p><strong>11. lighten</strong></p>
+<p>保证重叠部分最量的像素。（每个颜色位进行比较，得到最大的）</p>
+<pre tabindex="0"><code>blue: #0000ff
+red:  #ff0000
+
+// 所以重叠部分的颜色：#ff00ff
+</code></pre><p>![[assets/Pasted image 20230525172325.png|300]]</p>
+<p><strong>12. xor</strong></p>
+<p>重叠部分会变成透明。</p>
+<p>![[assets/Pasted image 20230525172348.png|300]]</p>
+<p><strong>13. copy</strong></p>
+<p>只有新图像会被保留，其余的全部被清除（边透明）。</p>
+<p>![[assets/Pasted image 20230525172405.png|300]]</p>
+<h2 id="裁剪路径">裁剪路径</h2>
+<pre tabindex="0"><code>clip()
+
+- 把已经创建的路径转换成裁剪路径
+</code></pre><p>裁剪路径的作用是遮罩。只显示裁剪路径内的区域，裁剪路径外的区域会被隐藏。</p>
+<p>注意：<code>clip()</code> 只能遮罩在这个方法调用之后绘制的图像，如果是 <code>clip()</code> 方法调用之前绘制的图像，则无法实现遮罩。</p>
+<p>![[assets/Pasted image 20230525172425.png]]</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> ctx;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.getElementById(<span style="color:#d14">&#39;tutorial1&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>canvas.getContext) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.arc(<span style="color:#099">20</span>,<span style="color:#099">20</span>, <span style="color:#099">100</span>, <span style="color:#099">0</span>, <span style="color:#0086b3">Math</span>.PI <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">2</span>);
+</span></span><span style="display:flex;"><span>    ctx.clip();
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    ctx.fillStyle <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;pink&#34;</span>;
+</span></span><span style="display:flex;"><span>    ctx.fillRect(<span style="color:#099">20</span>, <span style="color:#099">20</span>, <span style="color:#099">100</span>,<span style="color:#099">100</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>draw();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="动画">动画</h2>
+<p>动画的基本步骤：</p>
+<ol>
+<li>清空 canvas 再绘制每一帧动画之前，需要清空所有。清空所有最简单的做法就是 <code>clearRect()</code> 方法；</li>
+<li>保存 canvas 状态 如果在绘制的过程中会更改 canvas 的状态（颜色、移动了坐标原点等）, 又在绘制每一帧时都是原始状态的话，则最好保存下 canvas 的状态；</li>
+<li>绘制动画图形这一步才是真正的绘制动画帧；</li>
+<li>恢复 canvas 状态如果你前面保存了 canvas 状态，则应该在绘制完成一帧之后恢复 canvas 状态。</li>
+</ol>
+<p><strong>控制动画</strong></p>
+<p>我们可用通过 canvas 的方法或者自定义的方法把图像绘制到 canvas 上。正常情况，我们能看到绘制的结果是在脚本执行结束之后。例如，我们不可能在一个 for 循环内部完成动画。</p>
+<p>也就是，为了执行动画，我们需要一些可以定时执行重绘的方法。</p>
+<p>一般用到下面三个方法：</p>
+<ol>
+<li><code>setInterval()</code></li>
+<li><code>setTimeout()</code></li>
+<li><code>requestAnimationFrame()</code></li>
+</ol>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> <span style="color:#0086b3">sun</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> earth;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> moon;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> ctx;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>init();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> init() {
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">sun</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Image();
+</span></span><span style="display:flex;"><span>    earth <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Image();
+</span></span><span style="display:flex;"><span>    moon <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Image();
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">sun</span>.src <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;sun.png&#34;</span>;
+</span></span><span style="display:flex;"><span>    earth.src <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;earth.png&#34;</span>;
+</span></span><span style="display:flex;"><span>    moon.src <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;moon.png&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">let</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.querySelector(<span style="color:#d14">&#34;#solar&#34;</span>);
+</span></span><span style="display:flex;"><span>    ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">sun</span>.onload <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (){
+</span></span><span style="display:flex;"><span>        draw()
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw() {
+</span></span><span style="display:flex;"><span>    ctx.clearRect(<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">300</span>, <span style="color:#099">300</span>);  <span style="color:#998;font-style:italic">// 清空所有内容
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#998;font-style:italic">// 绘制太阳
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.drawImage(<span style="color:#0086b3">sun</span>, <span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">300</span>, <span style="color:#099">300</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ctx.save();
+</span></span><span style="display:flex;"><span>    ctx.translate(<span style="color:#099">150</span>, <span style="color:#099">150</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">//绘制 earth 轨道
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.strokeStyle <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;rgba(255,255,0,0.5)&#34;</span>;
+</span></span><span style="display:flex;"><span>    ctx.arc(<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">100</span>, <span style="color:#099">0</span>, <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#0086b3">Math</span>.PI)
+</span></span><span style="display:flex;"><span>    ctx.stroke()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">let</span> time <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> <span style="color:#0086b3">Date</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">//绘制地球
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.rotate(
+</span></span><span style="display:flex;"><span>        <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#0086b3">Math</span>.PI <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">60</span> <span style="color:#000;font-weight:bold">*</span> time.getSeconds() <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#0086b3">Math</span>.PI <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">60000</span> <span style="color:#000;font-weight:bold">*</span> time.getMilliseconds()
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>    ctx.translate(<span style="color:#099">100</span>, <span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>    ctx.drawImage(earth, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">12</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">12</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">//绘制月球轨道
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.strokeStyle <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;rgba(255,255,255,.3)&#34;</span>;
+</span></span><span style="display:flex;"><span>    ctx.arc(<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">40</span>, <span style="color:#099">0</span>, <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#0086b3">Math</span>.PI);
+</span></span><span style="display:flex;"><span>    ctx.stroke();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">//绘制月球
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.rotate(
+</span></span><span style="display:flex;"><span>        <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#0086b3">Math</span>.PI <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">6</span> <span style="color:#000;font-weight:bold">*</span> time.getSeconds() <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#0086b3">Math</span>.PI <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">6000</span> <span style="color:#000;font-weight:bold">*</span> time.getMilliseconds()
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>    ctx.translate(<span style="color:#099">40</span>, <span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>    ctx.drawImage(moon, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.5</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.5</span>);
+</span></span><span style="display:flex;"><span>    ctx.restore();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    requestAnimationFrame(draw);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/4.gif]]</p>
+<blockquote>
+<p>:: Emm… 不错，再来一个吧 🍪</p>
+</blockquote>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">70
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">71
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">72
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">73
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">74
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">75
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">76
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">77
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">78
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">79
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">80
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">81
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">82
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">83
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// &lt;canvas id=&#34;solar&#34; width=&#34;300&#34; height=&#34;300&#34;&gt;&lt;/canvas&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>init();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> init(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">let</span> canvas <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.querySelector(<span style="color:#d14">&#34;#solar&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">let</span> ctx <span style="color:#000;font-weight:bold">=</span> canvas.getContext(<span style="color:#d14">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>    draw(ctx);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> draw(ctx){
+</span></span><span style="display:flex;"><span>    requestAnimationFrame(<span style="color:#000;font-weight:bold">function</span> step(){
+</span></span><span style="display:flex;"><span>        drawDial(ctx); <span style="color:#998;font-style:italic">//绘制表盘
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        drawAllHands(ctx); <span style="color:#998;font-style:italic">//绘制时分秒针
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        requestAnimationFrame(step);
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">/*绘制时分秒针*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> drawAllHands(ctx){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">let</span> time <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> <span style="color:#0086b3">Date</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">let</span> s <span style="color:#000;font-weight:bold">=</span> time.getSeconds();
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">let</span> m <span style="color:#000;font-weight:bold">=</span> time.getMinutes();
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">let</span> h <span style="color:#000;font-weight:bold">=</span> time.getHours();
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">let</span> pi <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">Math</span>.PI;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">let</span> secondAngle <span style="color:#000;font-weight:bold">=</span> pi <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">180</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">6</span> <span style="color:#000;font-weight:bold">*</span> s;                     <span style="color:#998;font-style:italic">//计算出来 s 针的弧度
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">let</span> minuteAngle <span style="color:#000;font-weight:bold">=</span> pi <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">180</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">6</span> <span style="color:#000;font-weight:bold">*</span> m <span style="color:#000;font-weight:bold">+</span> secondAngle <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">60</span>;  <span style="color:#998;font-style:italic">//计算出来分针的弧度
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">let</span> hourAngle <span style="color:#000;font-weight:bold">=</span> pi <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">180</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">30</span> <span style="color:#000;font-weight:bold">*</span> h <span style="color:#000;font-weight:bold">+</span> minuteAngle <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">12</span>;   <span style="color:#998;font-style:italic">//计算出来时针的弧度
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>    drawHand(hourAngle, <span style="color:#099">60</span>, <span style="color:#099">6</span>, <span style="color:#d14">&#34;red&#34;</span>, ctx);                 <span style="color:#998;font-style:italic">//绘制时针
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    drawHand(minuteAngle, <span style="color:#099">106</span>, <span style="color:#099">4</span>, <span style="color:#d14">&#34;green&#34;</span>, ctx);            <span style="color:#998;font-style:italic">//绘制分针
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    drawHand(secondAngle, <span style="color:#099">129</span>, <span style="color:#099">2</span>, <span style="color:#d14">&#34;blue&#34;</span>, ctx);             <span style="color:#998;font-style:italic">//绘制秒针
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">/*绘制时针、或分针、或秒针
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">    * 参数 1：要绘制的针的角度
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">    * 参数 2：要绘制的针的长度
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">    * 参数 3：要绘制的针的宽度
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">    * 参数 4：要绘制的针的颜色
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">    * 参数 4：ctx
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">    * */</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> drawHand(angle, len, width, color, ctx){
+</span></span><span style="display:flex;"><span>    ctx.save();
+</span></span><span style="display:flex;"><span>    ctx.translate(<span style="color:#099">150</span>, <span style="color:#099">150</span>);                <span style="color:#998;font-style:italic">//把坐标轴的远点平移到原来的中心
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.rotate(<span style="color:#000;font-weight:bold">-</span><span style="color:#0086b3">Math</span>.PI <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">+</span> angle);       <span style="color:#998;font-style:italic">//旋转坐标轴。 x 轴就是针的角度
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.moveTo(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">4</span>, <span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>    ctx.lineTo(len, <span style="color:#099">0</span>);                     <span style="color:#998;font-style:italic">// 沿着 x 轴绘制针
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.lineWidth <span style="color:#000;font-weight:bold">=</span> width;
+</span></span><span style="display:flex;"><span>    ctx.strokeStyle <span style="color:#000;font-weight:bold">=</span> color;
+</span></span><span style="display:flex;"><span>    ctx.lineCap <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;round&#34;</span>;
+</span></span><span style="display:flex;"><span>    ctx.stroke();
+</span></span><span style="display:flex;"><span>    ctx.closePath();
+</span></span><span style="display:flex;"><span>    ctx.restore();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">/*绘制表盘*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> drawDial(ctx){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">let</span> pi <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">Math</span>.PI;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    ctx.clearRect(<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">300</span>, <span style="color:#099">300</span>);          <span style="color:#998;font-style:italic">//清除所有内容
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.save();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ctx.translate(<span style="color:#099">150</span>, <span style="color:#099">150</span>);                <span style="color:#998;font-style:italic">//一定坐标原点到原来的中心
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.beginPath();
+</span></span><span style="display:flex;"><span>    ctx.arc(<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">148</span>, <span style="color:#099">0</span>, <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">*</span> pi);          <span style="color:#998;font-style:italic">//绘制圆周
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    ctx.stroke();
+</span></span><span style="display:flex;"><span>    ctx.closePath();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> (<span style="color:#000;font-weight:bold">let</span> i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>; i <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">60</span>; i<span style="color:#000;font-weight:bold">++</span>){           <span style="color:#998;font-style:italic">//绘制刻度。
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        ctx.save();
+</span></span><span style="display:flex;"><span>        ctx.rotate(<span style="color:#000;font-weight:bold">-</span>pi <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">+</span> i <span style="color:#000;font-weight:bold">*</span> pi <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">30</span>);  <span style="color:#998;font-style:italic">//旋转坐标轴。坐标轴 x 的正方形从 向上开始算起
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        ctx.beginPath();
+</span></span><span style="display:flex;"><span>        ctx.moveTo(<span style="color:#099">110</span>, <span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>        ctx.lineTo(<span style="color:#099">140</span>, <span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>        ctx.lineWidth <span style="color:#000;font-weight:bold">=</span> i <span style="color:#000;font-weight:bold">%</span> <span style="color:#099">5</span> <span style="color:#000;font-weight:bold">?</span> <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#099">4</span>;
+</span></span><span style="display:flex;"><span>        ctx.strokeStyle <span style="color:#000;font-weight:bold">=</span> i <span style="color:#000;font-weight:bold">%</span> <span style="color:#099">5</span> <span style="color:#000;font-weight:bold">?</span> <span style="color:#d14">&#34;blue&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;red&#34;</span>;
+</span></span><span style="display:flex;"><span>        ctx.stroke();
+</span></span><span style="display:flex;"><span>        ctx.closePath();
+</span></span><span style="display:flex;"><span>        ctx.restore();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    ctx.restore();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[assets/5.gif]]</p>
+<h2 id="结语">结语</h2>
+<p>Canvas 画布的功能还是挺强大的，Go Go Go!</p>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41092802000242">
+            
+            <img src="/imgs/beian.png" />
+            <p>豫公网安备 41092802000242号</p>
+            
+
+        </a>
+
+        
+        <a href="//beian.miit.gov.cn" target="_blank">
+            
+            豫ICP备2023017189号-2
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

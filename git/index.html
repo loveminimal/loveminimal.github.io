@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Git - https://aituyaa.com/git/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>Git</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">Git</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/ols/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：OLs <sup>10</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/css-%E4%B8%AD%E7%9A%84%E5%8A%A8%E6%95%88/">CSS 中的动效</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/emacs-lisp/">Emacs Lisp</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/git/">Git</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/json-web-tokens/">Json Web Tokens</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/lua-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">Lua 那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/python-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">Python 那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/sql/">SQL</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/">字符集和字符编码</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E8%BF%9B%E5%88%B6%E5%8F%8A%E8%BD%AC%E6%8D%A2/">进制及转换</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2023-05-25&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2024-12-13&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            4040 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            9 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/ols">OLs</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#入门篇">入门篇</a>
+      <ul>
+        <li><a href="#安装设置">安装设置</a></li>
+        <li><a href="#基本操作">基本操作</a></li>
+      </ul>
+    </li>
+    <li><a href="#进阶篇">进阶篇</a>
+      <ul>
+        <li><a href="#远程仓库">远程仓库</a></li>
+        <li><a href="#分支">分支</a></li>
+        <li><a href="#标签">标签</a></li>
+        <li><a href="#git-submodule-子模块">Git Submodule 子模块</a></li>
+      </ul>
+    </li>
+    <li><a href="#其他">其他</a>
+      <ul>
+        <li><a href="#搭建-git-服务器并启用-hooks">搭建 Git 服务器并启用 Hooks</a></li>
+      </ul>
+    </li>
+    <li><a href="#实例">实例</a></li>
+    <li><a href="#常见问题">常见问题</a>
+      <ul>
+        <li><a href="#git-rebase-和-git-merge-的区别">git rebase 和 git merge 的区别</a></li>
+        <li><a href="#git-多平台换行符问题lfcrlf">git 多平台换行符问题(LF/CRLF)</a></li>
+        <li><a href="#ssh-通过-rsa-认证实现免密登录远程服务器">SSH 通过 RSA 认证实现免密登录远程服务器</a></li>
+        <li><a href="#推送到-github-时出现错误相关-10054--443">推送到 Github 时出现错误相关 (10054 $ 443)</a></li>
+        <li><a href="#解决-git-status-不能显示中文">解决 <code>git status</code> 不能显示中文</a></li>
+        <li><a href="#git-解决每次拉取提交代码时都需要输入用户名和密码">Git 解决每次拉取、提交代码时都需要输入用户名和密码</a></li>
+        <li><a href="#解决-git-bash-不能登录-mysql">解决 git bash 不能登录 mysql</a></li>
+        <li><a href="#设置-git-bash-为-emacs-默认-shell">设置 git-bash 为 Emacs 默认 shell</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <blockquote>
+<p>不可或缺的工具！！！</p>
+</blockquote>
+<p>本文旨在记录个人使用过程中遇到的相关 Git 命令，非教程式的，详细学习请参阅 <a href="https://git-scm.com/book/zh/v2">《Pro Git》 的中文文档</a>。</p>
+<h2 id="入门篇">入门篇</h2>
+<p>![[assets/Pasted image 20230525223448.png]]</p>
+<h3 id="安装设置">安装设置</h3>
+<p>去 <a href="https://git-scm.com/">Git 官网</a> 下载对应版本的 Git 安装即可，此处不再赘述。</p>
+<p>安装完成后，需要设置当前用户的名字和 Email 地址：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config --global user.name <span style="color:#d14">&#34;Your Name&#34;</span>
+</span></span><span style="display:flex;"><span>git config --global user.email <span style="color:#d14">&#34;email@example.com&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>你总是可以通过以下方式获取帮助：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git <span style="color:#0086b3">help</span> &lt;verb&gt;
+</span></span><span style="display:flex;"><span>git &lt;verb&gt; -h                   <span style="color:#998;font-style:italic"># --help 最常用，如 git config --help</span>
+</span></span><span style="display:flex;"><span>man git-&lt;verb&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>也许，你还想设置一下 RSA 密钥对：</p>
+<pre tabindex="0"><code>ssh-keygen -t rsa -C &#34;email@example.com&#34;
+</code></pre><h3 id="基本操作">基本操作</h3>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git init                         <span style="color:#998;font-style:italic"># 初始化仓库</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># ……</span>
+</span></span><span style="display:flex;"><span>git add .                        <span style="color:#998;font-style:italic"># 添加工作区所有变更到暂存区</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#d14">&#34;some commit log.&#34;</span> <span style="color:#998;font-style:italic"># 提交缓存区内变更到本地仓库</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="进阶篇">进阶篇</h2>
+<h3 id="远程仓库">远程仓库</h3>
+<p>我们就以 <a href="https://github.com/loveminimal/loveminimal.github.io">站点仓库</a> 为例。</p>
+<p>本地仓库和远程仓库之间的传输是通过 SSH 加密的，在使用远程仓库之前，我们需要先创建 SSH Key 。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ssh-keygen -t rsa -C <span style="color:#d14">&#34;youremail@example.com&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在用户主目录下，会生成 <code>.ssh</code> 目录，包含 <code>id_rsa</code> （私钥）和 <code>id_rsa.pub</code> （公钥）等文件。</p>
+<p>……</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 列出远程仓库（名称及地址）</span>
+</span></span><span style="display:flex;"><span>git remote -v                   <span style="color:#998;font-style:italic"># --verbose</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 添加远程仓库</span>
+</span></span><span style="display:flex;"><span>git remote add &lt;name&gt; &lt;url&gt;
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 移除远程仓库</span>
+</span></span><span style="display:flex;"><span>git remote remove &lt;name&gt;
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 重命名远程仓库分支</span>
+</span></span><span style="display:flex;"><span>git remote rename &lt;old&gt; &lt;new&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>关于远程仓库的其他操作，会分散在后续章节中，不在此处单独列出。</p>
+<h3 id="分支">分支</h3>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 列出分支</span>
+</span></span><span style="display:flex;"><span>git branch
+</span></span><span style="display:flex;"><span>git branch -l                   <span style="color:#998;font-style:italic"># --list 列出本地分支</span>
+</span></span><span style="display:flex;"><span>git branch -a                   <span style="color:#998;font-style:italic"># --all  列出远程、本地分支</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 创建分支</span>
+</span></span><span style="display:flex;"><span>git checkout -b &lt;branch&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 切换分支</span>
+</span></span><span style="display:flex;"><span>git checkout &lt;branch&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 删除分支</span>
+</span></span><span style="display:flex;"><span>git branch -d &lt;branch&gt;          <span style="color:#998;font-style:italic"># --delete 删除合并完全的分支</span>
+</span></span><span style="display:flex;"><span>git branch -D &lt;branch&gt;          <span style="color:#998;font-style:italic"># 强制删除分支（包含未合并完全）</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 删除远程分支</span>
+</span></span><span style="display:flex;"><span>git branch -d &lt;remote-repo&gt; &lt;remote-branch&gt;    <span style="color:#998;font-style:italic"># --delete 删除远程仓库的指定分支</span>
+</span></span><span style="display:flex;"><span>git push &lt;remote-repo&gt; :&lt;remote-branch&gt;        
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Or 推送一个空分支到远程分支，其实就相当于删除远程分支</span>
+</span></span><span style="display:flex;"><span>git push &lt;remote-repo&gt; --delete &lt;remote-brach&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 重命名分支</span>
+</span></span><span style="display:flex;"><span>git branch -m &lt;branch&gt;          <span style="color:#998;font-style:italic"># --move</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 合并分支</span>
+</span></span><span style="display:flex;"><span>git merge &lt;other-branch&gt; &lt;current-branch&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果你得到以下错误消息，可能是因为其他人已经删除了这个分支。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>error: unable to push to unqualified destination: remoteBranchName The destination refspec neither matches an existing ref on the remote nor begins with refs/, and we are unable to guess a prefix based on the <span style="color:#0086b3">source</span> ref. error: failed to push some refs to <span style="color:#d14">&#39;git@repository_name&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时，使用 <code>git fetch -p</code> 同步分支列表就可以了，如此，你的分支列表里就不会显示已远程被删除的分支了。</p>
+<p>我们从一个远程仓库拉取分支，默认会在本地创建 <code>master</code> 分支，并关联到远程仓库的主分支。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 拉取远程仓库并关联到自定义本地分支</span>
+</span></span><span style="display:flex;"><span>git clone -b &lt;local-branch&gt; &lt;remote-repo-url&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 摘取远程仓库指定分支并关联自定义本地分支</span>
+</span></span><span style="display:flex;"><span>git remote add origin &lt;remote-repo-url&gt;
+</span></span><span style="display:flex;"><span>git fetch origin &lt;remote-branch&gt;
+</span></span><span style="display:flex;"><span>git checkout -b &lt;local-branch&gt; origin/&lt;remote-branch&gt; <span style="color:#998;font-style:italic"># ！关键</span>
+</span></span><span style="display:flex;"><span>git pull origin &lt;remote-branch&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>强制推送本地分支到远程仓库分支（两者分支名称不同时），如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># git remote add origin https://github.com/loveminimal/loveminimal.github.io.git</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># git push -f origin master:main  # 本地分支 master ，远程分支 main</span>
+</span></span><span style="display:flex;"><span>  git push -f origin master         <span style="color:#998;font-style:italic"># 本地分支与远程分支名称相同，皆为 master</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>!!永远不要试图一蹴而就，在使用的过程中慢慢补充完善即可！</strong></p>
+<p>git 设置本地与远程分支关联:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 查看本地与远程分支关联的情况</span>
+</span></span><span style="display:flex;"><span>git branch -vv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 设置本地与远程分支关联</span>
+</span></span><span style="display:flex;"><span>git branch --set-upstream-to<span style="color:#000;font-weight:bold">=</span>origin/&lt;remote-branch&gt; &lt;local-branch&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="标签">标签</h3>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># === 查看标签 ===  </span>
+</span></span><span style="display:flex;"><span>git tag <span style="color:#998;font-style:italic"># -l, --list 列出标签</span>
+</span></span><span style="display:flex;"><span>git tag -l <span style="color:#d14">&#34;v1.8.5*&#34;</span>
+</span></span><span style="display:flex;"><span>git tag -n <span style="color:#998;font-style:italic"># 列出标签，并显示描述信息</span>
+</span></span><span style="display:flex;"><span>git ls-remote --tags origin <span style="color:#998;font-style:italic"># 查看远程所有标签</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># === 创建标签 === </span>
+</span></span><span style="display:flex;"><span>git tag v1.4-lw <span style="color:#998;font-style:italic"># 创建轻量标签</span>
+</span></span><span style="display:flex;"><span>git tag -a v2.0 -m <span style="color:#d14">&#39;描述信息&#39;</span> <span style="color:#998;font-style:italic"># 创建附注标签</span>
+</span></span><span style="display:flex;"><span>git tag -a v1.2 9fceb02 <span style="color:#998;font-style:italic"># 后期对指定提交打标签</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># === 发布标签 ===</span>
+</span></span><span style="display:flex;"><span>git push origin v2.0.0 <span style="color:#998;font-style:italic"># 其中 origin 为远程仓库名</span>
+</span></span><span style="display:flex;"><span>git push origin --tags <span style="color:#998;font-style:italic"># 将本地标签一次性提交到远程仓库</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># === 删除标签 ===</span>
+</span></span><span style="display:flex;"><span>git tag -d v1.4-lw <span style="color:#998;font-style:italic"># 删除标签</span>
+</span></span><span style="display:flex;"><span>git push origin --delete <span style="color:#000;font-weight:bold">[</span>tagname<span style="color:#000;font-weight:bold">]</span> <span style="color:#998;font-style:italic"># 删除远程标签</span>
+</span></span><span style="display:flex;"><span>git push origin :<span style="color:#000;font-weight:bold">[</span>tagname<span style="color:#000;font-weight:bold">]</span>         <span style="color:#998;font-style:italic"># 删除远程标签</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># === 检出标签 ===  </span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 拉取远程仓库指定标签到本地，</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 并创建 master 分支跳转</span>
+</span></span><span style="display:flex;"><span>git clone --branch v1.0.0 https://github.com/loveminimal/hugo-theme-virgo.git
+</span></span><span style="display:flex;"><span>git switch -c master
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git checkout -b &lt;branchName&gt; &lt;tagName&gt; <span style="color:#998;font-style:italic"># 检出某个标签  </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># === 切换标签 ===  </span>
+</span></span><span style="display:flex;"><span>git checkout <span style="color:#000;font-weight:bold">[</span>tagname<span style="color:#000;font-weight:bold">]</span> <span style="color:#998;font-style:italic"># 切换到指定标签</span>
+</span></span><span style="display:flex;"><span>git show <span style="color:#000;font-weight:bold">[</span>tagname<span style="color:#000;font-weight:bold">]</span>     <span style="color:#998;font-style:italic"># 查看标签版本信息</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="git-submodule-子模块">Git Submodule 子模块</h3>
+<blockquote>
+<p>参考 <a href="https://zhuanlan.zhihu.com/p/87053283">https://zhuanlan.zhihu.com/p/87053283</a></p>
+</blockquote>
+<blockquote>
+<p>:: 果然，可以模块的地方，最终都会模块化。</p>
+</blockquote>
+<p>假定我们有两个项目： <code>project-main</code> （主项目）和 <code>project-sub-1</code> （子模块项目）。</p>
+<p>我们可以使用 <code>git submodule add &lt;submodule_url&gt; [&lt;local_dir_name&gt;]</code> 命令在项目中创建一个子模块。</p>
+<p>💡 其中， <code>&lt;local_dir_name&gt;</code> 可选。</p>
+<p>上述命令执行之后，项目仓库会多出两个文件： <code>.gitmodules</code> （子模块的相关信息）和 <code>project-sub-1</code> （子模块当前版本的版本号信息）。</p>
+<p><strong>如何获取 submodule 呢？</strong></p>
+<blockquote>
+<p>为了方便，我们不妨称主模块为 Main ，子模块为 Sub 。</p>
+</blockquote>
+<p>对于主项目 Main 使用普通的 <code>clone</code> 操作并不会拉取到子模块 Sub 中的实际代码（它是空的）。如果希望子模块代码也获取到，可以使用以下两种方式：</p>
+<ol>
+<li>在克隆 Main 的时候带上参数 <code>--recurse-submodules</code> ，如此会递归地将项目中所有子模块的代码拉取；或，</li>
+<li>在 Main 中执行 <code>git submodule init &amp; git submodule update</code> ，会根据主项目的配置信息，拉取更新子模块中的代码（or <code>git submodule update --init --recursive</code>）。</li>
+</ol>
+<p><strong>子模块内容更新了如何操作？</strong></p>
+<p>对于子模块 Sub 而言，它并不知道引用自己的主项目的存在，其自身是一个完整的 Git 仓库，按照正常的 Git 代码管理规范操作即可。</p>
+<p>主模块的处理，目前就记住，操作了 Sub 后，再去操作 Main 即可。</p>
+<p><strong>删除子模块</strong></p>
+<p>使用 <code>git submodule deinit</code> 命令卸载一个子模块。这个命令如果添加上参数 <code>--force</code> ，则子模块工作区内即使有本地的修改，也会被移除。</p>
+<h2 id="其他">其他</h2>
+<h3 id="搭建-git-服务器并启用-hooks">搭建 Git 服务器并启用 Hooks</h3>
+<p>许多教程使用的都是 <code>root</code> 账户，其实我们使用哪个账户都可以，比如，这里我们就用当前用户 <code>jack</code> 来搭建 git 服务。</p>
+<p>首先，把客户机的公钥 <code>id_rsa.pub</code> 文件，导入到 <code>/home/jack/.ssh/authorized_keys</code> 文件里（若没有，新建该文件即可），一行一个。</p>
+<p>然后，选定一个目录作为 Git 仓库，比如 <code>~/.repo/site.git</code> ，在 <code>.repo</code> 目录下，输入：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git init --bare site.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Git 就会创建一个裸仓库，它没有工作区，纯粹是为了共享。</p>
+<p>最后，在客户机上，就可以通过 <code>git clone</code> 命令克隆远程仓库了，如：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># jack - 服务器主机用户名</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># ovirgo.com - 服务器绑定的域名（可以是 IP）</span>
+</span></span><span style="display:flex;"><span>git clone jack@ovirgo.com:/home/jack/.repo/site.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>什么是 Hooks 呢？</strong></p>
+<p>执行 <code>cd ~/.repo/site.git/hooks &amp;&amp; ls</code> ，你会发现许多 hooks 文件示例，用于该仓库去响应客户机的某些指令时的一些操作，比如，我们在客户机向该仓库推送时，自动克隆部署该仓库。</p>
+<p>在 <code>hooks</code> 目录下，执行以下操作：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 新建 post-receive</span>
+</span></span><span style="display:flex;"><span>touch post-receive
+</span></span><span style="display:flex;"><span>vim post-receive
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>编辑 <code>post-receive</code> 这个钩子：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span><span style="color:#0086b3">cd</span> /home/jack
+</span></span><span style="display:flex;"><span>rm -rf blog
+</span></span><span style="display:flex;"><span>git clone .repo/site.git blog
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>是的，它是一个 shell 脚本，如此而已。</p>
+<p>综上，我们完成了服务器端的 Git 搭建及自动化部署。</p>
+<h2 id="实例">实例</h2>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># === 全局化配置用户信息</span>
+</span></span><span style="display:flex;"><span>git config --global user.name  <span style="color:#d14">&#34;jack&#34;</span>
+</span></span><span style="display:flex;"><span>git config --global user.email <span style="color:#d14">&#34;loveminimal@163.com&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># === 生成 rsa 密钥对</span>
+</span></span><span style="display:flex;"><span>ssh-keygen -t rsa -C <span style="color:#d14">&#34;email@example.com&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> ~/.ssh
+</span></span><span style="display:flex;"><span>cat id_rsa.pub
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># === 克隆远程仓库</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># --- 常用 bash 别名</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> ~
+</span></span><span style="display:flex;"><span>git clone https://gitee.com/loveminimal/shell.git .shell
+</span></span><span style="display:flex;"><span>cp -r .shell/* ./
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">source</span> .bash_alias
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># --- 站点源码（私有仓库）</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> ~/AppData/Roaming
+</span></span><span style="display:flex;"><span>git clone https://gitee.com/loveminimal/site.git
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># --- 递归拉取项目及其子模块</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># git clone https://gitee.com/loveminimal/site.git --recurse-submodules</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># --- OR</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> ~/site
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># git submodule init &amp; git submodule update</span>
+</span></span><span style="display:flex;"><span>git submodule update --init --recursive
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># --- 添加其它的远程仓库</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> ~/site/themes/virgo
+</span></span><span style="display:flex;"><span>git remote add github https://github.com/loveminimal/hugo-theme-virgo.git
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> ~/site/static/ship
+</span></span><span style="display:flex;"><span>git remote add github https://github.com/loveminimal/ship.git
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> ~/site/static/emojing
+</span></span><span style="display:flex;"><span>git remote add github https://github.com/loveminimal/emojing.git
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> ~/site/content/.obsidian/themes/Virgo
+</span></span><span style="display:flex;"><span>git remote add github https://github.com/loveminimal/obsidian-theme-virgo.git
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># --- 配置 Vim</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> ~
+</span></span><span style="display:flex;"><span>git clone https://gitee.com/loveminimal/vim.git .vim
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># --- OR</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># scp -r aituyaa.com:/home/jack/.vim .vim</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># --- 下载浏览器插件 copy-link</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> ~/local
+</span></span><span style="display:flex;"><span>git clone https://gitee.com/loveminimal/copy-link.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="常见问题">常见问题</h2>
+<h3 id="git-rebase-和-git-merge-的区别">git rebase 和 git merge 的区别</h3>
+<p>参考 <a href="https://www.yiibai.com/git/git_rebase.html">git base 的用法</a></p>
+<p>假设你现在基于远程分支” <code>origin</code> “，创建一个叫” <code>mywork</code> “的分支。</p>
+<p>![[assets/Pasted image 20241213115440.png|130]]</p>
+<p>现在我们在这个分支( mywork )做一些修改，然后生成两个提交( commit )。</p>
+<p>但是与此同时，有些人也在” <code>origin</code> “分支上做了一些修改并且做了提交了，这就意味着” <code>origin</code> “和” <code>mywork</code> “这两个分支各自”前进”了，它们之间”分叉”了。</p>
+<p>![[assets/Pasted image 20241213115542.png|300]]</p>
+<p>在这里，你可以用” <code>pull</code> “命令把” <code>origin</code> “分支上的修改拉下来并且和你的修改合并； 结果看起来就像一个新的”合并的提交”(merge commit):</p>
+<p>![[assets/Pasted image 20241213115619.png|390]]</p>
+<p>但是，如果你想让” <code>mywork</code> “分支历史看起来像没有经过任何合并一样，也可以用 <code>git rebase</code>，如下所示:</p>
+<pre tabindex="0"><code>git checkout mywork
+git rebase origin
+</code></pre><p>这些命令会把你的” <code>mywork</code> “分支里的每个提交(commit)取消掉，并且把它们临时 保存为补丁(patch)(这些补丁放到” <code>.git/rebase</code> “目录中),然后把” <code>mywork</code> “分支更新 到最新的” <code>origin</code> “分支，最后把保存的这些补丁应用到” <code>mywork</code> “分支上。</p>
+<p>![[assets/Pasted image 20241213115803.png|460]]</p>
+<p>当  <code>mywork</code> 分支更新之后，它会指向这些新创建的提交(commit),而那些老的提交会被丢弃。 如果运行垃圾收集命令(pruning garbage collection), 这些被丢弃的提交就会删除。</p>
+<p>![[assets/Pasted image 20241213115851.png|460]]</p>
+<p>现在我们可以看一下用合并(<code>merge</code>)和用 <code>rebase</code> 所产生的历史的区别：</p>
+<p>![[assets/Pasted image 20241213115910.png|550]]</p>
+<p>在 <code>rebase</code> 的过程中，也许会出现冲突(conflict)。在这种情况，Git会停止 <code>rebase</code> 并会让你去解决冲突；在解决完冲突后，用” <code>git add</code> “命令去更新这些内容的索引(index), 然后，你无需执行 <code>git commit</code>,只要执行 <code>git rebase --continue</code> git 会继续应用(apply)余下的补丁。</p>
+<p>在任何时候，可以用 <code>--abort</code> 参数来终止 <code>rebase</code> 的操作，并且” <code>mywork</code> “ 分支会回到 <code>rebase</code> 开始前的状态。</p>
+<h3 id="git-多平台换行符问题lfcrlf">git 多平台换行符问题(LF/CRLF)</h3>
+<p>详见  <a href="https://sampwood.github.io/2019/01/07/git%E5%A4%9A%E5%B9%B3%E5%8F%B0%E6%8D%A2%E8%A1%8C%E7%AC%A6%E9%97%AE%E9%A2%98-LF-CRLF/">git多平台换行符问题(LF/CRLF) - Sampwood的One Piece</a></p>
+<p>git 提供了一个 <code>core.autocrlf</code> 的配置项，用于在提交和检出时自动转换换行符，该配置有三个可选项：</p>
+<ul>
+<li>true: 提交时转换为 LF，检出时转换为 CRLF</li>
+<li>false: 默认值，提交检出均不转换</li>
+<li>input: 提交时转换为 LF，检出时不转换</li>
+</ul>
+<p>一种规范换行符的方式是这样的：</p>
+<pre tabindex="0"><code># 使用 Windows 系统的开发者设置
+git config --global core.aurocrlf true
+
+使用 Linux/MacOS 的开发者设置
+git config --global core.autocrlf input
+</code></pre><p>git 同时提供了另一个配置项 <code>core.safecrlf</code>，用于检查文件是否包含混合换行符，该配置也有三个可选项：</p>
+<ul>
+<li>true 默认值，禁止提交混合换行符的文本文件(git add 的时候会被拦截，提示异常)</li>
+<li>warn 提交混合换行符的文本文件的时候发出警告，但是不会阻止 git add 操作</li>
+<li>false 不禁止提交混合换行符的文本文件（默认配置）</li>
+</ul>
+<p>该配置用来防止错误的标准化（提交）与转换（检出）。嫌烦的话，可以：</p>
+<pre tabindex="0"><code>git config --global core.safecrlf false
+</code></pre><h3 id="ssh-通过-rsa-认证实现免密登录远程服务器">SSH 通过 RSA 认证实现免密登录远程服务器</h3>
+<p>我们假设你在本机已经生成了 ssh-key</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#0086b3">cd</span> ~/.ssh
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 复制本机公钥到服务器</span>
+</span></span><span style="display:flex;"><span>scp id_rsa.pub aituyaa.com:/home/jack
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 追加公钥内容到服务器认证文件末尾</span>
+</span></span><span style="display:flex;"><span>cat id_rsa.pub &gt;&gt; .ssh/authorized_keys
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="推送到-github-时出现错误相关-10054--443">推送到 Github 时出现错误相关 (10054 $ 443)</h3>
+<pre tabindex="0"><code>OpenSSL SSL_read: Connection was reset, errno 10054
+# OR
+Failed to connect to github.com port 443: Timed out
+</code></pre><p>解决办法：</p>
+<pre tabindex="0"><code># 关闭验证
+git config --global http.sslVerify &#34;false&#34;
+# 设置代理，
+# 本机代理端口为 7890
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
+</code></pre><p>上面的本机代理端口号为 <code>7890</code> ，你需要查询自己的，在系统 <code>设置 / 网络和 Internet / 代理</code> 层级，如下：</p>
+<p>![[assets/Pasted image 20230908112808.png]]</p>
+<p>当然，这需要你科学上网才行。</p>
+<blockquote>
+<p>:: 真心的，不翻墙，Github 这破玩意儿用起来是真的糟心……</p>
+</blockquote>
+<p>再次提交，就可以正常提交了，过程中可以会出现这个警告，无视它即可！</p>
+<pre tabindex="0"><code>warning: ----------------- SECURITY WARNING ----------------
+warning: | TLS certificate verification has been disabled! |
+warning: ---------------------------------------------------      
+warning: HTTPS connections may not be secure. See https://aka.ms/gcmcore-tlsverify for more information.
+</code></pre><p>怎么恢复呢？很简单。</p>
+<pre tabindex="0"><code>git config --global http.sslVerify &#34;true&#34;
+# 设置代理，
+# 本机代理端口为 7890
+git config --global --unset http.proxy 
+git config --global --unset https.proxy
+</code></pre><h3 id="解决-git-status-不能显示中文">解决 <code>git status</code> 不能显示中文</h3>
+<p><a href="https://blog.csdn.net/u012145252/article/details/81775362">Ref</a></p>
+<p>默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</p>
+<ol>
+<li>终端输入：</li>
+</ol>
+<pre tabindex="0"><code>git config --global core.quotepath false
+</code></pre><ol start="2">
+<li>同时， git-bash 中 <code>Options/Text</code> 终端也要设置成中文和 utf-8 编码。</li>
+</ol>
+<p>![[assets/Pasted image 20230529085346.png]]</p>
+<p>当然，你也可以通过修改配置文件来解决中文乱码，此处暂不讨论（因为一般上面这种办法就可以解决）。</p>
+<h3 id="git-解决每次拉取提交代码时都需要输入用户名和密码">Git 解决每次拉取、提交代码时都需要输入用户名和密码</h3>
+<p>在家目录运行 <code>git config --global credential.helper store</code> ，然后在拉取时输入正确的用户名和密码，就可以成功记录下来。</p>
+<h3 id="解决-git-bash-不能登录-mysql">解决 git bash 不能登录 mysql</h3>
+<p>在使用 git bash 登录 mysql 时会卡死，怎么办呢？加上 winpty 就好了，如下：</p>
+<pre tabindex="0"><code>winpty mysql -u root -p
+</code></pre><h3 id="设置-git-bash-为-emacs-默认-shell">设置 git-bash 为 Emacs 默认 shell</h3>
+<p>→ <a href="https://blog.csdn.net/csfreebird/article/details/9719221">https://blog.csdn.net/csfreebird/article/details/9719221</a></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span>(<span style="color:#0086b3">setq</span> <span style="color:#008080">explicit-shell-file-name</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#d14">&#34;C:/Program Files/Git/bin/bash. exe&#34;</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#0086b3">setq</span> <span style="color:#008080">shell-file-name</span> <span style="color:#008080">explicit-shell-file-name</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#008080">add-to-list</span> <span style="color:#990073">&#39;exec-path</span> <span style="color:#d14">&#34;C:/Program Files/Git/bin&#34;</span>)
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41092802000242">
+            
+            <img src="/imgs/beian.png" />
+            <p>豫公网安备 41092802000242号</p>
+            
+
+        </a>
+
+        
+        <a href="//beian.miit.gov.cn" target="_blank">
+            
+            豫ICP备2023017189号-2
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

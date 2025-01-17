@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>玩具 on 爱涂鸦啊</title>
+    <link>https://aituyaa.com/tags/%E7%8E%A9%E5%85%B7/</link>
+    <description>Recent content in 玩具 on 爱涂鸦啊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 25 Dec 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/%E7%8E%A9%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一种获取五笔大词库的方式</title>
+      <link>https://aituyaa.com/%E4%B8%80%E7%A7%8D%E8%8E%B7%E5%8F%96%E4%BA%94%E7%AC%94%E5%A4%A7%E8%AF%8D%E5%BA%93%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Wed, 25 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E7%A7%8D%E8%8E%B7%E5%8F%96%E4%BA%94%E7%AC%94%E5%A4%A7%E8%AF%8D%E5%BA%93%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
+      <description>&lt;p&gt;一种获取五笔大词库的方式 ~&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20241225110558.png]]&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RIME_JK 指尖上的旋律</title>
+      <link>https://aituyaa.com/rime_jk-%E6%8C%87%E5%B0%96%E4%B8%8A%E7%9A%84%E6%97%8B%E5%BE%8B/</link>
+      <pubDate>Wed, 29 May 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/rime_jk-%E6%8C%87%E5%B0%96%E4%B8%8A%E7%9A%84%E6%97%8B%E5%BE%8B/</guid>
+      <description>&lt;p&gt;这个是迟来的 &lt;a href=&#34;https://github.com/loveminimal/rime-jk&#34;&gt;loveminimal/rime-jk&lt;/a&gt; 的 &lt;code&gt;README&lt;/code&gt; ，照例单开一篇，方便记录和更新~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一个修改浏览器默认字体的油猴脚本</title>
+      <link>https://aituyaa.com/%E4%B8%80%E4%B8%AA%E4%BF%AE%E6%94%B9%E6%B5%8F%E8%A7%88%E5%99%A8%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93%E7%9A%84%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/</link>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E4%B8%AA%E4%BF%AE%E6%94%B9%E6%B5%8F%E8%A7%88%E5%99%A8%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93%E7%9A%84%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/</guid>
+      <description>&lt;p&gt;Windows 系统的默认字体很丑！浏览器中的字体也不好看！如何方便地修改浏览器的各个页面的默认字体呢？如果你有这个需求，接着向下看。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一款简约的 Obsidian 主题</title>
+      <link>https://aituyaa.com/%E4%B8%80%E6%AC%BE%E7%AE%80%E7%BA%A6%E7%9A%84-obsidian-%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Thu, 31 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E6%AC%BE%E7%AE%80%E7%BA%A6%E7%9A%84-obsidian-%E4%B8%BB%E9%A2%98/</guid>
+      <description>📘 loveminimal/obsidian-theme-virgo: A obsidian theme. 更新日志 - 2024-04-12 15:29 重构主题，精简冗余代码 快速使用 后续你可以直接从 Obsidian 的主题仓库中直接搜索 Virgo 安装即可（上传中，待官方合并 限制太多，不允许上传自定义字体，不再上</description>
+    </item>
+    
+    <item>
+      <title>A Simple Bookmark Copying</title>
+      <link>https://aituyaa.com/a-simple-bookmark-copying/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/a-simple-bookmark-copying/</guid>
+      <description>&lt;p&gt;感谢小伙伴 Whatacold 的创意 &lt;a href=&#34;https://whatacold.io/blog/2022-08-08-org-link-bookmarklet/&#34;&gt;A Bookmarklet for Copying a Link as an Org-mode Link - whatacold’s space - whatacold.io&lt;/a&gt; ，可以方便地复制当前页面的地址并格式化 &lt;code&gt;.md&lt;/code&gt; 链接格式，当然，也可以格式化成 &lt;code&gt;.org&lt;/code&gt; 链接格式。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emojings</title>
+      <link>https://aituyaa.com/emojings/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/emojings/</guid>
+      <description>&lt;p&gt;Emoji（えもじ 绘文字），就是表情符号，来自日语词汇“絵文字”（假名为“えもじ”，读音即 emoji）。最早是由栗穰崇于 1999 年创作，并在日本网络及手机用户中流行。自苹果公司发布的 ios5 输入法中加入 emoji 后，这种表情符号开始席卷全球，现已被大多数计算机系统所兼容的 Unicode 编码采纳，得以普遍运用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VSCode 插件 CVE Keymap 的开发记录</title>
+      <link>https://aituyaa.com/vscode-%E6%8F%92%E4%BB%B6-cve-keymap-%E7%9A%84%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/vscode-%E6%8F%92%E4%BB%B6-cve-keymap-%E7%9A%84%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;当前博文以 &lt;code&gt;Org Mode&lt;/code&gt; 格式编辑。&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I have a vim, I have a emacs.&lt;br&gt;
+Eh~ vim-emacs!&lt;br&gt;
+I have a code, I have a vim-emacs.&lt;br&gt;
+Eh~ code-vim-emacs!&lt;br&gt;
+CVE!&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>一场疲惫的主题制作之旅</title>
+      <link>https://aituyaa.com/%E4%B8%80%E5%9C%BA%E7%96%B2%E6%83%AB%E7%9A%84%E4%B8%BB%E9%A2%98%E5%88%B6%E4%BD%9C%E4%B9%8B%E6%97%85/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E5%9C%BA%E7%96%B2%E6%83%AB%E7%9A%84%E4%B8%BB%E9%A2%98%E5%88%B6%E4%BD%9C%E4%B9%8B%E6%97%85/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;哎，这让人费解的强迫症……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;博客没写几篇，博客系统倒是折腾了不少，哎，有点本末倒置了，希望这次是最后一次啦（不可能的），单开一篇碎碎念一下前前后后的那些事儿。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一款 Typora 主题</title>
+      <link>https://aituyaa.com/%E4%B8%80%E6%AC%BE-typora-%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E6%AC%BE-typora-%E4%B8%BB%E9%A2%98/</guid>
+      <description>&lt;p&gt;为什么会制作这款 Typora 的主题呢？&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://theme.typora.io/theme/Virgo/&#34;&gt;📙 Virgo&lt;/a&gt; , 仓库地址 &lt;a href=&#34;https://github.com/loveminimal/typora-theme-virgo&#34;&gt;loveminimal/typora-theme-virgo: A typora theme for relative hugo.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>手写板</title>
+      <link>https://aituyaa.com/%E6%89%8B%E5%86%99%E6%9D%BF/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%89%8B%E5%86%99%E6%9D%BF/</guid>
+      <description>&lt;p&gt;在 &lt;a href=&#34;http://localhost:1313/posts/canvas/&#34;&gt;Canvas&lt;/a&gt; 中，我们介绍了画布的基本概念和使用方式，现在，我们来用它实现一个基本的手写板 - 你可以在 &lt;a href=&#34;https://github.com/loveminimal/tablet&#34;&gt;Tablet&lt;/a&gt; 查看源码。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 原生 JS 实现一下喽 ~&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>键位映射那些事儿</title>
+      <link>https://aituyaa.com/%E9%94%AE%E4%BD%8D%E6%98%A0%E5%B0%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E9%94%AE%E4%BD%8D%E6%98%A0%E5%B0%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;Vim 的键位不错，无论是移动光标还是进行编辑操作，但是如果是使用中文输入的话，就很尬 – 中文状态下命令模式不能用，虽然通过一些方式可以使得在切换为非插入模式时自动切换为英文状态，但总是不那么尽如人意。&lt;/p&gt;
+&lt;p&gt;Emacs 的键位模式，就很适应中英文的混合输入，唯一的缺点就是有点费小手指。在 Emacs 中，我一般会启用 Evil 插件，如此，可以实现如果是只读文件和做一些删减工作的时候，就直接使用 Vim 的键位模式，而在插入模式下，就使用 Emacs 的键位模式，很不错，附上一份个人的 Evil 插件的配置 &lt;a href=&#34;https://github.com/loveminimal/emacs.d/blob/master/lisp/init-evil.el&#34;&gt;init-evil.el&lt;/a&gt; 。唯一不足的是，这种方式只有在 Emacs 中才是可用的，如果你使用其他编辑器时，就没有这份待遇了。不过，单纯的 Emacs 键位也足够好用了。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

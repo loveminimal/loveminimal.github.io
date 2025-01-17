@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="反射与泛型 - https://aituyaa.com/%E5%8F%8D%E5%B0%84%E4%B8%8E%E6%B3%9B%E5%9E%8B/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>反射与泛型</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">反射与泛型</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/java/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：Java <sup>7</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/java-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">Java 那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/spring/">Spring</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/spring-boot/">Spring Boot</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/web-%E5%BC%80%E5%8F%91/">Web 开发</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/%E5%8F%8D%E5%B0%84%E4%B8%8E%E6%B3%9B%E5%9E%8B/">反射与泛型</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%9E%9A%E4%B8%BE/">枚举</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B3%A8%E8%A7%A3/">注解</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2023-05-25&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2023-11-01&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            3402 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            7 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/java">Java</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#反射">反射</a></li>
+    <li><a href="#泛型">泛型</a>
+      <ul>
+        <li><a href="#擦拭法">擦拭法</a></li>
+        <li><a href="#通配符">通配符</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p>i.e. Reflection and Generic</p>
+<p>反射与泛型那些事儿……</p>
+<h2 id="反射">反射</h2>
+<p>反射，i.e.Reflection，Java 的反射是指程序在运行期可以拿到一个对象（实例）的所有信息。</p>
+<p>正常情况下，如果我们要调用一个对象的方法，或者访问一个对象的字段，通常会传入对象实例。反射是为了解决在运行期，对某个实例一无所知的情况下，如何调用其方法。</p>
+<p>除了 <code>int</code> 等基本类型外，Java 的其他类型全部都是 <code>class</code> （包括 <code>interface</code> ）， <code>class</code> 的本质是数据类型。</p>
+<p><strong><code>class</code> 在由 JVM 在执行过程中动态加载的。</strong></p>
+<p>JVM 在第一次读取到一种 <code>class</code> 类型时，将其加载进内存。每加载一种 <code>class</code> ，JVM 就为其创建一个 <code>Class</code> 类型的实例，并关联起来。</p>
+<p>注意：这里的 <code>Class</code> 类型是一个类名为 <code>Class</code> 的 <code>class</code> （即 <code>Class.class</code> ） ，它长这样：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">final</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Class</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">private</span> <span style="color:#900;font-weight:bold">Class</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>以 <code>String</code> 类为例，当 JVM 加载 <code>String</code> 类时，它首先读取 <code>String.class</code> 文件到内存，然后，为 <code>String</code> 类创建一个 <code>Class</code> 实例并关联起来：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Class cls <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Class<span style="color:#000;font-weight:bold">(</span>String<span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个 <code>Class</code> 实例是由 JVM 内部创建的，其构造方法是 <code>private</code> ，只有 JVM 能创建 <code>Class</code> 实例，我们自己的 Java 程序是无法创建 <code>Class</code> 实例的。</p>
+<p>所以，JVM 持有的每个 <code>Class</code> 实例都指向一个数据类型（ <code>class</code> 或 <code>interface</code> ），一个 <code>Class</code> 实例包含了该 <code>class</code> 的所有完整信息：</p>
+<p>![[assets/Pasted image 20230525165823.png|400]]</p>
+<p>由于 JVM 为每个加载的 <code>class</code> 创建了对应的 <code>Class</code> 实例，并在实例中保存了该 <code>class</code> 的所有信息，包括类名、包名、父类、实现的接口、所有方法、字段等。因此，如果获取了某个 <code>Class</code> 实例，我们就可以通过这个 <code>Class</code> 实例获取到该实例对应的 <code>class</code> 的所有信息。</p>
+<p><strong>这种通过 <code>Class</code> 实例获取 <code>class</code> 信息的方法称为反射（Reflection）。</strong></p>
+<p>如何获取一个 <code>class</code> 的 <code>Class</code> 实例呢？</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 方法一
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 直接通过一个 class 的静态变量 class 获取
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>Class cls <span style="color:#000;font-weight:bold">=</span> String<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">class</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 方法二
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 通过该实例变量（如果有一个实例变量）提供的 getClass() 方法获取
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>String s <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Hello&#34;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>Class cls <span style="color:#000;font-weight:bold">=</span> s<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getClass</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 方法三
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 通过静态方法（如果知道一个 class 的完整类名） Class.forName() 获取
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>Class cls <span style="color:#000;font-weight:bold">=</span> Class<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">forName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;java.lang.String&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>JVM 在执行 Java 程序的时候，并不是一次性把所有用到的 <code>class</code> 全部加载到内存，而是第一次需要用到 <code>class</code> 时才加载。</p>
+<h2 id="泛型">泛型</h2>
+<p>泛型是一种“代码模板”，可以用一套代码套用各种类型。</p>
+<p>在讲解什么是泛型之前，我们先观察 Java 标准提供的 <code>ArrayList</code> ，可以看作“可变长度”的数组，实际上它内部就是一个 <code>Object[]</code> 数组，配合存储一个当前分配的长度。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">ArrayList</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">private</span> Object<span style="color:#000;font-weight:bold">[]</span> array<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">private</span> <span style="color:#458;font-weight:bold">int</span> size<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">add</span><span style="color:#000;font-weight:bold">(</span>Object e<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">...</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">remove</span><span style="color:#000;font-weight:bold">(</span><span style="color:#458;font-weight:bold">int</span> index<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">...</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> Object <span style="color:#900;font-weight:bold">get</span><span style="color:#000;font-weight:bold">(</span><span style="color:#458;font-weight:bold">int</span> index<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">...</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如上所示，ArrayList 的 <code>get</code> 方法返回的是一个 <code>Object</code> 类型的数据。如此，当你用它存储 <code>String</code> 类型的时候，获取的结果其实需要强制转型（由 <code>Object</code> 转型为 <code>String</code> ）。如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ArrayList list <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> ArrayList<span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>list<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">add</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;Hello&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 获取到 Object ，必须强制转型为 String
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>String first <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span>String<span style="color:#000;font-weight:bold">)</span> list<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">get</span><span style="color:#000;font-weight:bold">(</span>0<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>list<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">add</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">new</span> Interger<span style="color:#000;font-weight:bold">(</span>123<span style="color:#000;font-weight:bold">));</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// ERROR: ClassCastException
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>String second <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span>String<span style="color:#000;font-weight:bold">)</span> list<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">get</span><span style="color:#000;font-weight:bold">(</span>1<span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>并且很容易出现误转型 <code>ClassCastException</code> 。</p>
+<p>要解决上述问题，我们可以为 <code>String</code> 单独编写一种 ArrayList ：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">StringArrayList</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">private</span> String<span style="color:#000;font-weight:bold">[]</span> array<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">private</span> <span style="color:#458;font-weight:bold">int</span> size<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">add</span><span style="color:#000;font-weight:bold">(</span>String e<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">...</span> <span style="color:#000;font-weight:bold">}</span>     <span style="color:#998;font-style:italic">// 存 String
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#000;font-weight:bold">public</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">remove</span><span style="color:#000;font-weight:bold">(</span><span style="color:#458;font-weight:bold">int</span> index<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">...</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> String <span style="color:#900;font-weight:bold">get</span><span style="color:#000;font-weight:bold">(</span><span style="color:#458;font-weight:bold">int</span> index<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">...</span> <span style="color:#000;font-weight:bold">}</span>  <span style="color:#998;font-style:italic">// 取 String
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>存取 <code>String</code> 的问题暂时解决了，然而存取 <code>Integer</code> 、 <code>Person</code> 等其他类型呢？当然，我们可以用上述方式为其创建对应的类，然而实际上这实际上是不科学的，太多了。</p>
+<p>为了解决这个新的问题，我们必须把 <code>ArrayList</code> 变成一种模板： <code>ArrayList&lt;T&gt;</code> ，代码如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">ArrayList</span><span style="color:#000;font-weight:bold">&lt;</span>T<span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">private</span> T<span style="color:#000;font-weight:bold">[]</span> array<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">private</span> <span style="color:#458;font-weight:bold">int</span> size<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">add</span><span style="color:#000;font-weight:bold">(</span>T e<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">...</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">remove</span><span style="color:#000;font-weight:bold">(</span><span style="color:#458;font-weight:bold">int</span> index<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">...</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> T <span style="color:#900;font-weight:bold">get</span><span style="color:#000;font-weight:bold">(</span><span style="color:#458;font-weight:bold">int</span> index<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">...</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如此，我们在存取 <code>String</code> 类型的时候，就可以用 <code>ArrayList&lt;String&gt;</code> 了，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ArrayList<span style="color:#000;font-weight:bold">&lt;</span>String<span style="color:#000;font-weight:bold">&gt;</span> strList <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> ArrayList<span style="color:#000;font-weight:bold">&lt;</span>String<span style="color:#000;font-weight:bold">&gt;();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>strList<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">add</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;hello&#34;</span><span style="color:#000;font-weight:bold">);</span>           <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>String s <span style="color:#000;font-weight:bold">=</span> strList<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">get</span><span style="color:#000;font-weight:bold">(</span>0<span style="color:#000;font-weight:bold">);</span>      <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>strList<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">add</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">new</span> Integer<span style="color:#000;font-weight:bold">(</span>123<span style="color:#000;font-weight:bold">));</span>  <span style="color:#998;font-style:italic">// ✘ compile error
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>Integer n <span style="color:#000;font-weight:bold">=</span> strList<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">get</span><span style="color:#000;font-weight:bold">(</span>0<span style="color:#000;font-weight:bold">);</span>     <span style="color:#998;font-style:italic">// ✘ compile error
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>:: 看，泛型，其实是一种更高层次上的抽象。</p>
+</blockquote>
+<p>通常来说，<strong>泛型类一般用在集合类中</strong>，例如 <code>ArrayList&lt;T&gt;</code>，我们很少需要编写泛型类。那么，Java 语言是如何实现泛型的呢？</p>
+<h3 id="擦拭法">擦拭法</h3>
+<p>Java 语言的泛型实现方式是擦拭法（Type Erasure），<strong>虚拟机对泛型其实一无所知</strong>，所有的工作都是编译器做的。</p>
+<p>例如，我们编写了一个泛型类 <code>Pair&lt;T&gt;</code> ，下面是编译器看到的（我们编写的）代码：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Pair</span><span style="color:#000;font-weight:bold">&lt;</span>T<span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">private</span> T first<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">private</span> T last<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">public</span> <span style="color:#900;font-weight:bold">Pair</span><span style="color:#000;font-weight:bold">(</span>T first<span style="color:#000;font-weight:bold">,</span> T last<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">first</span> <span style="color:#000;font-weight:bold">=</span> first<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">last</span> <span style="color:#000;font-weight:bold">=</span> last<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">public</span> T <span style="color:#900;font-weight:bold">getFirst</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> first<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">public</span> T <span style="color:#900;font-weight:bold">getLast</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> last<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">public</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">setFirst</span><span style="color:#000;font-weight:bold">(</span>T first<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">first</span> <span style="color:#000;font-weight:bold">=</span> first<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">public</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">setLast</span><span style="color:#000;font-weight:bold">(</span>T last<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">last</span> <span style="color:#000;font-weight:bold">=</span> last<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>虚拟机可看不到上述代码！它也不认识！编译器把上面的代码，编译成了下面这样：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Pair</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">private</span> Object first<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">private</span> Object last<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">public</span> <span style="color:#900;font-weight:bold">Pair</span><span style="color:#000;font-weight:bold">(</span>Object first<span style="color:#000;font-weight:bold">,</span> Object last<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">first</span> <span style="color:#000;font-weight:bold">=</span> first<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">last</span> <span style="color:#000;font-weight:bold">=</span> last<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">public</span> Object <span style="color:#900;font-weight:bold">getFirst</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> first<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">public</span> Object <span style="color:#900;font-weight:bold">getLast</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> last<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">public</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">setFirst</span><span style="color:#000;font-weight:bold">(</span>Object first<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">first</span> <span style="color:#000;font-weight:bold">=</span> first<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">public</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">setLast</span><span style="color:#000;font-weight:bold">(</span>Object last<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">last</span> <span style="color:#000;font-weight:bold">=</span> last<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>编译器直接把 <code>&lt;T&gt;</code> 擦拭掉了，把所有类型 <code>&lt;T&gt;</code> 视为 <code>Object</code> ！它只是在使用编写的泛型类时，根据 <code>&lt;T&gt;</code> 将取得的值进行安全的强制转型。</p>
+<p>比如，我们这样使用编写的泛型类（编译器看到的代码）：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Pair<span style="color:#000;font-weight:bold">&lt;</span>String<span style="color:#000;font-weight:bold">&gt;</span> p <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Pair<span style="color:#000;font-weight:bold">&lt;&gt;(</span><span style="color:#d14">&#34;Hello&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#d14">&#34;world&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>String first <span style="color:#000;font-weight:bold">=</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getFirst</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>String last <span style="color:#000;font-weight:bold">=</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getLast</span><span style="color:#000;font-weight:bold">();</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>编译器会将上面这段代码中所取的值进行强制转型（虚拟机看到的代码）：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Pair p <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Pair<span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;Hello&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#d14">&#34;world&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>String first <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span>String<span style="color:#000;font-weight:bold">)</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getFirst</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>String last <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span>String<span style="color:#000;font-weight:bold">)</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getLast</span><span style="color:#000;font-weight:bold">();</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>是的，Java 就这样实现了泛型，并不难！对于我们来说，不嫌麻烦的话，你完全可以不使用泛型，自己来做编译器做的这些活。</p>
+<p>📣 题外话：Java 引入了泛型，所以，只用 <code>Class</code> 来标识类型已经不够了。实际上，Java 的类型系统结构如下：</p>
+<p>![[assets/Pasted image 20231101142648.png]]</p>
+<h3 id="通配符">通配符</h3>
+<p>我们在阅读源码的时候，经常会看到类似 <code>&lt;? extends Number&gt;</code> 或是 <code>&lt;? super Integer&gt;</code> 等的代码，它们是什么？有什么作用？</p>
+<p>我们称之为通配符。先来看一下，为什么需要它们。</p>
+<p>我们仍然使用上个章节中编写的泛型类 <code>Pair&lt;T&gt;</code> ，现在我们要针对 <code>Pair&lt;Number&gt;</code> 类型写了一个静态方法，它接收的参数类型是 <code>Pair&lt;Number&gt;</code>：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">PairHelper</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">static</span> <span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">add</span><span style="color:#000;font-weight:bold">(</span>Pair<span style="color:#000;font-weight:bold">&lt;</span>Number<span style="color:#000;font-weight:bold">&gt;</span> p<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        Number first <span style="color:#000;font-weight:bold">=</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getFirst</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>        Number last <span style="color:#000;font-weight:bold">=</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getLast</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> first<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">intValue</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">+</span> last<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">intValue</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在使用的时候，我们传入如下代码，运行是没有任何问题的：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> sum <span style="color:#000;font-weight:bold">=</span> PairHelper<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">add</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">new</span> Pair<span style="color:#000;font-weight:bold">&lt;</span>Number<span style="color:#000;font-weight:bold">&gt;(</span>1<span style="color:#000;font-weight:bold">,</span> 2<span style="color:#000;font-weight:bold">));</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意，传入的类型是 <code>Pair&lt;Number&gt;</code>，实际参数类型是 <code>(Integer, Integer)</code>。那如果我们像下面这样，直接传入 <code>Pair&lt;Integer&gt;</code> 可不可以呢？</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">PairHelper</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">static</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">main</span><span style="color:#000;font-weight:bold">(</span>String<span style="color:#000;font-weight:bold">[]</span> args<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#998;font-style:italic">// 生成一个 Pair&lt;Integer&gt; 实例，然后传入 add 方法使用它
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        Pair<span style="color:#000;font-weight:bold">&lt;</span>Integer<span style="color:#000;font-weight:bold">&gt;</span> p <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Pair<span style="color:#000;font-weight:bold">&lt;&gt;(</span>123<span style="color:#000;font-weight:bold">,</span> 456<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#458;font-weight:bold">int</span> n <span style="color:#000;font-weight:bold">=</span> add<span style="color:#000;font-weight:bold">(</span>p<span style="color:#000;font-weight:bold">);</span> <span style="color:#998;font-style:italic">// ❌ 编译会报错
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        System<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">out</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">println</span><span style="color:#000;font-weight:bold">(</span>n<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">static</span> <span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">add</span><span style="color:#000;font-weight:bold">(</span>Pair<span style="color:#000;font-weight:bold">&lt;</span>Number<span style="color:#000;font-weight:bold">&gt;</span> p<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#998;font-style:italic">// ❌
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        Number first <span style="color:#000;font-weight:bold">=</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getFirst</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>        Number last <span style="color:#000;font-weight:bold">=</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getLast</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> first<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">intValue</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">+</span> last<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">intValue</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结果编译的时候，就抛出了一个错误：</p>
+<pre tabindex="0"><code>incompatible types: Pair&lt;Integer&gt; cannot be converted to Pair&lt;Number&gt;
+</code></pre><p>想想也是，<code>Pair&lt;Integer&gt;</code> 不是 <code>Pair&lt;Number&gt;</code> 的子类，因此，<code>add(Pair&lt;Number&gt;)</code> 不接受参数类型 <code>Pair&lt;Integer&gt;</code>。</p>
+<p>但是从 <code>add()</code> 方法的代码可知，传入 <code>Pair&lt;Integer&gt;</code> 是完全符合内部代码的类型规范，因为语句：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Number first <span style="color:#000;font-weight:bold">=</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getFirst</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>Number last <span style="color:#000;font-weight:bold">=</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getLast</span><span style="color:#000;font-weight:bold">();</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>实际类型是 <code>Integer</code>，引用类型是 <code>Number</code>，没有问题。</p>
+<p>问题在于方法参数类型定死了只能传入 <code>Pair&lt;Number&gt;</code>！那么，有没有办法使得方法参数接受 <code>Pair&lt;Integer&gt;</code>？有的 —— 通配符！</p>
+<p>下面我们来修改一下上面的 <code>add()</code> 方法，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">PairHelper</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    Pair<span style="color:#000;font-weight:bold">&lt;</span>Integer<span style="color:#000;font-weight:bold">&gt;</span> p <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Pair<span style="color:#000;font-weight:bold">&lt;&gt;(</span>123<span style="color:#000;font-weight:bold">,</span> 456<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> n <span style="color:#000;font-weight:bold">=</span> add<span style="color:#000;font-weight:bold">(</span>p<span style="color:#000;font-weight:bold">);</span> <span style="color:#998;font-style:italic">// ✔️ 通过了
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    System<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">out</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">println</span><span style="color:#000;font-weight:bold">(</span>n<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">static</span> <span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">add</span><span style="color:#000;font-weight:bold">(</span>Pair<span style="color:#000;font-weight:bold">&lt;?</span> <span style="color:#000;font-weight:bold">extends</span> Number<span style="color:#000;font-weight:bold">&gt;</span> p<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#998;font-style:italic">// ✔️ &lt;? extends Number&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        Number first <span style="color:#000;font-weight:bold">=</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getFirst</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>        Number last <span style="color:#000;font-weight:bold">=</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getLast</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> first<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">intValue</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">+</span> last<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">intValue</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如此，给方法传入 <code>Pair&lt;Integer&gt;</code> 类型时，它符合参数 <code>Pair&lt;? extends Number&gt;</code> 类型。</p>
+<p>这种使用类似 <code>&lt;? extends Number&gt;</code> 的泛型定义称之为<strong>上界通配符</strong>（Upper Bounds Wildcards），即把泛型类型 <code>T</code> 的上界限定在 <code>Number</code> 了。</p>
+<p>如果我们考察对 <code>Pair&lt;? extends Number&gt;</code> 类型调用 <code>getFirst()</code> 方法，实际的方法签名变成了：</p>
+<pre tabindex="0"><code>&lt;? extends Number&gt; getFirst();
+</code></pre><p>即返回值是 <code>Number</code> 或 <code>Number</code> 的子类，因此，可以安全赋值给 <code>Number</code> 类型的变量。那能不能赋值给 <code>Integer</code> 类型的变量呢？不行！因为 <code>&lt;? extens Number&gt;</code> 不是只允许你传入 <code>Integer</code> 类型的 实例，还允许你什么 <code>Double</code> 等其他 <code>Number</code> 的子类（包括 <code>Number</code> 本身）的实例，这就导致上述 <code>getFirst()</code> 方实际返回类型可能是 <code>Integer</code>，也可能是 <code>Double</code> 或者其他类型。</p>
+<p>‘读’是没有问题了，‘写’呢？比如：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">PairHelper</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    Pair<span style="color:#000;font-weight:bold">&lt;</span>Integer<span style="color:#000;font-weight:bold">&gt;</span> p <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Pair<span style="color:#000;font-weight:bold">&lt;&gt;(</span>123<span style="color:#000;font-weight:bold">,</span> 456<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">int</span> n <span style="color:#000;font-weight:bold">=</span> add<span style="color:#000;font-weight:bold">(</span>p<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    System<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">out</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">println</span><span style="color:#000;font-weight:bold">(</span>n<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">static</span> <span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">add</span><span style="color:#000;font-weight:bold">(</span>Pair<span style="color:#000;font-weight:bold">&lt;?</span> <span style="color:#000;font-weight:bold">extends</span> Number<span style="color:#000;font-weight:bold">&gt;</span> p<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        Number first <span style="color:#000;font-weight:bold">=</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getFirst</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>        Number last <span style="color:#000;font-weight:bold">=</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getLast</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>        p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setFirst</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">new</span> Integer<span style="color:#000;font-weight:bold">(</span>first<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">intValue</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">+</span> 100<span style="color:#000;font-weight:bold">));</span> <span style="color:#998;font-style:italic">// ❌
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setLast</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">new</span> Integer<span style="color:#000;font-weight:bold">(</span>last<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">intValue</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">+</span> 100<span style="color:#000;font-weight:bold">));</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getFirst</span><span style="color:#000;font-weight:bold">().</span><span style="color:#008080">intValue</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">+</span> p<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getFirst</span><span style="color:#000;font-weight:bold">().</span><span style="color:#008080">intValue</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>编译错误发生在 <code>p.setFirst()</code> 传入的参数是 <code>Integer</code> 类型。既然 <code>p</code> 的定义是 <code>Pair&lt;? extends Number&gt;</code>，那么 <code>setFirst(? extends Number)</code> 为什么不能传入 <code>Integer</code>？</p>
+<p>这就是 <code>&lt;? extends Number&gt;</code> 通配符的一个<strong>重要限制</strong>：方法参数签名 <code>setFirst(? extends Number)</code> 无法传递任何 <code>Number</code> 的子类型给 <code>setFirst(? extends Number)</code>。</p>
+<p>⭐ 一句话，对于 <code>&lt;? extends T&gt;</code> 就是 <strong>‘读可以，写不行’</strong> ，‘读’出来的 能确写都是 <code>T</code> 类型，‘写’的时候编译器不确定你会写个啥类型（<strong>不同 T 类型子类实例一起使用的时候很容易就乱套了</strong>），所以干脆不让你写，直接报错！</p>
+<blockquote>
+<p>在定义泛型类型 <code>Pair&lt;T&gt;</code> 的时候，也可以使用 <code>extends</code> 通配符来限定 <code>T</code> 的类型。</p>
+</blockquote>
+<p><strong>那怎么‘写’？</strong></p>
+<p>使用 <code>&lt;? super T&gt;</code> -  <strong>下界通配符</strong> (Lower Bounds Wildcards)！</p>
+<p>上面说了  <code>&lt;? extends T&gt;</code> 允许调用读方法 <code>T get()</code> 获取 <code>T</code> 的引用，但不允许调用写方法 <code>set(T)</code> 传入 <code>T</code> 的引用（传入 <code>null</code> 除外）；</p>
+<p><code>&lt;? super T&gt;</code> 允许调用写方法 <code>set(T)</code> 传入 <code>T</code> 的引用，但不允许调用读方法 <code>T get()</code> 获取 <code>T</code> 的引用（获取 <code>Object</code> 除外）。</p>
+<p>为什么呢？一句话，对于 <code>&lt;? super T&gt;</code> ，‘写’的时候，编译器能确定实际类型都兼容 <code>T</code> （本身或其父类），不会存在什么引用错误，但是‘读’的时候编译器不能确定你会读个啥类型（<strong>不同 T 类型父类实例一起使用的时候很容易就乱套了</strong>），所以干脆不让你读，直接报错！</p>
+<blockquote>
+<p>:: 好吧，其实还是有点乱，具体使用多了就明了了。</p>
+</blockquote>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41092802000242">
+            
+            <img src="/imgs/beian.png" />
+            <p>豫公网安备 41092802000242号</p>
+            
+
+        </a>
+
+        
+        <a href="//beian.miit.gov.cn" target="_blank">
+            
+            豫ICP备2023017189号-2
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

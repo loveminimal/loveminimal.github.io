@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on 爱涂鸦啊</title>
+    <link>https://aituyaa.com/tags/hugo/</link>
+    <description>Recent content in Hugo on 爱涂鸦啊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一种简单的 Hugo 本地搜索实现</title>
+      <link>https://aituyaa.com/%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E7%9A%84-hugo-%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E7%9A%84-hugo-%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%AE%9E%E7%8E%B0/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;🚨 后又陆陆续续加了些辅助功能，可以点击下载最新完整的 &lt;a href=&#34;https://github.com/loveminimal/hugo-theme-virgo/blob/1.x/static/js/search.js&#34;&gt;search.js&lt;/a&gt;  源码（另存后使用编辑器打开就不中文乱码了）。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何使用 hugo-theme-virgo 主题</title>
+      <link>https://aituyaa.com/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-hugo-theme-virgo-%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Fri, 06 May 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-hugo-theme-virgo-%E4%B8%BB%E9%A2%98/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-virgo/&#34;&gt;🎨 hugo-theme-virgo&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;为什么要把使用指南单独列出，而不是放在 README 中？&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;一方面，内容更新频繁（虽然没有必要），把更改放在 &lt;code&gt;README&lt;/code&gt; 中需要每次都提交主题更新，然而有时候只是单纯的更新 &lt;code&gt;README&lt;/code&gt; 而已。&lt;/p&gt;
+&lt;p&gt;另一方面，国内网络推送到 Github 仓库的时候经常抽风 (如下图)，速度也慢。&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20230815144943.png]]&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

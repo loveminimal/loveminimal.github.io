@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on 爱涂鸦啊</title>
+    <link>https://aituyaa.com/docs/</link>
+    <description>Recent content in Docs on 爱涂鸦啊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 28 Dec 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 工作总结</title>
+      <link>https://aituyaa.com/docs/2023-%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Thu, 28 Dec 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/docs/2023-%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;2023 年相关工作整理及总结。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>生育建档资料</title>
+      <link>https://aituyaa.com/docs/%E7%94%9F%E8%82%B2%E5%BB%BA%E6%A1%A3%E8%B5%84%E6%96%99/</link>
+      <pubDate>Wed, 14 Jun 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/docs/%E7%94%9F%E8%82%B2%E5%BB%BA%E6%A1%A3%E8%B5%84%E6%96%99/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 实体社保卡&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 居住证&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 生育建档&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>工作资料</title>
+      <link>https://aituyaa.com/docs/%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99/</link>
+      <pubDate>Thu, 25 May 2023 16:10:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/docs/%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99/</guid>
+      <description>&lt;p&gt;开发环境 Jenkins 的 Git Branches 和项目名称对照表及其说明和备忘。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>计划</title>
+      <link>https://aituyaa.com/docs/%E8%AE%A1%E5%88%92/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/docs/%E8%AE%A1%E5%88%92/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;凡事，预则立，不预则废。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

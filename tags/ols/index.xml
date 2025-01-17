@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OLs on 爱涂鸦啊</title>
+    <link>https://aituyaa.com/tags/ols/</link>
+    <description>Recent content in OLs on 爱涂鸦啊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 03 Jan 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/ols/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lua 那些事儿</title>
+      <link>https://aituyaa.com/lua-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/lua-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;最近配置 [[Rime_JK 指尖上的旋律|Rime]] 的时候遇到了不少 lua 脚本，加上比较流行的 Neovim 也是使用的这个嵌入式脚本，Java 和一些游戏中也使用了这个脚本语言……&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20250103183548.png|500]]&lt;/p&gt;
+&lt;p&gt;这难免让人想要多了解一下她，不是吗？所以，让我们开始吧 🎉&lt;/p&gt;
+&lt;p&gt;📘 &lt;a href=&#34;https://www.runoob.com/manual/lua53doc/&#34;&gt;Lua 5.3 参考手册&lt;/a&gt;&lt;br&gt;
+📗 &lt;a href=&#34;https://www.runoob.com/lua/lua-tutorial.html&#34;&gt;Lua 教程 | 菜鸟教程&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python 那些事儿</title>
+      <link>https://aituyaa.com/python-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/python-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;![[assets/Pasted image 20241215124829.png]]&lt;/p&gt;
+&lt;p&gt;官方文档请参阅 📖 &lt;a href=&#34;https://docs.python.org/zh-cn/3/tutorial/index.html&#34;&gt;Python 教程 — Python 3.13.1 文档&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;本语言的命名源自 BBC 的 “Monty Python 飞行马戏团”，与爬行动物无关（Python 原义为“蟒蛇”）。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emacs Lisp</title>
+      <link>https://aituyaa.com/emacs-lisp/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/emacs-lisp/</guid>
+      <description>&lt;p&gt;📕 转载自 &lt;a href=&#34;http://smacs.github.io/elisp/&#34;&gt;Emacs Lisp 简明教程 - 水木社区 Emacs 版&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这是 叶文彬（水木 ID: happierbee) 写的一份 Emacs Lisp 的教程，深入浅出，非常适合初学者。文档的 TeX 代码及 PDF 文档可在&lt;a href=&#34;http://www.newsmth.net/nForum/article/Emacs/58338?s=58338&#34;&gt;此处下载&lt;/a&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;emacs 的高手不能不会 elisp。但是对于很多人来说 elisp 学习是一个痛苦的历程，至少我是有这样一段经历。因此，我写了这一系列文章，希望能为后来者提供一点捷径。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Json Web Tokens</title>
+      <link>https://aituyaa.com/json-web-tokens/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/json-web-tokens/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://jwt.io/&#34;&gt;https://jwt.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;相关参考：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jwt.io/introduction&#34;&gt;JSON Web Token Introduction - jwt.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html&#34;&gt;JSON Web Token 入门教程 - 阮一峰的网络日志&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/ittranslator/p/14595165.html&#34;&gt;JWT 介绍 - Step by Step - 技术译民 - 博客园&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://aituyaa.com/sql/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/sql/</guid>
+      <description>&lt;p&gt;🔔 摘录自 &lt;a href=&#34;https://www.liaoxuefeng.com/wiki/1177760294764384&#34;&gt;廖雪峰老师的 SQL 教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SQL，结构化查询语言（Structured Query Language ），是一种数据库查询和程序设计语言，用于访问和操作数据库系统。SQL 语句既可以查询数据库中的数据，也可以插入、更新和删除数据库中的数据，还可以对数据库进行管理和维护操作。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: 数据库能听懂的语言 – SQL&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>字符集和字符编码</title>
+      <link>https://aituyaa.com/%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</guid>
+      <description>&lt;p&gt;i.e. Charset and Character Encoding&lt;/p&gt;
+&lt;p&gt;字符是什么？字母、汉字、标点符号、控制字符、假名……&lt;/p&gt;
+&lt;p&gt;计算机中储存的信息都是二进制数表示的，我们在屏幕上看到的英文、汉字等字符都是二进制转换之后的结果。按照何种规则将字符存储在计算机中，如 &lt;code&gt;a&lt;/code&gt; 用什么表示，称为“编码”；反之，将存储在计算机中的二进制数解析显示出来，称为“解码”。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>正则表达式</title>
+      <link>https://aituyaa.com/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;很强大，也让人很头大…… 这只是一个精简的摘要，相信我，即使总结的再全面，一段时间之后，也需要借助参考手册，才能正确的使用它。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>进制及转换</title>
+      <link>https://aituyaa.com/%E8%BF%9B%E5%88%B6%E5%8F%8A%E8%BD%AC%E6%8D%A2/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%BF%9B%E5%88%B6%E5%8F%8A%E8%BD%AC%E6%8D%A2/</guid>
+      <description>&lt;p&gt;i.e. Base and Conversion&lt;/p&gt;
+&lt;p&gt;👉 推荐一个不错的网站 - &lt;a href=&#34;http://c.biancheng.net/&#34;&gt;C 语言中文网&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSS 中的动效</title>
+      <link>https://aituyaa.com/css-%E4%B8%AD%E7%9A%84%E5%8A%A8%E6%95%88/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/css-%E4%B8%AD%E7%9A%84%E5%8A%A8%E6%95%88/</guid>
+      <description>&lt;p&gt;CSS 中的 &lt;code&gt;transform&lt;/code&gt;（变换）、&lt;code&gt;transition&lt;/code&gt;（过渡） 和 &lt;code&gt;animation&lt;/code&gt;（动画） ，简称 TTA。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: CSS 什么的这种逻辑性略弱、规则性很强的领域，边用边深入就好，不常用的记了也会忘。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://aituyaa.com/git/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/git/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;不可或缺的工具！！！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本文旨在记录个人使用过程中遇到的相关 Git 命令，非教程式的，详细学习请参阅 &lt;a href=&#34;https://git-scm.com/book/zh/v2&#34;&gt;《Pro Git》 的中文文档&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

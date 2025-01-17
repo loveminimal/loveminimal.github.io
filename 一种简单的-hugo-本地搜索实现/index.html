@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="一种简单的 Hugo 本地搜索实现 - https://aituyaa.com/%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E7%9A%84-hugo-%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%AE%9E%E7%8E%B0/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>一种简单的 Hugo 本地搜索实现</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">一种简单的 Hugo 本地搜索实现</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/hugo/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：Hugo <sup>2</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E7%9A%84-hugo-%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%AE%9E%E7%8E%B0/">一种简单的 Hugo 本地搜索实现</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-hugo-theme-virgo-%E4%B8%BB%E9%A2%98/">如何使用 hugo-theme-virgo 主题</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2023-05-26&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2024-04-19&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            2135 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            5 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/hugo">Hugo</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#更新日志">更新日志</a></li>
+    <li><a href="#简介">简介</a></li>
+    <li><a href="#使用">使用</a>
+      <ul>
+        <li><a href="#搜索模板页">搜索模板页</a></li>
+        <li><a href="#解析站点页面内容">解析站点页面内容</a></li>
+        <li><a href="#如何搜索">如何搜索</a></li>
+      </ul>
+    </li>
+    <li><a href="#最后">最后</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <blockquote>
+<p>🚨 后又陆陆续续加了些辅助功能，可以点击下载最新完整的 <a href="https://github.com/loveminimal/hugo-theme-virgo/blob/1.x/static/js/search.js">search.js</a>  源码（另存后使用编辑器打开就不中文乱码了）。</p>
+</blockquote>
+<h2 id="更新日志">更新日志</h2>
+<pre tabindex="0"><code>- 2024-03-20 11:42 修复多 sections 时站点文章内容索引不完全的问题
+- 2022-07-13 11:02 修改了站点内容结构解析方式，以解决随着文章数量增长导致搜索性能下降的问题
+</code></pre><h2 id="简介">简介</h2>
+<p>近来稍闲，实现了一个 Hugo 本地搜索的小功能，分享一下 🍧 。</p>
+<blockquote>
+<p>:: 这个功能写了两遍，第一次不知道怎么着就在一个临时分支（切换回主分支会自动消失的那种 😠 ）中开发了，然后就没什么然后了…… 感觉是 IDE 的锅，对，就是它的，不是也要是！</p>
+</blockquote>
+<p>让我们先来看一下，它可以做什么吧：</p>
+<ul>
+<li>内容实时搜索；</li>
+<li>搜索内容摘要显示；</li>
+<li>搜索词高亮。</li>
+</ul>
+<p>都是一些搜索时常用的功能。稍后，我们来看一下上述功能的一些细节，以及开发过程中的一些糗事 😄 。你也可以，先在这里体验一下它的大概使用效果 <a href="https://loveminimal.github.io/search">Search</a> 。</p>
+<h2 id="使用">使用</h2>
+<p>如何实时获取站点的所有内容呢？这里有两个方面，一就是获取站点的所有页面内容，二是实时获取。</p>
+<h3 id="搜索模板页">搜索模板页</h3>
+<p>一个大概的思路，就是创建一个模板页，如 <code>_search.html</code> 文件（详见 <a href="https://github.com/loveminimal/hugo-theme-virgo/blob/1.x/layouts/partials/_search.html">_search.html</a>），利用 Hugo 模板本身的变量（如 <code>.Site</code>）来获取站点所有的页面内容。</p>
+<p><code>&gt; 废弃 {{ range where .Site.Pages &quot;Kind&quot; &quot;section&quot; }}</code></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#000080">div</span> <span style="color:#008080">class</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;container-search&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#000080">div</span> <span style="color:#008080">id</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;data&#34;</span> <span style="color:#008080">style</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;display: none;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">&lt;!-- 遍历所有的站点页面 --&gt;</span>
+</span></span><span style="display:flex;"><span>    {{ range where .Site.Pages &#34;Kind&#34; &#34;page&#34; }}
+</span></span><span style="display:flex;"><span>        {{ if (and (ne .Section &#34;snippets&#34;))}}
+</span></span><span style="display:flex;"><span>            [{{- dict 
+</span></span><span style="display:flex;"><span>                    &#34;title&#34; (lower .Title) 
+</span></span><span style="display:flex;"><span>                    &#34;permalink&#34; .Permalink 
+</span></span><span style="display:flex;"><span>                    &#34;date&#34; (.Date | time.Format &#34;2006-01-02&#34;)
+</span></span><span style="display:flex;"><span>                    &#34;summary&#34; .Summary
+</span></span><span style="display:flex;"><span>                    &#34;content&#34; (lower .Plain)
+</span></span><span style="display:flex;"><span>                | jsonify -}},]
+</span></span><span style="display:flex;"><span>        {{ end }}
+</span></span><span style="display:flex;"><span>    {{ end }}
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#000080">div</span>&gt;
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">&lt;!-- 搜索框 --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#000080">div</span> <span style="color:#008080">id</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;search&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic">&lt;!-- 🔎 --&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#000080">span</span> <span style="color:#008080">class</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;sc-icon&#34;</span>&gt;&lt;<span style="color:#000080">img</span> <span style="color:#008080">src</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;/imgs/icons/search.svg&#34;</span> <span style="color:#008080">width</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;48&#34;</span>&gt; &lt;/<span style="color:#000080">span</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#000080">span</span> <span style="color:#008080">id</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;sc-clear&#34;</span> <span style="color:#008080">onclick</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;clearInputVal()&#34;</span>&gt;✖&lt;/<span style="color:#000080">span</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#000080">input</span> <span style="color:#008080">id</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;sc-input&#34;</span> <span style="color:#008080">oninput</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;search()&#34;</span> <span style="color:#008080">type</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;text&#34;</span> <span style="color:#008080">placeholder</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;here search search...&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#000080">div</span> <span style="color:#008080">id</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;sc-res&#34;</span>&gt;&lt;/<span style="color:#000080">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#000080">div</span>&gt;
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">&lt;!-- 加载所需搜索脚本 --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#000080">script</span> <span style="color:#008080">src</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;/js/search.js&#34;</span> <span style="color:#008080">defer</span>&gt;&lt;/<span style="color:#000080">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#000080">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#000080">div</span>&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>当然，你可以进行按需进行一些修改，过滤掉一些，你不想被搜索到的页面。</p>
+<p>下面，我们来看一下核心的 js 搜索脚本 <code>search.js</code> （这里我们放在了 <code>static/js/search.js</code>）。其中的注释，是开发过程中帮助记忆和理清思路和一些碎碎念，不要在意。😅</p>
+<h3 id="解析站点页面内容">解析站点页面内容</h3>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> data <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.querySelector(<span style="color:#d14">&#39;#data&#39;</span>).innerText.trim();
+</span></span><span style="display:flex;"><span>data <span style="color:#000;font-weight:bold">=</span> data.slice(<span style="color:#099">0</span>, data.length <span style="color:#000;font-weight:bold">-</span> <span style="color:#099">2</span>) <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;]&#39;</span>;
+</span></span><span style="display:flex;"><span>data <span style="color:#000;font-weight:bold">=</span> data.replace(<span style="color:#009926">/\]\s+\[/g</span>, <span style="color:#d14">&#39;&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> map <span style="color:#000;font-weight:bold">=</span> JSON.parse(data);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我们使用 Hugo 模板提供的相关功能，组织站点内容映射，以文本形式放在元素 <code>#data</code> 中，后反序列化以得到当前站点所有页面内容的一个集合 <code>map</code> 。</p>
+<h3 id="如何搜索">如何搜索</h3>
+<p>我们的核心就是搜索函数 <code>search()</code> 。在 <code>map</code> 的生成过程中，我们对信息串的 <code>content</code> 做了一些处理，如将所有字符转化为小写。在 <code>search()</code> 中，我们也对搜索词 <code>scVal</code> 进行同样的处理，以实现不区分大小写的内容搜索。</p>
+<p>在这之前，我们定义了另一个辅助函数，用来返回搜索词 <code>scVal</code> 在对应页面中出现的所有索引位置 <code>_arrIndex</code> 。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> scanStr(content, str) {        <span style="color:#998;font-style:italic">// content 页面内容信息串
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">let</span> index <span style="color:#000;font-weight:bold">=</span> content.indexOf(str);   <span style="color:#998;font-style:italic">// str     出现的位置
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">let</span> num <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>;                        <span style="color:#998;font-style:italic">// str     出现的次数
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">let</span> arrIndex <span style="color:#000;font-weight:bold">=</span> [];                  <span style="color:#998;font-style:italic">// str     出现的位置集合
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">while</span>(index <span style="color:#000;font-weight:bold">!==</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>) {
+</span></span><span style="display:flex;"><span>        arrIndex.push(index);
+</span></span><span style="display:flex;"><span>        num <span style="color:#000;font-weight:bold">+=</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span>        index <span style="color:#000;font-weight:bold">=</span> content.indexOf(str, index <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">1</span>); <span style="color:#998;font-style:italic">// 从 str 出现的位置下一位置继续
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> arrIndex;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>有它 <code>scanStr</code> 我们就可以方便的知道搜索词都出现在了哪里，以方便后续的内容摘要截取及高亮。</p>
+<p><strong>内容摘要截取</strong></p>
+<p>通过 <code>scanStr</code> ，我们得到了搜索词在页面内容出现的所有位置，我们默认截取每个位置前后 100 个字符长度（后续我称之后 <strong>截取半径</strong>）的内容进行罗列展示（可以自定义长度）。这里，我们做了一些小小的优化操作，当后续搜索词的索引位置与当前搜索词的索引位置之差仍小于截取半径的时候，将不再对该位置前后内容进行截取（因为它已经包含在了之前的截取内容中），以避免大量重复性内容的展示。</p>
+<p>具体逻辑，还是直接看代码吧，其实不需要了解，因为它并没有什么太大的通用性，都是对字符串的蹂躏和被蹂躏。😿</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">70
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">71
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">72
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">73
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">74
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> scInput <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.querySelector(<span style="color:#d14">&#39;#sc-input&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> scRes <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.querySelector(<span style="color:#d14">&#39;#sc-res&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> scVal <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>scInput.focus(); <span style="color:#998;font-style:italic">// 自动聚集搜索框
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> search() {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">let</span> post <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;&#39;</span>;
+</span></span><span style="display:flex;"><span>    scVal <span style="color:#000;font-weight:bold">=</span> scInput.value.trim().toLowerCase();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    map.forEach(item =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>scVal) <span style="color:#000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> (item.content.indexOf(scVal) <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">let</span> _arrIndex <span style="color:#000;font-weight:bold">=</span> scanStr(item.content, scVal);
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">let</span> strRes <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;&#39;</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">let</span> _radius <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">100</span>;  <span style="color:#998;font-style:italic">// 搜索字符前后截取的长度
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>            <span style="color:#000;font-weight:bold">let</span> _strStyle0 <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;&lt;span style=&#34;background: yellow;&#34;&gt;&#39;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">let</span> _strStyle1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;&lt;/span&gt;&#39;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">let</span> _strSeparator <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;&lt;hr&gt;&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#998;font-style:italic">// 统计与首个与其前邻的索引（不妨称为基准索引）差值小于截取半径的索引位小于截取半径的索引的个数
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>            <span style="color:#998;font-style:italic">// 如果差值小于半径，则表示当前索引内容已包括在概要范围内，则不重复截取，且
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>            <span style="color:#998;font-style:italic">// 下次比较的索引应继续与基准索引比较，直到大于截取半径， _count重新置 为 0；
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>            <span style="color:#000;font-weight:bold">let</span> _count <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">for</span> (<span style="color:#000;font-weight:bold">let</span> i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>, len <span style="color:#000;font-weight:bold">=</span> _arrIndex.length; i <span style="color:#000;font-weight:bold">&lt;</span> len; i<span style="color:#000;font-weight:bold">++</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">let</span> _idxItem <span style="color:#000;font-weight:bold">=</span> _arrIndex[i];
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">let</span> _relidx <span style="color:#000;font-weight:bold">=</span> i;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#998;font-style:italic">// 如果相邻搜索词出现的距离小于截取半径，那么忽略后一个出现位置的内容截取（因为已经包含在内了）
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>                <span style="color:#000;font-weight:bold">if</span> (_relidx <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">0</span> <span style="color:#000;font-weight:bold">&amp;&amp;</span> (_arrIndex[_relidx] <span style="color:#000;font-weight:bold">-</span> _arrIndex[_relidx <span style="color:#000;font-weight:bold">-</span> <span style="color:#099">1</span> <span style="color:#000;font-weight:bold">-</span> _count] <span style="color:#000;font-weight:bold">&lt;</span> _radius)) {
+</span></span><span style="display:flex;"><span>                    _count <span style="color:#000;font-weight:bold">+=</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#000;font-weight:bold">continue</span>;
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>                _count <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#998;font-style:italic">// 概要显示
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>                <span style="color:#998;font-style:italic">// _startIdx, _endIdx 会在超限时自动归限（默认，无需处理）
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>                strRes <span style="color:#000;font-weight:bold">+=</span> _strSeparator;
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">let</span> _startIdx <span style="color:#000;font-weight:bold">=</span> _idxItem <span style="color:#000;font-weight:bold">-</span> _radius <span style="color:#000;font-weight:bold">+</span> (_relidx <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">1</span>) <span style="color:#000;font-weight:bold">*</span> _strSeparator.length;
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">let</span> _endIdx <span style="color:#000;font-weight:bold">=</span> _idxItem <span style="color:#000;font-weight:bold">+</span> _radius <span style="color:#000;font-weight:bold">+</span> (_relidx <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">1</span>) <span style="color:#000;font-weight:bold">*</span> _strSeparator.length;
+</span></span><span style="display:flex;"><span>                strRes <span style="color:#000;font-weight:bold">+=</span>  item.content.substring(_startIdx, _endIdx);
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#998;font-style:italic">// 进一步对搜索摘要进行处理，高亮搜索词
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>            <span style="color:#000;font-weight:bold">let</span> _arrStrRes <span style="color:#000;font-weight:bold">=</span> scanStr(strRes, scVal);
+</span></span><span style="display:flex;"><span>            <span style="color:#998;font-style:italic">// console.log(_arrStrRes)
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>            <span style="color:#000;font-weight:bold">for</span> (<span style="color:#000;font-weight:bold">let</span> i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>, len <span style="color:#000;font-weight:bold">=</span> _arrStrRes.length; i <span style="color:#000;font-weight:bold">&lt;</span> len; i<span style="color:#000;font-weight:bold">++</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">let</span> _idxItem <span style="color:#000;font-weight:bold">=</span> _arrStrRes[i];
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">let</span> _realidx <span style="color:#000;font-weight:bold">=</span> i;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                strRes <span style="color:#000;font-weight:bold">=</span>
+</span></span><span style="display:flex;"><span>                    strRes.slice(<span style="color:#099">0</span>, (_idxItem <span style="color:#000;font-weight:bold">+</span> _realidx <span style="color:#000;font-weight:bold">*</span> (_strStyle0.length <span style="color:#000;font-weight:bold">+</span> _strStyle1.length))) <span style="color:#000;font-weight:bold">+</span>          <span style="color:#998;font-style:italic">// 当前索引位置之前的部分
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>                    _strStyle0 <span style="color:#000;font-weight:bold">+</span> scVal <span style="color:#000;font-weight:bold">+</span> _strStyle1 <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>                    strRes.slice(_idxItem <span style="color:#000;font-weight:bold">+</span> scVal.length <span style="color:#000;font-weight:bold">+</span> _realidx <span style="color:#000;font-weight:bold">*</span> (_strStyle0.length <span style="color:#000;font-weight:bold">+</span> _strStyle1.length)); <span style="color:#998;font-style:italic">// 之后的部分
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            post <span style="color:#000;font-weight:bold">+=</span> <span style="color:#d14">`
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">                &lt;div class=&#34;item&#34; &gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">                    &lt;a href=&#34;</span><span style="color:#d14">${</span>item.permalink<span style="color:#d14">}</span><span style="color:#d14">&#34;&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">                        &lt;span&gt;📄&lt;/span&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">                        &lt;span class=&#34;date&#34;&gt;</span><span style="color:#d14">${</span>item.date<span style="color:#d14">}</span><span style="color:#d14">&lt;/span&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">                        &lt;span&gt;</span><span style="color:#d14">${</span>item.title<span style="color:#d14">}</span><span style="color:#d14">&lt;/span&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">                    &lt;/a&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">                    &lt;div&gt;</span><span style="color:#d14">${</span>strRes<span style="color:#d14">}</span><span style="color:#d14">&lt;/div&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">                &lt;/div&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">            `</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">let</span> res <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">`&lt;div class=&#34;list&#34;&gt;</span><span style="color:#d14">${</span>post<span style="color:#d14">}</span><span style="color:#d14">&lt;/div&gt;`</span>;
+</span></span><span style="display:flex;"><span>    scRes.innerHTML <span style="color:#000;font-weight:bold">=</span> res;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>高亮显示</strong></p>
+<p>在遍历获取了所有的搜索摘要 <code>strRes</code> 后，我们需要对其进行进一步的处理，以实现搜索词高亮显示，如下：</p>
+<p>![[assets/Pasted image 20230526104035.png]]</p>
+<p>同样，这也是和字符串长度之间的征战，没什么太大意思。</p>
+<h2 id="最后">最后</h2>
+<p>只需要把 <code>search.js</code> 放在 <code>static/js/</code> 目录下，或者其他你喜欢的路径，但要保证 <code>_search.html</code> 可以正常引用。再使用 Hugo 创建一个对应的 <code>search.md</code> 页面，用来启用 <code>_search.html</code> 模板即可。比如我把 <code>_search.html</code> 模板放在了 <code>single.html</code> 模板中，并且设置只有 <code>/search</code> 路径才加载这部分内容。</p>
+<pre tabindex="0"><code>{{ $IsSearch := eq .Title &#34;Search&#34;}}
+{{ if $IsSearch }}
+    {{- partial &#34;partials/_search.html&#34; . -}}
+{{ end }}
+</code></pre><p>上述代码块中的代码，是完整可用的，复制粘贴即可。</p>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41092802000242">
+            
+            <img src="/imgs/beian.png" />
+            <p>豫公网安备 41092802000242号</p>
+            
+
+        </a>
+
+        
+        <a href="//beian.miit.gov.cn" target="_blank">
+            
+            豫ICP备2023017189号-2
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>
