@@ -441,6 +441,8 @@
         
         
         
+        
+        
         <div class="curtag-desc">
             <a href="https://aituyaa.com/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：输入法 <sup>7</sup></a>
         </div>
@@ -539,7 +541,7 @@
                     d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
                     p-id="23839" fill="#adb5bd"></path>
             </svg>
-            2025-01-14&nbsp;&nbsp;&nbsp;
+            2025-01-23&nbsp;&nbsp;&nbsp;
         </span>
         <span>
             
@@ -552,7 +554,7 @@
                     d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
                     fill="#adb5bd" p-id="33868"></path>
             </svg>
-            48195 字</span>&nbsp;
+            55023 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -564,7 +566,7 @@
                     d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
                     p-id="32894" fill="#adb5bd"></path>
             </svg>
-            97 分钟</span>
+            110 分钟</span>
         <div class="container-ctgtag">
 	<div class="taxonomy">
 		<div class="tag">
@@ -599,6 +601,12 @@
         <li><a href="#概念">概念</a></li>
         <li><a href="#项目构成">项目构成</a></li>
         <li><a href="#开发计划">开发计划</a></li>
+      </ul>
+    </li>
+    <li><a href="#rime-架构设计解读">Rime 架构设计解读</a>
+      <ul>
+        <li><a href="#概念解读">概念解读</a></li>
+        <li><a href="#设计与实现">设计与实现</a></li>
       </ul>
     </li>
     <li><a href="#说明书">说明书📖</a>
@@ -791,8 +799,17 @@
         <li><a href="#活用标点创建自定义词组">活用标点创建自定义词组</a></li>
       </ul>
     </li>
+    <li><a href="#lua-脚本开发指南">Lua 脚本开发指南</a>
+      <ul>
+        <li><a href="#例子输入今天的日期">例子：输入今天的日期</a></li>
+        <li><a href="#模块化">模块化</a></li>
+        <li><a href="#编程接口">编程接口</a></li>
+        <li><a href="#对象接口">对象接口</a></li>
+      </ul>
+    </li>
     <li><a href="#附录">附录</a>
       <ul>
+        <li><a href="#candget_genuinetext--t_cand-为什么没有修改候选项的内容"><code>cand:get_genuine().text = 't_cand'</code> 为什么没有修改候选项的内容</a></li>
         <li><a href="#五笔码表开头的那些属性是什么意思">五笔码表开头的那些属性是什么意思</a></li>
       </ul>
     </li>
@@ -807,7 +824,7 @@
 </blockquote>
 <h2 id="todo">TODO</h2>
 <ul>
-<li>Rime 设计思想 <a href="https://github.com/rime/home/wiki/RimeWithTheDesign#%E6%A6%82%E5%BF%B5%E8%A7%A3%E8%AE%80">RimeWithTheDesign · rime/home Wiki</a></li>
+<li><input checked="" disabled="" type="checkbox"> Rime 设计思想 <a href="https://github.com/rime/home/wiki/RimeWithTheDesign#%E6%A6%82%E5%BF%B5%E8%A7%A3%E8%AE%80">RimeWithTheDesign · rime/home Wiki</a></li>
 <li>Lua 脚本开发指南 <a href="https://github.com/hchunhui/librime-lua/wiki/Scripting">Scripting · hchunhui/librime-lua Wiki</a></li>
 </ul>
 <h2 id="rime-佛振的序">Rime 佛振的序</h2>
@@ -883,6 +900,146 @@
 <p>万事开头难，虽然实验版的经验可做参考，让这项目高速运转起来，仍需要大的智慧。</p>
 <p>有同学索要文档，却真的没有。千头万绪，未及梳理，暂且概说一番，也可意会创作此软件的思路。</p>
 <p>是为之序。</p>
+<h2 id="rime-架构设计解读">Rime 架构设计解读</h2>
+<h3 id="概念解读">概念解读</h3>
+<p>❶ 框架</p>
+<p>输入法工作于需要输入文本的程序中，后者就叫它做输入法的「 客户程序 」吧。</p>
+<p>如果输入法同时在不同的程序中工作，每个客户程序里的输入内容都是不同的。所以需要每个客户维护输入法状态，术语称输入法「 上下文 / Context 」。</p>
+<p>逻辑复杂的输入法，常常有个独立的程序来做运算，便于集中管理词库等资源。Rime 称其为「 服务 / Service 」，形式为一个无界面表现的后台程序 / Backend。</p>
+<p>于是输入法的「 前端 / Frontend 」，即输入法在客户程序中的那部分，可依托于后台的服务来运作，自身只关注与操作系统交互，以及将消息向服务转发。</p>
+<p>Rime 的 Frontend / Backend 模型，依照 ibus、IMK 等输入法框架来设计：Frontend 不含输入逻辑，甚至不负责绘制输入法界面。因此会比较容易适配现有的输入法框架，不需要自己写很多代码。</p>
+<p>在服务中，会为每一个客户建立一个输入法「 会话 / Session 」。从功能上讲，会话是将一系列按键消息变（Convert）为文字的问（Request）答（Response）过程。</p>
+<p>技术上讲，会话会负责搞定输入法前端与服务之间的跨进程通信，同时在服务端为前端所代表的客户分配必要的资源。这资源主要是指一部有状态的、懂得所有输入转换逻辑的输入法引擎「 Engine 」。</p>
+<p>现在所写的 Rime 库，不做那框架部分，专注于输入引擎的实现。名字也叫「 中州韵输入法引擎 / RIME 」嘛。</p>
+<p>这部分定义的代码是 <a href="https://github.com/rime/librime">rime/librime</a> ，under C++ namespace <code>rime</code>。抛开实际的输入法框架，俺先写个控制程序 <code>RimeConsole</code> 来模拟输入，观察 Engine 的输出，以验证其功能是否符合设计。</p>
+<p>❷ 引擎</p>
+<p>输入法的转换逻辑自然是比较复杂，需要许多元件协同工作。要协同工作，必得组装到一起，外面再加个壳。通常的机器都是如此，有外壳做封装，看不到内部的元件，通过有限的几处开关来操作，用起来比较省心。</p>
+<p>Engine 对象，便是 Session 需要直接操作的界面。除此之外，Rime 库还对外提供若干用于输入输出的数据对象。包括它所持有的代表输入法状态的「 上下文 / Context 」对象、描述一份「 输入方案 / Schema 」的配置对象、代表输入按键的 <code>KeyEvent</code> 对象等。</p>
+<p>开发者对 Engine 的期望，一是将来可不断通过添加内部组件的方式增益其所不能，二是有能力动态地调整组件的调度，以在会话中切换到不同的输入方式。</p>
+<p>为了避免知道得太多，这引擎的内部构造必须精巧，他存在的意义在于接合内部的各种组件，并对外提供可靠的接口：Engine 所表达的逻辑仅限于此。</p>
+<p>标准化 Engine内部的「 组件 / Component 」，明确与关键组件之间的对接方式，就可以满足可扩展、可配置这两点期望。</p>
+<h3 id="设计与实现">设计与实现</h3>
+<p>❶ 组件</p>
+<p>为有好的扩展能力，定义一个接口来表示具有某种能力的一类组件；为了达到可在运行时动态配置的目的，采取抽象工厂的设计模式。</p>
+<p><code>boost::factory</code> 要求较高版本的 Boost 库，所以我还是用了自家酿造的一套设施来做组件的包装。</p>
+<p>原则是，Rime 中完成特定功能的对象，若只有一种实现方法，就写个 C++类 / class ；若有多种实现方法，就写个「 Rime 类 」/ <code>rime::Class</code> 。如：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Processor</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">public</span> Class<span style="color:#000;font-weight:bold">&lt;</span>Processor, Engine<span style="color:#000;font-weight:bold">*&gt;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">public</span><span style="color:#000;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>    Processor(Engine <span style="color:#000;font-weight:bold">*</span>engine) <span style="color:#000;font-weight:bold">:</span> enging_(engine) {}
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">virtual</span> <span style="color:#458;font-weight:bold">bool</span> <span style="color:#900;font-weight:bold">ProcessKeyEvent</span>(<span style="color:#000;font-weight:bold">const</span> KeyEvent <span style="color:#000;font-weight:bold">&amp;</span>ke);
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">private</span><span style="color:#000;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>    Engine <span style="color:#000;font-weight:bold">*</span>engine_;
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后，大家就可以写各式 Processor 的实现啦…… 当然，还要把每一种实现注册为具名的「 组件 」。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">ToUpperCase</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">public</span> Processor {
+</span></span><span style="display:flex;"><span> <span style="color:#000;font-weight:bold">public</span><span style="color:#000;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>  ToUpperCase(Engine <span style="color:#000;font-weight:bold">*</span>engine);
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">virtual</span> <span style="color:#458;font-weight:bold">bool</span> <span style="color:#900;font-weight:bold">ProcessKeyEvent</span>(<span style="color:#000;font-weight:bold">const</span> KeyEvent <span style="color:#000;font-weight:bold">&amp;</span>ke) {
+</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">char</span> ch <span style="color:#000;font-weight:bold">=</span> ke.ToAscii();
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (islower(ch)) {
+</span></span><span style="display:flex;"><span>      engine_<span style="color:#000;font-weight:bold">-&gt;</span>CommitChar(ch <span style="color:#000;font-weight:bold">-</span> <span style="color:#d14">&#39;a&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;A&#39;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">return</span> <span style="color:#0086b3">true</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> <span style="color:#0086b3">false</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">RegisterRimeComponents</span>() {
+</span></span><span style="display:flex;"><span>  Registry.instance().Register(<span style="color:#d14">&#34;upper&#34;</span>, <span style="color:#000;font-weight:bold">new</span> Component<span style="color:#000;font-weight:bold">&lt;</span>ToUpperCase<span style="color:#000;font-weight:bold">&gt;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// 注册到各种组件 Registry...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>用法：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">UsingAProcessor</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// Class&lt;&gt; 模板提供了简便的方法，按名称取得組件
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  <span style="color:#998;font-style:italic">// Class&lt;T&gt;::Require() 从 Registry中取得 T::Component 的指針
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  <span style="color:#998;font-style:italic">// 而 Component&lt;T&gt; 继承自 T::Component，并实现了其中的纯虛函數 Create()
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  Processor<span style="color:#000;font-weight:bold">::</span>Component<span style="color:#000;font-weight:bold">*</span> component <span style="color:#000;font-weight:bold">=</span> Processor<span style="color:#000;font-weight:bold">::</span>Require(<span style="color:#d14">&#34;upper&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// 利用组件生成所需的对象
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  KeyEvent key;   <span style="color:#998;font-style:italic">// 输入
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  Engine engine;  <span style="color:#998;font-style:italic">// 上屏文字由此输出
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  Processor<span style="color:#000;font-weight:bold">*</span> processor <span style="color:#000;font-weight:bold">=</span> component<span style="color:#000;font-weight:bold">-&gt;</span>Create(<span style="color:#000;font-weight:bold">&amp;</span>engine);
+</span></span><span style="display:flex;"><span>  <span style="color:#458;font-weight:bold">bool</span> taken <span style="color:#000;font-weight:bold">=</span> processor<span style="color:#000;font-weight:bold">-&gt;</span>ProcessKeyEvent(key);
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">delete</span> processor;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>实际的代码中，会将这个例子改造成 Engine 持有 Processor 对象，并转发输入按键给 Processor。</p>
+<p>❷ 框架级组件和基础组件</p>
+<p>以 Engine 的视角，可以把各种组件分为框架级组件和基础组件。前者会由 Engine 创建并直接调用，故需要每一类组件定义明确的接口。后者作为实现具体功能的积木，由框架级组件的实现类使用。</p>
+<p><strong>¹ 框架级组件</strong></p>
+<p>目前设计中规划了三类框架级组件：</p>
+<ul>
+<li>Processor，处理按键，编辑输入串；</li>
+<li>Segmentor，解释输入串「 是什么 」，将输入串分段，标记输入内容的可能类型；</li>
+<li>Translator，翻译一段输入，给出一组备选结果。</li>
+</ul>
+<p>对于每一类组件，Engine 将根据 Schema 中的配置，创建若干实例，并按一定规则调度，从而将复杂的输入法逻辑分解到组件的各种实现里，按输入方案的需求组合。</p>
+<p>当 Engine 接到前端传来的按键消息，会顺次调用一组 Processor 的 <code>ProcessKeyEvent()</code> 方法。在这方法里，每个 Processor 可决定是接受并处理该按键，放弃该按键还是给系统做默认处理，还是留给其他的 Processor 来决定。</p>
+<p>Processor 的处理结果表现为对 Context 的修改。当某个 Processor 修改了 Context 的编码串时，Engine 获得信号通知，开始切分和翻译的流程。</p>
+<p>首先按次序由各 Segmentor 当尝试对编码串分段。通过 N 个回合，将编码串分为 N 个编码段。每一回合中，各 Segmentor 给出从编码串指定位置开始可识别的最长编码序列，及对应的编码类型标签。回合中最长的分段将将被采纳，将该编码段的始末位置及一组编码类型标签记入 Context 中的分段信息。优先级较高的 Segmentor 也可以中止当前回合，从而跳过优先级较低的 Segmentor。</p>
+<p>接下来，对每一个编码段，调用各 Translator 做翻译。Translator 可凭借编码类型标签来判断本 Translator 能否完成该编码段的翻译。</p>
+<p>每个 Translator 针对一个编码段的翻译结果为 Translation 对象，是用来取得一组候选结果的迭代器。同一编码段由不同 Translator 给出的 Translations，存入 Menu 对象。为了在有大量候选结果的情况下保持效率，Menu 仅在需要时，譬如向后翻页时，才会从 Translation 中取得一定数目的候选结果。Translation 有和其他 Translation 比较的方法，用于根据下一个候选结果的内容，或某种预定的策略来决定候选结果的排序。</p>
+<p>Context 中的 Composition，汇总了分段信息、使用者在各代码段对应的 Menu 中所选结果等信息。经过使用者手动确认结果、且未发生编辑动作的编码段，将不再重新分段的处理。</p>
+<p><strong>² 基础组件</strong></p>
+<ul>
+<li>Dictionary ，词典，由编码序列检索候选结果；</li>
+<li>UserDictionary，动态的用户词典；</li>
+<li>Prism，音节拼写至词典编码的映射；</li>
+<li>Algebra，拼写运算规则；</li>
+<li>Syllablifier，音节切分算法。</li>
+</ul>
 <h2 id="说明书">说明书📖</h2>
 <p>❶ 专题：</p>
 <ul>
@@ -5162,7 +5319,471 @@ dict0 = OCD opencc/simp_to_trad_characters.ocd
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">   </span><span style="color:#000080">&#39;=&#39;</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#39;=_=&#39;</span><span style="color:#bbb">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="附录">附录</h2>
+</div><h2 id="lua-脚本开发指南">Lua 脚本开发指南</h2>
+<p>librime-lua 是 Rime输入法引擎的一个插件，它为用户提供了使用 Lua 脚本语言扩展输入法的能力。通过 Lua ，你可以实现单纯使用配置文件难以做到的灵活多样的功能，比如输入任意动态短语（日期时间、大写数字、计算器……）、自由重排 / 过滤候选词、甚至云输入等。</p>
+<p>要理解本项目的工作原理，需先了解 Rime 功能组件的基本概念与工作流程，见 <a href="https://rimeinn.github.io/rime/schema-design.html#%E8%AF%A6%E8%A7%A3%E8%BE%93%E5%85%A5%E6%96%B9%E6%A1%88">Rime 输入方案</a>。简而言之，librime-lua 提供了处理器 <code>processor</code> 、分段器 <code>segmentor</code> 、翻译器 <code>translator</code> 和过滤器 <code>filter</code> 这四类组件的开发接口。</p>
+<p>本文通过一个例子来说明使用 librime-lua 开发组件的完整流程，然后在下一个章节中详细介绍各类组件的编程接口。</p>
+<h3 id="例子输入今天的日期">例子：输入今天的日期</h3>
+<p>我们通过「 输入今天的日期 」这个例子，来说明开发定制的流程。一共分三步：编写代码、配置方案、重新部署。</p>
+<p>❶ 编写代码</p>
+<p>我们希望在输入 “date” 之后，在输入法候选框中得到今天的日期。为此，我们需要一个能产生今天日期的翻译器。我们在 Rime 的用户目录下新建一个 <code>rime.lua</code> 文件，这是 Lua 脚本的总入口。在文件中添加以下内容：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- rime.lua</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> <span style="color:#900;font-weight:bold">date_translator</span>(input, segment)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (input <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;date&#34;</span>) <span style="color:#000;font-weight:bold">then</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic">--- Candidate(type, start, end, text, comment)</span>
+</span></span><span style="display:flex;"><span>        yield(Candidate(<span style="color:#d14">&#34;date&#34;</span>, segment.start, segment._end, os.date(<span style="color:#d14">&#34;%Y年%m月%d日&#34;</span>), <span style="color:#d14">&#34; 日期&#34;</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>上面实现了一个叫做 <code>date_translator</code> 的函数。它的输入是 <code>input</code> 和 <code>segment</code> ，分别传入了翻译器需要翻译的内容和它在输入串中的位置。这个函数会判断输入的是否是 <code>date</code> ，如果是，则生成一个内容为今天日期的候选项。</p>
+<p>候选项的构造函数为 <code>Candidate</code> ，该函数有五个参数：</p>
+<ul>
+<li><strong>类型</strong> ，可以是任意字符串，这里用了 <code>'date'</code> ；</li>
+<li><strong>开始、结束位置</strong>，一般用 <code>segment.start</code> 和 <code>segment._end</code> 就可以，它表示了我们要将整个待翻译的输入串替换为候选内容；</li>
+<li><strong>候选内容</strong>，是使用 Lua 的函数库生成的日期；</li>
+<li><strong>候选注释</strong>，是 <code>日期</code> ，这会显示在候选框中展示在候选内容旁边。</li>
+</ul>
+<p>候选项生成以后是通过 <code>yield</code> 发出的，<code>yield</code> 在这里可以简单理解为 <code>发送一个选项到候选框中</code> 。一个函数可以 <code>yield</code> 任意次，这里我们只有一个候选项，所以只有一个 <code>yield</code> 。</p>
+<p>❷ 配置方案</p>
+<p>我们已经编写了输入日期的翻译器。为了让它生效，需要修改输入方案的配置文件。以朙月拼音为例，找到 <code>luna_pinyin.schema.yaml</code>，在 <code>engine/translators</code> 中加入一项 <code>lua_translator@date_translator</code> ，如下：</p>
+<pre tabindex="0"><code># luna_pinyin.schema.yaml
+engine:
+  ...
+  translators:
+    - lua_translator@date_translator
+    ...
+</code></pre><p>这样就完成了配置。它表示从 lua 执行环境中找到名为 <code>date_translator</code> 的对象，将它作为一种翻译器添加到引擎之中。其他类型的组件配置类推，分别为 <code>lua_processor</code>、<code>lua_segmentor</code>、<code>lua_filter</code> 。</p>
+<p>❸ 重新部署</p>
+<p>以上完成了所有开发和配置。点击 「 重新部署 」 ，输入 <code>date</code> ，就可以看到候选框中出现了今天的日期。</p>
+<p>在 <a href="https://github.com/hchunhui/librime-lua/tree/master/sample">本项目的示例目录 </a> 下，还有更多的例子。配合其中的注释并稍加修改，就可以满足大部分的日常需求。</p>
+<h3 id="模块化">模块化</h3>
+<p>到目前为止，我们的代码完全集中在 <code>rime.lua</code> 中，本节说明 librime-lua 对模块化的支持。</p>
+<p>模块化是指把脚本分门别类，放到独立的文件中，避免各自的修改互相干扰，也方便把自己的作品分享给他人使用。</p>
+<p>我们仍以 <code>date_translator</code> 为例。</p>
+<p>❶ 分离脚本内容</p>
+<p>首先需要把原来写在 <code>rime.lua</code> 的脚本搬运到独立的文件中。删掉 <code>rime.lua</code> 原有的内容后，在 Rime 的用户目录下新建一个 <code>lua</code> 目录，在该目录下再建立一个 <code>date_translator.lua</code> 文件，录入以下内容：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- lua/date_translator.lua</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> <span style="color:#000;font-weight:bold">function</span> <span style="color:#900;font-weight:bold">translator</span>(input, seg)
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">if</span> (input <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;date&#34;</span>) <span style="color:#000;font-weight:bold">then</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#998;font-style:italic">--- Candidate(type, start, end, text, comment)</span>
+</span></span><span style="display:flex;"><span>      yield(Candidate(<span style="color:#d14">&#34;date&#34;</span>, seg.start, seg._end, os.date(<span style="color:#d14">&#34;%Y年%m月%d日&#34;</span>), <span style="color:#d14">&#34; 日期&#34;</span>))
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">return</span> translator
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以看到主要内容与之前一致，但有两点不同：</p>
+<p>¹ <strong>使用 <code>local</code></strong> 。lua 脚本的变量作用域默认是全局的，如果不同模块的变量或函数正好用了相同的名字，就会导致互相干扰，出现难以排查的问题。因此，尽量使用 <code>local</code> 把变量作用域限制在局部。</p>
+<p>² <strong>新增 <code>return</code></strong> 。 librime-lua 是借助 lua 的 require 机制实现模块加载。引用模块时，整个文件被当作一个函数执行，返回模块内容。在被里返回的是一个翻译器组件。</p>
+<p>❷ 配置方案直接引用模块</p>
+<p>我们已经建立了一个名叫 <code>date_translator</code> 的模块。我们可以在输入方案配置文件中写入以下内容来直接引用被个模块所返回的组件，而不是从全局的 <code>rime.lua</code> 中的获取组件：</p>
+<pre tabindex="0"><code># luna_pinyin.schema.yaml
+engine:
+  ...
+  translators:
+    - lua_translator@*date_translator
+  ...
+</code></pre><p>与之前的区别是第一个 <code>@</code> 之后多了一个 <code>*</code> 。👻 它表示什么？</p>
+<p>这个星号 <code>*</code> 表示后面的名字是模块名而还是全局变量名。当遇到星号时，librime-lua 会使用 require 机制加载模块，然后将其返回值作为 Rime 组件加载到输入法框架中。</p>
+<p>❸ 更多引用方式</p>
+<p>首先，你可以对同一个 Lua 组件加载多个实例，此时需要用 <code>@namespace</code> 的语法标注出命名空间以区分不同的实例：</p>
+<pre tabindex="0"><code>engine:
+  translators: 
+    - lua_translator@*date_translator      # name_space &#34;date_translator&#34;
+    - lua_translator@*date_translator@date # namespace &#34;date&#34;
+</code></pre><p>其次，你还可以引用位于 <code>lua/</code> 文件夹下的子文件夹中的模块，此时路径的分隔符可以用 <code>.</code> ，也可以用 <code>/</code> ，例如：</p>
+<pre tabindex="0"><code>engine:
+  translators:
+    - lua_translator@*date.translator        # lua/date/translator.lua
+    - lua_translator@*date/translator        # lua/date/translator.lua
+    - lua_translator@*date/subdir/translator # lua/date/subdir/translator.lua
+</code></pre><p>最后，若一个文件通过 Lua 表的方式导出了多个组件，使用 <code>*</code> 还可以在表中进一步搜索，例如：</p>
+<pre tabindex="0"><code>engine:
+  translators:
+    - lua_translator@*module_name*subtable1*subtable2*tran@name_space
+  processors:
+    - lua_translator@*module_name*subtable1*subtable2*proc@name_space
+</code></pre><p>对应了以下的用表组织起来的多个组件：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- lua/module_name.lua</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">return</span> {
+</span></span><span style="display:flex;"><span>  subtable1 <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>     subtable2 <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>        tran <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (input, segment, env) ... <span style="color:#000;font-weight:bold">end</span>,
+</span></span><span style="display:flex;"><span>        proc <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (key, env) ... <span style="color:#000;font-weight:bold">end</span>,
+</span></span><span style="display:flex;"><span>        filter <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (translation, env) ... <span style="color:#000;font-weight:bold">end</span>,
+</span></span><span style="display:flex;"><span>     },
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  subtable2 <span style="color:#000;font-weight:bold">=</span> { ... },                            
+</span></span><span style="display:flex;"><span>  subtable3 <span style="color:#000;font-weight:bold">=</span> { ... },
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>❹ 旧版 librime-lua 的使用方式</p>
+<p>如果使用的是较旧的 librime-lua ，则配置文件不能直接载入在子目录中的 Lua 模块。在将模块分离出去之后，仍然需要在 <code>rime.lua</code> 内输入以下内容：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>date_translator <span style="color:#000;font-weight:bold">=</span> require(<span style="color:#d14">&#34;date_translator&#34;</span>)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>前一个 <code>date_translator</code> 是全局变量名，后一个是模块名。librime-lua 将 Rime 的用户目录和 Rime 共享目录下的 <code>lua</code> 目录加入了模块搜索路径，因此本句的意义是搜索 <code>date_translator</code> 模块，并将返回的组件绑定到同名的全局变量上。被样就可以输入方案配置文件中使用了，方法与之前一致。</p>
+<p>❺ 配方补丁</p>
+<p>以上我们实现了 lua 脚本的模块化。但为引用组件，仍需修改 <code>schema.yaml</code> 配置文件。那么如何模块化都修改配置文件呢？</p>
+<p>请参考 <a href="https://rimeinn.github.io/rime/configuration.html">Rime 配置文件</a> 中关于补丁的讲解。</p>
+<h3 id="编程接口">编程接口</h3>
+<p>本节详细介绍编程接口。根据我们此前讲过的约定，以下假定所编写的 Lua 组件位于 <code>lua/my_rime</code> 子文件夹下，即为 <code>lua/my_ime/xxx.lua</code>，且导入时不指定相关的命名空间。你也可以使用上面介绍过的命空间、子文件夹以及 Lua 表等方式来更灵活都组织你的脚本。</p>
+<p>❶ Lua 处理器 <code>lua_processor</code></p>
+<p><code>lua_processor</code> 提供了处理器的开发接口，它在配置文件的 <code>engine/processors</code> 中配置：</p>
+<pre tabindex="0"><code>engine:
+  processors:
+    - lua_processor@*my_ime.my_processor
+</code></pre><p><code>my_processor</code> 所指对象有多种形式：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- 简化形式 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> <span style="color:#000;font-weight:bold">function</span> <span style="color:#900;font-weight:bold">my_processor</span>(key_event)
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- 简化形式 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> <span style="color:#000;font-weight:bold">function</span> <span style="color:#900;font-weight:bold">my_processor</span>(key_event, env)
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- 完整形式</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> my_processor <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  init <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span>(env) ... <span style="color:#000;font-weight:bold">end</span>,
+</span></span><span style="display:flex;"><span>  func <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span>(key_event, env) ... <span style="color:#000;font-weight:bold">end</span>,
+</span></span><span style="display:flex;"><span>  fini <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span>(env) ... <span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>简化形式是一个 Lua 函数，此函数执行处理器的逻辑，参数为：</p>
+<ul>
+<li><code>key_event</code> ： <a href="https://github.com/hchunhui/librime-lua/wiki/objects#keyevent"><code>KeyEvent</code> 对象</a>，为待处理的按键（包括带修饰符的组合键）；</li>
+<li><code>env</code>：<code>Env</code> 对象，包括 <code>engine</code> 和 <code>name_space</code> 两个成员，分别是  <a href="https://github.com/hchunhui/librime-lua/wiki/objects#engine"><code>Engine</code> 对象</a>和前述 <code>name_space</code> 配置字符串。</li>
+</ul>
+<p>返回值为 <code>0、1、2</code> ：</p>
+<p>¹ <code>0</code> 表示 <code>kRejected</code>，声称本组件和其他组件都不响应该输入事件，结束处理流程，交还操作系统按默认方式响应（例如 ASCII 字符上屏、方向翻页等功能作用于客户程序或系统全局等）。</p>
+<p>注意：如果组件已响应该输入事件但返回 <code>kRejected</code> ，则按键会再被操作系统处理一次，有可能产生 「 处理了两次 」的效果。</p>
+<p>² <code>1</code> 表示 <code>KAccepted</code>，声称本组件已响应该输入事件，结束处理流程，之后的组件以及操作系统都不再响应应该输入事件。</p>
+<p>注意：如何组件未响应该输入事件但返回 <code>KAccepted</code>，相当于禁用这个按键。</p>
+<p>³ <code>2</code> 表示 <code>KNoop</code>，声称本函数不响应该输入事件，交给接下来的处理器决定。</p>
+<p>注意：如果组件已响应该输入事件但返回 <code>KNoop</code>，则按键会被接下来的组件处理一次或多次，有可能产生 「 处理了多次 」的效果。如果所有处理器都返回 <code>KNoop</code>，则交还由操作系统按默认方式响应。</p>
+<p>完整形式是一个 Lua 表，其中 <code>func</code> 与简化形式意义相同。<code>init</code> 与 <code>fini</code> 分别在组件构造与析构时调用。</p>
+<p>❷ Lua 分段器 <code>lua_segmentor</code></p>
+<p><code>lua_segmentor</code> 提供了分段器的开发接口，它在配置文件的 <code>engine/segmentor</code> 中配置：</p>
+<pre tabindex="0"><code>engine:
+  segmentors:
+    - lua_segmentor@*my_ime.my_segmentor
+</code></pre><p><code>my_segmentor</code> 所指对象有多种形式：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- 简化形式 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> <span style="color:#000;font-weight:bold">function</span> <span style="color:#900;font-weight:bold">my_segmentor</span>(segmentation)
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- 简化形式 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> <span style="color:#000;font-weight:bold">function</span> <span style="color:#900;font-weight:bold">my_segmentor</span>(segmentation, env)
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- 完整形式</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> my_segmentor <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  init <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (env) ... <span style="color:#000;font-weight:bold">end</span>,
+</span></span><span style="display:flex;"><span>  func <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (segmentation, env) ... <span style="color:#000;font-weight:bold">end</span>,
+</span></span><span style="display:flex;"><span>  fini <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (env) ... <span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>简化形式是一个 Lua 函数，此函数执行分段器的逻辑，参数为：</p>
+<ul>
+<li><code>segmentation</code>： <a href="https://github.com/hchunhui/librime-lua/wiki/objects#segmentation"><code>Segmentation</code> 对象</a>；</li>
+<li><code>env</code>：<code>Env</code> 对象，含义同前。</li>
+</ul>
+<p>而返回值为布尔类型：</p>
+<ul>
+<li><code>true</code>: 交由下一个分段器处理；</li>
+<li><code>false</code>: 终止分段器处理流程。</li>
+</ul>
+<p>而完整形式是一个 Lua 表，其中 <code>func</code> 与简化形式意义相同。<code>init</code> 与 <code>fini</code> 分别在组件构造与析构时调用。</p>
+<p>❸ Lua 翻译器 <code>lua_translator</code></p>
+<p><code>lua_translator</code> 提供了翻译器的开发接口。它在配置文件的 <code>engine/translator</code> 中配置：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">engine</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">translators</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>- lua_translator@*my_ime.my_translator<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>my_translator</code> 所指对象有多种形式：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- 简化形式 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> <span style="color:#000;font-weight:bold">function</span> <span style="color:#900;font-weight:bold">my_translator</span>(input, segment)
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- 简化形式 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> <span style="color:#000;font-weight:bold">function</span> <span style="color:#900;font-weight:bold">my_translator</span>(input, segment, env)
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- 完整形式</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> my_translator <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  init <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (env) ... <span style="color:#000;font-weight:bold">end</span>,
+</span></span><span style="display:flex;"><span>  func <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (input, segment, env) ... <span style="color:#000;font-weight:bold">end</span>,
+</span></span><span style="display:flex;"><span>  fini <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (env) ... <span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>简化形式是一个 Lua 函数，此函数执行翻译器的逻辑，参数为：</p>
+<ul>
+<li><code>input</code>：<code>string</code> 类型的字符串，为待翻译串；</li>
+<li><code>segment</code>： <a href="https://github.com/hchunhui/librime-lua/wiki/objects#segment"><code>Segment</code> 对象</a>；</li>
+<li><code>env</code>：<code>Env</code> 对象，含义同前。</li>
+</ul>
+<p>函数无返回值，而是通过 <code>yield</code> 发送 <a href="https://github.com/hchunhui/librime-lua/wiki/objects#candidate-%E5%80%99%E9%80%89%E8%AF%8D"><code>Candidate</code> 对象</a>或其他的候选对象。</p>
+<p>而完整形式是一个 Lua 表，其中 <code>func</code> 与简化形式意义相同。<code>init</code> 与 <code>fini</code> 分别在 <code>lua_translator</code> 构造与析构时调用。</p>
+<p>❹ Lua 过滤器 <code>lua_filter</code></p>
+<p><code>lua_filter</code> 提供了过滤器的开发接口。它在配置文件的 <code>engine/filters</code> 中配置：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">engine</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">filters</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>- lua_filter@*my_ime.my_filter<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>my_filter</code> 所指对象有多种形式：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- 简化形式 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> <span style="color:#000;font-weight:bold">function</span> <span style="color:#900;font-weight:bold">my_filter</span>(translation)
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- 简化形式 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> <span style="color:#000;font-weight:bold">function</span> <span style="color:#900;font-weight:bold">my_filter</span>(translation, env)
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- 完整形式</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> my_filter <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>   init <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (env) ... <span style="color:#000;font-weight:bold">end</span>,
+</span></span><span style="display:flex;"><span>   func <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (translation, env) ... <span style="color:#000;font-weight:bold">end</span>,
+</span></span><span style="display:flex;"><span>   fini <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (env) ... <span style="color:#000;font-weight:bold">end</span>,
+</span></span><span style="display:flex;"><span>   tags_match <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (segment, env) ... <span style="color:#000;font-weight:bold">end</span>  <span style="color:#998;font-style:italic">--- 可选</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>简化形式是一个 Lua function，此函数执行过滤器的逻辑，参数为</p>
+<ul>
+<li><code>translation</code>： <a href="https://github.com/hchunhui/librime-lua/wiki/objects"><code>Translation</code> 对象</a>，为待过滤的 <code>Candidate</code> 流；</li>
+<li><code>env</code>：<code>Env</code> 对象，含义同前。</li>
+</ul>
+<p>函数无返回值，而是通过 <code>yield</code> 发送 <code>Candidate</code> 对象或其他的候选对象。</p>
+<p>而完整形式是一个 Lua 表，其中 <code>func</code> 与简化形式意义相同。<code>init</code> 与 <code>fini</code> 分别在 <code>lua_filter</code> 构造与析构时调用。另外，<code>tags_match</code> 出现时可以指定该过滤器只在某种特定情况下工作，通常是使用 <code>segment</code> 所包含的 <code>tag</code> 来判断。</p>
+<h3 id="对象接口">对象接口</h3>
+<blockquote>
+<p>librime-lua 封装了 librime C++ 对象到 lua 中供脚本访问。需注意随着项目的开发，以下文档可能是不完整或过时的，敬请各位参与贡献文档。</p>
+</blockquote>
+<p>这个章节请直接参考 <a href="https://github.com/hchunhui/librime-lua/wiki/Objects">原链接 🔗</a> 。</p>
+<h2 id="附录">附录</h2>
+<h3 id="candget_genuinetext--t_cand-为什么没有修改候选项的内容"><code>cand:get_genuine().text = 't_cand'</code> 为什么没有修改候选项的内容</h3>
+<p>在 Lua 的 Rime API 中，直接修改候选项（<code>Candidate</code> 对象）的 <code>text</code> 属性通常无效，因为 <strong><code>Candidate</code> 对象是只读的</strong>。你需要通过创建一个新的 <code>Candidate</code> 对象来替换现有的候选项，而不是试图直接修改它。</p>
+<p>❶ 原因</p>
+<ul>
+<li><strong><code>cand:get_genuine()</code></strong> 返回的是原始候选项（<code>cand</code>），但 Rime 的候选项属性（如 <code>text</code> 和 <code>comment</code>）是不可变的，不能直接修改。</li>
+<li>想要更改候选项的内容，你需要创建一个新的候选项，并在必要时将其插入到 <code>segment</code> 中。</li>
+</ul>
+<p>❷ 解决方法</p>
+<ol>
+<li>
+<p><strong>创建新的候选项</strong> 使用 <code>Candidate</code> 构造函数创建一个新的候选项，并用新的 <code>text</code> 替换现有候选项。</p>
+</li>
+<li>
+<p><strong>示例代码</strong> 假设你想在 <code>filter</code> 函数中修改候选项内容：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> <span style="color:#900;font-weight:bold">filter</span>(input, env)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> cand <span style="color:#000;font-weight:bold">in</span> input:iter() <span style="color:#000;font-weight:bold">do</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic">-- 创建新的候选项，修改内容</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">local</span> new_cand <span style="color:#000;font-weight:bold">=</span> Candidate(cand.type, cand.start, cand._end, <span style="color:#d14">&#34;t_cand&#34;</span>, cand.comment)
+</span></span><span style="display:flex;"><span>        yield(new_cand) <span style="color:#998;font-style:italic">-- 使用 yield 替换原始候选项</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<p><strong><code>Candidate</code> 构造函数</strong>：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>Candidate(type, start, <span style="color:#000;font-weight:bold">end</span>, text, comment)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>type</code>: 候选项类型，例如 <code>&quot;completion&quot;</code>。</li>
+<li><code>start</code> 和 <code>end</code>: 候选项在输入字符串中的范围。</li>
+<li><code>text</code>: 候选项的实际显示文本。</li>
+<li><code>comment</code>: 候选项的附加注释（可选）。</li>
+</ul>
+<p><strong>处理 <code>cand:get_genuine()</code></strong> 如果需要从原始候选项提取某些属性，可以使用 <code>cand:get_genuine()</code> 提取真正的候选项，然后基于这些信息创建新的候选项。</p>
+<p>❸ 注意事项</p>
+<ul>
+<li><strong>顺序问题</strong>：确保修改后的候选项按需要的顺序插入到候选列表中。</li>
+<li><strong>性能考虑</strong>：在大规模处理候选项时，尽量优化逻辑，避免不必要的重复操作。</li>
+<li><strong>调试日志</strong>：在修改候选项时，添加调试日志可以帮助确认候选项是否正确被替换。例如：</li>
+</ul>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>print(<span style="color:#d14">&#34;Original:&#34;</span>, cand.text, <span style="color:#d14">&#34;-&gt; Modified:&#34;</span>, new_cand.text)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>通过上述方式，你可以正确修改 Rime 的候选项内容。</p>
 <h3 id="五笔码表开头的那些属性是什么意思">五笔码表开头的那些属性是什么意思</h3>
 <pre tabindex="0"><code>---
 name: wubi86                      # 码表名称

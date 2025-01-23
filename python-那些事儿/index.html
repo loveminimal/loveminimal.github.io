@@ -218,7 +218,7 @@
         
         
         <div class="curtag-desc">
-            <a href="https://aituyaa.com/tags/ols/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：OLs <sup>10</sup></a>
+            <a href="https://aituyaa.com/tags/ols/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：OLs <sup>11</sup></a>
         </div>
 
         <div class="curtag-post">
@@ -255,6 +255,13 @@
             
                 <div class="curtag-post-item ">
                     <a href="https://aituyaa.com/lua-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">Lua 那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/poetry-%E7%9A%84%E7%AE%80%E8%A6%81%E8%AF%B4%E6%98%8E/">Poetry 的简要说明</a>
                 </div>
                 
                 
@@ -539,6 +546,8 @@
         
         
         
+        
+        
     </div>
     
     
@@ -560,7 +569,7 @@
                     d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
                     p-id="23839" fill="#adb5bd"></path>
             </svg>
-            2025-01-11&nbsp;&nbsp;&nbsp;
+            2025-01-22&nbsp;&nbsp;&nbsp;
         </span>
         <span>
             
@@ -573,7 +582,7 @@
                     d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
                     fill="#adb5bd" p-id="33868"></path>
             </svg>
-            10352 字</span>&nbsp;
+            11870 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -585,7 +594,7 @@
                     d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
                     p-id="32894" fill="#adb5bd"></path>
             </svg>
-            21 分钟</span>
+            24 分钟</span>
         <div class="container-ctgtag">
 	<div class="taxonomy">
 		<div class="tag">
@@ -640,6 +649,7 @@
     </li>
     <li><a href="#附录">附录</a>
       <ul>
+        <li><a href="#python-项目组织结构">python 项目组织结构</a></li>
         <li><a href="#python-中获取时间和格式化">python 中获取时间和格式化</a></li>
         <li><a href="#pyenv-版本管理">pyenv 版本管理</a></li>
         <li><a href="#pypi-换源">PyPI 换源</a></li>
@@ -1847,6 +1857,108 @@ wrapper    # ❓ 变成 wrapper 了
 <p>:: 跟 <code>node_modules</code> 是一样一样的。</p>
 </blockquote>
 <h2 id="附录">附录</h2>
+<h3 id="python-项目组织结构">python 项目组织结构</h3>
+<p>Python 项目的组织结构有很多种方式，但有一些经典且广泛使用的组织结构，可以帮助你创建易于维护、扩展和协作的项目。以下是一些经典的 Python 项目结构示例，适用于不同类型的项目。</p>
+<p>❶ 最简单的 Python 脚本项目</p>
+<p>最简单的项目结构，适合只有一个或几个脚本的小项目。</p>
+<pre tabindex="0"><code>/my_project
+    /script.py
+    /another_script.py
+</code></pre><p>❷ 典型的 Python 包结构</p>
+<p>适用于将项目组织为一个 Python 包，并且可能会包含多个模块和脚本。</p>
+<pre tabindex="0"><code>/my_project
+    /my_project              # 主包目录
+        __init__.py          # 包的初始化文件
+        module1.py           # 模块 1
+        module2.py           # 模块 2
+    /tests                   # 测试目录
+        test_module1.py      # 测试模块 1
+        test_module2.py      # 测试模块 2
+    /setup.py                # 安装脚本
+    /README.md               # 项目文档
+    /requirements.txt        # 依赖库
+</code></pre><p>❸ Python 应用程序项目结构</p>
+<p>适用于较大的 Python 应用程序，包含多个模块、脚本、配置文件、日志文件等。它的组织结构支持大规模开发。</p>
+<pre tabindex="0"><code>/my_project
+    /my_project              # 主包目录
+        __init__.py
+        /core                # 核心模块
+            __init__.py
+            main.py          # 主程序入口
+        /models              # 数据模型
+            __init__.py
+            model1.py
+        /services            # 服务层，例如 API 调用
+            __init__.py
+            service1.py
+        /utils               # 工具函数
+            __init__.py
+            utils.py
+    /tests                   # 测试目录
+        __init__.py
+        test_core.py         # 核心模块的测试
+        test_models.py       # 模型模块的测试
+    /config                  # 配置文件
+        config.yaml          # 配置文件
+        logging.conf         # 日志配置
+    /logs                    # 日志目录
+    /setup.py                # 安装脚本
+    /README.md               # 项目文档
+    /requirements.txt        # 依赖库
+    /Dockerfile              # 如果需要容器化
+    /Makefile                # 可选，自动化构建任务
+</code></pre><p>❹ CLI 工具项目结构</p>
+<p>如果你要开发一个命令行工具（CLI），这通常包括命令的定义、解析和执行。</p>
+<pre tabindex="0"><code>/my_project
+    /my_project              # 主包目录
+        __init__.py
+        cli.py               # 定义命令行工具
+        commands.py          # 定义命令
+    /tests                   # 测试文件
+        test_cli.py
+    /setup.py                # 安装脚本
+    /requirements.txt        # 依赖库
+    /README.md               # 项目文档
+</code></pre><p>还有一些经典的框架项目组织结构，如 Django、Flask 等等……</p>
+<p>以下是项目组织结构中常见的文件和目录：</p>
+<ul>
+<li><strong><code>README.md</code></strong>：项目文档，描述项目的目的、使用方法和任何其他相关信息。</li>
+<li><strong><code>requirements.txt</code></strong>：列出所有 Python 包依赖，通常用于 <code>pip install -r requirements.txt</code> 来安装依赖。</li>
+<li><strong><code>setup.py</code></strong>：安装脚本，通常用于将包发布到 PyPI 或安装到虚拟环境中。</li>
+<li><strong><code>Dockerfile</code></strong>：容器化配置，用于 Docker 部署。</li>
+<li><strong><code>tests/</code></strong>：测试文件目录，包含单元测试、集成测试等。</li>
+<li><strong><code>config/</code></strong>：配置文件，通常包括数据库配置、日志配置等。</li>
+</ul>
+<p>对于小型项目，你可以使用简单的脚本结构或者单一模块结构。对于中型到大型项目，通常建议按照功能模块进行划分，并且将配置文件、日志文件、文档等独立成不同的目录。</p>
+<p>❺ 项目脚手架</p>
+<p>Python 生态系统中有一些优秀的项目脚手架工具和框架，它们帮助开发者快速创建结构化、可扩展的项目，提升开发效率。这些工具通常为项目提供了清晰的目录结构、常用的功能模块和配置文件等。</p>
+<p><strong>¹ Cookiecutter</strong></p>
+<p>Cookiecutter 是一个非常流行的项目模板生成器，支持从模板快速创建新的 Python 项目结构。它的主要优点是模板可自定义，开发者可以根据需要创建模板，或者使用社区中已有的模板（如 Django、Flask、Data Science 项目等）。</p>
+<p><strong>² Poetry 🌟 〔 推荐 〕</strong></p>
+<p>Poetry 是一个现代化的 Python 包管理和构建工具，支持依赖管理、包发布和项目脚手架生成。Poetry 具有类似于 Node.js 的 <code>npm</code> 的功能，但它更适合 Python 开发。</p>
+<p>我们将在另一篇文章 - [[ Poetry 的简要说明 ]] 中系统扼要的说明一下。</p>
+<p><strong>特点</strong>：</p>
+<ul>
+<li>自动化依赖管理：Poetry 自动处理依赖关系，避免手动编辑 <code>requirements.txt</code>。</li>
+<li>包发布：Poetry 可以方便地将包发布到 PyPI。</li>
+<li>集成虚拟环境：Poetry 自带虚拟环境的管理功能。</li>
+</ul>
+<pre tabindex="0"><code># 安装
+pip install poetry
+
+# 创建项目
+poetry new my_project
+# 管理依赖
+poetry add requests
+</code></pre><p>其他还有一些脚手架，这里就不作过多介绍了，感兴趣的可以自行了解。</p>
+<ul>
+<li><strong>Cookiecutter</strong>：最为通用的 Python 项目脚手架工具，支持多种类型的项目结构。</li>
+<li><strong>Poetry</strong>：除了包管理功能外，还支持项目脚手架生成，非常适合现代 Python 项目。</li>
+<li><strong>PyScaffold</strong>：提供一个标准化的 Python 项目结构，适合各种应用和库开发。</li>
+<li><strong>Flask-Skeleton</strong> 和 <strong>Django Cookiecutter</strong>：专为 Flask 和 Django 项目提供的脚手架。</li>
+<li><strong>FastAPI Starter Template</strong>：专为 FastAPI 项目提供的高效开发模板。</li>
+</ul>
+<p>根据你的需求（例如 Web 开发、数据科学、API 开发等），你可以选择适合的脚手架工具，快速启动项目。如果你有特定的框架或需求，可以让我进一步帮助你选择。</p>
 <h3 id="python-中获取时间和格式化">python 中获取时间和格式化</h3>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">

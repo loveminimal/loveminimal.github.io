@@ -6,7 +6,16 @@
     <description>Recent content in OLs on 爱涂鸦啊</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 03 Jan 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/ols/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/ols/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Poetry 的简要说明</title>
+      <link>https://aituyaa.com/poetry-%E7%9A%84%E7%AE%80%E8%A6%81%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/poetry-%E7%9A%84%E7%AE%80%E8%A6%81%E8%AF%B4%E6%98%8E/</guid>
+      <description>&lt;p&gt;Poetry 是一个现代的 Python 包管理工具，它不仅能够管理依赖，还可以构建和发布 Python 包。Poetry 的目标是简化 Python 项目的管理，替代传统的 &lt;code&gt;requirements.txt&lt;/code&gt;、&lt;code&gt;setup.py&lt;/code&gt; 和 &lt;code&gt;pip&lt;/code&gt; 等工具。下面是 Poetry 的简要教程说明，包括安装、常用命令和基本使用。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Lua 那些事儿</title>
       <link>https://aituyaa.com/lua-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
@@ -17,7 +26,10 @@
 &lt;p&gt;![[assets/Pasted image 20250103183548.png|500]]&lt;/p&gt;
 &lt;p&gt;这难免让人想要多了解一下她，不是吗？所以，让我们开始吧 🎉&lt;/p&gt;
 &lt;p&gt;📘 &lt;a href=&#34;https://www.runoob.com/manual/lua53doc/&#34;&gt;Lua 5.3 参考手册&lt;/a&gt;&lt;br&gt;
-📗 &lt;a href=&#34;https://www.runoob.com/lua/lua-tutorial.html&#34;&gt;Lua 教程 | 菜鸟教程&lt;/a&gt;&lt;/p&gt;</description>
+📗 &lt;a href=&#34;https://www.runoob.com/lua/lua-tutorial.html&#34;&gt;Lua 教程 | 菜鸟教程&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里我们以实用性为中心，简要了解一下其基本用法 ~&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
