@@ -6,16 +6,7 @@
     <description>Recent content in _Misc on 爱涂鸦啊</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 11 Jan 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/_misc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Shell 那些事儿</title>
-      <link>https://aituyaa.com/shell-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
-      <pubDate>Sat, 11 Jan 2025 00:00:00 +0800</pubDate>
-      
-      <guid>https://aituyaa.com/shell-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/_misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>函数柯里化</title>
       <link>https://aituyaa.com/%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96/</link>
@@ -39,15 +30,6 @@
     </item>
     
     <item>
-      <title>Frontend</title>
-      <link>https://aituyaa.com/devmaps/frontend/</link>
-      <pubDate>Tue, 26 Nov 2024 00:00:00 +0800</pubDate>
-      
-      <guid>https://aituyaa.com/devmaps/frontend/</guid>
-      <description>&lt;p&gt;你可以在这里找到完整的路线图 &lt;a href=&#34;https://roadmap.sh/frontend&#34;&gt;Frontend Developer Roadmap&lt;/a&gt; ~ 注册了账号后，还可以同步进度，Nice ~&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>文学体裁</title>
       <link>https://aituyaa.com/%E6%96%87%E5%AD%A6%E4%BD%93%E8%A3%81/</link>
       <pubDate>Thu, 14 Nov 2024 00:00:00 +0800</pubDate>
@@ -66,46 +48,6 @@
 - 说明文：事物、事理、文艺性（科学小品）
 - 议论文：立论文、驳论文、政论文、评论文章
 &lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>Emacs 那些事儿</title>
-      <link>https://aituyaa.com/emacs-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
-      <pubDate>Sat, 09 Nov 2024 00:00:00 +0800</pubDate>
-      
-      <guid>https://aituyaa.com/emacs-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
-      <description>&lt;p&gt;一些关于 Emacs 配置和使用的……&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/loveminimal/emacs.d&#34;&gt;loveminimal/emacs.d: All in emacs.&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>VSCode 那些事儿</title>
-      <link>https://aituyaa.com/vscode-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
-      <pubDate>Sat, 09 Nov 2024 00:00:00 +0800</pubDate>
-      
-      <guid>https://aituyaa.com/vscode-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
-      <description>&lt;p&gt;一些关于 VSCode 配置和使用的……&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>TypeScript Note</title>
-      <link>https://aituyaa.com/typescript-note/</link>
-      <pubDate>Fri, 25 Oct 2024 00:00:00 +0800</pubDate>
-      
-      <guid>https://aituyaa.com/typescript-note/</guid>
-      <description>&lt;p&gt;TypeScript 闪念随手记……&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;:: 不要试图把一门语言的边边角角都一次性都搞清楚，没啥用，你又不准备成为“参考书”。一则平时使用的部分并没有那么多，二则脱离了实际应用的抽象文字并不容易记忆。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>Git 提交消息约定</title>
-      <link>https://aituyaa.com/git-%E6%8F%90%E4%BA%A4%E6%B6%88%E6%81%AF%E7%BA%A6%E5%AE%9A/</link>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0800</pubDate>
-      
-      <guid>https://aituyaa.com/git-%E6%8F%90%E4%BA%A4%E6%B6%88%E6%81%AF%E7%BA%A6%E5%AE%9A/</guid>
-      <description>&lt;p&gt;规范一下 Git 的提交方式 ~&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -133,15 +75,6 @@
       
       <guid>https://aituyaa.com/%E4%BA%91%E7%9B%98%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
       <description>&lt;p&gt;云盘？很长一段时间内，它对于我来说都不是一个问题，直到我渐渐习惯了多端同步……&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Web 开发相关体系结构随想</title>
-      <link>https://aituyaa.com/web-%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%9A%8F%E6%83%B3/</link>
-      <pubDate>Fri, 01 Mar 2024 00:00:00 +0800</pubDate>
-      
-      <guid>https://aituyaa.com/web-%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%9A%8F%E6%83%B3/</guid>
-      <description>&lt;p&gt;与其它领域相比，Web 开发更像是一个全栈化的工程，其使用的技术基本上涵盖了目前大部分应用所需。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -234,15 +167,6 @@
 &lt;p&gt;转载自 &lt;a href=&#34;https://www.jb51.net/hardware/cpu/610074.html&#34;&gt;https://www.jb51.net/hardware/cpu/610074.html&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;我们知道，CPU 性能是主要由 CPU 构架、核心线程数量、主频、缓存等诸多因素共同决定，而“缓存”是很多网友容易忽视的一个地方。那么，CPU 缓存是什么？在电脑 CPU 中，一二三级缓存究竟谁对 CPU 性能影响最重要呢？&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>前端浅谈</title>
-      <link>https://aituyaa.com/%E5%89%8D%E7%AB%AF%E6%B5%85%E8%B0%88/</link>
-      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
-      
-      <guid>https://aituyaa.com/%E5%89%8D%E7%AB%AF%E6%B5%85%E8%B0%88/</guid>
-      <description>&lt;p&gt;本文不涉及具体的细节，浅谈一下 Web 前端的 1 2 3 ……&lt;/p&gt;</description>
     </item>
     
     <item>

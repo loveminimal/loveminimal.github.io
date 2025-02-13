@@ -6,7 +6,16 @@
     <description>Recent content on 爱涂鸦啊</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neovim 那些事儿</title>
+      <link>https://aituyaa.com/neovim-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/neovim-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;好嘛，让我们来试一下 Neovim ~&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Poetry 的简要说明</title>
       <link>https://aituyaa.com/poetry-%E7%9A%84%E7%AE%80%E8%A6%81%E8%AF%B4%E6%98%8E/</link>
@@ -35,11 +44,11 @@
     </item>
     
     <item>
-      <title>输入法那些事儿</title>
-      <link>https://aituyaa.com/%E8%BE%93%E5%85%A5%E6%B3%95%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <title>Rime 那些事儿</title>
+      <link>https://aituyaa.com/rime-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
       <pubDate>Mon, 06 Jan 2025 00:00:00 +0800</pubDate>
       
-      <guid>https://aituyaa.com/%E8%BE%93%E5%85%A5%E6%B3%95%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <guid>https://aituyaa.com/rime-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
       <description>&lt;p&gt;说是“输入法那些事儿”，其实主要就是 Rime 那些事儿。商业输入法不怎么用，也就没有什么太多好说的，不过做为参照物可能会略有提及。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;:: 目前可以看成是 Rime Home Wiki 的汇总。 &amp;ndash; 🤣 好嘛，经过两三天的噼里啪啦，终于整合在了一起。原 Wiki 毕竟是 wiki ，内容有些凌乱，后续有时间再慢慢整理、删减、补充吧。&lt;/p&gt;
@@ -290,11 +299,11 @@
     </item>
     
     <item>
-      <title>TypeScript Note</title>
-      <link>https://aituyaa.com/typescript-note/</link>
+      <title>TypeScript 那些事儿</title>
+      <link>https://aituyaa.com/typescript-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
       <pubDate>Fri, 25 Oct 2024 00:00:00 +0800</pubDate>
       
-      <guid>https://aituyaa.com/typescript-note/</guid>
+      <guid>https://aituyaa.com/typescript-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
       <description>&lt;p&gt;TypeScript 闪念随手记……&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;:: 不要试图把一门语言的边边角角都一次性都搞清楚，没啥用，你又不准备成为“参考书”。一则平时使用的部分并没有那么多，二则脱离了实际应用的抽象文字并不容易记忆。&lt;/p&gt;
@@ -1339,6 +1348,16 @@ CVE!&lt;/p&gt;
     </item>
     
     <item>
+      <title>⭐️如何学习计算机科学</title>
+      <link>https://aituyaa.com/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</guid>
+      <description>&lt;p&gt;i.e. Teach Yourself Computer Science&lt;/p&gt;
+&lt;p&gt;🔔 转载 &lt;a href=&#34;https://teachyourselfcs.com/&#34;&gt;英文原文&lt;/a&gt;、&lt;a href=&#34;https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md&#34;&gt;中文译本&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Ajax</title>
       <link>https://aituyaa.com/ajax/</link>
       <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
@@ -1482,11 +1501,11 @@ CVE!&lt;/p&gt;
     </item>
     
     <item>
-      <title>Vim</title>
-      <link>https://aituyaa.com/vim/</link>
+      <title>Vim  那些事儿</title>
+      <link>https://aituyaa.com/vim-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
       <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://aituyaa.com/vim/</guid>
+      <guid>https://aituyaa.com/vim-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
       <description>&lt;p&gt;Vim 是 Vi 的升级版，一款功能强大、高度可定制的文本编辑器，它只有一个对手 – Emacs 。那么，它来自哪里？&lt;/p&gt;</description>
     </item>
     
@@ -1517,16 +1536,6 @@ CVE!&lt;/p&gt;
       <guid>https://aituyaa.com/%E5%8F%8D%E5%B0%84%E4%B8%8E%E6%B3%9B%E5%9E%8B/</guid>
       <description>&lt;p&gt;i.e. Reflection and Generic&lt;/p&gt;
 &lt;p&gt;反射与泛型那些事儿……&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>如何学习计算机科学</title>
-      <link>https://aituyaa.com/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</link>
-      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
-      
-      <guid>https://aituyaa.com/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</guid>
-      <description>&lt;p&gt;i.e. Teach Yourself Computer Science&lt;/p&gt;
-&lt;p&gt;🔔 转载 &lt;a href=&#34;https://teachyourselfcs.com/&#34;&gt;英文原文&lt;/a&gt;、&lt;a href=&#34;https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md&#34;&gt;中文译本&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

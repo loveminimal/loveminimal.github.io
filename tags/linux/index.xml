@@ -55,14 +55,5 @@
 &lt;p&gt;&lt;code&gt;&amp;gt; 2024-02-29 14:17&lt;/code&gt; 新情况 - 关于 博客多个域名使用一级域名（如 &lt;code&gt;example.com&lt;/code&gt;）还是 www 二级域名 （如 &lt;code&gt;www.example.com&lt;/code&gt; ）及其使用 HTTP 和 HTTPs 访问的相关问题。详见 [[#域名重写向问题]] 。&lt;/p&gt;</description>
     </item>
     
-    <item>
-      <title>Vim</title>
-      <link>https://aituyaa.com/vim/</link>
-      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
-      
-      <guid>https://aituyaa.com/vim/</guid>
-      <description>&lt;p&gt;Vim 是 Vi 的升级版，一款功能强大、高度可定制的文本编辑器，它只有一个对手 – Emacs 。那么，它来自哪里？&lt;/p&gt;</description>
-    </item>
-    
   </channel>
 </rss>
