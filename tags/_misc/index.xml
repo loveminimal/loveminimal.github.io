@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>_Misc on 爱涂鸦啊</title>
+    <link>https://aituyaa.com/tags/_misc/</link>
+    <description>Recent content in _Misc on 爱涂鸦啊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/_misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>编程水平是怎么训练出来的</title>
+      <link>https://aituyaa.com/%E7%BC%96%E7%A8%8B%E6%B0%B4%E5%B9%B3%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%AD%E7%BB%83%E5%87%BA%E6%9D%A5%E7%9A%84/</link>
+      <pubDate>Fri, 14 Feb 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%BC%96%E7%A8%8B%E6%B0%B4%E5%B9%B3%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%AD%E7%BB%83%E5%87%BA%E6%9D%A5%E7%9A%84/</guid>
+      <description>&lt;p&gt;源自知乎问答 &lt;a href=&#34;https://www.zhihu.com/question/351504112&#34;&gt;那些编程水平很高的程序员是怎么训练出来的?&lt;/a&gt; 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>函数柯里化</title>
+      <link>https://aituyaa.com/%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;函数柯里化（Currying）&lt;/strong&gt; 是一种将多参数函数转换为一系列单参数函数的技术。通过柯里化，可以将一个接受多个参数的函数分解为多个只接受一个参数的函数，每个函数返回一个新的函数，直到所有参数都被传递完毕。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于“那些事儿”系列</title>
+      <link>https://aituyaa.com/%E5%85%B3%E4%BA%8E%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF%E7%B3%BB%E5%88%97/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%85%B3%E4%BA%8E%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF%E7%B3%BB%E5%88%97/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;为什么会有这个“那些事儿”系列？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因为许多时候其实是碎片化的学习，对内容深度并没有什么需求，但需要记录一些学习过程中遇到的问题及其解决方案。&lt;/p&gt;
+&lt;p&gt;之前是全部记录在 [[百科]] 中，然后定期整理成专项的内容，但实际上有些知识就是碎片化的，把它们分散到不同的文章中不仅没有解决其“碎片化”的本质，反而让它们更加“分散”了。&lt;/p&gt;
+&lt;p&gt;所以，每一个标签项中都创建一个“那些事儿”，用以折衷“过于分散”和“潜在集中化”的需求。可以这么认为，“那些事儿”中内容是分散的，但整体框架是集中的。&lt;/p&gt;
+&lt;p&gt;相信我，没有什么知识管理体系是毕其功于一役的，都需要周期性的去整理。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>文学体裁</title>
+      <link>https://aituyaa.com/%E6%96%87%E5%AD%A6%E4%BD%93%E8%A3%81/</link>
+      <pubDate>Thu, 14 Nov 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%96%87%E5%AD%A6%E4%BD%93%E8%A3%81/</guid>
+      <description>&lt;p&gt;&lt;code&gt;&amp;gt; 该文章内容由豆包 AI 驱动 ^_^&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;文章体裁主要分为文学体裁和实用体裁两大类，如下：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;文学体裁：
+- 诗歌：古体诗、近体诗、词、曲、现代诗歌（-自由诗、-散文诗）
+- 散文：叙事散文、抒情散文、哲理散文、写景散文
+- 小说：长篇小说、中篇小说、短篇小说、微型小说（小小说）、按体裁分类（武侠、科幻、言情、历史）
+- 戏剧：话剧、歌剧、舞剧、戏曲、按题材分类（历史、现代、童话）、按结构分类（多幕、独幕）
+
+实用体裁：
+- 记叙文：写人、记事、写景、状物、新闻
+- 说明文：事物、事理、文艺性（科学小品）
+- 议论文：立论文、驳论文、政论文、评论文章
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>拥抱清爽，远离湿气</title>
+      <link>https://aituyaa.com/%E6%8B%A5%E6%8A%B1%E6%B8%85%E7%88%BD%E8%BF%9C%E7%A6%BB%E6%B9%BF%E6%B0%94/</link>
+      <pubDate>Wed, 05 Jun 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%8B%A5%E6%8A%B1%E6%B8%85%E7%88%BD%E8%BF%9C%E7%A6%BB%E6%B9%BF%E6%B0%94/</guid>
+      <description>&lt;p&gt;身体“湿”的很哦，疲惫的紧，真是年龄上来了，问题陆陆续续地都浮现了出来…… 学习一些相关方面的知识吧 ~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows 那些事儿</title>
+      <link>https://aituyaa.com/windows-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Mon, 13 May 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/windows-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;不可否认，Windows 是一款非常优秀的操作系统，但日常使用起来仍有不少可以改善的地方，尤其是当它偶尔抽风开倒车的时候。在这篇文章中，我会列出自己经常使用并感觉比较舒服的一些软件，分享给大家试一试，或许你也会有意想不到的收获~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>云盘那些事儿</title>
+      <link>https://aituyaa.com/%E4%BA%91%E7%9B%98%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Mon, 06 May 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%BA%91%E7%9B%98%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;云盘？很长一段时间内，它对于我来说都不是一个问题，直到我渐渐习惯了多端同步……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>图床那些事儿</title>
+      <link>https://aituyaa.com/%E5%9B%BE%E5%BA%8A%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%9B%BE%E5%BA%8A%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;相信每天写博文并且喜欢多平台发布的人，或早或晚都会遇到‘图床’的相关问题。折腾图床好多天了，仅以此篇做一个阶段性的总结或终止符。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CDN 回源流出流量</title>
+      <link>https://aituyaa.com/cdn-%E5%9B%9E%E6%BA%90%E6%B5%81%E5%87%BA%E6%B5%81%E9%87%8F/</link>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cdn-%E5%9B%9E%E6%BA%90%E6%B5%81%E5%87%BA%E6%B5%81%E9%87%8F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://78moban.com/article/2235.html&#34;&gt;📘 CDN回源流出流量是什么意思？&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今天以对象存储 + CDN 为例，跟大家讲下 CDN 回源流出流量是什么意思？我们在使用 CDN 时会在管理后台的资源监控页面中，发现回源流出流量较大，新人可能会不大清楚这个概念，接下来跟大家详细分享。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>艾宾浩斯记忆遗忘曲线</title>
+      <link>https://aituyaa.com/%E8%89%BE%E5%AE%BE%E6%B5%A9%E6%96%AF%E8%AE%B0%E5%BF%86%E9%81%97%E5%BF%98%E6%9B%B2%E7%BA%BF/</link>
+      <pubDate>Mon, 18 Sep 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%89%BE%E5%AE%BE%E6%B5%A9%E6%96%AF%E8%AE%B0%E5%BF%86%E9%81%97%E5%BF%98%E6%9B%B2%E7%BA%BF/</guid>
+      <description>&lt;p&gt;德国心理学家、实验学习心理学的创始人&lt;a href=&#34;https://wiki.mbalib.com/wiki/%E8%B5%AB%E5%B0%94%E6%9B%BC%C2%B7%E8%89%BE%E5%AE%BE%E6%B5%A9%E6%96%AF&#34; title=&#34;赫尔曼·艾宾浩斯&#34;&gt;赫尔曼·艾宾浩斯&lt;/a&gt;(Hermann Ebbinghaus) 1850 年 1 月 24 日 - 1909 年 2 月 26 日)研究发现，&lt;strong&gt;遗忘在学习之后立即开始，而且遗忘的进程并不是均匀的，最初遗忘速度很快，以后逐渐缓慢&lt;/strong&gt;。他认为＂保持和遗忘是时间的函数＂，并根据他的实验结果绘成描述遗忘进程的曲线，即著名的艾宾浩斯记忆遗忘曲线。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>终端 Terminal 字符的多彩输出</title>
+      <link>https://aituyaa.com/%E7%BB%88%E7%AB%AF-terminal-%E5%AD%97%E7%AC%A6%E7%9A%84%E5%A4%9A%E5%BD%A9%E8%BE%93%E5%87%BA/</link>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%BB%88%E7%AB%AF-terminal-%E5%AD%97%E7%AC%A6%E7%9A%84%E5%A4%9A%E5%BD%A9%E8%BE%93%E5%87%BA/</guid>
+      <description>&lt;p&gt;最近在在改进站点的部署脚本，调试的时候有一些中间状态信息想要高亮显示，就需要对终端 Terminal 字符的输出样式进行修改，如何修改呢？往下看。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>费曼学习法</title>
+      <link>https://aituyaa.com/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/</link>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/</guid>
+      <description>&lt;p&gt;费曼学习法的灵感源于诺贝尔物理奖获得者理查德•费曼（Richard Feynman），运用费曼技巧, 你只需花上 20 分钟就能深入理解知识点,而且记忆深刻,难以遗忘。&lt;/p&gt;
+&lt;p&gt;知识有两种类型，我们绝大多数人关注的都是错误的那类。第一类知识注重了解某个事物的名称，第二类知识注重了解某件事物，这可不是一回事儿。著名的诺贝尔物理学家理查德·费曼（Richard Feynman）能够理解这二者间的差别，这也是他成功最重要的原因之一。事实上，他创造了一种学习方法，确保他会比别人对事物了解的更透彻。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>游戏</title>
+      <link>https://aituyaa.com/%E6%B8%B8%E6%88%8F/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%B8%B8%E6%88%8F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://dota2.fandom.com/zh/wiki/Dota_2_Wiki&#34;&gt;中文Dota 2 Wiki - 刀塔百科&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>微信小程序</title>
+      <link>https://aituyaa.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+      <pubDate>Thu, 08 Jun 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid>
+      <description>&lt;p&gt;微信小程序开发的一些记录……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CPU 是如何制造出来的</title>
+      <link>https://aituyaa.com/cpu-%E6%98%AF%E5%A6%82%E4%BD%95%E5%88%B6%E9%80%A0%E5%87%BA%E6%9D%A5%E7%9A%84/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cpu-%E6%98%AF%E5%A6%82%E4%BD%95%E5%88%B6%E9%80%A0%E5%87%BA%E6%9D%A5%E7%9A%84/</guid>
+      <description>&lt;p&gt;好吧，试了，但真的没找到 “佚名” 是谁 😂 ，希望原作者能感受到我的原力感谢吧…… 不少网站都有转载该篇文章，以下是图片较清晰的几个页面链接。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sohu.com/a/255397866_468626&#34;&gt;https://www.sohu.com/a/255397866_468626&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jb51.net/hardware/cpu/611229.html&#34;&gt;https://www.jb51.net/hardware/cpu/611229.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jb51.net/hardware/cpu/610350.html&#34;&gt;https://www.jb51.net/hardware/cpu/610350.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;1 寸 = 33.3333 mm&lt;/code&gt; &lt;code&gt;集成电路 ic (integrated circuit )&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CPU 缓存是什么</title>
+      <link>https://aituyaa.com/cpu-%E7%BC%93%E5%AD%98%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cpu-%E7%BC%93%E5%AD%98%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&#34;https://www.jb51.net/hardware/cpu/610074.html&#34;&gt;https://www.jb51.net/hardware/cpu/610074.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我们知道，CPU 性能是主要由 CPU 构架、核心线程数量、主频、缓存等诸多因素共同决定，而“缓存”是很多网友容易忽视的一个地方。那么，CPU 缓存是什么？在电脑 CPU 中，一二三级缓存究竟谁对 CPU 性能影响最重要呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>用沙子造的 CPU 凭什么卖的那么贵</title>
+      <link>https://aituyaa.com/%E7%94%A8%E6%B2%99%E5%AD%90%E9%80%A0%E7%9A%84-cpu-%E5%87%AD%E4%BB%80%E4%B9%88%E5%8D%96%E7%9A%84%E9%82%A3%E4%B9%88%E8%B4%B5/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%94%A8%E6%B2%99%E5%AD%90%E9%80%A0%E7%9A%84-cpu-%E5%87%AD%E4%BB%80%E4%B9%88%E5%8D%96%E7%9A%84%E9%82%A3%E4%B9%88%E8%B4%B5/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&#34;https://www.jb51.net/hardware/cpu/610350.html&#34;&gt;https://www.jb51.net/hardware/cpu/610350.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2018 年 4 月 3 日，Intel 在北京举办了第八代酷睿移动处理器全球发布会，正式发布了全新的第八代酷睿移动处理器。很多小伙伴其实对 intel 的芯片很感兴趣，但是一但深入了解，很快就会被扑面而来的晶体管，微架构，纳米，CPI，睿频，超频，缓存等概念搞疯………&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>嗨，PC</title>
+      <link>https://aituyaa.com/%E5%97%A8pc/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%97%A8pc/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;近来，准备组装一台 PC 主机，做个记录 ~&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="艾宾浩斯记忆遗忘曲线 - https://aituyaa.com/%E8%89%BE%E5%AE%BE%E6%B5%A9%E6%96%AF%E8%AE%B0%E5%BF%86%E9%81%97%E5%BF%98%E6%9B%B2%E7%BA%BF/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>艾宾浩斯记忆遗忘曲线</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">艾宾浩斯记忆遗忘曲线</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/_misc/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：_Misc <sup>18</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cdn-%E5%9B%9E%E6%BA%90%E6%B5%81%E5%87%BA%E6%B5%81%E9%87%8F/">CDN 回源流出流量</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cpu-%E6%98%AF%E5%A6%82%E4%BD%95%E5%88%B6%E9%80%A0%E5%87%BA%E6%9D%A5%E7%9A%84/">CPU 是如何制造出来的</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cpu-%E7%BC%93%E5%AD%98%E6%98%AF%E4%BB%80%E4%B9%88/">CPU 缓存是什么</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/windows-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">Windows 那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E4%BA%91%E7%9B%98%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">云盘那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF%E7%B3%BB%E5%88%97/">关于“那些事儿”系列</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96/">函数柯里化</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%97%A8pc/">嗨，PC</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%9B%BE%E5%BA%8A%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">图床那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%8B%A5%E6%8A%B1%E6%B8%85%E7%88%BD%E8%BF%9C%E7%A6%BB%E6%B9%BF%E6%B0%94/">拥抱清爽，远离湿气</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%96%87%E5%AD%A6%E4%BD%93%E8%A3%81/">文学体裁</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B8%B8%E6%88%8F/">游戏</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%94%A8%E6%B2%99%E5%AD%90%E9%80%A0%E7%9A%84-cpu-%E5%87%AD%E4%BB%80%E4%B9%88%E5%8D%96%E7%9A%84%E9%82%A3%E4%B9%88%E8%B4%B5/">用沙子造的 CPU 凭什么卖的那么贵</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%BB%88%E7%AB%AF-terminal-%E5%AD%97%E7%AC%A6%E7%9A%84%E5%A4%9A%E5%BD%A9%E8%BE%93%E5%87%BA/">终端 Terminal 字符的多彩输出</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%BC%96%E7%A8%8B%E6%B0%B4%E5%B9%B3%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%AD%E7%BB%83%E5%87%BA%E6%9D%A5%E7%9A%84/">编程水平是怎么训练出来的</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/%E8%89%BE%E5%AE%BE%E6%B5%A9%E6%96%AF%E8%AE%B0%E5%BF%86%E9%81%97%E5%BF%98%E6%9B%B2%E7%BA%BF/">艾宾浩斯记忆遗忘曲线</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/">费曼学习法</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2023-09-18&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2023-09-18&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            1260 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            3 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/_misc">_Misc</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#遗忘是什么">遗忘是什么</a></li>
+    <li><a href="#他是怎么实验的">他是怎么实验的</a></li>
+    <li><a href="#结语">结语</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p>德国心理学家、实验学习心理学的创始人<a href="https://wiki.mbalib.com/wiki/%E8%B5%AB%E5%B0%94%E6%9B%BC%C2%B7%E8%89%BE%E5%AE%BE%E6%B5%A9%E6%96%AF" title="赫尔曼·艾宾浩斯">赫尔曼·艾宾浩斯</a>(Hermann Ebbinghaus) 1850 年 1 月 24 日 - 1909 年 2 月 26 日)研究发现，<strong>遗忘在学习之后立即开始，而且遗忘的进程并不是均匀的，最初遗忘速度很快，以后逐渐缓慢</strong>。他认为＂保持和遗忘是时间的函数＂，并根据他的实验结果绘成描述遗忘进程的曲线，即著名的艾宾浩斯记忆遗忘曲线。</p>
+<blockquote>
+<p>规律对于自然人改造世界的行为，只能起一个催化的作用。</p>
+</blockquote>
+<p>![[assets/Pasted image 20230918143737.png|550]]</p>
+<p><code>&gt; 艾宾浩斯记忆遗忘曲线</code></p>
+<p>这就是非常著名的揭示遗忘规律的曲线：<a href="https://wiki.mbalib.com/wiki/%E8%89%BE%E5%AE%BE%E6%B5%A9%E6%96%AF%E9%81%97%E5%BF%98%E6%9B%B2%E7%BA%BF">艾宾浩斯记忆遗忘曲线</a>，图中竖轴表示学习中记住的知识数量，横轴表示时间 (天数)，曲线表示记忆量变化的规律。</p>
+<h2 id="遗忘是什么">遗忘是什么</h2>
+<p>遗忘，就是我们对于曾经记忆过的东西不能再认起来，或不能回忆起来，或者是错误的再认和错误的回忆。</p>
+<h2 id="他是怎么实验的">他是怎么实验的</h2>
+<blockquote>
+<p>记忆是一种高级的心理过程，受许多因素影响。旧联想主义者只从结果推论原因，没有给予科学的解释；艾宾浩斯则从严格控制原因来观察结果，对记忆过程进行定量分析。</p>
+</blockquote>
+<p>艾宾浩斯在做这个实验的时候是拿自己作为测试对象的，他发觉，用散文或诗词作为记忆材料存在着一定的困难，因为各人的文化背景和知识经验不同，且理解语言的人容易把意义或联想跟词形成联系，这些已形成的联想可以有助材料的学习，这样便不能在意义方面加以控制。</p>
+<p>为此，艾宾浩斯寻找一些没有形成联想的、完全同类的、对被试来说同样不熟悉的材料，用这些材料做实验就不可能有任何过去的联想。这种材料便是无意义音节，也就是那些不能拼出单词来的众多字母的组合，比如 asww，cfhhj，ijikmb，rfyjbc 等等。</p>
+<blockquote>
+<p>艾宾浩斯在关于记忆的实验中发现，记住 12 个无意义音节，平均需要重复 16.5 次；为了记住 36 个无意义章节，需重复 54 次；而记忆六首诗中的 480 个音节，平均只需要重复 8 次！</p>
+</blockquote>
+<p>艾宾浩斯的研究方法是客观的、实验的、通过细致观察和记录可以量化的。他的程序是把数据基础置于经过时间考验的联想和学习的研究之上。他推想出，对于学习材料的难度，可以用学习材料时所需要重复的次数来测量它，而计算起来的这个重复的次数也可以作为完全再现的标准。为使实验有条不紊，他连续 5 年（约 1879－1884）调节了自己的个人习惯，尽量使个人习惯保持常态，按照同样严格的日常做法去工作，学习材料时总是恰在每天的同一时间。</p>
+<blockquote>
+<p>:: 5 年啊，5 年，真心是一个有毅力的人！</p>
+</blockquote>
+<h2 id="结语">结语</h2>
+<p>艾宾浩斯记忆曲线是艾宾浩斯在实验室中经过了大量测试后，产生了不同的记忆数据，从而生成的一种曲线，是一个具有共性的群体规律。</p>
+<p>此记忆曲线并不考虑接受试验个人的个性特点，而是寻求一种处于平衡点的记忆规律。但是记忆规律可以具体到我们每个人，因为我们的生理特点、生活经历不同，可能导致我们有不同的记忆习惯、记忆方式、记忆特点。</p>
+<p>规律对于自然人改造世界的行为，只能起一个催化的作用，如果与每个人的记忆特点相吻合，那么就如顺水扬帆，一日千里；如果与个人记忆特点相悖，记忆效果则会大打折扣。因此，我们要根据每个人的不同特点，寻找到属于自己的艾宾浩斯记忆曲线。</p>
+<p>不过，艾宾浩斯的实验向我们充分证实了一个道理，学习要勤于复习，而且记忆的理解效果越好，遗忘也越慢。</p>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="/about" target="_blank">
+            
+            将喜欢的一切留在身边，这便是努力的意义
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Nginx - https://aituyaa.com/nginx/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>Nginx</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">Nginx</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/linux/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：Linux <sup>5</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/manjaro-linux/">Manjaro Linux</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/nginx/">Nginx</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/nginx-%E9%87%8D%E5%AE%9A%E5%90%91/">Nginx 重定向</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%8D%81%E5%88%86%E9%92%9F%E6%8E%8C%E6%8F%A1-tmux/">十分钟掌握 TMUX</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85/">源码编译安装</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2023-05-25&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2023-09-07&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            5020 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            11 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/linux">Linux</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#关于代理">关于代理</a>
+      <ul>
+        <li><a href="#单点服务的-cs-架构">单点服务的 C/S 架构</a></li>
+        <li><a href="#基于代理的-cs-架构">基于代理的 C/S 架构</a></li>
+        <li><a href="#proxy-是什么">Proxy 是什么</a></li>
+        <li><a href="#正向代理和反向代理">正向代理和反向代理</a></li>
+      </ul>
+    </li>
+    <li><a href="#nginx-那些事">Nginx 那些事</a>
+      <ul>
+        <li><a href="#安装">安装</a></li>
+        <li><a href="#静态网站部署">静态网站部署</a></li>
+        <li><a href="#配置虚拟主机">配置虚拟主机</a></li>
+        <li><a href="#反向代理">反向代理</a></li>
+        <li><a href="#负载均衡">负载均衡</a></li>
+        <li><a href="#proxypass">ProxyPass</a></li>
+        <li><a href="#upstream">upstream</a></li>
+      </ul>
+    </li>
+    <li><a href="#其他">其他</a>
+      <ul>
+        <li><a href="#nginx-一个-server-配置多个-location">Nginx 一个 server 配置多个 location </a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p>在认识、学习 Nginx 之前，我们先来看一下代理是什么，如果你已经非常熟悉代理，可以直接跳到第二个章节。</p>
+<h2 id="关于代理">关于代理</h2>
+<p><a href="https://blog.csdn.net/tl4832194/article/details/106642981">1</a></p>
+<blockquote>
+<p>注：该节原创发布于慕课网，作者：咚咚呛。</p>
+</blockquote>
+<p>要说清楚什么是反向代理，先来了解下最简单的 C/S （Client-Server）架构，即以单个节点作为后端 Server 的 C/S 架构。</p>
+<h3 id="单点服务的-cs-架构">单点服务的 C/S 架构</h3>
+<p>在普通的开发中，单点 Server 的服务方式非常常见，比如使用 Django 框架做后台服务的时候，就可以通过简单的 =run server= 命令起一个临时的服务，接着通过地址就可能访问到这个服务了。</p>
+<blockquote>
+<p>当然，对于 Django 而言， <code>run server</code> 命令只是提供开发周期的调试使用的便捷工具，更一般的情况是通过 uWSGI 把这个 Django 服务跑起来，以获取比 <code>run server</code> 更好的服务性能。</p>
+</blockquote>
+<p>![[assets/Pasted image 20230525223650.png|375]]</p>
+<p>对于请求量非常少的服务，这样的部署不会有什么问题，但随着服务请求量越来越多，这样的部署架构就很有问题了。</p>
+<p><strong>首先，从服务器的物理特性来看，这个服务器可能就不能支持这么高的请求量。</strong> 这种情况下，就迫使开发者去把服务迁移到一个 CPU 更强、内存更高，综合性能更好的服务器。</p>
+<p>在不考虑成本的条件下，总可以找到性能更好的服务器来支撑服务，然而，这是不现实的，地主家也没有余粮啊……</p>
+<p><strong>其次，如果服务 Server 单节点发生了故障，就必然会影响整个服务。</strong> 因为对于众多的 Client 客户端都是连接的一个 Server 服务端，一旦这个节点不可用了，势必会影响所有使用了客户端的用户。</p>
+<p><strong>那么，如何解决这两个显而易见的问题呢？</strong></p>
+<p>如果有一种横向拓展架构，使得服务可以支撑的请求量可以随着服务的横向拓展面增加就好了。</p>
+<h3 id="基于代理的-cs-架构">基于代理的 C/S 架构</h3>
+<p>一种基于代理的可横向拓展的 C/S 架构，如下：</p>
+<p>![[assets/Pasted image 20230525223712.png|500]]</p>
+<p>在这个部署的架构中，除了 Server 节点外，还多出一个叫 <em>Proxy</em> 的节点，这个节点的做什么的呢？</p>
+<p>Proxy 节点，用于把接收的所有请求都转发到它后面的 Server 节点中，然后等待 Server 节点处理请求，再从 Server 节点取回执行结果返回到 Client 。所以，实际上 Proxy 节点不处理任何的请求。</p>
+<p>下面让我们来看一下，这种架构是怎么解决了上述问题的，之后再思考 <em>Proxy</em> 的这个角色。</p>
+<p><strong>1. 服务器性能不足的问题</strong></p>
+<p>![[assets/Pasted image 20230525223726.png|500]]</p>
+<p>在这个架构里，假设 Server 节点 S1 性能到达瓶颈了，不能处理更多请求了。我们可以添加 Server 节点 S2 ，同时告诉 Proxy 节点，让它把部分原来转发到 S1 节点的请求转发到 S2 节点。如此，通过服务分流减少压力的方法就可以解决原来 S1 节点性能不足的问题了。</p>
+<p><strong>2. 单点服务器挂掉的问题</strong></p>
+<p>![[assets/Pasted image 20230525223742.png|525]]</p>
+<p>在这个架构里，假设 Server 节点 S1 和 S2 能够提供的服务是一样的。如果 S1 挂掉了，Proxy 节点存在，且能够察觉到 S1 挂掉了的话，就让 Proxy 节点把原来要转发给 S1 节点的请求转发到 S2 进行处理，如此，通过服务冗余的方法就可以解决原来 S1 突然挂掉影响服务的问题了。</p>
+<p>那么，Proxy 节点到底是什么呢？</p>
+<h3 id="proxy-是什么">Proxy 是什么</h3>
+<p><strong>Proxy ，就是代理。</strong> 如何理解呢？</p>
+<p>在第一个问题中，Proxy 节点通过服务分流的方法来减少 S1 的压力。对于原来应该被 S1 服务的，却由于被 Proxy 节点转发而被 S2 服务的 Client 客户端而言，其实 Client 并不知道它的请求是由 S1 处理的，还是由 S2 处理的，它只需要往 Proxy 节点发送请求就好了，剩下的工作就由 Proxy 节点去解决了。</p>
+<p>也就是说，Proxy 节点相当于一个中介，“代理” Client 去寻找实际的 Server 节点去完成服务。</p>
+<blockquote>
+<p>这种模式在现实生活中也非常常见，在买房的时候，通常由房产中介帮助你完成和卖者之间的手续，而不需要你亲自去处理这些事情，你只需要处理自己与中介之间的手续就可以了，这里的中介，就和我们的 Proxy 节点工作非常类似。</p>
+</blockquote>
+<p>同样的，在第二个问题中，Client 并不需要感知 S1 是否还能正常工作，只需要把请求发送给 Proxy 节点，由它去帮忙处理就可以了。</p>
+<p>由上可知，基于代理的可横向拓展的 C/S 架构中，Proxy 节点就是我们的代理节点。</p>
+<h3 id="正向代理和反向代理">正向代理和反向代理</h3>
+<blockquote>
+<p>:: 开始先做个总结：<br>
+所谓“正向代理”其实应该称为“客户端代理”，而“反向代理”应该称为“服务端代理”。</p>
+</blockquote>
+<p>本质上来讲，代理都是存在于 Client 和 Server 之间，但是由于性质不同，可以分为正向代理和反向代理两种。那么，什么是反向代理？什么是正向代理呢？</p>
+<p>我们来看一个直观的例子，假设有 A、B 和 C 三人，他们之间存在借钱的关系。</p>
+<p><strong>1. 正向代理</strong></p>
+<blockquote>
+<ol>
+<li>A 需要钱，A 知道 C 有很多钱，想向 C 借钱；</li>
+<li>但是 A 和 C 有矛盾，于是 A 想到通过 B 去借 C 的钱；</li>
+<li>B 向 C 借到钱了 ，C 并不知道 A 的存在；</li>
+<li>B 再把借到的钱交给 A 。</li>
+</ol>
+</blockquote>
+<p>![[assets/Pasted image 20230525223902.png|425]]</p>
+<p>在这个过程中，B 就充当了代理借钱的角色，并且是代替 A 去借钱的，这样就是正向代理。</p>
+<blockquote>
+<p>:: 比如国内日常使用的“科学上网” VPN 工具，就是正向代理了。比如，小明要访问 Twitter ，但是访问不了，就委托 VPN 帮他访问，然后再把响应结果返回给他。 Twitter 只知道是 VPN 访问它的，并不知道也不关心 VPN 把结果返回给谁。对于小明们来说，VPN 就是他们的访问代理，即正向代理。</p>
+</blockquote>
+<p><strong>2. 反向代理</strong></p>
+<blockquote>
+<ol>
+<li>A 需要钱，C 有很多钱，A 不知道 C 有很多钱；</li>
+<li>A 找 B 借钱；</li>
+<li>B 知道 C 有很多钱；</li>
+<li>B 向 C 借钱，并把借到的钱给 A ，而没有使用自己的钱借给 A ；</li>
+<li>A 拿到钱后，以为钱是 B 的，A 不知道 C 的存在。</li>
+</ol>
+</blockquote>
+<p>![[assets/Pasted image 20230525223922.png|525]]</p>
+<p>在这个过程中，B 也充当了代理代理借钱的角色，不过这次不是代替 A 去借的，而是用 C 的钱借给 A 的，换言之即是代替 C 将钱代给了 A ，这就是反向代理。</p>
+<blockquote>
+<p>:: 同样都是 A 借钱：</p>
+<p>正向代理是 A 委任 B 去借。B 去借钱，借钱的人只知道钱借给了 B ，并不知道、也不关心 B 拿来做什么用。</p>
+<p>反向代理是 A 去向 B 借钱，A 并不知道、也不关心 B 的钱是从哪儿来的。</p>
+</blockquote>
+<p><strong>3. 两者区别</strong></p>
+<p>1）服务对象不同：</p>
+<ul>
+<li>正向代理，代理的是客户端，也就是例子中的 A ，服务端并不知道实际发起请求的客户端；</li>
+<li>反向代理，代理的是服务端，也就是例子中的 C ，客户端并不知道实际提供服务的服务端。</li>
+</ul>
+<p>![[assets/Pasted image 20230525224054.png|600]]</p>
+<p><code>Figure：正向代理</code></p>
+<p>![[assets/Pasted image 20230525224112.png|600]]</p>
+<p><code>Figure：反向代理</code></p>
+<p>2）安全模型不同：</p>
+<ul>
+<li>正向代理，允许客户端通过它访问任意网站并且隐藏客户端自身，因此必须采取安全措施以确保仅为授权的客户端提供服务；</li>
+<li>反向代理，对外都是透明的，访问者并不知道自己访问的是代理，并不知道服务节点的存在，认为处理请求的就是代理节点。</li>
+</ul>
+<p>总而言之，正向代理是从客户端的角度出发，服务于局域网用户，以访问非特定的服务，其中最典型的例子就是翻墙；反向代理正好与此相反，从服务端的角度出发，服务于所有用户，隐藏实际的服务节点，服务节点的架构对用户透明，以代理节点统一对外服务。</p>
+<h2 id="nginx-那些事">Nginx 那些事</h2>
+<p><a href="https://blog.csdn.net/nanhuaibeian/article/details/106927143">2</a></p>
+<p>![[assets/Pasted image 20230525224144.png|325]]</p>
+<p>了解了什么是代理，下面我们要进入正题认识下 Nginx 了。</p>
+<p>Nginx 是异步框架的网页服务器，也可以用作反向代理、负载平衡器和 HTTP 缓存，该软件由 <em>伊戈尔·塞索耶夫</em> 创建并于 2004 年站首次公开发布，官方测试 nginx 能够支支撑五万并发链接，并且 CPU 、内存等资源消耗非常低，运行非常稳定。</p>
+<p>Nginx 这么强劲，都有些什么应用场景呢？如下：</p>
+<ul>
+<li>Http 服务器。Nginx 可以独立提供 http 服务，用做网页静态服务器；</li>
+<li>虚拟主机。Nginx 可以实现在一台服务器虚拟出多个网站，如个人网站使用的虚拟主机；</li>
+<li>反向代理、负载均衡。Nginx 可以实现请求分流，避免单点服务器宕机影响服务。</li>
+</ul>
+<h3 id="安装">安装</h3>
+<p>→ 具体安装过程可以参考<a href="https://blog.csdn.net/nanhuaibeian/article/details/106916313">该链接</a>。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 准备工作</span>
+</span></span><span style="display:flex;"><span>yum install gcc-c++                     <span style="color:#998;font-style:italic"># 安装需要的 gcc 环境</span>
+</span></span><span style="display:flex;"><span>yum install -y pcre pcre-devel          <span style="color:#998;font-style:italic"># 安装 perl 兼容的正则表达式库</span>
+</span></span><span style="display:flex;"><span>yum install -y zlib zlib-devel          <span style="color:#998;font-style:italic"># nginx 使用 zlib 对 http 包进行 gzip</span>
+</span></span><span style="display:flex;"><span>yum install -y openssl openssl-devel    <span style="color:#998;font-style:italic"># 支持 https</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 下载安装 nginx - http://nginx.org</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 可以修改为你要的版本，目前最前为 1.19.3</span>
+</span></span><span style="display:flex;"><span>wget http://nginx.org/download/nginx-1.8.0.tar.gz
+</span></span><span style="display:flex;"><span>tar zxvf nginx-1.8.0.tar.gz
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> nginx-1.8.0
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 使用 configure 命令创建 makeFile 文件</span>
+</span></span><span style="display:flex;"><span>./configure --prefix<span style="color:#000;font-weight:bold">=</span>/usr/local/nginx   <span style="color:#998;font-style:italic"># 指向安装目录</span>
+</span></span><span style="display:flex;"><span>make <span style="color:#000;font-weight:bold">&amp;&amp;</span> make install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Nginx 的启动和访问：</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> nginx                        <span style="color:#998;font-style:italic"># 进入 nginx 安装目录</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> sbin <span style="color:#000;font-weight:bold">&amp;&amp;</span> ./nginx              <span style="color:#998;font-style:italic"># 进入 nginx 的执行目录并启动 ./nginx</span>
+</span></span><span style="display:flex;"><span>ps aux | grep nginx             <span style="color:#998;font-style:italic"># 启动后台查看进程</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Nginx 的一些常用操作：</span>
+</span></span><span style="display:flex;"><span>./nginx -s stop                 <span style="color:#998;font-style:italic"># 停止 nginx</span>
+</span></span><span style="display:flex;"><span>./nginx -s quit                 <span style="color:#998;font-style:italic"># 强制停止 nginx</span>
+</span></span><span style="display:flex;"><span>./nginx -t                      <span style="color:#998;font-style:italic"># 校验 nginx 配置正确与否</span>
+</span></span><span style="display:flex;"><span>./nginx -s reload               <span style="color:#998;font-style:italic"># 重启 nginx，用于修改配置文件后更新 nginx 状态</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="静态网站部署">静态网站部署</h3>
+<p>将我们的网页内容（假设为 <code>index</code> 文件夹 ）上传到服务器的 <code>/usr/local/nginx</code> 下，并更新 <code>/usr/local/nginx/conf</code> 下的 <code>nginx.conf</code> 配置文件，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>worker_processes 1;
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>http <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	...
+</span></span><span style="display:flex;"><span>	server <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		listen      80;
+</span></span><span style="display:flex;"><span>		server_name localhost；
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		location / <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>			root  index;                <span style="color:#998;font-style:italic"># 目录名称</span>
+</span></span><span style="display:flex;"><span>			index index.html index.htm; <span style="color:#998;font-style:italic"># 文件名称</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>		...
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>重启 Nginx 即可，打开服务器的 IP 即可访问。</p>
+<h3 id="配置虚拟主机">配置虚拟主机</h3>
+<p>（1）上传静态网站：</p>
+<ul>
+<li>将 <code>index</code> 目录上传至 <code>/usr/local/nginx/index</code> 下；</li>
+<li>将 <code>regist</code> 目录上传至 <code>/usr/local/nginx/regist</code> 下。</li>
+</ul>
+<p>（2）修改 Nginx 的配置文件：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 配置 index 访问资源</span>
+</span></span><span style="display:flex;"><span>server <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	listen        80;           <span style="color:#998;font-style:italic"># 监听端口</span>
+</span></span><span style="display:flex;"><span>	server_name   localhost;    <span style="color:#998;font-style:italic"># 域名或 IP</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	location / <span style="color:#000;font-weight:bold">{</span>                <span style="color:#998;font-style:italic"># 访问路径配置</span>
+</span></span><span style="display:flex;"><span>		root      index;
+</span></span><span style="display:flex;"><span>		index     index.html index.htm;
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	...
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 配置 regist 访问资源</span>
+</span></span><span style="display:flex;"><span>server <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	listen        81;
+</span></span><span style="display:flex;"><span>	server_name   localhost;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	location / <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		root regist;
+</span></span><span style="display:flex;"><span>		index regist.html;
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>（3）重启 Nginx ，可以通过 80，81 访问不同的资源。</p>
+<p>综上，就实现了一台虚拟主机部署两个项目，一个 Nginx 虚拟出来了两个主机，实现了端口号配置虚拟主机。</p>
+<p>当然，还可以通过域名配置虚拟主机 ，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 配置 index 访问资源</span>
+</span></span><span style="display:flex;"><span>server <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	listen        80;             <span style="color:#998;font-style:italic"># 监听端口</span>
+</span></span><span style="display:flex;"><span>	server_name   www.travel.com; <span style="color:#998;font-style:italic"># 域名或 IP</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	location / <span style="color:#000;font-weight:bold">{</span>                  <span style="color:#998;font-style:italic"># 访问路径配置</span>
+</span></span><span style="display:flex;"><span>		root      index;
+</span></span><span style="display:flex;"><span>		index     index.html index.htm;
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	...
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 配置 regist 访问资源</span>
+</span></span><span style="display:flex;"><span>server <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	listen        80;             <span style="color:#998;font-style:italic"># 端口号相同</span>
+</span></span><span style="display:flex;"><span>	server_name   www.regist.com; <span style="color:#998;font-style:italic"># 域名不同，以此进行区分</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	location / <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		root regist;
+</span></span><span style="display:flex;"><span>		index regist.html;
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="反向代理">反向代理</h3>
+<p>这里我们将实现好的案例（war 包）部署到服务器的 Tomcat 中的根目录下：</p>
+<ul>
+<li>为了操作方便（不需要输入对应的项目名称访问）将项目命名为 <code>ROOT.war</code> ；</li>
+<li>将服务器 <code>/usr/local/tomcat/apache-tomcat-7.0.57/webapps</code> 下的内容删除，将打好的包导入即可。</li>
+</ul>
+<p>此时，输入相应 IP:Port 如 <code>192.168.245.129:8080</code> 即可正常访问。</p>
+<p>接下来，我们看看如何用 Nginx 配置反向代理：</p>
+<p>![[assets/Pasted image 20230525224253.png]]</p>
+<p>重新启动 Nginx ，输入 <code>www.travel.com</code> 即可实现访问。</p>
+<h3 id="负载均衡">负载均衡</h3>
+<p>什么是负载均衡呢？</p>
+<p>负载均衡（i.e. Load Balance），就是分摊到多个操作单元上进行执行，例如 Web 服务器、FTP 服务器、企业关键应用服务器等，从而共同完成工作任务。</p>
+<p>![[assets/Pasted image 20230525224305.png]]</p>
+<p>实际应该部署到不同的服务器上，这里为了演示方便，就在同一台服务器配置三个 Tomcat 。</p>
+<p>将刚才存放工程的 tomcat 复制三份，修改端口分别为 8080，8081，8082 ，修改 <code>server.xml</code> 的端口，分别启动这三个 tomcat 服务。</p>
+<p>配置负载均衡：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>worker_process 1;
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>http <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	...
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic"># 配置要代理的网址</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic"># 默认如下配置是平权的，随机选概率相同 1:1:1</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic"># 也可以通过加权，如：</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic"># server 192.168.245.129:8080 weight=2;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic"># 此时的权重比为 2:1:1</span>
+</span></span><span style="display:flex;"><span>	upstream tomcat-travel <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		server 192.168.245.129:8080;
+</span></span><span style="display:flex;"><span>		server 192.168.245.129:8081;
+</span></span><span style="display:flex;"><span>		server 192.168.245.129:8082;
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic"># 配置 index 访问资源</span>
+</span></span><span style="display:flex;"><span>	server <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		listen        80;
+</span></span><span style="display:flex;"><span>		server_name   www.travel.com;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		location / <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#998;font-style:italic"># root    index;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#998;font-style:italic"># 对应要代理的网址</span>
+</span></span><span style="display:flex;"><span>			proxy_pass http://tomcat-travel;
+</span></span><span style="display:flex;"><span>			index      index.html index.htm;
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>		...
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如 Nginx 这种配置性的软件，用时查询即可，重在理解它的原理。</p>
+<h3 id="proxypass">ProxyPass</h3>
+<p><a href="http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass">3</a> <a href="https://blog.csdn.net/qq_31772441/article/details/107072652">4</a></p>
+<p>配置语法：</p>
+<pre tabindex="0"><code>Syntax:	 proxy_pass URL;
+Default: —
+Context: location, if in location, limit_except
+</code></pre><p>其中，URL 用于设置代理服务器的协议和地址，以及可选的 uri ，一般表现形式为：</p>
+<ul>
+<li><code>protocol://ip:port[uri]</code></li>
+<li><code>protocal://domain[uri]</code></li>
+</ul>
+<p>由于 URL 末尾 <em>是否存在 uri</em> 的处理逻辑不同，我们下面来着重分析一下。</p>
+<p><strong>1. URL 末尾存在 uri</strong></p>
+<p>注意 <code>/</code> 也算是 uri</p>
+<p>处理逻辑：代理请求时，会先将 <em>请求的 uri</em> 中 <em>localtion 匹配的部分</em> 替换成 <code>proxy_pass</code> 指定的 uri ，再将最终的 uri 拼接到代理地址 ，才是最终访问的 url。</p>
+<p>例如，有如下配置：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>localtion /proxy <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	proxy_pass http://127.0.0.1:8099/svr1; <span style="color:#998;font-style:italic"># uri 为 &#39;/svr1&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我们发起如下请求： <code>http://localhost:8088/proxy/index.html</code> ，详细解析如下表。</p>
+<table>
+<thead>
+<tr>
+<th>部分</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>请求的 uri</td>
+<td><code>/proxy/index.html</code></td>
+</tr>
+<tr>
+<td>location 匹配的部分</td>
+<td><code>/proxy</code></td>
+</tr>
+<tr>
+<td><code>proxy_pass</code> 指定的 uri</td>
+<td><code>/svr1</code></td>
+</tr>
+<tr>
+<td>最终的 uri</td>
+<td><code>/svr1/index.html</code></td>
+</tr>
+<tr>
+<td>代理地址</td>
+<td><code>http://127.0.0.1:8099</code></td>
+</tr>
+<tr>
+<td>最终访问的 url</td>
+<td><code>http://127.0.0.1:8099/svr1/index.html</code></td>
+</tr>
+</tbody>
+</table>
+<p>即：</p>
+<ul>
+<li>原本访问路径为： <code>http://localhost:8088/proxy/index.html</code> ，</li>
+<li>实际请求路径为： <code>http://127.0.0.1:8099/svr1/index.html</code> 。</li>
+</ul>
+<p><strong>2. URL 末尾不存在 uri</strong></p>
+<p>处理逻辑：代理请求时，直接将 <em>请求的 uri</em> 拼接到 <em>代理地址</em> ，就是 <em>最终访问的 url</em> 。</p>
+<p>例如，有如下配置：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>location /proxy2 <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	proxy_pass http://127.0.0.1:8099; <span style="color:#998;font-style:italic"># 无 uri</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我们发起如下请求： <code>http://localhost:8088/proxy2/index.html</code> ，详细解析如下表。</p>
+<table>
+<thead>
+<tr>
+<th>部分</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>请求的 uri</td>
+<td><code>proxy2/index.html</code></td>
+</tr>
+<tr>
+<td>代理地址</td>
+<td><code>http://127.0.0.1:8099</code></td>
+</tr>
+<tr>
+<td>最终访问的 url</td>
+<td><code>http://127.0.0.1:8099/proxy2/index.html</code></td>
+</tr>
+</tbody>
+</table>
+<p>即：</p>
+<ul>
+<li>原本访问路径为 <code>http://localhost:8088/proxy2/index.html</code> ，</li>
+<li>实际请求路径为 <code>http://127.0.0.1:8099/proxy2/index.html</code> 。</li>
+</ul>
+<p>看 proxy_pass 的使用的方法本质上就是就这么简单，官网文档这部分文档内容也不是很多，有时候事物往往是由于我们理解不当，而被过分的复杂化了。</p>
+<h3 id="upstream">upstream</h3>
+<p>这个方法主要是方便把单独的代理存储为独立的文件进行区分和设置，可以更好地进行多个服务器的代理设置，包括每个子服务器的权重，以及分发的方式等。</p>
+<p>配置范例：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>upstream backend  <span style="color:#000;font-weight:bold">{</span>             <span style="color:#998;font-style:italic"># backend 为当前配置的名称，与 proxy_pass 参数对应</span>
+</span></span><span style="display:flex;"><span>	ip_hash;                    <span style="color:#998;font-style:italic"># 表示负载均衡配置</span>
+</span></span><span style="display:flex;"><span>	server backend1.example.com <span style="color:#008080">weight</span><span style="color:#000;font-weight:bold">=</span>5;
+</span></span><span style="display:flex;"><span>	server backend2.example.com:8080;
+</span></span><span style="display:flex;"><span>	server unix:/tmp/backend3;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>server <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	location / <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		proxy_pass  http://backend;
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>关于 <code>ip_hash</code> ，它表示负载均衡的配置，它的设置可以使每个请求按访问的 ip 的 hash 结果分配，这样每个访客固定访问一个后端服务器，可以解决 session 的问题。备选为 <code>url_hash</code> ，表示按用户的访问 URL 来进行分配，这样访问相同的 URL 时会指向同一台服务器，主要用于下载站点，可以节约带宽资源。</p>
+<h2 id="其他">其他</h2>
+<h3 id="nginx-一个-server-配置多个-location">Nginx 一个 server 配置多个 location </h3>
+<p><a href="https://blog.csdn.net/tl4832194/article/details/106642981">1</a></p>
+<p>Nginx 作为代理服务器，可以配置多个 location，通过访问不同路径来访问不同目录。比如， <code>location /</code> 用于访问官网首页， <code>location /docs</code> 用于访问帮助文档。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>server <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	listen		8088;
+</span></span><span style="display:flex;"><span>	server_name	localhost;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	location / <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		root 	/path/to/site/index;
+</span></span><span style="display:flex;"><span>		index	index.html index.htm;
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	location /docs <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#0086b3">alias</span> 	/path/to/docs;	<span style="color:#998;font-style:italic"># 注意这里是 alias</span>
+</span></span><span style="display:flex;"><span>		index	index.html index.htm;
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	……
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong><code>alias</code> 和 <code>root</code> 有什么区别呢？</strong></p>
+<p><code>root</code> 和 <code>alias</code> 都可以定义在 location 模块中，都是用来指定请求资源的真实路径，比如：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>location /abc/ <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	root /data/www;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>请求 <code>http://ip:port/abc/123.png</code> 时，在服务器里面对应的真正的资源是 <code>/data/www/abc/123.png</code>，也就是说， <code>root</code> 真实路径是 <code>root</code> 指定的值加上 <code>location</code> 指定的值。</p>
+<p>而 <code>alias</code> 指定的路径是 <code>location</code> 的别名，不管 <code>location</code> 的值怎么写，资源的真实路径都是 <code>alias</code> 指定的路径，比如：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>location /abc/ <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">alias</span> /data/www;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>请求 <code>http://ip:port/abc/123.png</code> 时，在服务器里对应的真正的资源是 <code>/data/www/123.png</code>，而不再包含 <code>location</code> 指定的值了。</p>
+<p>注意：</p>
+<ul>
+<li>在一个 <code>location</code> 中， <code>alias</code> 可以存在多个，但是 <code>root</code> 只能有一个；</li>
+<li><code>alias</code> 只能存在与 <code>location</code> 中，但是 <code>root</code> 可以用在 <code>server、http</code> 和 <code>location</code> 中。</li>
+</ul>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="/about" target="_blank">
+            
+            将喜欢的一切留在身边，这便是努力的意义
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

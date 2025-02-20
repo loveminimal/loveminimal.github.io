@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devmaps on 爱涂鸦啊</title>
+    <link>https://aituyaa.com/devmaps/</link>
+    <description>Recent content in Devmaps on 爱涂鸦啊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 26 Nov 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/devmaps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frontend</title>
+      <link>https://aituyaa.com/devmaps/frontend/</link>
+      <pubDate>Tue, 26 Nov 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/devmaps/frontend/</guid>
+      <description>&lt;p&gt;你可以在这里找到完整的路线图 &lt;a href=&#34;https://roadmap.sh/frontend&#34;&gt;Frontend Developer Roadmap&lt;/a&gt; ~ 注册了账号后，还可以同步进度，Nice ~&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

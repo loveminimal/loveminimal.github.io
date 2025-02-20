@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="SQL - https://aituyaa.com/sql/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>SQL</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">SQL</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/ols/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：OLs <sup>13</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/css-%E4%B8%AD%E7%9A%84%E5%8A%A8%E6%95%88/">CSS 中的动效</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/emacs-lisp/">Emacs Lisp</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/git/">Git</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/git-%E6%8F%90%E4%BA%A4%E6%B6%88%E6%81%AF%E7%BA%A6%E5%AE%9A/">Git 提交消息约定</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/json-web-tokens/">Json Web Tokens</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/lua-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">Lua 那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/poetry-%E7%9A%84%E7%AE%80%E8%A6%81%E8%AF%B4%E6%98%8E/">Poetry 的简要说明</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/python-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">Python 那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/shell-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">Shell 那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/sql/">SQL</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/">字符集和字符编码</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E8%BF%9B%E5%88%B6%E5%8F%8A%E8%BD%AC%E6%8D%A2/">进制及转换</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2023-05-26&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2024-12-12&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            9040 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            19 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/ols">OLs</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sql">SQL</a>
+      <ul>
+        <li><a href="#关系数据库概述">关系数据库概述</a></li>
+        <li><a href="#安装-mysql">安装 MySQL</a></li>
+        <li><a href="#关系模型">关系模型</a></li>
+        <li><a href="#查询数据">查询数据</a></li>
+        <li><a href="#修改数据">修改数据</a></li>
+        <li><a href="#mysql">MySQL</a></li>
+        <li><a href="#事务">事务</a></li>
+      </ul>
+    </li>
+    <li><a href="#jdbc">JDBC</a>
+      <ul>
+        <li><a href="#jdbc-是什么">JDBC 是什么</a></li>
+        <li><a href="#jdbc-连接">JDBC 连接</a></li>
+        <li><a href="#jdbc-查询">JDBC 查询</a></li>
+        <li><a href="#jdbc-更新">JDBC 更新</a></li>
+        <li><a href="#jdbc-事务">JDBC 事务</a></li>
+        <li><a href="#jdbc-batch">JDBC Batch</a></li>
+        <li><a href="#jdbc-连接池">JDBC 连接池</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p>🔔 摘录自 <a href="https://www.liaoxuefeng.com/wiki/1177760294764384">廖雪峰老师的 SQL 教程</a></p>
+<p>SQL，结构化查询语言（Structured Query Language ），是一种数据库查询和程序设计语言，用于访问和操作数据库系统。SQL 语句既可以查询数据库中的数据，也可以插入、更新和删除数据库中的数据，还可以对数据库进行管理和维护操作。</p>
+<blockquote>
+<p>:: 数据库能听懂的语言 – SQL</p>
+</blockquote>
+<h2 id="sql">SQL</h2>
+<h3 id="关系数据库概述">关系数据库概述</h3>
+<p>为什么需要数据库？ <strong>为了优化数据的读写及管理。</strong> 应用程序不需要自己管理数据，而是通过数据库软件提供的接口来读写数据。至于数据本身如何存储到文件，那就是数据库软件的事情了。</p>
+<p>数据库按照数据结构来组织、存储和管理数据，有三种模型：层次模型、网关模型和关系模型。</p>
+<p>关系数据库的关系模型是基于数学理论建立的（有兴趣的可以深入下）。其支持的标准数据类型包括数值、字符串、时间等，如下表：</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INT</td>
+<td>整型</td>
+<td>4 字节，约 +/-21 亿</td>
+</tr>
+<tr>
+<td>BIGINT</td>
+<td>长整型</td>
+<td>8 字节，约 +/-922 亿</td>
+</tr>
+<tr>
+<td>REAL/FLOAT(24)</td>
+<td>浮点型</td>
+<td>4 字节</td>
+</tr>
+<tr>
+<td>DOUBLE</td>
+<td>浮点型</td>
+<td>8 字节</td>
+</tr>
+<tr>
+<td>DECIMAL(M,N)</td>
+<td>高精度小数</td>
+<td><code>DECIMAL(20,10)</code> 表示一共 20 位，其中小数 10 位，通常用于财务计算</td>
+</tr>
+<tr>
+<td>CHAR(N)</td>
+<td>定长字符串</td>
+<td><code>CHAR(100)</code> 总是存储 100 个字符的字符串</td>
+</tr>
+<tr>
+<td>VARCHAR(N)</td>
+<td>变长字符串</td>
+<td><code>VARCHAR(100)</code> 可以存储 0~100 个字符的字符串</td>
+</tr>
+<tr>
+<td>BOOLEAN</td>
+<td>布尔类型</td>
+<td>存储 <code>True</code> 或者 <code>False</code></td>
+</tr>
+<tr>
+<td>DATE</td>
+<td>日期类型</td>
+<td><code>2018-06-22</code></td>
+</tr>
+<tr>
+<td>TIME</td>
+<td>时间类型</td>
+<td><code>12:20:59</code></td>
+</tr>
+<tr>
+<td>DATETIME</td>
+<td>日期和时间类型</td>
+<td><code>2018-06-22 12:20:59</code></td>
+</tr>
+</tbody>
+</table>
+<p>通常来说， <code>BIGINT</code> 能满足整数存储的需求， <code>VARCHAR(N)</code> 能满足字符串存储的需求。其他，还有一些不常用的数据类型，如 <code>TINYINT</code> （范围在 0~255）。各数据库厂商还会支持特定的数据类型，如 <code>JSON</code> 。</p>
+<p><strong>SQL 语言关键字不区分大小写！</strong></p>
+<blockquote>
+<p>:: 一般约定 SQL 关键字总是大写，以示突出，表名和列名均使用小写。</p>
+</blockquote>
+<h3 id="安装-mysql">安装 MySQL</h3>
+<p><a href="https://blog.csdn.net/LB_AUTO/article/details/106041858">1</a></p>
+<p>选择国内镜像下载（如 <a href="https://repo.huaweicloud.com/mysql/Downloads/">华为的 MySQL 镜像</a>），官网太慢了……</p>
+<p>如果，你要也要下载 mysql-8.0.26 ，可以直接 <a href="https://repo.huaweicloud.com/mysql/Downloads/MySQL-8.0/mysql-8.0.26-winx64.msi">点此下载</a> 。</p>
+<p>安装完成之后，将执行路径，如 <code>C:\Program Files\MySQL\MySQL Server 8.0\bin</code> 加入到电脑环境变量中（具体方法自行百度），以管理员权限打开 cmd 或 Powershell：</p>
+<ul>
+<li>输入 <code>mysqld --initialize --console</code> ，进行初始化，该步可以得到 mysql 的初始密码；</li>
+<li>输入 <code>mysqld --install</code> ，如果需要安装多个 mysql 服务，这步输入 <code>mysql --install [服务名]</code>；</li>
+<li>输入 <code>net start mysql</code> ，启动 MySQL 服务；</li>
+<li>输入 <code>mysql -u root -p</code> ，使用初始密码登录 mysql ；</li>
+<li>登录后，把初始密码改掉，输入 <code>ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '你自己的密码';</code> （注意带分号）；</li>
+<li>输入 <code>show databases;</code> ，可以查看包含哪些数据库了。</li>
+</ul>
+<p>WIN10 具体安装 mysql 8.0.26 如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">70
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">71
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 1. 初始化</span>
+</span></span><span style="display:flex;"><span>PS C:<span style="color:#d14">\W</span>indows<span style="color:#d14">\s</span>ystem32&gt; mysqld --initialize --console
+</span></span><span style="display:flex;"><span>2022-01-17T12:32:47.721393Z <span style="color:#099">0</span> <span style="color:#000;font-weight:bold">[</span>System<span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">[</span>MY-013169<span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">[</span>Server<span style="color:#000;font-weight:bold">]</span> C:<span style="color:#d14">\P</span>rogram Files<span style="color:#d14">\M</span>ySQL<span style="color:#d14">\M</span>ySQL Server 8.0<span style="color:#d14">\b</span>in<span style="color:#d14">\m</span>ysqld.exe <span style="color:#000;font-weight:bold">(</span>mysqld 8.0.26<span style="color:#000;font-weight:bold">)</span> initializing of server in progress as process <span style="color:#099">16088</span>
+</span></span><span style="display:flex;"><span>2022-01-17T12:32:47.739476Z <span style="color:#099">1</span> <span style="color:#000;font-weight:bold">[</span>System<span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">[</span>MY-013576<span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">[</span>InnoDB<span style="color:#000;font-weight:bold">]</span> InnoDB initialization has started.
+</span></span><span style="display:flex;"><span>2022-01-17T12:32:48.147715Z <span style="color:#099">1</span> <span style="color:#000;font-weight:bold">[</span>System<span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">[</span>MY-013577<span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">[</span>InnoDB<span style="color:#000;font-weight:bold">]</span> InnoDB initialization has ended.
+</span></span><span style="display:flex;"><span>2022-01-17T12:32:49.184664Z <span style="color:#099">0</span> <span style="color:#000;font-weight:bold">[</span>Warning<span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">[</span>MY-013746<span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">[</span>Server<span style="color:#000;font-weight:bold">]</span> A deprecated TLS version TLSv1 is enabled <span style="color:#000;font-weight:bold">for</span> channel mysql_main
+</span></span><span style="display:flex;"><span>2022-01-17T12:32:49.187008Z <span style="color:#099">0</span> <span style="color:#000;font-weight:bold">[</span>Warning<span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">[</span>MY-013746<span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">[</span>Server<span style="color:#000;font-weight:bold">]</span> A deprecated TLS version TLSv1.1 is enabled <span style="color:#000;font-weight:bold">for</span> channel mysql_main
+</span></span><span style="display:flex;"><span>2022-01-17T12:32:49.384847Z <span style="color:#099">6</span> <span style="color:#000;font-weight:bold">[</span>Note<span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">[</span>MY-010454<span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">[</span>Server<span style="color:#000;font-weight:bold">]</span> A temporary password is generated <span style="color:#000;font-weight:bold">for</span> root@localhost: gMlai+AXi2rn
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 2. 安装服务</span>
+</span></span><span style="display:flex;"><span>PS C:<span style="color:#d14">\W</span>indows<span style="color:#d14">\s</span>ystem32&gt; mysqld --install
+</span></span><span style="display:flex;"><span>Service successfully installed.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 3. 启动服务</span>
+</span></span><span style="display:flex;"><span>PS C:<span style="color:#d14">\W</span>indows<span style="color:#d14">\s</span>ystem32&gt; net start mysql
+</span></span><span style="display:flex;"><span>MySQL 服务正在启动 .
+</span></span><span style="display:flex;"><span>MySQL 服务已经启动成功。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 4. 使用初始化密码登录</span>
+</span></span><span style="display:flex;"><span>PS C:<span style="color:#d14">\W</span>indows<span style="color:#d14">\s</span>ystem32&gt; mysql -u root -p
+</span></span><span style="display:flex;"><span>Enter password: ************
+</span></span><span style="display:flex;"><span>Welcome to the MySQL monitor.  Commands end with ; or <span style="color:#d14">\g</span>.
+</span></span><span style="display:flex;"><span>Your MySQL connection id is <span style="color:#099">8</span>
+</span></span><span style="display:flex;"><span>Server version: 8.0.26
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Copyright <span style="color:#000;font-weight:bold">(</span>c<span style="color:#000;font-weight:bold">)</span> 2000, 2021, Oracle and/or its affiliates.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Oracle is a registered trademark of Oracle Corporation and/or its
+</span></span><span style="display:flex;"><span>affiliates. Other names may be trademarks of their respective
+</span></span><span style="display:flex;"><span>owners.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Type <span style="color:#d14">&#39;help;&#39;</span> or <span style="color:#d14">&#39;\h&#39;</span> <span style="color:#000;font-weight:bold">for</span> help. Type <span style="color:#d14">&#39;\c&#39;</span> to clear the current input statement.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mysql&gt; show databases;
+</span></span><span style="display:flex;"><span>ERROR <span style="color:#099">1820</span> <span style="color:#000;font-weight:bold">(</span>HY000<span style="color:#000;font-weight:bold">)</span>: You must reset your password using ALTER USER statement before executing this statement.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 5. 为 root 设置自己的密码，方便下次登录</span>
+</span></span><span style="display:flex;"><span>mysql&gt; ALTER USER <span style="color:#d14">&#39;root&#39;</span>@<span style="color:#d14">&#39;localhost&#39;</span> IDENTIFIED WITH mysql_native_password BY <span style="color:#d14">&#39;your_password&#39;</span>;
+</span></span><span style="display:flex;"><span>Query OK, <span style="color:#099">0</span> rows affected <span style="color:#000;font-weight:bold">(</span>0.00 sec<span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mysql&gt; show databases;
+</span></span><span style="display:flex;"><span>+--------------------+
+</span></span><span style="display:flex;"><span>| Database           |
+</span></span><span style="display:flex;"><span>+--------------------+
+</span></span><span style="display:flex;"><span>| information_schema |
+</span></span><span style="display:flex;"><span>| mysql              |
+</span></span><span style="display:flex;"><span>| performance_schema |
+</span></span><span style="display:flex;"><span>| sys                |
+</span></span><span style="display:flex;"><span>+--------------------+
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span> rows in <span style="color:#0086b3">set</span> <span style="color:#000;font-weight:bold">(</span>0.01 sec<span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 使用 exit 退出</span>
+</span></span><span style="display:flex;"><span>mysql&gt; <span style="color:#0086b3">exit</span>
+</span></span><span style="display:flex;"><span>Bye
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 下次使用新设置的密码 &#39;your_password&#39; 登录即可</span>
+</span></span><span style="display:flex;"><span>PS C:<span style="color:#d14">\W</span>indows<span style="color:#d14">\s</span>ystem32&gt; mysql -u root -p
+</span></span><span style="display:flex;"><span>Enter password: *************
+</span></span><span style="display:flex;"><span>Welcome to the MySQL monitor.  Commands end with ; or <span style="color:#d14">\g</span>.
+</span></span><span style="display:flex;"><span>Your MySQL connection id is <span style="color:#099">10</span>
+</span></span><span style="display:flex;"><span>Server version: 8.0.26 MySQL Community Server - GPL
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Copyright <span style="color:#000;font-weight:bold">(</span>c<span style="color:#000;font-weight:bold">)</span> 2000, 2021, Oracle and/or its affiliates.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Oracle is a registered trademark of Oracle Corporation and/or its
+</span></span><span style="display:flex;"><span>affiliates. Other names may be trademarks of their respective
+</span></span><span style="display:flex;"><span>owners.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Type <span style="color:#d14">&#39;help;&#39;</span> or <span style="color:#d14">&#39;\h&#39;</span> <span style="color:#000;font-weight:bold">for</span> help. Type <span style="color:#d14">&#39;\c&#39;</span> to clear the current input statement.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mysql&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>其他版本的安装过程，大同小异，出现的问题可能是形形色色，直接百度就 OK 了。</p>
+<p><strong>Ubuntu20 安装相关</strong>
+<a href="https://devanswers.co/install-secure-mysql-server-ubuntu-20-04/">3</a></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt update <span style="color:#000;font-weight:bold">&amp;&amp;</span> sudo apt install mysql-server <span style="color:#998;font-style:italic"># 安装</span>
+</span></span><span style="display:flex;"><span>sudo service mysql status                        <span style="color:#998;font-style:italic"># 查看服务状态</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># OR systemctl status mysql</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sudo mysql                      <span style="color:#998;font-style:italic"># Ubuntu 默认 root@localhost 是无密码的</span>
+</span></span><span style="display:flex;"><span>mysql&gt; exit;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如何为 <code>root@localhost</code> 设置密码呢？
+<a href="https://www.cnblogs.com/Noturns/p/13385481.html">4</a></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>mysql<span style="color:#000;font-weight:bold">&gt;</span><span style="color:#bbb"> </span>alert<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">user</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;root&#39;</span><span style="color:#000;font-weight:bold">@</span><span style="color:#d14">&#39;localhost&#39;</span><span style="color:#bbb"> </span>identified<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">with</span><span style="color:#bbb"> </span>mysql_native_password<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">by</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;你自己的mysql密码&#39;</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>mysql<span style="color:#000;font-weight:bold">&gt;</span><span style="color:#bbb"> </span>flush<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">privileges</span>;<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>如何当前 Mysql 服务可能远程登录呢？
+<a href="https://blog.csdn.net/sunrj_niu/article/details/113350063">5</a></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>mysql<span style="color:#000;font-weight:bold">&gt;</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">create</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">user</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;root&#39;</span><span style="color:#000;font-weight:bold">@</span><span style="color:#d14">&#39;%&#39;</span><span style="color:#bbb"> </span>identified<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">by</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;你自己的mysql密码&#39;</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>mysql<span style="color:#000;font-weight:bold">&gt;</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">grant</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">all</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">privileges</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">on</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">*</span>.<span style="color:#000;font-weight:bold">*</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">to</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;root&#39;</span><span style="color:#000;font-weight:bold">@</span><span style="color:#d14">&#39;%&#39;</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>mysql<span style="color:#000;font-weight:bold">&gt;</span><span style="color:#bbb"> </span>flush<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">privileges</span>;<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后：</p>
+<ol>
+<li><code>cd /etc/mysql/mysql.conf.d</code> ;</li>
+<li>修改相应的配置文件 <code>mysqld.cnf</code> ;</li>
+<li>将 <code>bind-address</code> 127.0.0.1<code>修改为</code>bind-address <code>0.0.0.0</code> ;</li>
+<li><code>service mysql restart</code> 重启 mysql 服务；</li>
+<li><code>netstat -lntp</code> 查看状态。</li>
+</ol>
+<h3 id="关系模型">关系模型</h3>
+<p>关系数据库是建立在关系模型上，关系模型本质上就是若干存储数据的二维表。表的每一行称为记录（Record），每一列称为字段（Column）。</p>
+<p>字段定义了数据类型，以及是否允许为 <code>NULL</code> （ 表示字段不存在）。</p>
+<blockquote>
+<p>:: 通常情况下，字段应该避免允许为 NULL。不允许为 NULL 可以简化查询条件，加快查询速度，也利于应用程序读取数据后无需判断是否为 NULL。</p>
+</blockquote>
+<p>关系数据库的表和表之间需要建立“一对多”，“多对一”和“一对一”的关系，关系是通过主键和外键来维护的。</p>
+<p><strong>1. 主键</strong></p>
+<p>主键是关系表中记录的唯一标识，其选取非常重要，注意不要带有业务含义，而应该使用 BIGINT 自增或者 GUID 类型，主键也不应该允许 <code>NULL</code> 。</p>
+<p><strong>2. 外键</strong></p>
+<p>在一张表中，通过某个字段，可以把数据与另一张表关联起来，这种列称为外键。关系数据库通过外键可以实现一对多、多对多（需要通过中间表）和一对一的关系。外键既可以通过数据库来约束，也可以不设置约束，仅依靠应用程序的逻辑来保证。</p>
+<p>下面来看一个外键约束：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 定义一个外键约束
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">ALTER</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">TABLE</span><span style="color:#bbb"> </span>students<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">ADD</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">CONSTRAINT</span><span style="color:#bbb"> </span>fk_class_id<span style="color:#bbb">      </span><span style="color:#998;font-style:italic">-- 外键约束名称 fk_class_id，任意
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">FOREIGN</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">KEY</span><span style="color:#bbb"> </span>(class_id)<span style="color:#bbb">          </span><span style="color:#998;font-style:italic">-- 指定了 class_id 作为外键
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">REFERENCES</span><span style="color:#bbb"> </span>classes<span style="color:#bbb"> </span>(id);<span style="color:#bbb">        </span><span style="color:#998;font-style:italic">-- 指定了这个关键将关联到 classes 表的 id 列
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#998;font-style:italic">-- 删除一个外键约束
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>ALERT<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">TABLE</span><span style="color:#bbb"> </span>students<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">DROP</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FOREIGN</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">KEY</span><span style="color:#bbb"> </span>fk_class_id;<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>3. 索引</strong></p>
+<p>在查找记录的时候，想要获得非常快的速度，就需要使用索引。索引是关系数据库中对某一列或多个列的值进行预排序的数据结构。通过使用索引，可以让数据库系统不必扫描整个表，而是直接定位到符合条件的记录，这样就大大加快了查询速度。无论是否创建索引，对于用户和应用程序来说，使用关系数据库不会有任何区别。</p>
+<h3 id="查询数据">查询数据</h3>
+<p>在关系数据库中，最常用的操作就是查询。</p>
+<p><strong>1. 基本查询</strong></p>
+<p>使用 SELECT 查询的基本语句 <code>SELECT * FROM &lt;表名&gt;</code> 可以查询一个表的所有行和所有列的数据，查询结果是一个二维表。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 语法：
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- SELECT * FROM &lt;表名&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 如
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">*</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students;<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">-- 所有的学生记录
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>2. 条件查询</strong></p>
+<p>SELECT 语句可以通过 <code>WHERE</code> 条件来设定查询条件，查询结果是满足查询条件的记录，而不是整个表的所有记录。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 语法：
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- SELECT * FROM &lt;表名&gt; WHERE &lt;条件表达式&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 如
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">*</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">WHERE</span><span style="color:#bbb"> </span>score<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">&gt;</span><span style="color:#bbb"> </span>::<span style="color:#bbb"> </span><span style="color:#099">80</span>;<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">-- 分数大于 80 的学生记录
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>条件表达式可以包含逻辑运算，优先级由高到低为 <code>NOT &gt; AND &gt; OR</code> ，当然还有括号。</p>
+<blockquote>
+<p>:: 此处可以用谐音记忆， not（NOT） at(AND) all(OR) - 一点也不，别客气。</p>
+</blockquote>
+<p><strong>3. 投影查询</strong></p>
+<p>如果我们只希望返回某些列的数据，而不是所有列的数据，可以使用投影查询。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 语法：
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- SELECT 列1 [别名1], 列2, 列3 FROM &lt;表名&gt; [...]
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 如
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span>id,<span style="color:#bbb"> </span>score,<span style="color:#bbb"> </span>name<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students;<span style="color:#bbb">        </span><span style="color:#998;font-style:italic">-- 没设置别名
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span>id,<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>points,<span style="color:#bbb"> </span>name<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students;<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">-- 设置别名
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span>id,<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>points,<span style="color:#bbb"> </span>name<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">WHERE</span><span style="color:#bbb"> </span>gender<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;M&#39;</span>;<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">-- 可接 WHERE条件
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>4. 排序</strong></p>
+<p>使用 <code>ORDER BY</code> 可以对结果集进行排序，可以对多列进行升序、倒序排序。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span>id,<span style="color:#bbb"> </span>name,<span style="color:#bbb"> </span>gender,<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">ORDER</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">BY</span><span style="color:#bbb"> </span>score;<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">-- 默认 ASC 升序，可以省略
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span>id,<span style="color:#bbb"> </span>name,<span style="color:#bbb"> </span>gender,<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">ORDER</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">BY</span><span style="color:#bbb"> </span>score<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">DESC</span>;<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">-- 降序
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 多列，先按 score ，有相同分数的再按 gender
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span>id,<span style="color:#bbb"> </span>name,<span style="color:#bbb"> </span>gender,<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">ORDER</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">BY</span><span style="color:#bbb"> </span>score<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">DESC</span>,<span style="color:#bbb"> </span>gender;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#998;font-style:italic">-- 如果有 WHERE 子句，那么 ORDER BY 子句要放到 WHERE 子句后面（因为是对结果集排序嘛）
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span>id,<span style="color:#bbb"> </span>name,<span style="color:#bbb"> </span>gender,<span style="color:#bbb"> </span>score<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">WHERE</span><span style="color:#bbb"> </span>class_id<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#099">1</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">ORDER</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">BY</span><span style="color:#bbb"> </span>score<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">DESC</span>;<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>5. 分页查询</strong></p>
+<p>分页实际上就是从结果集中“截取”出第 M~N 条记录。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 语法：
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- LIMIT &lt;N-M&gt; OFFSET &lt;M&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 如
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">*</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">LIMIT</span><span style="color:#bbb"> </span><span style="color:#099">3</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">OFFSET</span><span style="color:#bbb"> </span><span style="color:#099">0</span>;<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">-- 查询第 1 页
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">*</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">LIMIT</span><span style="color:#bbb"> </span><span style="color:#099">3</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">OFFSET</span><span style="color:#bbb"> </span><span style="color:#099">3</span>;<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">-- 查询第 2 页
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">*</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">LIMIT</span><span style="color:#bbb"> </span><span style="color:#099">3</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">OFFSET</span><span style="color:#bbb"> </span><span style="color:#099">6</span>;<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">-- 查询第 3 页
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- ...
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>可见，分页查询的关键在于，首先要确定每页需要显示的结果数量 <code>pageSize</code> （这里为 3），然后根据当前页的索引 <code>pageIndex</code> （从 1 开始，页码啦），确定 <code>LIMIT</code> 和 <code>OFFSET</code> 应该设定的值：</p>
+<ul>
+<li><code>LIMIT</code> 总是设定为 <code>pageSize</code> ；</li>
+<li><code>OFFSET</code> 计算公式为 <code>pageSize * (pageIndex - 1)</code> 。</li>
+</ul>
+<p>另外：</p>
+<ul>
+<li><code>OFFSET</code> 是可选的，如果只写 <code>LIMIT 15</code> ，那么相当于 <code>LIMIT 15 OFFSET 0</code> ；</li>
+<li>在 MySQL 中， <code>LIMIT 15 OFFSET 30</code> 还可以简写成 <code>LIMIT 30, 15</code> ；</li>
+<li>使用 <code>LIMIT &lt;M&gt; OFFSET &lt;N&gt;</code> 分页时，随着 N 越来越大，查询效率也会越来越低。</li>
+</ul>
+<p><strong>6. 聚合查询</strong></p>
+<p>对于统计总数、平均数这类计算，SQL 提供了专门的聚合函数，使用聚合函数进行查询，就是聚合查询。</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COUNT</td>
+<td>查询所有列的行数</td>
+</tr>
+<tr>
+<td>SUM/AVG</td>
+<td>计算某一数值类型列的合计值/平均值</td>
+</tr>
+<tr>
+<td>MAX/MIN</td>
+<td>计算某一列的最大值/最小值</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">COUNT</span>(<span style="color:#000;font-weight:bold">*</span>)<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">AVG</span>(score)<span style="color:#bbb"> </span>average<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">WHERE</span><span style="color:#bbb"> </span>gender<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;M&#39;</span>;<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意：</p>
+<ul>
+<li>如果 WHERE 条件没有匹配到任何行， <code>COUNT()</code> 会返回 0 ，而其他会返回 <code>NULL</code> ；</li>
+<li>聚合的计算结果虽然是一个数字，但查询的结果仍然是一个二维表，只是这个二维表只有一行一列；</li>
+<li>通常，使用聚合查询时，我们应该给列名设置一个别名，便于处理结果。</li>
+</ul>
+<p><strong>对于聚合查询，SQL 还提供了“分组聚合”的功能。</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span>class_id,<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">COUNT</span>(<span style="color:#000;font-weight:bold">*</span>)<span style="color:#bbb"> </span>num<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">GROUP</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">BY</span><span style="color:#bbb"> </span>class_id;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#998;font-style:italic">-- COUNT() 的结果不再是一个，因为 GROUP BY 子句指定了按 class_id 分组
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>执行上述 <code>SELECT</code> 语句时，会把 <code>class_id</code> 相同的列先分组，再分别计算，因些会得到不止一行结果（当然，我们此处假设 <code>class_id</code> 有几个不同的值）。</p>
+<p><strong>7. 多表查询</strong></p>
+<p>使用多表查询可以获取 M x N 行记录，查询的结果也是一个二维表。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 语法：
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- SELECT * FROM &lt;表1&gt; [表1别名], &lt;表2&gt; [表2别名];
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 如
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">*</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students,<span style="color:#bbb"> </span>classes;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#998;font-style:italic">-- 可以利用投影查询设置别名
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span>students.id<span style="color:#bbb"> </span>sid,<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span>students.name,<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span>students.gender,<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span>students.score,<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span>classes.id<span style="color:#bbb"> </span>cid,<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span>classes.name<span style="color:#bbb"> </span>cname<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students,<span style="color:#bbb"> </span>classes;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#998;font-style:italic">-- SQL还允许给表设置一个别名，以在投影查询中引用起来稍微简洁一点
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span>s.id<span style="color:#bbb"> </span>sid,<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span>s.name,<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span>s.gender,<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span>s.score,<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span><span style="color:#000;font-weight:bold">c</span>.id<span style="color:#bbb"> </span>cid,<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span><span style="color:#000;font-weight:bold">c</span>.name<span style="color:#bbb"> </span>cname<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span>s,<span style="color:#bbb"> </span>classes<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">c</span>;<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>8. 连接查询</strong></p>
+<p>连接查询是另一种类型的多表查询，对多个表进行 JOIN 运算，简单地说，就是先确定一个主表作为结果集，然后，把其他表的行有选择地“连接”在主表结果集上。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 语法：
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- SELECT ... FROM &lt;表1&gt; INNER JOIN &lt;表2&gt; ON &lt;条件...&gt;;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 如
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">SELECT</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span>s.id,<span style="color:#bbb"> </span>s.name,<span style="color:#bbb"> </span>s.class_id,<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span><span style="color:#000;font-weight:bold">c</span>.name<span style="color:#bbb"> </span>class_name,<span style="color:#bbb">          </span><span style="color:#998;font-style:italic">--
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#bbb">	</span>s.gender,<span style="color:#bbb"> </span>s.score<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span>s<span style="color:#bbb">                 </span><span style="color:#998;font-style:italic">-- 先确定主表，仍然使用 FROM &lt;表1&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">INNER</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">JOIN</span><span style="color:#bbb"> </span>classes<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">c</span><span style="color:#bbb">            </span><span style="color:#998;font-style:italic">-- 再确定需要连接的表，使用 INNER JOIN &lt;表2&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">ON</span><span style="color:#bbb"> </span>s.class_id<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">c</span>.id;<span style="color:#bbb">           </span><span style="color:#998;font-style:italic">-- 然后确定连接条件，使用 ON &lt;条件……&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 可选，加上 WHERE 子句、 ORDER BY 等子句
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>INNER JOIN 是最常用的一种 JOIN 查询，除此之外还有 LEFT/RIGHT/FULL OUTER JOIN 。</p>
+<h3 id="修改数据">修改数据</h3>
+<p>关系数据库的基本操作就是 CRUD（Create 增、Retrieve 查、Update 改、Delete 删）。对于增、删、改，对应的 SQL 语句分别是：</p>
+<ul>
+<li>INSERT 插入新记录；</li>
+<li>UPDATE 更新已有记录；</li>
+<li>DELETE 删除已有记录。</li>
+</ul>
+<p><strong>1. INSERT</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 语法：
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- INSERT INTO &lt;表名&gt; (字段1, 字段2, ...) VALUES (值1, 值2, ...)
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 如
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">INSERT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">INTO</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span>(class_id,<span style="color:#bbb"> </span>name,<span style="color:#bbb"> </span>gender,<span style="color:#bbb"> </span>score)<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">VALUES</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span>(<span style="color:#099">1</span>,<span style="color:#bbb"> </span><span style="color:#d14">&#39;大宝&#39;</span>,<span style="color:#bbb"> </span><span style="color:#d14">&#39;M&#39;</span>,<span style="color:#bbb"> </span><span style="color:#099">87</span>),<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">	</span>(<span style="color:#099">2</span>,<span style="color:#bbb"> </span><span style="color:#d14">&#39;二宝&#39;</span>,<span style="color:#bbb"> </span><span style="color:#d14">&#39;M&#39;</span>,<span style="color:#bbb"> </span><span style="color:#099">81</span>);<span style="color:#bbb">       </span><span style="color:#998;font-style:italic">-- 可以一次性添加多条记录
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意，字段顺序不必和数据库表的字段顺序一致，但值的顺序必须和字段顺序一致。</p>
+<p><strong>2. UPDATE</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 语法：
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- UPDATE &lt;表名&gt; SET 字段1=值1, 字段2=值2, ... WHERE ...;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 如
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">UPDATE</span><span style="color:#bbb"> </span>students<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">SET</span><span style="color:#bbb"> </span>name<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;大牛&#39;</span>,<span style="color:#bbb"> </span>score<span style="color:#000;font-weight:bold">=</span>score<span style="color:#000;font-weight:bold">+</span><span style="color:#099">10</span><span style="color:#bbb"> </span><span style="color:#998;font-style:italic">-- 可以一次性更新多条记录，且可以使用表达式
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">WHERE</span><span style="color:#bbb"> </span>id<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>;<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>3. DELETE</strong></p>
+<p>使用 <code>DELETE</code> ，我们就可以一次删除表中的一条或多条记录。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 语法：
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- DELETE FROM &lt;表名&gt; WHERE ...;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 如
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">DELETE</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">FROM</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">where</span><span style="color:#bbb"> </span>id<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>;<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="mysql">MySQL</h3>
+<p>安装完 MySQL 后，除了 MySQL Server，即真正的 MySQL 服务器外，还附赠一个 MySQL Client 程序。MySQL Client 是一个命令行客户端，可以通过 MySQL Client 登录 MySQL，然后，输入 SQL 语句并执行。</p>
+<p>MySQL Client 的可执行程序是 <code>mysql</code> ，MySQL Server 的可执行程序是 <code>mysqld</code> （后台运行）。</p>
+<p>![[assets/Pasted image 20230526091940.png]]</p>
+<p>在 MySQL Client 中输入的 SQL 语句通过 TCP 连接发送到 MySQL Server。默认端口号是 3306，即如果发送到本机 MySQL Server，地址就是 <code>127.0.0.1:3306</code> 。</p>
+<p>也可以只安装 MySQL Client，然后连接到远程 MySQL Server。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># mysql -h &lt;mysql-server-ip&gt; -u root -p</span>
+</span></span><span style="display:flex;"><span>mysql -h 10.0.1.99 -u root -p
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>除了命令行客户端外，也有 GUI 客户端可供使用，如 MySQL Workbench、 Navicat 等。</p>
+<p><strong>1. 数据库</strong></p>
+<p>在一个运行的 MySQL 服务器上，实际上可以创建多个数据库（Database）。相关操作如下：</p>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SHOW DATABASES;</code></td>
+<td>列出所有数据库</td>
+</tr>
+<tr>
+<td><code>CREATE DATABASE test;</code></td>
+<td>创建一个新数据库</td>
+</tr>
+<tr>
+<td><code>DROP DATABASE test;</code></td>
+<td>删除一个数据库</td>
+</tr>
+<tr>
+<td><code>USE test;</code></td>
+<td>切换到数据库 test</td>
+</tr>
+<tr>
+<td>——————————-</td>
+<td>————————</td>
+</tr>
+<tr>
+<td>表</td>
+<td></td>
+</tr>
+<tr>
+<td><code>SHOW TABLES;</code></td>
+<td>列出当前数据库的所有表</td>
+</tr>
+<tr>
+<td><code>DESC students;</code></td>
+<td>查看一个表的结构</td>
+</tr>
+<tr>
+<td><code>SHOW CREATE TABLE students;</code></td>
+<td>查看创建表的 SQL 语句</td>
+</tr>
+<tr>
+<td><code>DROP TABLE students;</code></td>
+<td>删除表</td>
+</tr>
+</tbody>
+</table>
+<p>修改表就比较复杂。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 给 students 表新增一列 birth
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>ALERT<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">TABLE</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">ADD</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">COLUMN</span><span style="color:#bbb"> </span>birth<span style="color:#bbb"> </span><span style="color:#0086b3">VARCHAR</span>(<span style="color:#099">10</span>)<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">NOT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">NULL</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#998;font-style:italic">-- 修改 birth 列名为 birthday，类型改为 VARCHAR(20)
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>ALERT<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">TABLE</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span>CHANGE<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">COLUMN</span><span style="color:#bbb"> </span>birth<span style="color:#bbb"> </span>birthday<span style="color:#bbb"> </span><span style="color:#0086b3">VARCHAR</span>(<span style="color:#099">20</span>)<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">NOT</span><span style="color:#bbb">　</span><span style="color:#000;font-weight:bold">NULL</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#998;font-style:italic">-- 删除列
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>ALERT<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">TABLE</span><span style="color:#bbb"> </span>students<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">DROP</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">COLUMN</span><span style="color:#bbb"> </span>birthday;<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>TODO 2. 实用的 SQL 语句</strong></p>
+<p>……</p>
+<h3 id="事务">事务</h3>
+<p>这种把多条语句作为一个整体进行操作的功能，被称为数据库事务。数据库事务可以确保该事务范围内的所有操作都可以全部成功或者全部失败。如果事务失败，那么效果就和没有执行这些 SQL 一样，不会对数据库数据有任何改动。</p>
+<p>对于单条 SQL 语句，数据库系统自动将其作为一个事务执行，这种事务被称为隐式事务。</p>
+<p>要手动把多条 SQL 语句作为一个事务执行，使用 <code>BEGIN</code> 开启一个事务，使用 <code>COMMIT</code> 提交一个事务，这种事务被称为显式事务。如：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">BEGIN</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">UPDATE</span><span style="color:#bbb"> </span>accounts<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">SET</span><span style="color:#bbb"> </span>balance<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>balance<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span><span style="color:#099">100</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">WHERE</span><span style="color:#bbb"> </span>id<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#099">1</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">UPDATE</span><span style="color:#bbb"> </span>accounts<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">SET</span><span style="color:#bbb"> </span>balance<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>balance<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">+</span><span style="color:#bbb"> </span><span style="color:#099">100</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">WHERE</span><span style="color:#bbb"> </span>id<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#099">2</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">COMMIT</span>;<span style="color:#bbb">                         </span><span style="color:#998;font-style:italic">-- 试图把事务内的所有SQL所做的修改永久保存
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- ROLLBACK;                    -- 可以主动用 ROLLBACK 回滚事务
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>数据库事务具有 ACID 共 4 个特性：</p>
+<ul>
+<li>Atomic 原子性（要么全部执行，要么全部不执行）、</li>
+<li>Consistent 一致性（事务完成后，所有数据的状态都是一致的）、</li>
+<li>Isolation 隔离性（多个事务并发执行，每个事务作出的修改必须与其他事务隔离）、</li>
+<li>Duration 持久性（即事务完成后，对数据库的修改被持久化存储）。</li>
+</ul>
+<p>对于两个并发执行的事务，如果涉及到操作同一条记录的时候，可能会发生问题。SQL 标准定义了 4 种隔离级别：</p>
+<table>
+<thead>
+<tr>
+<th>Isolation Level</th>
+<th>脏读（Dirty Read）</th>
+<th>不可重复读（Non Repeatable Read）</th>
+<th>幻读（Phantom Read）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read Uncommitted</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Read Committed</td>
+<td>-</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Repeatable Read</td>
+<td>-</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Serializable</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="jdbc">JDBC</h2>
+<p><a href="https://www.liaoxuefeng.com/wiki/1252599548343744/1255943820274272">2</a></p>
+<h3 id="jdbc-是什么">JDBC 是什么</h3>
+<p>JDBC（Java DataBase Connectivity），是 Java 程序访问数据库的标准接口。</p>
+<p>使用 Java 程序访问数据库时，Java 代码并不是直接通过 TCP 连接去访问数据库，而是通过 JDBC 接口（Java 标准库自带）来访问，而 JDBC 接口则通过 JDBC 驱动（数据库厂商提供，里面是接口的具体实现类）来实现真正对数据库的访问。如下：</p>
+<p>![[assets/Pasted image 20230526092033.png|275]]</p>
+<p>实际上，一个 MySQL 的驱动就是一个 jar 包，它本身也是纯 Java 编写的。我们自己编写的代码只需要引用 Java 标准库提供的 java.sql 包下面的相关接口，由此再间接地通过 MySQL 驱动的 jar 包通过网络访问 MySQL 服务器，所有复杂的网络通讯都被封装到 JDBC 驱动中，因此，Java 程序本身只需要引入一个 MySQL 驱动的 jar 包就可以正常访问 MySQL 服务器，如下：</p>
+<p>![[assets/Pasted image 20230526092049.png|400]]</p>
+<p>*注意：Java 程序编译期仅依赖 java.sql 包，不依赖具体数据库的 jar 包，可随时替换底层数据库，访问数据库管理员的 Java 代码基本不变。</p>
+<p>前面已经说过，所谓的 JDBC 驱动，其实就是一个第三方的 jar 包，我们可能通过添加一个 Maven 依赖引入它：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#000080">&lt;dependency&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000080">&lt;groupId&gt;</span>mysql<span style="color:#000080">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000080">&lt;artifactId&gt;</span>mysql-connector-java<span style="color:#000080">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000080">&lt;version&gt;</span>5.1.47<span style="color:#000080">&lt;/version&gt;</span>   <span style="color:#998;font-style:italic">&lt;!-- 与安装的 MySQL 版本对应 --&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000080">&lt;scope&gt;</span>runtime<span style="color:#000080">&lt;/scope&gt;</span>      <span style="color:#998;font-style:italic">&lt;!-- 注意是 runtime --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000080">&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>其中，添加依赖的 <code>scope</code> 是 <code>runtime</code> ，因为编译 Java 程序并不需要 MySQL 的这个 jar 包，只有在运行期才需要使用。如果改为 <code>compile</code> ，虽然也能正常编译，但是在 IDE 里写程序的时候，会多出一大堆类似 <code>com.mysql.jdbc.Connection</code> 这样的类，非常容易与 Java 标准库的 JDBC 接口混淆，所以坚决不要设置为 <code>compile</code> 。</p>
+<h3 id="jdbc-连接">JDBC 连接</h3>
+<p>Connection 代表一个 JDBC 连接，它相当于 Java 程序到数据库的连接（通常是 TCP 连接）。打开一个 Connection 时，需要准备 URL、用户名和口令，才能成功连接到数据库。</p>
+<p>URL 是由数据库厂商指定的格式，例如，MySQL 的 URL 是：</p>
+<pre tabindex="0"><code>jdbc:mysql://&lt;hostname&gt;:&lt;port&gt;/&lt;db&gt;?key1=value1&amp;key2=value2
+</code></pre><p>假设数据库运行在本机 <code>localhost</code> ，端口使用标准的 <code>3306</code> ，数据库名称是 <code>learnjdbc</code> ，那么 URL 如下：</p>
+<pre tabindex="0"><code>jdbc:mysql://localhost:3306/learnjdbc?useSSL=false&amp;characterEncoding=utf8
+</code></pre><p>其中，后面的两个参数表示不使用 SSL 加密，使用 UTF-8 作为字符编码。</p>
+<p>要获取数据库连接，使用如下代码：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// JDBC 连接的 URL, 不同数据库有不同的格式:
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>String JDBC_URL <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;jdbc:mysql://localhost:3306/test&#34;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>String JDBC_USER <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;root&#34;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>String JDBC_PASSWORD <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;password&#34;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 获取连接:
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>Connection conn <span style="color:#000;font-weight:bold">=</span> DriverManager<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getConnection</span><span style="color:#000;font-weight:bold">(</span>JDBC_URL<span style="color:#000;font-weight:bold">,</span> JDBC_USER<span style="color:#000;font-weight:bold">,</span> JDBC_PASSWORD<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// TODO: 访问数据库...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 关闭连接:
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">close</span><span style="color:#000;font-weight:bold">();</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>核心代码是 <code>DriverManager</code> 提供的静态方法 <code>getConnection()</code> ， <code>DriverManager</code> 会自动扫描 classpath，找到所有的 JDBC 驱动，然后根据我们传入的 URL 自动挑选一个合适的驱动。</p>
+<p>因为 JDBC 连接是一种昂贵的资源，所以使用后要及时释放。使用 <code>try (resource)</code> 来自动释放 JDBC 连接是一个好方法：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>Connection conn <span style="color:#000;font-weight:bold">=</span> DriverManager<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getConnection</span><span style="color:#000;font-weight:bold">(</span>JDBC_URL<span style="color:#000;font-weight:bold">,</span> JDBC_USER<span style="color:#000;font-weight:bold">,</span> JDBC_PASSWORD<span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="jdbc-查询">JDBC 查询</h3>
+<p>获取到 JDBC 连接后，下一步就可以查询数据库了。查询数据库分以下几步：</p>
+<ol>
+<li>通过 <code>Connection</code> 提供的 <code>createStatemetn()</code> 方法创建一个 <code>Statement</code> 对象，用于执行一个查询；</li>
+<li>执行 <code>Statement</code> 对象提供的 <code>executeQuery(&quot;SELECT * FROM students&quot;)</code> 并传入 SQL 语句，执行查询返回的结果集，使用 <code>ResultSet</code> 来引用这个结果集；</li>
+<li>反复调用 <code>ResultSet</code> 的 <code>next()</code> 方法来读取每一行结果。如下：</li>
+</ol>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>Connection conn <span style="color:#000;font-weight:bold">=</span> DriverManager<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getConnection</span><span style="color:#000;font-weight:bold">(</span>JDBC_URL<span style="color:#000;font-weight:bold">,</span> JDBC_USER<span style="color:#000;font-weight:bold">,</span> JDBC_PASSWORD<span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>Statement stmt <span style="color:#000;font-weight:bold">=</span> conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">createStatement</span><span style="color:#000;font-weight:bold">())</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>ResultSet rs <span style="color:#000;font-weight:bold">=</span> stmt<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">executeQuery</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;SELECT id, grade, name, gender FROM students WHERE gender=1&#34;</span><span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#000;font-weight:bold">while</span> <span style="color:#000;font-weight:bold">(</span>rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">next</span><span style="color:#000;font-weight:bold">())</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#458;font-weight:bold">long</span> id <span style="color:#000;font-weight:bold">=</span> rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getLong</span><span style="color:#000;font-weight:bold">(</span>1<span style="color:#000;font-weight:bold">);</span> <span style="color:#998;font-style:italic">// 注意：索引从1开始
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>				<span style="color:#458;font-weight:bold">long</span> grade <span style="color:#000;font-weight:bold">=</span> rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getLong</span><span style="color:#000;font-weight:bold">(</span>2<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>				String name <span style="color:#000;font-weight:bold">=</span> rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getString</span><span style="color:#000;font-weight:bold">(</span>3<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#458;font-weight:bold">int</span> gender <span style="color:#000;font-weight:bold">=</span> rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getInt</span><span style="color:#000;font-weight:bold">(</span>4<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>需要注意以下几点：</p>
+<ul>
+<li><code>Statement</code> 和 <code>ResultSet</code> 都是需要关闭的资源，因此嵌套使用 <code>try (resource)</code> 确保及时关闭；</li>
+<li><code>rs.next()</code> 用于判断是否有下一行记录，如果有，将自动把当前行移动到下一行（一开始获得 <code>ResultSet</code> 时当前行不是第一行）；</li>
+<li><code>ResultSet</code> 获取列时，索引从 <code>1</code> 开始而不是 <code>0</code> ；（思考一下，这是为什么？😏）</li>
+<li>必须根据 <code>SELECT</code> 的列对应的位置来调用 <code>getLong(1)，getString(2)</code> 这些方法，否则对应位置的数据类型不对，将报错。</li>
+</ul>
+<p><strong>关于 SQL 注入攻击</strong></p>
+<p>使用 <code>Statement</code> 拼字符串非常容易引发 SQL 注入的问题，因为 SQL 参数往往是从方法参数传入的。</p>
+<p>如何避免 SQL 注入攻击呢？一个办法是对所有字符串进行转义（很麻烦，推荐），另一个办法就是使用 <code>PreparedStatement</code> （比 <code>Statement</code> 更快更安全）。</p>
+<p>使用 <code>PreparedStatement</code> 可以完全避免 SQL 注入的问题，因为 <code>PreparedStatement</code> 始终使用 <code>?</code> 作为占位符，并且把数据连同 SQL 本身传给数据库，这样可以保证每次传给数据库的 SQL 语句是相同的，只是占位符的数据不同，还能高效利用数据库本身对查询的缓存。</p>
+<p>如此，上面使用 <code>Statement</code> 的代码改为使用 <code>PreparedStatement</code> ，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>Connection conn <span style="color:#000;font-weight:bold">=</span> DriverManager<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getConnection</span><span style="color:#000;font-weight:bold">(</span>JDBC_URL<span style="color:#000;font-weight:bold">,</span> JDBC_USER<span style="color:#000;font-weight:bold">,</span> JDBC_PASSWORD<span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>PreparedStatement ps <span style="color:#000;font-weight:bold">=</span> conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">prepareStatement</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;SELECT id, grade, name, gender FROM students WHERE gender=? AND grade=?&#34;</span><span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">// 必须首先调用setObject() 设置每个占位符 ? 的值
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setObject</span><span style="color:#000;font-weight:bold">(</span>1<span style="color:#000;font-weight:bold">,</span> <span style="color:#d14">&#34;M&#34;</span><span style="color:#000;font-weight:bold">);</span> <span style="color:#998;font-style:italic">// 注意：索引从1开始
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setObject</span><span style="color:#000;font-weight:bold">(</span>2<span style="color:#000;font-weight:bold">,</span> 3<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>ResultSet rs <span style="color:#000;font-weight:bold">=</span> ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">executeQuery</span><span style="color:#000;font-weight:bold">())</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#000;font-weight:bold">while</span> <span style="color:#000;font-weight:bold">(</span>rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">next</span><span style="color:#000;font-weight:bold">())</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#458;font-weight:bold">long</span> id <span style="color:#000;font-weight:bold">=</span> rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getLong</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;id&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#458;font-weight:bold">long</span> grade <span style="color:#000;font-weight:bold">=</span> rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getLong</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;grade&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>				String name <span style="color:#000;font-weight:bold">=</span> rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getString</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;name&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>				String gender <span style="color:#000;font-weight:bold">=</span> rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getString</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;gender&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>:: 在 ResultSet 获取列时，索引从 1 开始而不是 0 ，在 PrepareStatement 的设置占位符时索引也是从 1 开始。</p>
+</blockquote>
+<p>注意到 JDBC 查询的返回值总是 <code>ResultSet</code> ，即使我们写这样的聚合查询 <code>SELECT SUM(score) FROM ...</code> ，也需要按结果集读取：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ResultSet rs <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span>rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">next</span><span style="color:#000;font-weight:bold">())</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#458;font-weight:bold">double</span> sum <span style="color:#000;font-weight:bold">=</span> rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getDouble</span><span style="color:#000;font-weight:bold">(</span>1<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="jdbc-更新">JDBC 更新</h3>
+<p>数据库操作总结起来就四个字：增查改删，CRUD（Create，Retrieve，Update 和 Delete）。</p>
+<p>查询，就是使用 <code>PreparedStatement</code> 进行各种 <code>SELECT</code> ，然后处理结果集。</p>
+<p><strong>插入</strong></p>
+<p>插入操作是 <code>INSERT</code> ，即插入一条新记录。通过 JDBC 进行插入，本质上了也是用 <code>PreparedStatement</code> 执行一条 SQL 语句，不过最后执行的不是 <code>execteQuery()</code> ，而是 <code>execteUpdate()</code> 。示例代码如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>Connection conn <span style="color:#000;font-weight:bold">=</span> DriverManager<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getConnection</span><span style="color:#000;font-weight:bold">(</span>JDBC_URL<span style="color:#000;font-weight:bold">,</span> JDBC_USER<span style="color:#000;font-weight:bold">,</span> JDBC_PASSWORD<span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>PreparedStatement ps <span style="color:#000;font-weight:bold">=</span> conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">prepareStatement</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;INSERT INTO students (id, grade, name, gendar) VALUES (?,?,?,?)&#34;</span><span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setObject</span><span style="color:#000;font-weight:bold">(</span>1<span style="color:#000;font-weight:bold">,</span> 999<span style="color:#000;font-weight:bold">);</span>   <span style="color:#998;font-style:italic">// 注意：索引从1开始
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setObject</span><span style="color:#000;font-weight:bold">(</span>2<span style="color:#000;font-weight:bold">,</span> 1<span style="color:#000;font-weight:bold">);</span>     <span style="color:#998;font-style:italic">// grade
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setObject</span><span style="color:#000;font-weight:bold">(</span>3<span style="color:#000;font-weight:bold">,</span> <span style="color:#d14">&#34;Bob&#34;</span><span style="color:#000;font-weight:bold">);</span> <span style="color:#998;font-style:italic">// name
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setObject</span><span style="color:#000;font-weight:bold">(</span>4<span style="color:#000;font-weight:bold">,</span> <span style="color:#d14">&#34;M&#34;</span><span style="color:#000;font-weight:bold">);</span>   <span style="color:#998;font-style:italic">// gender
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>		<span style="color:#458;font-weight:bold">int</span> n <span style="color:#000;font-weight:bold">=</span> ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">executeUpdate</span><span style="color:#000;font-weight:bold">();</span> <span style="color:#998;font-style:italic">// 1 返回 int，表示插入的记录数量
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>插入并获取主键</strong></p>
+<p>如果数据库的表设置了自增主键，那么在执行 <code>INSERT</code> 语句时，并不需要指定主键，数据库会自动分配主键。</p>
+<p>对于使用自增主键的程序，有个额外的步骤，就是如何获取插入后的自增主键的值？要获取自增主键，不能先插入，再查询。因为两条 SQL 执行期间可能有别的程序也插入了同一个表。获取自增主键的正确写法是在创建 <code>PreparedStatement</code> 的时候，指定一个 <code>RETURN_GENERATED_KEYS</code> 标志位，表示 JDBC 驱动必须返回插入的自增主键。示例代码如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>Connection conn <span style="color:#000;font-weight:bold">=</span> DriverManager<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getConnection</span><span style="color:#000;font-weight:bold">(</span>JDBC_URL<span style="color:#000;font-weight:bold">,</span> JDBC_USER<span style="color:#000;font-weight:bold">,</span> JDBC_PASSWORD<span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>Preparestatement ps <span style="color:#000;font-weight:bold">=</span> conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">prepareStatement</span><span style="color:#000;font-weight:bold">(</span>
+</span></span><span style="display:flex;"><span>													<span style="color:#d14">&#34;INSERT INTO students (grade, name, gender) VALUES (?,?,?)&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>													Statement<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">RETURN_GENERATED_KEYS</span><span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setObject</span><span style="color:#000;font-weight:bold">(</span>1<span style="color:#000;font-weight:bold">,</span> 1<span style="color:#000;font-weight:bold">);</span>     <span style="color:#998;font-style:italic">// grade
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setObject</span><span style="color:#000;font-weight:bold">(</span>2<span style="color:#000;font-weight:bold">,</span> <span style="color:#d14">&#34;Bob&#34;</span><span style="color:#000;font-weight:bold">);</span> <span style="color:#998;font-style:italic">// name
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setObject</span><span style="color:#000;font-weight:bold">(</span>3<span style="color:#000;font-weight:bold">,</span> <span style="color:#d14">&#34;M&#34;</span><span style="color:#000;font-weight:bold">);</span>   <span style="color:#998;font-style:italic">// gender
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>		<span style="color:#458;font-weight:bold">int</span> n <span style="color:#000;font-weight:bold">=</span> ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">executeUpdate</span><span style="color:#000;font-weight:bold">();</span> <span style="color:#998;font-style:italic">// 1
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>ResultSet rs <span style="color:#000;font-weight:bold">=</span> ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getGeneratedKeys</span><span style="color:#000;font-weight:bold">())</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span>rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">next</span><span style="color:#000;font-weight:bold">())</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#458;font-weight:bold">long</span> id <span style="color:#000;font-weight:bold">=</span> rs<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getLong</span><span style="color:#000;font-weight:bold">(</span>1<span style="color:#000;font-weight:bold">);</span> <span style="color:#998;font-style:italic">// 注意：索引从1开始
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>			<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>观察上述代码，有两点注意事项：</p>
+<ul>
+<li>调用 <code>prepareStatement()</code> 时，第二个参数必须传入常量 <code>Statement.RETURN_GENERATED_KEYS</code> ，否则 JDBC 驱动不会返回自增主键；</li>
+<li>执行 <code>execteUpdate()</code> 方法后，必须调用 <code>getGeneratedkeys()</code> 获取一个 <code>ResultSet</code> 对象，这个对象包含了数据库自动生成的主键的值，读取该对象的每一行来获取自增主键的值。注意，如果一次插多条记录，那么这个 <code>ResultSet</code> 对象就会有多行返回值。如果插入时有多列自增，那么 <code>ResultSet</code> 对象的每一行都会对应多个自增值（自增列不一定必须是主键）。</li>
+</ul>
+<p><strong>更新</strong></p>
+<p>更新操作是 <code>UPDATE</code> 语句，它可以一次更新若干列的记录。更新操作和插入操作在 JDBC 代码的层面上实际上没有区别，除了 SQL 语句不同：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>Connection conn <span style="color:#000;font-weight:bold">=</span> DriverManager<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getConnection</span><span style="color:#000;font-weight:bold">(</span>JDBC_URL<span style="color:#000;font-weight:bold">,</span> JDBC_USER<span style="color:#000;font-weight:bold">,</span> JDBC_PASSWORD<span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>PreparedStatement ps <span style="color:#000;font-weight:bold">=</span> conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">prepareStatement</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;UPDATE students SET name=? WHERE id=?&#34;</span><span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setObject</span><span style="color:#000;font-weight:bold">(</span>1<span style="color:#000;font-weight:bold">,</span> <span style="color:#d14">&#34;Bob&#34;</span><span style="color:#000;font-weight:bold">);</span> <span style="color:#998;font-style:italic">// 注意：索引从1开始
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setObject</span><span style="color:#000;font-weight:bold">(</span>2<span style="color:#000;font-weight:bold">,</span> 999<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#458;font-weight:bold">int</span> n <span style="color:#000;font-weight:bold">=</span> ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">executeUpdate</span><span style="color:#000;font-weight:bold">();</span> <span style="color:#998;font-style:italic">// 返回更新的行数
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>*注意， <code>execteUpdate()</code> 返回数据库实际更新的行数。返回结果可能是正数，也可能是 0 （表示没有任何记录更新）。</p>
+<p><strong>删除</strong></p>
+<p>删除操作是 <code>DELETE</code> 语句，它可以一次删除若干列。和更新一样，除了 SQL 语句不同外，JDBC 代码都是相同的：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>Connection conn <span style="color:#000;font-weight:bold">=</span> DriverManager<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getConnection</span><span style="color:#000;font-weight:bold">(</span>JDBC_URL<span style="color:#000;font-weight:bold">,</span> JDBC_USER<span style="color:#000;font-weight:bold">,</span> JDBC_PASSWORD<span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>PreparedStatement ps <span style="color:#000;font-weight:bold">=</span> conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">prepareStatement</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;DELETE FROM students WHERE id=?&#34;</span><span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setObject</span><span style="color:#000;font-weight:bold">(</span>1<span style="color:#000;font-weight:bold">,</span> 999<span style="color:#000;font-weight:bold">);</span> <span style="color:#998;font-style:italic">// 注意：索引从1开始
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		<span style="color:#458;font-weight:bold">int</span> n <span style="color:#000;font-weight:bold">=</span> ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">executeUpdate</span><span style="color:#000;font-weight:bold">();</span> <span style="color:#998;font-style:italic">// 删除的行数
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="jdbc-事务">JDBC 事务</h3>
+<p>要在 JDBC 中执行事务，本质上就是如何把多条 SQL 包裹在一个数据库事务中执行。如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Connection conn <span style="color:#000;font-weight:bold">=</span> openConnection<span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// 关闭自动提交
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setAutoCommit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">false</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// 执行多条 SQL 语句
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	insert<span style="color:#000;font-weight:bold">();</span> update<span style="color:#000;font-weight:bold">();</span> delete<span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// 提交事务
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">commit</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">catch</span> <span style="color:#000;font-weight:bold">(</span>SQLException e<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// 回滚事务
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">rollback</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">finally</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setAutoCommit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">true</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">close</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>实际上，默认情况下，我们获取到 <code>Connection</code> 连接后，总是处于“自动提交”模式（一条 SQL 语句其实就是一个“隐式事务”）。只要关闭了 <code>Connection</code> 的 <code>autoCommit</code> ，那么就可以在一个事务中执行多条语句，事务以 <code>commit()</code> 方法结束。</p>
+<p>如果要设定事务的隔离级别，可以使用如下代码：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 设定隔离级别为READ COMMITTED:
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setTransactionIsolation</span><span style="color:#000;font-weight:bold">(</span>Connection<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">TRANSACTION_READ_COMMITTED</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果没有调用上述方法，那么会使用数据库的默认隔离级别。MySQL 的默认隔离级别是<code>REPEATABLE READ</code>。</p>
+<h3 id="jdbc-batch">JDBC Batch</h3>
+<p>通过一个循环来执行每个 <code>PreparedStatement</code> 虽然可靠，但是性能很低。SQL 数据库对 SQL 语句相同但参数不同的若干语句可以作为 batch 执行（批量执行），这种操作有特别优化，速度远远快于循环执行每个 SQL。示例代码如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>PreparedStatement ps <span style="color:#000;font-weight:bold">=</span> conn<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">PreparedStatement</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;INSERT INTO students (name, gender, grade, score) VALUES (?,?,?,?)&#34;</span><span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// 对同一个 PreparedStatement 反复设置参数并调用 addBatch():
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#000;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span>Student s <span style="color:#000;font-weight:bold">:</span> students<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setString</span><span style="color:#000;font-weight:bold">(</span>1<span style="color:#000;font-weight:bold">,</span> s<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">name</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setBoolean</span><span style="color:#000;font-weight:bold">(</span>2<span style="color:#000;font-weight:bold">,</span> s<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">gender</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setInt</span><span style="color:#000;font-weight:bold">(</span>3<span style="color:#000;font-weight:bold">,</span> s<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">grade</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setInt</span><span style="color:#000;font-weight:bold">(</span>4<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">s</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">score</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">addBatch</span><span style="color:#000;font-weight:bold">();</span>          <span style="color:#998;font-style:italic">// 添加到 batch
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// 执行 batch
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#458;font-weight:bold">int</span><span style="color:#000;font-weight:bold">[]</span> ns <span style="color:#000;font-weight:bold">=</span> ps<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">executeBatch</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">for</span><span style="color:#000;font-weight:bold">(</span><span style="color:#458;font-weight:bold">int</span> n <span style="color:#000;font-weight:bold">:</span> ns<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		System<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">out</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">println</span><span style="color:#000;font-weight:bold">(</span>n <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34; insert.&#34;</span><span style="color:#000;font-weight:bold">);</span> <span style="color:#998;font-style:italic">// batch 中每个 SQL 执行的结果数量
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>执行 batch 和执行一个 SQL 不同点在于，需要对同一个 <code>PreparedStatement</code> 反复设置参数并调用 <code>addBatch()</code> ，这样就相当于给一个 SQL 加上了多组参数，相当于变成了“多行”SQL。</p>
+<p>第二个不同点是调用的不是 <code>executeUpdate()</code> ，而是 <code>executeBatch()</code> ，因为我们设置了多组参数，相应地，返回结果也是多个 <code>int</code> 值，因此返回类型是 <code>int[]</code> ，循环 <code>int[]</code> 数组即可获取每组参数执行后影响的结果数量。</p>
+<h3 id="jdbc-连接池">JDBC 连接池</h3>
+<p>在执行 JDBC 的增删改查的操作时，如果每一次操作都来一次“打开连接，操作，关闭连接”，那么创建和销毁 JDBC 连接的开销就太大了。</p>
+<p>为了避免频繁地创建和销毁 JDBC 连接，我们可能通过连接池（Connection Pool）复用已经创建好的连接。JDBC 连接池有一个标准的接口 <code>javax.sql.DataSource</code> 。要使用 JDBC 连接池，我们必须选择一个 JDBC 连接池的实现。常用的 JDBC 连接池有：</p>
+<ul>
+<li>HikariCP（使用最广泛）</li>
+<li>C3P0</li>
+<li>BoneCP</li>
+<li>Druid（阿里的，国内使用最多）</li>
+</ul>
+<p>此处，我们以 HikariCP 为例，要使用 JDBC 连接池，先添加 HikariCP 的依赖：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#000080">&lt;dependency&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000080">&lt;groupId&gt;</span>com.zaxxer<span style="color:#000080">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000080">&lt;artifactId&gt;</span>HikariCP<span style="color:#000080">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000080">&lt;version&gt;</span>2.7.1<span style="color:#000080">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000080">&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>紧接着，创建一个 <code>DataSource</code> 实例，这个实例就是连接池：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>HikariConfig config <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> HikariConfig<span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>config<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setJdbcUrl</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;jdbc:mysql://localhost:3306/test&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>config<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setUsername</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;root&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>config<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setPassword</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;password&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>config<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">addDataSourceProperty</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;connectionTimeout&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#d14">&#34;1000&#34;</span><span style="color:#000;font-weight:bold">);</span> <span style="color:#998;font-style:italic">// 连接超时：1秒
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>config<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">addDataSourceProperty</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;idleTimeout&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#d14">&#34;60000&#34;</span><span style="color:#000;font-weight:bold">);</span>      <span style="color:#998;font-style:italic">// 空闲超时：60秒
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>config<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">addDataSourceProperty</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;maximumPoolSize&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#d14">&#34;10&#34;</span><span style="color:#000;font-weight:bold">);</span>     <span style="color:#998;font-style:italic">// 最大连接数：10
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>DataSource ds <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> HikariDataSource<span style="color:#000;font-weight:bold">(</span>config<span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>有了连接池以后，我们通过 <code>ds.getConnection()</code> 来代替 <code>DriverManager.getConnection()</code> 获取一个连接，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">(</span>Connection conn <span style="color:#000;font-weight:bold">=</span> ds<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getConnection</span><span style="color:#000;font-weight:bold">())</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#998;font-style:italic">// 在此处获取连接
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#998;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>   <span style="color:#998;font-style:italic">// 在此处“关闭”连接（不是真正的关闭，只是释放到连接池中，以便下次获取连接时直接返回）
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>连接池内部维护了若干个 <code>Connection</code> 实例，如果调用 <code>ds.getConnection()</code> ，就选择一个空闲连接，并标记它为“正在使用”然后返回，如果对 <code>Connection</code> 调用 <code>close()</code> ，那么就把连接再次标记为“空闲”从而等待下次调用。这样一来，我们就通过连接池维护了少量连接，但可以频繁地执行大量的 SQL 语句。</p>
+<p>通常连接池提供了大量的参数可以配置，例如，维护的最小、最大活动连接数，指定一个连接在空闲一段时间后自动关闭等，需要根据应用程序的负载合理地配置这些参数。此外，大多数连接池都提供了详细的实时状态以便进行监控。</p>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="/about" target="_blank">
+            
+            将喜欢的一切留在身边，这便是努力的意义
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

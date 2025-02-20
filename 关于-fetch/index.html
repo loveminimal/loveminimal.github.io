@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="关于 fetch - https://aituyaa.com/%E5%85%B3%E4%BA%8E-fetch/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>关于 fetch</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">关于 fetch</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/javascript/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：JavaScript <sup>24</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/ajax/">Ajax</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/callapply-%E5%92%8C-bind/">call、apply 和 bind</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/canvas/">Canvas</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/devmaps/frontend/">Frontend</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/js-%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE/">JS 中的拖放</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/js-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%91%98%E5%BD%95/">JS 高级程序设计·摘录</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/react/">React</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/react-%E5%9F%BA%E7%A1%80%E8%84%9A%E6%89%8B%E6%9E%B6%E7%A4%BA%E4%BE%8B/">React 基础脚手架示例</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/source-map/">Source Map</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/typescript-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">TypeScript 那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/web-%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%9A%8F%E6%83%B3/">Web 开发相关体系结构随想</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E-fetch/">关于 fetch</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E-promise/">关于 Promise</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%89%8D%E7%AB%AF%E6%B5%85%E8%B0%88/">前端浅谈</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2/">文件转换</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/">模块化编程</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8/">浏览器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BD%8D%E7%BD%AE/">浏览器中的尺寸大小和位置</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%B8%B2%E6%9F%93%E8%BF%87%E7%A8%8B/">浏览器的渲染过程</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/">滚动条样式</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%94%9F%E6%88%90%E5%99%A8/">生成器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%BD%91%E9%A1%B5%E4%B8%AD%E7%9A%84%E9%94%9A%E7%82%B9%E8%B7%B3%E8%BD%AC/">网页中的锚点跳转</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E8%B7%A8%E5%9F%9F/">跨域</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/">防抖与节流</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2024-12-12&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2024-12-12&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            2467 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            5 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/javascript">JavaScript</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#基础">基础</a>
+      <ul>
+        <li><a href="#基本用法">基本用法</a></li>
+        <li><a href="#处理错误">处理错误</a></li>
+        <li><a href="#使用-asyncawait">使用 <code>async/await</code></a></li>
+        <li><a href="#配置选项">配置选项</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结">总结</a></li>
+    <li><a href="#附录">附录</a>
+      <ul>
+        <li><a href="#fetch-相较于传统的-xhr-的优势和不足">fetch 相较于传统的 XHR 的优势和不足</a>
+          <ul>
+            <li><a href="#优势的方面">优势的方面</a></li>
+            <li><a href="#不足的方面">不足的方面</a></li>
+            <li><a href="#总结-1"><strong>总结</strong></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p><code>fetch</code> 是现代 JavaScript 中用于发起网络请求的一个全局 API。它提供了一种简单、灵活的方式来与服务器进行通信，基于 <code>Promise</code>，因此非常适合处理异步操作。<code>fetch</code> 是 <code>XMLHttpRequest</code> 的替代品，广泛用于前端开发中。</p>
+<h2 id="基础">基础</h2>
+<h3 id="基本用法">基本用法</h3>
+<p><code>fetch</code> 的基本语法如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>fetch(resource, options)
+</span></span><span style="display:flex;"><span>  .then(response =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// 处理响应
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#000;font-weight:bold">catch</span>(error =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// 处理错误
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  });
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong><code>resource</code></strong>: 请求的资源，通常是一个 URL。</li>
+<li><strong><code>options</code></strong>: 可选的配置对象，用于指定请求的方法、头信息、请求体等。</li>
+</ul>
+<p><strong>示例：GET 请求</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>fetch(<span style="color:#d14">&#39;https://jsonplaceholder.typicode.com/posts&#39;</span>)
+</span></span><span style="display:flex;"><span>  .then(response =&gt; response.json()) <span style="color:#998;font-style:italic">// 将响应转换为 JSON
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  .then(data =&gt; {
+</span></span><span style="display:flex;"><span>    console.log(data); <span style="color:#998;font-style:italic">// 输出: 包含所有帖子的数组
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#000;font-weight:bold">catch</span>(error =&gt; {
+</span></span><span style="display:flex;"><span>    console.error(<span style="color:#d14">&#39;Error:&#39;</span>, error);
+</span></span><span style="display:flex;"><span>  });
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>示例：POST 请求</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>fetch(<span style="color:#d14">&#39;https://jsonplaceholder.typicode.com/posts&#39;</span>, {
+</span></span><span style="display:flex;"><span>  method<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;POST&#39;</span>, <span style="color:#998;font-style:italic">// 请求方法
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  headers<span style="color:#000;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;Content-Type&#39;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;application/json&#39;</span> <span style="color:#998;font-style:italic">// 请求头
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  },
+</span></span><span style="display:flex;"><span>  body<span style="color:#000;font-weight:bold">:</span> JSON.stringify({
+</span></span><span style="display:flex;"><span>    title<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;foo&#39;</span>,
+</span></span><span style="display:flex;"><span>    body<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;bar&#39;</span>,
+</span></span><span style="display:flex;"><span>    userId<span style="color:#000;font-weight:bold">:</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>  }) <span style="color:#998;font-style:italic">// 请求体
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>})
+</span></span><span style="display:flex;"><span>  .then(response =&gt; response.json())
+</span></span><span style="display:flex;"><span>  .then(data =&gt; {
+</span></span><span style="display:flex;"><span>    console.log(data); <span style="color:#998;font-style:italic">// 输出: 新创建的帖子对象
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#000;font-weight:bold">catch</span>(error =&gt; {
+</span></span><span style="display:flex;"><span>    console.error(<span style="color:#d14">&#39;Error:&#39;</span>, error);
+</span></span><span style="display:flex;"><span>  });
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>处理响应</strong></p>
+<p><code>fetch</code> 返回的 <code>response</code> 对象包含多种方法来处理不同类型的响应数据：</p>
+<ul>
+<li><strong><code>response.json()</code></strong>: 将响应体解析为 JSON 格式。</li>
+<li><strong><code>response.text()</code></strong>: 将响应体解析为文本格式。</li>
+<li><strong><code>response.blob()</code></strong>: 将响应体解析为 <code>Blob</code> 对象。</li>
+<li><strong><code>response.arrayBuffer()</code></strong>: 将响应体解析为 <code>ArrayBuffer</code> 对象。</li>
+</ul>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>fetch(<span style="color:#d14">&#39;https://jsonplaceholder.typicode.com/posts/1&#39;</span>)
+</span></span><span style="display:flex;"><span>  .then(response =&gt; response.json())
+</span></span><span style="display:flex;"><span>  .then(data =&gt; {
+</span></span><span style="display:flex;"><span>    console.log(data); <span style="color:#998;font-style:italic">// 输出: 单个帖子的对象
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#000;font-weight:bold">catch</span>(error =&gt; {
+</span></span><span style="display:flex;"><span>    console.error(<span style="color:#d14">&#39;Error:&#39;</span>, error);
+</span></span><span style="display:flex;"><span>  });
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="处理错误">处理错误</h3>
+<p><code>fetch</code> 只有在网络错误（如无法连接到服务器）时才会进入 <code>catch</code> 块。如果服务器返回一个错误状态码（如 404 或 500），<code>fetch</code> 不会自动抛出错误，你需要手动检查 <code>response.ok</code> 或 <code>response.status</code>。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>fetch(<span style="color:#d14">&#39;https://jsonplaceholder.typicode.com/nonexistent&#39;</span>)
+</span></span><span style="display:flex;"><span>  .then(response =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>response.ok) {
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">throw</span> <span style="color:#000;font-weight:bold">new</span> <span style="color:#0086b3">Error</span>(<span style="color:#d14">&#39;Network response was not ok&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> response.json();
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>  .then(data =&gt; {
+</span></span><span style="display:flex;"><span>    console.log(data);
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#000;font-weight:bold">catch</span>(error =&gt; {
+</span></span><span style="display:flex;"><span>    console.error(<span style="color:#d14">&#39;Error:&#39;</span>, error);
+</span></span><span style="display:flex;"><span>  });
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="使用-asyncawait">使用 <code>async/await</code></h3>
+<p><code>fetch</code> 与 <code>async/await</code> 结合使用可以使代码更加简洁和易读。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">async</span> <span style="color:#000;font-weight:bold">function</span> fetchPosts() {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">try</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">const</span> response <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">await</span> fetch(<span style="color:#d14">&#39;https://jsonplaceholder.typicode.com/posts&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>response.ok) {
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">throw</span> <span style="color:#000;font-weight:bold">new</span> <span style="color:#0086b3">Error</span>(<span style="color:#d14">&#39;Network response was not ok&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">const</span> data <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">await</span> response.json();
+</span></span><span style="display:flex;"><span>    console.log(data);
+</span></span><span style="display:flex;"><span>  } <span style="color:#000;font-weight:bold">catch</span> (error) {
+</span></span><span style="display:flex;"><span>    console.error(<span style="color:#d14">&#39;Error:&#39;</span>, error);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fetchPosts();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="配置选项">配置选项</h3>
+<p><code>fetch</code> 的 <code>options</code> 参数可以包含以下常用选项：</p>
+<ul>
+<li><strong><code>method</code></strong>: 请求方法（如 <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>）。</li>
+<li><strong><code>headers</code></strong>: 请求头（如 <code>Content-Type</code>, <code>Authorization</code>）。</li>
+<li><strong><code>body</code></strong>: 请求体（通常用于 <code>POST</code> 或 <code>PUT</code> 请求）。</li>
+<li><strong><code>mode</code></strong>: 请求模式（如 <code>cors</code>, <code>no-cors</code>, <code>same-origin</code>）。</li>
+<li><strong><code>credentials</code></strong>: 是否发送 cookies（如 <code>omit</code>, <code>same-origin</code>, <code>include</code>）。</li>
+<li><strong><code>cache</code></strong>: 缓存模式（如 <code>default</code>, <code>no-store</code>, <code>reload</code>, <code>no-cache</code>, <code>force-cache</code>）。</li>
+<li><strong><code>redirect</code></strong>: 重定向模式（如 <code>follow</code>, <code>error</code>, <code>manual</code>）。</li>
+</ul>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>fetch(<span style="color:#d14">&#39;https://jsonplaceholder.typicode.com/posts&#39;</span>, {
+</span></span><span style="display:flex;"><span>  method<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;POST&#39;</span>,
+</span></span><span style="display:flex;"><span>  headers<span style="color:#000;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;Content-Type&#39;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;application/json&#39;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  body<span style="color:#000;font-weight:bold">:</span> JSON.stringify({
+</span></span><span style="display:flex;"><span>    title<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;foo&#39;</span>,
+</span></span><span style="display:flex;"><span>    body<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;bar&#39;</span>,
+</span></span><span style="display:flex;"><span>    userId<span style="color:#000;font-weight:bold">:</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>  }),
+</span></span><span style="display:flex;"><span>  mode<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;cors&#39;</span>,
+</span></span><span style="display:flex;"><span>  credentials<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;same-origin&#39;</span>
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>  .then(response =&gt; response.json())
+</span></span><span style="display:flex;"><span>  .then(data =&gt; {
+</span></span><span style="display:flex;"><span>    console.log(data);
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#000;font-weight:bold">catch</span>(error =&gt; {
+</span></span><span style="display:flex;"><span>    console.error(<span style="color:#d14">&#39;Error:&#39;</span>, error);
+</span></span><span style="display:flex;"><span>  });
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="总结">总结</h2>
+<p><code>fetch</code> 是一个强大且灵活的 API，用于发起网络请求。它基于 <code>Promise</code>，因此非常适合处理异步操作。通过 <code>fetch</code>，你可以轻松地与服务器进行通信，处理各种类型的响应数据，并结合 <code>async/await</code> 使代码更加简洁和易读。</p>
+<h2 id="附录">附录</h2>
+<h3 id="fetch-相较于传统的-xhr-的优势和不足">fetch 相较于传统的 XHR 的优势和不足</h3>
+<h4 id="优势的方面">优势的方面</h4>
+<p><strong>1、基于 Promise</strong></p>
+<ul>
+<li><strong>优势</strong>: <code>fetch</code> 基于 <code>Promise</code>，使得异步代码的编写更加简洁和直观。可以使用 <code>then()</code> 和 <code>catch()</code> 链式调用，或者结合 <code>async/await</code> 编写更易读的代码。
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>fetch(<span style="color:#d14">&#39;https://api.example.com/data&#39;</span>)
+</span></span><span style="display:flex;"><span>  .then(response =&gt; response.json())
+</span></span><span style="display:flex;"><span>  .then(data =&gt; console.log(data))
+</span></span><span style="display:flex;"><span>  .<span style="color:#000;font-weight:bold">catch</span>(error =&gt; console.error(error));
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li><strong>对比 XHR</strong>: XHR 使用回调函数处理异步操作，容易导致“回调地狱”，代码可读性较差。</li>
+</ul>
+<p><strong>2、更简洁的 API</strong></p>
+<ul>
+<li><strong>优势</strong>: <code>fetch</code> 的 API 设计更加简洁，语法更现代化。只需调用 <code>fetch(url, options)</code>，而不需要像 XHR 那样手动设置 <code>open()</code>、<code>send()</code> 和事件监听器。
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>fetch(<span style="color:#d14">&#39;https://api.example.com/data&#39;</span>, {
+</span></span><span style="display:flex;"><span>  method<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;POST&#39;</span>,
+</span></span><span style="display:flex;"><span>  headers<span style="color:#000;font-weight:bold">:</span> { <span style="color:#d14">&#39;Content-Type&#39;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;application/json&#39;</span> },
+</span></span><span style="display:flex;"><span>  body<span style="color:#000;font-weight:bold">:</span> JSON.stringify({ key<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;value&#39;</span> })
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li><strong>对比 XHR</strong>: XHR 的 API 较为冗长，需要手动设置请求方法、头信息和事件监听器。</li>
+</ul>
+<p><strong>3、内置支持多种数据格式</strong></p>
+<ul>
+<li><strong>优势</strong>: <code>fetch</code> 提供了内置方法来处理不同类型的响应数据（如 <code>response.json()</code>、<code>response.text()</code>、<code>response.blob()</code> 等），使得处理响应更加方便。
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>fetch(<span style="color:#d14">&#39;https://api.example.com/data&#39;</span>)
+</span></span><span style="display:flex;"><span>  .then(response =&gt; response.json()) <span style="color:#998;font-style:italic">// 自动解析 JSON
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  .then(data =&gt; console.log(data));
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li><strong>对比 XHR</strong>: XHR 需要手动解析响应数据（如 <code>JSON.parse(xhr.responseText)</code>）。</li>
+</ul>
+<p><strong>4、更现代的错误处理</strong></p>
+<ul>
+<li><strong>优势</strong>: <code>fetch</code> 的错误处理更加现代化。只有网络错误（如无法连接到服务器）才会触发 <code>catch</code> 块，而 HTTP 错误（如 404 或 500）不会自动抛出错误，需要手动检查 <code>response.ok</code> 或 <code>response.status</code>。
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>fetch(<span style="color:#d14">&#39;https://api.example.com/data&#39;</span>)
+</span></span><span style="display:flex;"><span>  .then(response =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>response.ok) {
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">throw</span> <span style="color:#000;font-weight:bold">new</span> <span style="color:#0086b3">Error</span>(<span style="color:#d14">&#39;Network response was not ok&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> response.json();
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#000;font-weight:bold">catch</span>(error =&gt; console.error(error));
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li><strong>对比 XHR</strong>: XHR 的错误处理依赖于 <code>status</code> 属性，需要手动检查状态码。</li>
+</ul>
+<p><strong>5、支持跨域请求（CORS）</strong></p>
+<ul>
+<li><strong>优势</strong>: <code>fetch</code> 默认支持跨域请求（CORS），并且可以通过 <code>mode</code> 选项（如 <code>cors</code>、<code>no-cors</code>、<code>same-origin</code>）灵活控制请求的行为。
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>fetch(<span style="color:#d14">&#39;https://api.example.com/data&#39;</span>, {
+</span></span><span style="display:flex;"><span>  mode<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;cors&#39;</span>
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li><strong>对比 XHR</strong>: XHR 也支持 CORS，但配置相对复杂。</li>
+</ul>
+<p><strong>6、支持流式数据</strong></p>
+<ul>
+<li><strong>优势</strong>: <code>fetch</code> 支持流式数据处理，可以逐步读取大文件或流式响应。
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>fetch(<span style="color:#d14">&#39;https://api.example.com/large-file&#39;</span>)
+</span></span><span style="display:flex;"><span>  .then(response =&gt; response.body.getReader())
+</span></span><span style="display:flex;"><span>  .then(reader =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// 逐步读取数据
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  });
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li><strong>对比 XHR</strong>: XHR 不支持流式数据处理。</li>
+</ul>
+<h4 id="不足的方面">不足的方面</h4>
+<p><strong>1、不支持进度事件</strong></p>
+<ul>
+<li><strong>不足</strong>: <code>fetch</code> 不支持进度事件（如 <code>xhr.upload.onprogress</code> 或 <code>xhr.onprogress</code>），因此无法实时监控文件上传或下载的进度。
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> xhr <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> XMLHttpRequest();
+</span></span><span style="display:flex;"><span>xhr.upload.onprogress <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (event) {
+</span></span><span style="display:flex;"><span>  console.log(<span style="color:#d14">`Uploaded </span><span style="color:#d14">${</span>event.loaded<span style="color:#d14">}</span><span style="color:#d14"> of </span><span style="color:#d14">${</span>event.total<span style="color:#d14">}</span><span style="color:#d14"> bytes`</span>);
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li><strong>对比 XHR</strong>: XHR 提供了 <code>onprogress</code> 事件，可以方便地监控上传或下载的进度。</li>
+</ul>
+<p><strong>2、默认不发送 cookies</strong></p>
+<ul>
+<li><strong>不足</strong>: <code>fetch</code> 默认不会发送跨域请求的 cookies（除非显式设置 <code>credentials: 'include'</code>）。
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>fetch(<span style="color:#d14">&#39; https://api.example.com/data &#39;</span>, {
+</span></span><span style="display:flex;"><span>  credentials<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;include&#39;</span> <span style="color:#998;font-style:italic">// 需要显式开启
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>});
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li><strong>对比 XHR</strong>: XHR 默认会发送 cookies，无需额外配置。</li>
+</ul>
+<p><strong>3、不支持超时设置</strong></p>
+<ul>
+<li><strong>不足</strong>: <code>fetch</code> 没有内置的超时机制，需要手动实现超时逻辑。
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> controller <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> AbortController();
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> signal <span style="color:#000;font-weight:bold">=</span> controller.signal;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>setTimeout(() =&gt; controller.abort(), <span style="color:#099">5000</span>); <span style="color:#998;font-style:italic">// 5 秒超时
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>fetch(<span style="color:#d14">&#39; https://api.example.com/data &#39;</span>, { signal })
+</span></span><span style="display:flex;"><span>  .<span style="color:#000;font-weight:bold">catch</span>(error =&gt; console.error(<span style="color:#d14">&#39;Request timed out&#39;</span>));
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li><strong>对比 XHR</strong>: XHR 提供了 <code>timeout</code> 属性，可以轻松设置请求超时。</li>
+</ul>
+<p><strong>4、兼容性问题</strong></p>
+<ul>
+<li><strong>不足</strong>: <code>fetch</code> 在某些旧版浏览器（如 IE11）中不被支持，需要使用 polyfill 来兼容。
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#000080">script</span> <span style="color:#008080">src</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js&#34;</span>&gt;&lt;/<span style="color:#000080">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#000080">script</span> <span style="color:#008080">src</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;https://cdn.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js&#34;</span>&gt;&lt;/<span style="color:#000080">script</span>&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li><strong>对比 XHR</strong>: XHR 在所有现代浏览器和旧版浏览器中都得到了广泛支持。</li>
+</ul>
+<p><strong>5、复杂场景下功能不足</strong></p>
+<ul>
+<li><strong>不足</strong>: 在某些复杂场景下（如需要精细控制请求行为或处理二进制数据），<code>fetch</code> 的功能可能不如 XHR 灵活。</li>
+<li><strong>对比 XHR</strong>: XHR 提供了更底层、更精细的控制能力。</li>
+</ul>
+<h4 id="总结-1"><strong>总结</strong></h4>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th><code>fetch</code> 优势</th>
+<th><code>fetch</code> 不足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>API 设计</strong></td>
+<td>基于 <code>Promise</code>，语法简洁，支持链式调用和 <code>async/await</code>。</td>
+<td>不支持进度事件，无法实时监控上传或下载进度。</td>
+</tr>
+<tr>
+<td><strong>错误处理</strong></td>
+<td>现代化错误处理，结合 <code>Promise</code> 更易读。</td>
+<td>默认不发送 cookies，需要显式配置。</td>
+</tr>
+<tr>
+<td><strong>数据处理</strong></td>
+<td>内置支持多种数据格式（如 JSON、文本、Blob）。</td>
+<td>不支持超时设置，需要手动实现。</td>
+</tr>
+<tr>
+<td><strong>兼容性</strong></td>
+<td>现代浏览器支持良好，但需要 polyfill 兼容旧版浏览器。</td>
+<td>在旧版浏览器（如 IE11）中不被支持。</td>
+</tr>
+<tr>
+<td><strong>功能灵活性</strong></td>
+<td>支持流式数据处理，适合处理大文件或流式响应。</td>
+<td>在复杂场景下功能不如 XHR 灵活。</td>
+</tr>
+</tbody>
+</table>
+<p>通过以上对比可以看出，<code>fetch</code> 是一个更现代化、更简洁的 API，适合大多数场景。但在需要精细控制请求行为或兼容旧版浏览器的场景下，XHR 仍然是一个可靠的选择。</p>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="/about" target="_blank">
+            
+            将喜欢的一切留在身边，这便是努力的意义
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

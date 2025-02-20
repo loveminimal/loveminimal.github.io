@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="模块化编程 - https://aituyaa.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>模块化编程</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">模块化编程</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/javascript/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：JavaScript <sup>24</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/ajax/">Ajax</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/callapply-%E5%92%8C-bind/">call、apply 和 bind</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/canvas/">Canvas</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/devmaps/frontend/">Frontend</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/js-%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE/">JS 中的拖放</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/js-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%91%98%E5%BD%95/">JS 高级程序设计·摘录</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/react/">React</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/react-%E5%9F%BA%E7%A1%80%E8%84%9A%E6%89%8B%E6%9E%B6%E7%A4%BA%E4%BE%8B/">React 基础脚手架示例</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/source-map/">Source Map</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/typescript-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">TypeScript 那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/web-%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%9A%8F%E6%83%B3/">Web 开发相关体系结构随想</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E-fetch/">关于 fetch</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E-promise/">关于 Promise</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%89%8D%E7%AB%AF%E6%B5%85%E8%B0%88/">前端浅谈</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2/">文件转换</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/">模块化编程</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8/">浏览器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BD%8D%E7%BD%AE/">浏览器中的尺寸大小和位置</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%B8%B2%E6%9F%93%E8%BF%87%E7%A8%8B/">浏览器的渲染过程</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/">滚动条样式</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%94%9F%E6%88%90%E5%99%A8/">生成器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%BD%91%E9%A1%B5%E4%B8%AD%E7%9A%84%E9%94%9A%E7%82%B9%E8%B7%B3%E8%BD%AC/">网页中的锚点跳转</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E8%B7%A8%E5%9F%9F/">跨域</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/">防抖与节流</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2023-05-25&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2023-09-07&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            6098 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            13 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/javascript">JavaScript</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#简介">简介</a></li>
+    <li><a href="#javascript-的模块化1httpwwwruanyifengcomblog201210javascript_modulehtml">JavaScript 的模块化 <a href="http://www.ruanyifeng.com/blog/2012/10/javascript_module.html">1</a></a>
+      <ul>
+        <li><a href="#原始划分">原始划分</a></li>
+        <li><a href="#对象划分">对象划分</a></li>
+        <li><a href="#立即执行函数划分">立即执行函数划分</a></li>
+        <li><a href="#模块依赖">模块依赖</a></li>
+      </ul>
+    </li>
+    <li><a href="#commonjs">CommonJS</a>
+      <ul>
+        <li><a href="#commonjs-模块原理">CommonJS 模块原理</a></li>
+        <li><a href="#moduleexports-vs-exports">module.exports VS exports</a></li>
+      </ul>
+    </li>
+    <li><a href="#es-module">ES Module</a>
+      <ul>
+        <li><a href="#es-module-vs-commonjs">ES Module VS CommonJS</a></li>
+        <li><a href="#export">export</a></li>
+        <li><a href="#import">import</a></li>
+        <li><a href="#export-default">export default</a></li>
+        <li><a href="#export-与-import-的复合写法">export 与 import 的复合写法</a></li>
+        <li><a href="#import-1">import()</a></li>
+      </ul>
+    </li>
+    <li><a href="#webpack-module">Webpack Module</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <blockquote>
+<p>每一个领域的内容，都要有先问一下 – 是什么？为什么？做什么？怎么做？</p>
+<ul>
+<li>是什么？简述概念；</li>
+<li>为什么？历史发展，出现的原因，优缺点；</li>
+<li>做什么？主要应用场景；</li>
+<li>怎么做？具体使用方法步骤。</li>
+</ul>
+</blockquote>
+<h2 id="简介">简介</h2>
+<p><strong>模块化编程</strong> （模块化程序设计），是指在进行程序设计时将一个大程序按照功能划分为若干小程序模块，每个小程序模块完成一个确定的功能，并在这些模块之间建立必要的联系，通过模块的互相协作完成整个功能的程序设计方法。</p>
+<blockquote>
+<p>:: 大程序 → （功能）小程序模块（ → 子过程） → 模块联系、协作</p>
+</blockquote>
+<p>随着程序规模的扩大，无论是项目本身（编写、扩展、测试、维护），还是经济上的考虑（效率、收支），分工协作都是不可避免的。</p>
+<p>在模块化的过程中可能会产生什么问题呢？ <strong>命名冲突</strong>，本质在于作用域。</p>
+<blockquote>
+<p>:: 实际项目中，模块化开发几乎不会是一个人开发所有模块，那就很难避免命名冲突（小甲和小乙都使用了同一个变量名、函数名），项目越大，越难控制。</p>
+</blockquote>
+<p>下面我们就以 JavaScript 为例来看一下其模块化的发展。</p>
+<blockquote>
+<p>:: 为什么选用 JavaScript 呢？因为 JavaScript 最初的设计是没有模块化考虑的，而是随着其应用场景和范围的变化，逐渐通过各种方式实现了模块化，如此，我们可以看一下其模块化的全貌和历程。</p>
+</blockquote>
+<h2 id="javascript-的模块化1httpwwwruanyifengcomblog201210javascript_modulehtml">JavaScript 的模块化 <a href="http://www.ruanyifeng.com/blog/2012/10/javascript_module.html">1</a></h2>
+<p>1991 年 8 月 6 日 （农历六月廿六），世界上第一个网页诞生。世界上的第一个网页是这样的 <a href="http://info.cern.ch/">http://info.cern.ch/</a> ，只用来作为文本的展示和极其简单的交互。</p>
+<p>![[assets/Pasted image 20230525180236.png]]</p>
+<p><code>&gt; 万维网的发明者，互联网之父蒂姆·伯纳斯·李</code></p>
+<p>检查一下网页源码的话，你会发现，它只是纯 HTML 文本，没有 CSS ，更没有 JavaScript 。</p>
+<blockquote>
+<p>哈坤·利于 1994 年在芝加哥的一次会议上第一次展示了 CSS 的建议；JavaScript 是 1995 年由 Netscape 公司的 Brendan Eich，在网景导航者浏览器上首次设计实现而成。</p>
+</blockquote>
+<p>随着网页越来越像桌面程序，需要一个团队分工协作、进度管理、单元测试等等……开发者不得不使用软件工程的方法，管理网页的业务逻辑。JavaScript 的模块化编程，已经成为一个迫切的需求。</p>
+<p>前面我们已经知道，JavaScript 最初设计的时候就没有考虑到模块化，那么我们要怎么实现它的模块化呢？</p>
+<p>模块化编程是将一个大程序按照功能划分为若干小程序模块，那么，我们我们首先要解决的就是 <strong>划分模块</strong> 。</p>
+<h3 id="原始划分">原始划分</h3>
+<p>我们可以认为模块就是实现特定功能的一组方法（以及记录状态），只要把不同函数简单地放在一起，就算是一个模块。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 这就是一个模块
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">function</span> m1() {
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">/* ... */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> m2() {
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">/* ... */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// ...
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>上面的代码中，函数 <code>m1()</code> 和 <code>m2()</code> ，组成一个模块，使用的时候，直接调用就行了。这样做有以下缺点：</p>
+<pre tabindex="0"><code>- 污染了全局变量，无法保证不与其他模块发生变量名冲突；
+- 模块成员之间看不出直接关系。
+</code></pre><blockquote>
+<p>:: 看，模块化其实就是相反的两个方面： ‘拆分’（隔离、解决冲突）和‘组合’（依赖、导出引入）。</p>
+</blockquote>
+<h3 id="对象划分">对象划分</h3>
+<p>为了解决上面的缺点，可以把模块写成一个对象，所有的模块成员都放到这个对象里面。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> module1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> <span style="color:#0086b3">Object</span>({
+</span></span><span style="display:flex;"><span>    _count<span style="color:#000;font-weight:bold">:</span> <span style="color:#099">0</span>,
+</span></span><span style="display:flex;"><span>    m1<span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic">/* ... */</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    m2<span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic">/* ... */</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>上边的函数 <code>m1()</code> 和 <code>m2()</code> ，都封装在 <code>module1</code> 对象里（现在它们有关系了，都属于一个对象嘛），使用的时候，就是调用这个对象的属性，如 <code>module1.m1()</code> 。但是，这样的写法会暴露所有模块成员，内部状态可以被外部改写，如 <code>module1._count = 5</code> 。</p>
+<blockquote>
+<p>:: 很显然，这样的封装是不安全的。</p>
+</blockquote>
+<h3 id="立即执行函数划分">立即执行函数划分</h3>
+<p>如何不暴露私有成员的目的，自然是做到外界不能直接访问原始对象内部，只能访问我们想让他访问的对象。使用“立即执行函数（Immediately-Invoked Function Expression, IIFE）”，可以砍到不暴露私有成员的目的。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> module1 <span style="color:#000;font-weight:bold">=</span> (<span style="color:#000;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> _count <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> m1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic">/* ... */</span>
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> m2 <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic">/* ... */</span>
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// 这个就是我们想让外界访问到的对象了
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">return</span> {
+</span></span><span style="display:flex;"><span>        m1<span style="color:#000;font-weight:bold">:</span> m1,
+</span></span><span style="display:flex;"><span>        m2<span style="color:#000;font-weight:bold">:</span> m2,
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>})();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如此，在 <code>{ m1: m1, m2: m2 }</code> 中根本没有 <code>_count</code> 变量，外界自然是访问不到的喽。</p>
+<p>至此，我们解决了 JavaScript 中如何模块化的问题 – 使用 IIFE 来实现模块分离（避免命名冲突、封装不够等问题）。</p>
+<h3 id="模块依赖">模块依赖</h3>
+<p>我们在前面已经讲述了 <strong>如何分离模块的问题</strong> ，那么，另一个问题也就随之而来了 – 假如在一个程序中，模块 A 调用了 B ，B 又调用了 C、D ，我们如何处理 <strong>模块之间的依赖关系</strong> 呢？</p>
+<p>什么是依赖？聚焦在模块本身无非就是两点：</p>
+<ol>
+<li>如何导入一个模块？</li>
+<li>如何导出模块中你想暴露的？</li>
+</ol>
+<p>我们来了解一下比较成熟的模块实现方式，如 CommonJS、AMD、CMD、UMD 和 ES Module 等。后续的章节中，我们重点来认识一下 CommonJS 和 ES Module 两种模块规范，其他在实际项目中已经应用不多。</p>
+<h2 id="commonjs">CommonJS</h2>
+<p><a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023027697415616">2</a></p>
+<p>在 Node 环境中，一个 <code>.js</code> 文件就称之为一个模块（module），它们遵循 CommonJS 模块规范。</p>
+<p>我们来看一个具体的例子，假如我们遵循 CommonJS 规范编写 <code>hello.js</code> 文件，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// hello.js 文件就是名为 hello 的模块
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> s <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Hello&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> greet(name) {
+</span></span><span style="display:flex;"><span>    console.log(s <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;, &#39;</span> <span style="color:#000;font-weight:bold">+</span> name <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;!&#39;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 导出模块
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 把函数 greet 作为模块的输出暴露出去
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>module.exports <span style="color:#000;font-weight:bold">=</span> greet;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在同一目录下，再来编写 <code>main.js</code> 文件，来调用 <code>hello</code> 模块的 <code>greet</code> 函数，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 引入模块
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 使用 Node 提供的 `require` 函数引入模块 `hello`
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> greet <span style="color:#000;font-weight:bold">=</span> require(<span style="color:#d14">&#39;./hello&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> s <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Michael&#39;</span>;
+</span></span><span style="display:flex;"><span>greet(s); <span style="color:#998;font-style:italic">// → Hello, Michael!
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>综上可知，CommonJS 规范，使用</p>
+<ul>
+<li><code>module.exports</code> 暴露模块，如 <code>module.exports = variable</code> ，其中 <code>variable</code> 可以是任意对象、函数、数组等；</li>
+<li><code>require</code> 函数导入模块，如 <code>var ref = require('module_name)</code> ，引入的对象具体是什么，取决于所引入模块输出的对象。</li>
+</ul>
+<blockquote>
+<p>:: ‘输出’决定‘引入’！*</p>
+</blockquote>
+<h3 id="commonjs-模块原理">CommonJS 模块原理</h3>
+<p>我们知道，JavaScript 语言本身并没有一种模块机制来保证不同模块可以使用相同的变量名。</p>
+<p><strong>那么，NodeJS 是如何实现这一点的呢？</strong></p>
+<ol>
+<li>模块隔离</li>
+</ol>
+<p>其实要实现“模块”这个功能，并不需要语法层面的支持，NodeJS 也没有增加任何新的 JavaScript 语法。实现“模块”功能的奥妙就在于 JavaScript 是一种函数式编程语言， <strong>它运行闭包！闭包！闭包！</strong> ，如我们上面说到是 IIFE 。我们只需要把一段 JavaScript 代码用一个函数包装起来，这段代码的所有“全局”变量就变成了函数内部的局部变量。</p>
+<blockquote>
+<p>:: 看，我们使用函数的作用域作了隔离，如此，就避免了不同模块内部变量、函数名的命名冲突。</p>
+</blockquote>
+<pre tabindex="0"><code class="language-__思考：闭包为什么可以做作用域隔离呢？" data-lang="__思考：闭包为什么可以做作用域隔离呢？">答案：内存机制决定的。看，内存才是最本质的。
+</code></pre><p>下面，我们来看看 NodeJS 具体为我们做了什么？</p>
+<p>我们编写的 <code>hello.js</code> 代码是这样的：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;world&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>console.log(<span style="color:#d14">&#39;Hello, &#39;</span> <span style="color:#000;font-weight:bold">+</span> name <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;!&#39;</span>);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>NodeJS 加载了 <code>hello.js</code> 之后，把代码包装了一下，变成了这样执行 ↓ ：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>(<span style="color:#000;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// 读取 hello.js 代码
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">var</span> name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;world&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    console.log(<span style="color:#d14">&#39;Hello, &#39;</span> <span style="color:#000;font-weight:bold">+</span> name <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;!&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// hello.js 代码读取结束
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>})();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如此， <code>name</code> 就变成了函数内部的局部变量，如果 NodeJS 继续加载其他模块，这些模块中定义的 <code>name</code> 也互不干扰。</p>
+<ol start="2">
+<li>模块输出</li>
+</ol>
+<p>NodeJS 利用 JavaScript 的函数式编程特性 – 闭包，轻松实现了模块的隔离。</p>
+<p><strong>但是，模块的输出 <code>module.exports</code> 是怎么实现的呢？</strong></p>
+<p>这个也容易，原来 NodeJS 先准备了一个对象 <code>module</code> ，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// NodeJS 准备一个 module 对象
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> module <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>    id<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;hello&#39;</span>,
+</span></span><span style="display:flex;"><span>    exports<span style="color:#000;font-weight:bold">:</span> {},
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> load <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (module) {
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// 读取的 hello.js 代码
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">function</span> greet(name) {
+</span></span><span style="display:flex;"><span>        console.log(<span style="color:#d14">&#39;Hello, &#39;</span> <span style="color:#000;font-weight:bold">+</span> name <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;!&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    module.exports <span style="color:#000;font-weight:bold">=</span> greet;
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// hello.js 代码读取结束
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> module.exports;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> exported <span style="color:#000;font-weight:bold">=</span> load(module);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 保存 module
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>save(module, exported);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可见，变量 <code>module</code> 是 NodeJS 在加载 <code>.js</code> 文件之前准备的一个变量，并将其传入加载函数，我们在 <code>hello.js</code> 中可以直接使用变量 <code>module</code> 原因就在于它实际上是加载函数的一个参数。</p>
+<p>通过把参数 <code>module</code> 传递给 <code>load()</code> 函数， <code>hello.js</code> 就顺利地把一个变量传递给了 Node 执行环境，Node 会把 <code>module</code> 变量保存到某个地方。</p>
+<p>由于 Node 保存了所有导入的 <code>module</code> ，当我们用 <code>require()</code> 获取模块时，Node 找到对应的 <code>module</code> ，把这个 <code>module</code> 的 <code>exports</code> 属性返回，如此，另一个模块就拿到了模块的输出。</p>
+<blockquote>
+<p>:: 通俗来说，就是 Node 加载模块时，在其可访问的环境（作用域）内挂载了一个 <code>module</code> 对象，如此该模块输出的‘对象’（变量、函数、对象等） 就可以赋给 <code>module</code> 对象的 <code>exports</code> 属性（即 <code>module.exports</code>）。</p>
+</blockquote>
+<h3 id="moduleexports-vs-exports">module.exports VS exports</h3>
+<p>我们只需要知道， <code>module.exports</code> 是 NodeJS 为我们准备的用于模块输入的唯一真正的对象， <code>exports</code> 不过是对 <code>module.exports</code> 的引用罢了。这也就决定了，如下使用方式的对错：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>module.exports <span style="color:#000;font-weight:bold">=</span> { desc<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;一个引用类型对象&#39;</span> }; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>module.exports.var1 <span style="color:#000;font-weight:bold">=</span> variable; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>exports.var1 <span style="color:#000;font-weight:bold">=</span> variable; <span style="color:#998;font-style:italic">// ✔ 并有改变 `exports` 的引用
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>exports <span style="color:#000;font-weight:bold">=</span> { desc<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;一个引用类型对象&#39;</span> }; <span style="color:#998;font-style:italic">// ✘ 已改变了 `exports` 的引用
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 你改变了 `exports` 的指向，它就不再指向 `module.exports` 了，
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 自然也就不是模块的输出对象了，
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 记住，模块的输出对象只有一个
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>注：强烈建议只使用 <code>module.exports</code> 方式来输出模块变量！</strong></p>
+<h2 id="es-module">ES Module</h2>
+<p><a href="https://es6.ruanyifeng.com/#docs/module">3</a></p>
+<p>在 ES6 之前，社区制定了一些模块加载方案，最主要的有 CommonJS（Node 服务器端） 和 AMD （浏览器端）两种。</p>
+<p>有一个好消息，ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，完全可以取代 CommonJS 和 AMD 规范，成为浏览器和服务器通用的模块解决方案。</p>
+<h3 id="es-module-vs-commonjs">ES Module VS CommonJS</h3>
+<p>ES Module 模块的设计思想是尽量的 <strong>静态化</strong> ，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。CommonJS 和 AMD 模块，都只能在运行时确定这些东东。比如，CommonJS 模块输出的就是 <code>module.exports</code> 对象，输入时必须查找对象属性。</p>
+<blockquote>
+<p>:: 有了 ES6 静态加载，使得静态分析成为可能，就能进一步拓宽 JavaScript 的语法，比如引入宏（macro）和类型系统（type system）。*</p>
+</blockquote>
+<pre tabindex="0"><code>❓ 想一想，为什么 CommonJS 和 AMD 只有在运行时才能确定模块的依赖关系及输入输出变量呢？
+
+✔️ 因为它们本质上都是“立即执行函数”（IIFE），不执行自然无法得到！
+</code></pre><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> { stat, exists, readfile } <span style="color:#000;font-weight:bold">=</span> require(<span style="color:#d14">&#39;fs&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 等同于
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">let</span> _fs <span style="color:#000;font-weight:bold">=</span> require(<span style="color:#d14">&#39;fs&#39;</span>); <span style="color:#998;font-style:italic">// 引入了整个 `fs` 模块的整个输出对象
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">let</span> stat <span style="color:#000;font-weight:bold">=</span> _fs.stat;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> exists <span style="color:#000;font-weight:bold">=</span> _fs.exists;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> readfile <span style="color:#000;font-weight:bold">=</span> _fs.readfile;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>上面代码的实质是整体加载 <code>fs</code> 模块（即加载 <code>fs</code> 模块的整个输出对象 <code>module.exports</code> ），生成一个对象 <code>_fs</code> ，然后再从这个对象上读取 3 个方法。</p>
+<p>这种加载称为 <strong>运行时加载</strong> ，因为只有运行时才能得到这个对象，导致完全没办法在编译时做“静态优化”。</p>
+<blockquote>
+<p>:: 所谓“静态化”，没那么玄乎，不过就是在运行之前，编译阶段就可以确定的一些东东。*</p>
+</blockquote>
+<p>与 CommonJS 模块输出的是 <code>module.exports</code> 对象不同的时，ES Module 模块输出的并不是对象，而是 <strong>通过 <code>export</code> 命令显式指定输出的代码，再通过 <code>import</code> 命令输入</strong> 。如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// ES Module
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> { stat, exists, readFile } from <span style="color:#d14">&#39;fs&#39;</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>其实质是从 <code>fs</code> 模块加载 3 个方法， <strong>其他方法不加载</strong> ，即它无法引用 ES Module 模块本身（因为它不是对象），这种加载称为 <strong>编译时加载</strong> （或静态加载）。</p>
+<h3 id="export">export</h3>
+<p>ES Module 模块功能主要由两个命令构成： <code>export</code> 和 <code>import</code> ：</p>
+<ul>
+<li><code>export</code> 命令用于规定模块的对外接口；</li>
+<li><code>import</code> 命令用于输入其他模块提供的功能。</li>
+</ul>
+<p><code>export、import</code> 命令可以出现在模块的任何位置，只要处于模块顶层就可以，因为处在代码块中，就没法做静态优化了。</p>
+<p><strong>注： <code>export</code> 命令显式指定输出的代码，对，是代码！代码！代码！</strong></p>
+<blockquote>
+<p>:: 其实，看一下基本的编译原理，就很容易理解这个地方了，<code>export</code> 输出的其实是一个动态外链。</p>
+</blockquote>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">var</span> year <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1990</span>; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// or
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> year <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1990</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> { year }; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 还可以用别名输出
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { year as yearAlias1 }; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { year as yearAlias2 }; <span style="color:#998;font-style:italic">// ✔
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>如上， <code>export</code> 导出的都是 <code>var year = 1990</code> 这行代码，而不是 <code>year</code> 这个变量。</p>
+<p>如果，你像在下面这样使用，就会报错了，如：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#099">1</span>                        <span style="color:#998;font-style:italic">// ✘
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> m <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> m                        <span style="color:#998;font-style:italic">// ✘
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>想一下，为会什么会报错呢？因为它们 <strong>不是有意义的代码</strong> 呗！ <code>1</code> 只是一个字面量，引用它明显没有什么意义，同样 <code>m</code> 中存的也是 <code>1</code> 。</p>
+<p>同理，对于函数而言，也是一样的，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">function</span> f() {}          <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// or
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">function</span> f() {}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> { f }                    <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { f as fn }              <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> f                        <span style="color:#998;font-style:italic">// ✘
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong><code>export</code> 语句输出的接口，与其对应的值是动态绑定关系。</strong> 即通过该接口，可以取到模块内部实时的值。这一点与 CommonJS 规范完全不同，CommonJS 模块输出的是值的缓存，不存在动态更新。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">var</span> foo <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;bar&#39;</span>;
+</span></span><span style="display:flex;"><span>setTimeout(() =&gt; (foo <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;baz&#39;</span>), <span style="color:#099">500</span>);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>上面代码输出变量 <code>foo</code> ，值为 <code>bar</code> ，500 毫秒后变成 <code>baz</code> 。</p>
+<h3 id="import">import</h3>
+<p>前面我们讲了输出 <code>export</code> ，这个章节我们来认识一下输入 <code>import</code> 。</p>
+<p><code>import</code> 命令接受一对大括号，里面指定要从其他模块导入的变量名，该变量名必须与被导入模块对象接口（输出的大括号是的变量啦）名称相同。其用法实例如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> { year } from <span style="color:#d14">&#39;./profile.js&#39;</span>; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> { year as yearAlias } from <span style="color:#d14">&#39;./profile.js&#39;</span>; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#d14">&#39;loadsh&#39;</span>; <span style="color:#998;font-style:italic">// ✔ 只是执行 loadsh 模块，不输入任何值
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>除了指定加载某个输出值，还可以使用 <strong>整体加载</strong> ，即用星号（ <code>*</code> ）指定一个对象，所有输出值都加载在这个对象上面。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#000;font-weight:bold">*</span> as circle from <span style="color:#d14">&#39;./circle&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>circle.area(<span style="color:#099">4</span>); <span style="color:#998;font-style:italic">// 调用 circle 的 area() 方法计算面积
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>circle.circumference(<span style="color:#099">14</span>); <span style="color:#998;font-style:italic">// 调用 circle 的 circumference() 方法计算周长
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="export-default">export default</h3>
+<p>前面说过，使用 <code>import</code> 命令的时候，用户需要知道所要加载的变量名或函数名，否则无法加载。为了给用户提供方便，让他们不用阅读文档就能加载模块，就要用到 <code>export default</code> 命令，为模块指定默认输出。</p>
+<p>注： 使用 <code>export default</code> 输出的代码，用 <code>import</code> 命令引入时，不使用大括号。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// export-default.js ///
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 匿名函数
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">default</span> <span style="color:#000;font-weight:bold">function</span>() {}      <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 具名函数
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">default</span> <span style="color:#000;font-weight:bold">function</span> foo() {}  <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// or
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">function</span> foo() {}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">default</span> foo                <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// import-default.js ///
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> baz from <span style="color:#d14">&#39;./exort-default&#39;</span> <span style="color:#998;font-style:italic">// ✔ `baz` 可以是任何自定义的变量名
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>但是，对于使用 <code>export</code> 命令时，就不能省略大括号，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// export.js ///
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">function</span> foo() {}          <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">function</span> foo() {}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> { foo }                    <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// import.js ///
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> { foo } from <span style="color:#d14">&#39;./export.js&#39;</span> <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> foo form <span style="color:#d14">&#39;./export.js&#39;</span>     <span style="color:#998;font-style:italic">// ✘
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>本质上， <code>export default</code> 就是输出一个叫做 <code>default</code> 的变量或方法，然后系统允许你为它取任意名字。</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// export.js ///
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">function</span> add(x, y) {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> x <span style="color:#000;font-weight:bold">+</span> y;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> { add as <span style="color:#000;font-weight:bold">default</span> }; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 等同于
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// export default add           // ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// import.js ///
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> { <span style="color:#000;font-weight:bold">default</span> as foo } from <span style="color:#d14">&#39;./export.js&#39;</span>; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 等同于
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// import foo from &#39;./export.js&#39;             // ✔
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>同样，因为 <code>export default</code> 命令其实只是输出一个叫做 <code>default</code> 的变量，所以它后面不能跟变量声明语句。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">var</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>                <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">default</span> a                <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">default</span> <span style="color:#000;font-weight:bold">var</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>        <span style="color:#998;font-style:italic">// ✘
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="export-与-import-的复合写法">export 与 import 的复合写法</h3>
+<p>如果在一个模块之中，先输入后输出同一个模块， <code>import</code> 语句可以与 <code>export</code> 语句写在一起。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> { foo, bar } from <span style="color:#d14">&#39;my_module&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 等价于
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> { foo, bar } from <span style="color:#d14">&#39;my_module&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> { foo, bar };
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>上面代码中， <code>export</code> 和 <code>import</code> 语句可以结合在一起，写成一行。</p>
+<p>但需要注意的是，写成一行以后， <code>foo</code> 和 <code>bar</code> 实际上 <strong>并没有被导入当前模块，只是相当于对外转发</strong> 了这两个接口，导致当前模块不能直接使用 <code>foo</code> 和 <code>bar</code> 。</p>
+<p>模块的接口改名和整体输出，也可以采用这种写法。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 接口改名
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { foo as myFoo } from <span style="color:#d14">&#39;my_module&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 整体输出
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">*</span> from <span style="color:#d14">&#39;my_module&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">*</span> as ns from <span style="color:#d14">&#34;mod&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 默认接口的写法
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { <span style="color:#000;font-weight:bold">default</span> } from <span style="color:#d14">&#39;foo&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 具名接口改为默认接口的写法
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { es6 as <span style="color:#000;font-weight:bold">default</span> } from <span style="color:#d14">&#39;./someModule&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 等同于
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> { es6 } from <span style="color:#d14">&#39;./someModule&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">default</span> es6;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 默认接口也可以改名为具名接口
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { <span style="color:#000;font-weight:bold">default</span> as es6 } from <span style="color:#d14">&#39;./someModule&#39;</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="import-1">import()</h3>
+<p>前面介绍过， <code>import</code> 命令会被 JavaScript 引擎静态分析，先于模块内的其他语句执行。</p>
+<p>这样的设计，固然有利于编译器提高效率，但也导致无法在运行时加载。在语法上，条件加载就不可能实现。如果 <code>import</code> 命令要取代 Node 的 <code>require</code> 方法，就形成了一个障碍。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 报错
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">if</span> (x <span style="color:#000;font-weight:bold">===</span> <span style="color:#099">2</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">import</span> MyModule from <span style="color:#d14">&#39;./myModule&#39;</span>; <span style="color:#998;font-style:italic">// ✘ `import` 命令不支持动态加载
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>ES2020 提案引入了 <code>import()</code> 函数，支持动态加载模块。</p>
+<pre tabindex="0"><code>import(specifier)               // `specifier` 指定所要加载的模块的位置
+</code></pre><p><code>import()</code> 函数和 <code>import</code> 命令接受的参数相同，区别在于 <code>import()</code> 可以动态加载，且与所加载的模块并没有静态链接关系， <strong>返回一个 Promise 对象</strong> 。</p>
+<p><code>import()</code> 函数类似于 Node 的 <code>require</code> 方法，区别在于 <code>import()</code> 是异步加载，而 <code>require</code> 是同步加载。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> (condition) {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">import</span>(<span style="color:#d14">&#39;moduleA&#39;</span>).then(<span style="color:#998;font-style:italic">/* ... */</span>); <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>} <span style="color:#000;font-weight:bold">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">import</span>(<span style="color:#d14">&#39;moduleB&#39;</span>).then(<span style="color:#998;font-style:italic">/* ... */</span>); <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>*注： <code>import()</code> 加载模块成功以后，这个模块会作为一个对象，当作 <code>then</code> 方法的参数。</p>
+<h2 id="webpack-module">Webpack Module</h2>
+<p><a href="https://www.webpackjs.com/concepts/modules/">4</a></p>
+<p>在模块化编程中，开发者将程序分解成离散功能块（Discrete Chunks of Funtionality），并称之为模块。</p>
+<p>每个模块具有比完整程序更小的接触面，使得校验、调试、测试轻而易举。精心编写的模块提供了可靠的抽象和封装界限，使得应用程序中每个模块都具有条理清楚的设计和明确的目的。</p>
+<p>NodeJS 从一开始就支持模块化编程，而 Web 浏览器对于模块化的支持却姗姗来迟。在 Web 存在多种支持 JavaScript 模块化的工具，如 AMD、CMD 等，这些工具各有优势和限制。</p>
+<p>Webpack 基于从这些系统获得的经验教训，并将模块的概念应用于项目中的任何文件。</p>
+<p><strong>什么是 Webpack 模块呢？</strong></p>
+<p>Webpack 模块能够以各种方式表达模块之间的依赖关系，如：</p>
+<ul>
+<li>ES2015 的 <code>import</code> 语句；</li>
+<li>CommonJS 的 <code>require()</code> 语句；</li>
+<li>AMD 的 <code>define</code> 和 <code>require</code> 语句；</li>
+<li>CSS/SASS/LESS 文件中的 <code>@import</code> 语句；</li>
+<li>样式 <code>url(...)</code> 或 HTML 文件 <code>&lt;img src=...&gt;</code> 中的图片链接。</li>
+</ul>
+<p>Webpack 是怎么做到这一点的呢？ loader ！</p>
+<p>Webpack 通过 loader 可以支持各种语言和预处理器编写模块。loader 描述了 webpack 如何处理非 JavaScript 的模块，并且在 bundle 中引入这些依赖。另外，webpack 社区已经为各种就行语言和语言处理器构建了 loader ，如： CoffeeScript、TypeScript、ESNext(Babel)、Sass、Less 等。</p>
+<p>注：有关完整列表，请参考 <a href="https://www.webpackjs.com/loaders">loader 列表</a> 或 <a href="https://www.webpackjs.com/api/loaders">自己编写</a> 。</p>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="/about" target="_blank">
+            
+            将喜欢的一切留在身边，这便是努力的意义
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="C - https://aituyaa.com/c/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>C</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">C</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2023-05-26&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2023-09-07&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            12177 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            25 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#编译器">编译器 </a>
+      <ul>
+        <li><a href="#什么是编译器">什么是编译器</a></li>
+        <li><a href="#gcc-是什么">GCC 是什么</a></li>
+        <li><a href="#gdb-调试器">GDB 调试器</a></li>
+      </ul>
+    </li>
+    <li><a href="#数据">数据</a>
+      <ul>
+        <li><a href="#关于数据">关于数据</a></li>
+        <li><a href="#数据类型">数据类型</a></li>
+      </ul>
+    </li>
+    <li><a href="#输入输出-io">输入输出 I/O</a>
+      <ul>
+        <li><a href="#输出">输出</a></li>
+        <li><a href="#输入">输入</a></li>
+      </ul>
+    </li>
+    <li><a href="#文件操作">文件操作</a>
+      <ul>
+        <li><a href="#c-语言中的文件是什么">C 语言中的文件是什么</a></li>
+        <li><a href="#关于文件流">关于文件流</a></li>
+        <li><a href="#打开关闭文件">打开/关闭文件</a></li>
+        <li><a href="#读写文件">读写文件</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <blockquote>
+<p>:: 好的吧，我承认，对于 C 语言，我有一种莫名其妙的偏爱！是因为可以直接操作内存吗？或许是！可能吧，计算机有什么神奇的东西呢？最终就是围绕那几个概念在来回打转！</p>
+</blockquote>
+<h2 id="编译器">编译器 </h2>
+<p><a href="http://c.biancheng.net/view/450.html">1</a></p>
+<blockquote>
+<p>:: 计算机说：“无论你怎么写，怎么编，怎么译，最终都要爷能看得懂才行！😈”</p>
+</blockquote>
+<h3 id="什么是编译器">什么是编译器</h3>
+<p><strong>可执行程序（Executable Program）</strong> 的内部是一系列计算机指令和数据的集合，它们是二进制形式的，CPU 可以直接识别，但对于程序员来说几乎不具备可读性。</p>
+<p>比如，在屏幕上输出“VIP 会员”，C 语言的写法为： <code>puts(&quot;VIP 会员&quot;);</code> ，但其二进制写法如下：</p>
+<p>![[assets/Pasted image 20230526091303.png]]</p>
+<p>直接使用二进制指令编程对程序员来说简直是噩梦！</p>
+<p>于是，编程语言就诞生了。比如，C 语言代码由固定的词汇按照固定的格式组织起来，简单直观，程序员容易识别和理解，但是对于 CPU 来说，C 语言代码就是天书（CPU 只认识几百个二进制形式的指令）！</p>
+<blockquote>
+<p>:: 💻：“不好意思，爷只认二进制！”</p>
+</blockquote>
+<p>这就需要一个工具，将 C 语言代码转换成 CPU 能够识别的二进制指令（即可执行程序），这个工具是一个特殊的软件，叫做 <strong>编译器（Compiler）</strong> 。</p>
+<p>用来保存代码文件叫做 <strong>源文件</strong> ，它就一个纯文本文件，内部并没有特殊格式（其后缀仅仅是为了表明文件中保存的是某种语言的代码，易于程序员区分和编译器识别）。</p>
+<blockquote>
+<p>:: 就一纯文本文件 📝</p>
+</blockquote>
+<p>在实际开发中，程序员将代码分门别类地放到多个源文件中。</p>
+<p>IDE（集成开发工具） 会为每一个程序都创建一个专门的目录，将用到的所有文件都集中到这个目录下进行管理。 不同的程序对应不同的项目类型（i.e. 工程类型） ，<strong>不同的工程类型本质上是对 IDE 各个参数的不同设置</strong> 。当然，我们也可以创建一个空白的工程类型，然后自己去设置各种参数（不过一般没有会这样做）。</p>
+<p>源代码要经过编译（Compile）和链接（Link）两个过程才能变成可执行文件。</p>
+<p>编译器一次只能编译一个源文件（如果当前程序包含了多个源文件，那么就需要编译多次），编译器每次编译的结果是产生一个中间文件（不是最终的可执行文件，但已经非常接近可执行文件了，它们都是二进制格式，内部结构也非常相似）。</p>
+<p>将当前程序的所有中间文件以及系统库组合在一起，才能形成最终的可执行文件，这个组合的过程就叫做 <strong>链接（Link）</strong> ，完成链接功能的软件叫做链接器（Linker）。</p>
+<p>不管有多少个源文件（哪怕只有一个），都必须经过编译和链接两个过程才能生成可执行文件。（为什么呢？因为你至少还需要和系统库组合。）</p>
+<p>综上可以发现，一个完整的编程过程是：</p>
+<ol>
+<li>编写源文件（保证代码语法正确，否则编译不通过）；</li>
+<li>预处理（Processing）；</li>
+<li>编译（Compile 将源文件转换为目标文件）；</li>
+<li>汇编（Assembly）；</li>
+<li>链接（Linking 将目标文件和系统库组合在一起，转换为可执行文件）；</li>
+<li>运行（可以检验代码的正确性）。</li>
+</ol>
+<p>默认情况下， <code>gcc</code> 指令会直接将源代码转变为可执行代码（2-5 四个过程），且不会保留各个阶段产生的中间文件。</p>
+<h3 id="gcc-是什么">GCC 是什么</h3>
+<p>GCC 编译器是 Linux 系统下最常用的 C/C++ 编译器，大部分 Linux 发行版中都会默认安装。</p>
+<p>早期的 GCC 全拼为 GNU C Compiler ，最初定位确实只用于编译 C 语言。经过不断迭代扩展，GCC 现在还可以处理 C++、Go、Ojbect-C 等多种编译语言编写的程序，故其全称被重新定义为 GNU Compiler Collection，即 GNU 编译器套件。</p>
+<p>👉 更多 <a href="https://zhuanlan.zhihu.com/p/424081696">GCC 和 Clang / LLVM 的区别</a></p>
+<p>可以通过 <code>gcc --help</code> 查看其常用指令选项如下：</p>
+<pre tabindex="0"><code>--version                Display compiler version information.
+-std=&lt;standard&gt;          Assume that the input sources are for &lt;standard&gt;.
+
+-E                       Preprocess only; do not compile, assemble or link.
+-S                       Compile only; do not assemble or link.
+-c                       Compile and assemble, but do not link.
+-o &lt;file&gt;                Place the output into &lt;file&gt;.
+-pie                     Create a dynamically linked position independent
+						executable.
+-shared                  Create a shared library.
+-x &lt;language&gt;            Specify the language of the following input files.
+						Permissible languages include: c c++ assembler none
+						&#39;none&#39; means revert to the default behavior of
+						guessing the language based on the file&#39;s extension.
+</code></pre><p>前面说过 GCC 是支持编译多种编程语言的，可以通过 <code>-x</code> 选项指定要编译的语言类型，如 <code>gcc -xc++ xxx</code> 表示以编译 C++ 代码的方式编译 <code>xxx</code> 文件。</p>
+<p>使用 GCC 编译器编译 C 或者 C++程序，必须经历 4 个过程： <strong>预处理 → 编译 → 汇编 → 链接</strong> （通常 gcc/g++ 支持该过程的自动化）。</p>
+<blockquote>
+<p>g++ 是什么？可以认为 <code>g++</code> →（等价于） <code>gcc -xc++ -lstdc++ -shared-libgcc</code> （因为 gcc 不会自动引入 C++ 相关的库，必须手动引入）。</p>
+<p>用于手动指定链接环节中程序可以调用的库文件，如 <code>-lstdc++</code> ，不建议 <code>-l</code> 和 library 之间有空格。</p>
+</blockquote>
+<p>默认情况下， <code>gcc</code> 指令会一气呵成将源代码历经这 4 个过程转变为可执行代码，且不会保留各个阶段产生的中间文件。</p>
+<p>如果我们想查看这 4 个阶段各自产生的中间文件，该怎么办呢？最简单直接的方式就是对源代码进行“分步编译”。即控制 GCC 编译器逐步对源代码进行预处理、编译、汇编及链接操作。</p>
+<table>
+<thead>
+<tr>
+<th>gcc/g++ 指令选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-E</td>
+<td>预处理指定的源文件，不进行编译</td>
+</tr>
+<tr>
+<td>-S</td>
+<td>编译指定的源文件，不进行汇编</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>编译、汇编指定的源文件，但是不进行链接</td>
+</tr>
+<tr>
+<td>-o</td>
+<td>指定生成文件的文件名</td>
+</tr>
+<tr>
+<td>-llibrary</td>
+<td>用于手动指定链接环节中程序可以调用的库文件，如 <code>-lstdc++</code> ，不建议 <code>-l</code> 和 <code>library</code> 之间有空格</td>
+</tr>
+<tr>
+<td>-ansi</td>
+<td>对于 C 语言程序来说，其等价于 <code>-std=c90</code>；对于 C++ 程序来说，其等价于 <code>-std=c++98</code></td>
+</tr>
+<tr>
+<td>-std=</td>
+<td>手动指令编程语言所遵循的标准</td>
+</tr>
+</tbody>
+</table>
+<p><code>&gt; GCC 常用的编译选项</code></p>
+<p>假如我们编写了一个 <code>source.c</code> 的源程序，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>() {
+</span></span><span style="display:flex;"><span>	printf(<span style="color:#d14">&#34;c program.</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>1. 预处理 - 生成预处理文件 <code>*.i</code></strong></p>
+<p>通过为 <code>gcc</code> 指令添加 <code>-E</code> 选项，即可控制 GCC 编译器仅对源代码做预处理操作。默认情况下， <code>gcc -E</code> 指令只会将预处理操作的结果输出到屏幕上，并不会自动保存到某个文件，因此，该指令往往会和 <code>-o</code> 选项连胜，将结果导入到指定文件中。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>jack@jk:~/cemo/cporj$ gcc -E source.c -o source.i
+</span></span><span style="display:flex;"><span>jack@jk:~/cemo/cporj$ ls
+</span></span><span style="display:flex;"><span>source.c  source.i
+</span></span><span style="display:flex;"><span>jack@jk:~/cemo/cporj$ cat source.i
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 1 &#34;source.c&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 1 &#34;&lt;built-in&gt;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 1 &#34;&lt;command-line&gt;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 31 &#34;&lt;command-line&gt;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 1 &#34;/usr/include/stdc-predef.h&#34; 1 3 4</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># ....</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Linux 系统中通常用 <code>&quot;.i&quot;</code> 作为 C 语言程序预处理后所得文件的后缀名。显然， <code>source.i</code> 中的内容不是那么容易看懂的，好在可以为 <code>gcc</code> 指令再添加一个 <code>-C</code> 选项，来阻止 GCC 删除源文件和头文件中的注释，即 <code>gcc -E -C source.c -o source.i</code> 。</p>
+<p><strong>2. 编译 - 生成汇编文件 <code>*.s</code></strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>jack@jk:~/cemo/cporj$ gcc -S source.i
+</span></span><span style="display:flex;"><span>jack@jk:~/cemo/cporj$ ls
+</span></span><span style="display:flex;"><span>source.c  source.i  source.s
+</span></span><span style="display:flex;"><span>jack@jk:~/cemo/cporj$ cat source.s
+</span></span><span style="display:flex;"><span>		.file   <span style="color:#d14">&#34;source.c&#34;</span>
+</span></span><span style="display:flex;"><span>		.text
+</span></span><span style="display:flex;"><span>		.section        .rodata
+</span></span><span style="display:flex;"><span>.LC0:
+</span></span><span style="display:flex;"><span>		.string <span style="color:#d14">&#34;c program.&#34;</span>
+</span></span><span style="display:flex;"><span>....
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>通过执行 <code>gcc -S</code> 指令，生成了个名为 <code>source.s</code> 的文件，这就是经过编译的汇编代码文件。（默认情况下，编译操作会自行新建一个文件名和指定文件相同、后缀名为 <code>.s</code> 的文件，并将编译的结果保存在该文件中。）</p>
+<p>同样，想要提高文件内汇编代码的可读性，可以借助 <code>-fverbose-asm</code> 选项，GCC 编译器会自动为汇编代码添加必要的注释，即 <code>gcc -S source.i -fverbose-asm</code> 。</p>
+<p><strong>3. 汇编 - 生成目标文件 <code>*.o</code></strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>jack@jk:~/cemo/cporj$ gcc -c source.s
+</span></span><span style="display:flex;"><span>jack@jk:~/cemo/cporj$ ls
+</span></span><span style="display:flex;"><span>source.c  source.i  source.o  source.s
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>上面生成的 <code>source.o</code> 文件就是目标文件，其本质为二进制文件（但尚未经过链接操作，所以无法直接运行）。</p>
+<p><strong>4. 链接 - 生成可执行文件</strong></p>
+<p>gcc 通过 <code>-o</code> 选项来指定输出文件，缺省默认输出 <code>a.out</code> ，其语法格式如下：</p>
+<pre tabindex="0"><code>gcc [-E|-S|-c] [infile] [-o outfile]
+</code></pre><hr>
+<p>通过 <code>-l</code> 选项手动添加链接库</p>
+<p>链接器把多个二进制的目标文件（object file）链接成一个单独的可执行文件。在链接过程中，它必须把符号（变量名、函数名等一些列标识符）用对应的数据的内存地址（变量地址、函数地址等）替代，以完成程序中多个模块的外部引用。</p>
+<p>而且，链接器也必须将程序中所用到的所有 C 标准库函数加入其中。对于链接器来说，链接库不过是一个具在许多目标文件的集合，它们放在一个文件中以方便处理。</p>
+<p>标准库的大部分函数通常放在文件 <code>libc.a</code> 中（文件名后缀 <code>.a</code> 代表 achieve 读取），或者放在共享的动态链接文件 <code>libc.so</code> 中（文件名后缀 <code>.so</code> 代表 share object 共享对象）。</p>
+<p>如，通过 <code>gcc source.c -o source.out -lm</code> 链接数学库 <code>libm.a</code> ，前缀 <code>lib</code> 和后缀 <code>.a</code> 是标准的， <code>m</code> 是基本名称。（GCC 会在 <code>-l</code> 选项后紧跟着的基本名称的基础上自动添加这些前缀、后缀）</p>
+<hr>
+<p>GCC 使用静态链接库和动态链接库</p>
+<p>库文件的产生，极大的提高了程序员的开发效率，因为很多功能根本不需要从 0 开发，直接调取包含该功能的库文件即可。并且，库文件的调用方法也很简单，以 C 语言中的 <code>printf()</code> 输出函数为例，程序中只需引入 <code>&lt;stdio.h&gt;</code> 头文件，即可调用 <code>printf()</code> 函数。</p>
+<p><strong>调用库文件为什么还要牵扯到头文件呢？</strong></p>
+<p>头文件和库文件并不是一码事，它们最大的区别在于：</p>
+<ul>
+<li>头文件只存储变量、函数或者类等这些功能模块的声明部分，库文件才负责存储各模块具体的实现部分；</li>
+<li>所有的库文件都提供有相应的头文件作为调用它的接口，即库文件是无法直接使用的，只能通过头文件间接调用。</li>
+</ul>
+<blockquote>
+<p>头文件和库文件相结合的访问机制，最大的好处在于，有时候我们只想让别人使用自己实现的功能，并不想公开实现功能的源码，就可以将其制作为库文件，这样用户获取到的是二进制文件，而头文件又只包含声明部分，这样就实现了“将源码隐藏起来”的目的，且不会影响用户使用。</p>
+</blockquote>
+<blockquote>
+<p>:: 其实，就是一种封装。</p>
+</blockquote>
+<p>事实上，库文件只是一个统称，代指的是一类压缩包，它们都包含有功能实用的目标文件。要知道，虽然库文件用于程序的链接阶段，但编译器提供有 2 种实现链接的方式，分别称为静态链接方式和动态链接方式，其中采用静态链接方式实现链接操作的库文件，称为 <strong>静态链接库</strong> ；采用动态链接方式实现链接操作的库文件，称为 <strong>动态链接库</strong> 。</p>
+<p>它们有什么不同呢？</p>
+<p>静态链接库 实现链接操作的方式很简单，即程序文件中哪里用到了库文件中的功能模块，GCC 编译器就会 <strong>将该模板代码直接复制到程序文件的适当位置</strong> ，最终生成可执行文件。</p>
+<p>好处是生成的可执行文件不再需要任何静态库文件的支持就可以独立运行（可移植性强），坏处如果程序文件中多次调用库中的同一个模块，则该模块代码会被复制多次（冗余），生成的可执行文件体积更大（与使用动态链接库生成的可执行文件相比）。</p>
+<p>在 Linux 发行版中，静态链接库文件的后缀通常用 <code>.a</code> 表示；在 Windows 系统中，静态链接库文件的后缀名为 <code>.lib</code> 。</p>
+<p>动态链接库 ，又称为共享链接库。和静态链接库不同，采用动态链接库实现链接操作时，程序文件中哪里需要库文件的功能模块，GCC 编译器不会直接将该功能模块的代码拷贝到文件中，而是 <strong>将功能模块的位置信息记录到文件中</strong>，直接生成可执行文件。</p>
+<p>显然，这样生成的可执行文件是无法独立运行的。</p>
+<blockquote>
+<p>采用动态链接库生成的可执行文件运行时，GCC 编译器会将对应的动态链接库一同加载在内存中，由于可执行文件中事先记录了所需功能模块的位置信息，所以在现有动态链接库的支持下，也可以成功运行。</p>
+</blockquote>
+<p>在 Linux 系统中，动态链接库的后缀名通常用 <code>.so</code> 表示；在 Windows 系统中，动态链接库的后缀名为 <code>.dll</code> 。</p>
+<p>值得一提的是，GCC 编译器生成可执行文件时，默认情况下会优先使用动态链接库实现链接操作，除非当前系统环境中没有程序文件所需要的动态链接库，GCC 编译器才会选择相应的静态链接库。如果两种都没有（或者 GCC 编译器未找到），则链接失败。</p>
+<h3 id="gdb-调试器">GDB 调试器</h3>
+<p>GNU symbolic debugger，简称「GDB 调试器」，是 Linux 平台下最常用的一款程序调试器。</p>
+<p>要知道，哪怕是开发经验再丰富的程序员，编写的程序也避免不了出错。程序中的错误主要分为 2 类，分别为：</p>
+<ul>
+<li>语法错误（可以借助编译器解决）；</li>
+<li>逻辑错误（只能程序员&lt;自己或借助调试工具&gt;调试解决）。</li>
+</ul>
+<p><strong>调试是每个程序员必须掌握的基本技能，没有选择的余地！</strong></p>
+<p>所谓调试（Debug），就是让代码一步一步慢慢执行，跟踪程序的运行过程。通过调试程序，我们可以监控程序执行的每一个细节，包括变量的值、函数的调用过程、内存中数据、线程的调度等，从而发现隐藏的错误或者低效的代码。</p>
+<p>GDB 就是 Linux 下使用最多的一款调试器，也有 Windows 的移植版。</p>
+<p>总的来说，借助 GDB 调试器可以实现以下几个功能：</p>
+<ul>
+<li>程序启动时，可以按照我们自定义的要求运行程序，例如设置参数和环境变量；</li>
+<li>可使被调试程序在指定代码处暂停运行，并查看当前程序的运行状态（如当前变量的值，函数执行的结果等），即支持断点调试；</li>
+<li>程序执行过程中，可以改变某个变量的值，还可以改变代码的执行顺序，从而尝试修改程序中出现的逻辑错误。</li>
+</ul>
+<p>默认情况下，程序不会进行调试模式，代码会瞬间从开关执行到末尾。要想观察程序运行的内部细节，可以借助 GDB 调试器在程序中的某个地方设置断点（BreakPoint），如此当程序执行到这个地方时就会停下来。</p>
+<p>GDB 调试器支持在程序中打 3 种断点：</p>
+<ul>
+<li>普通断点（break）：指定打断点的具体位置；</li>
+<li>观察断点（watch）：可以监控程序中某个变量或者表达式的值，只要发生改变，程序就会停止执行；</li>
+<li>捕捉断点（catch）：监控程序中某一事件的发生。</li>
+</ul>
+<p>……</p>
+<blockquote>
+<p>:: 具体调试细节，略过……</p>
+</blockquote>
+<h2 id="数据">数据</h2>
+<h3 id="关于数据">关于数据</h3>
+<p>数据是放在内存中的，变量是给这块内存起的名字，有了变量就可以找到并使用这份数据。</p>
+<p>诸如数字、文字、符号、图形、音频、视频等数据都是以二进制形式存储在内存中的，它们并没有本质上的区别。我们需要用数据类型用来说明数据的类型，确定了 <strong>数据的解释方式</strong> ，让计算机和程序员不会产生歧义。另外在 C 语言中，每一种数据类型所占用的字节数都是固定的，知道了数据类型，也就知道了 <strong>数据的长度</strong> 。</p>
+<blockquote>
+<p>:: 反正就是一个二进制串，解释权在编译器，反正乱解释肯定出问题。</p>
+</blockquote>
+<blockquote>
+<p>数据是放在内存中的，在内存中存取数据要明确三件事情：数据存储在哪里、数据的长度以及数据的处理方式。</p>
+</blockquote>
+<p>打印输出各种类型的数据</p>
+<p><code>puts</code> （output string） 只能用来输出字符串； <code>printf</code> （print format）格式化输出，功能强大，不仅可以输出字符串，还可以输出整数、小数、单个字符等，并且输出格式可以自定义。</p>
+<h3 id="数据类型">数据类型</h3>
+<p><strong>1. 整数类型 short、 int、 long</strong></p>
+<p>short（短整型）、int（整型）、long（长整型） 是 C 语言中常见的整数类型。C 语言并没有严格规定 short、int、long 的长度，只做了宽泛的限制：</p>
+<pre tabindex="0"><code>2 ≤ short ≤ int ≤ long
+</code></pre><p>其中，int 建议为一个机器字长。32 位环境下机器字长为 4 字节，64 位环境下机器字长为 8 字节。</p>
+<p>获取某个数据类型的长度可以使用 <code>sizeof</code> 操作符，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#458;font-weight:bold">short</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#458;font-weight:bold">int</span> b <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">100</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#458;font-weight:bold">int</span> short_length <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">sizeof</span> a;
+</span></span><span style="display:flex;"><span>	<span style="color:#458;font-weight:bold">int</span> int_length <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">sizeof</span>(b);
+</span></span><span style="display:flex;"><span>	<span style="color:#458;font-weight:bold">int</span> long_length <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">sizeof</span>(<span style="color:#458;font-weight:bold">long</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#458;font-weight:bold">int</span> char_length <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">sizeof</span>(<span style="color:#458;font-weight:bold">char</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	printf(<span style="color:#d14">&#34;short=%d, int=%d, long=%d, char=%d</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>, short_length, int_length, long_length, char_length);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 在 64 位 Linux 下的输出 → short=2, int=4, long=8, char=1
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>*注意， <code>sizeof</code> 是 C 语言中的操作符，不是函数（故可不带括号）。</p>
+<p><strong>2. 浮点类型 float、 double</strong></p>
+<p>一个数字，是有默认类型的：对于整数，默认是 int 类型；对于小数，默认是 double 类型。</p>
+<p>……</p>
+<p><strong>3. 字符类型 char</strong></p>
+<p>字符类型由单引号 <code>' '</code> 包围，字符串由双引号 <code>&quot; &quot;</code> 包围。</p>
+<p>计算机在存储字符时并不是真的要存储字符实体，而是存储该字符在字符集中的编号（也可以叫编码值）。对于 char 类型来说，它实际上存储的就是字符的 ASCII 码。</p>
+<blockquote>
+<p>可以说，是 ASCII 码表将英文字符和整数关联了起来。</p>
+</blockquote>
+<p>无论在哪个字符集中，字符编号都是一个整数；从这个角度考虑，字符类型和整数类型本质上没有什么区别。</p>
+<blockquote>
+<p>:: 在 C 语言中，并没有单独定义字符串类型，字符串实际上是使用空字符 <code>\0</code> 结尾的一维字符数组，如 <code>char site[7] = {'R', 'U', 'N', 'O', 'O', 'B', '\0'};</code> 。</p>
+</blockquote>
+<p><strong>4. 构造类型 - 数组</strong></p>
+<p>数组（Array）就是一些列具有相同类型的数据的集合，这些数据在内存中依次挨着存放，彼此之间没有缝隙。</p>
+<p>数组的定义方式：</p>
+<pre tabindex="0"><code>dataType arrayName[length];
+// - dataType  为数据类型
+// - arrayName 为数组名称
+// - length    为数组长度
+
+// 数组中每个元素都有一个索引（下标），从 0 开始，使用元素时指明下标即可：
+arrayName[index]
+// - index     为下标
+</code></pre><p>数组的初始化：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 当赋值的元素少于数组总体元素的时候，剩余的元素自动初始化为 0
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#458;font-weight:bold">int</span> arr[<span style="color:#099">10</span>] <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">1</span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 给全部元素赋值，那么在定义数组时可以不给出数组长度
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#458;font-weight:bold">int</span> arr[] <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>};      <span style="color:#998;font-style:italic">// 等价于
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#458;font-weight:bold">int</span> arr[<span style="color:#099">5</span>] <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>};
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如何获取数组的长度呢？ 通过 <code>sizeof arr / sizeof arr[0]</code> 。</p>
+<p><strong>5. 字符数组</strong></p>
+<p>在 C 语言中，没有专门的字符串变量，没有 string 类型，通常就用一个字符数组来存放一个字符串。</p>
+<p>在 C 语言中，字符串总是以 <code>'\0'</code> 作为结尾，所以 <code>'\0'</code> 也被称为字符串结束标志，或者字符串结束符。</p>
+<blockquote>
+<p><code>'\0'</code> 是 ASCII 码表中的第 0 个字符，英文称为 NUL，中文称为“空字符”。该字符既不能显示，也没有控制功能，输出该字符不会有任何效果，它在 C 语言中唯一的作用就是作为字符串结束标志。</p>
+</blockquote>
+<p>由 <code>&quot; &quot;</code> 包围的字符串会自动在末尾添加 <code>'\0'</code> 。例如，“abc123” 从表面看起来只包含了 6 个字符，其实不然，C 语言会在最后隐式地添加一个 <code>'\0'</code>，这个过程是在后台默默地进行的，所以我们感受不到。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#458;font-weight:bold">char</span> str[<span style="color:#099">6</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;abc123&#34;</span>;          <span style="color:#998;font-style:italic">// ✘
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#458;font-weight:bold">char</span> str[<span style="color:#099">7</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;abc123&#34;</span>;          <span style="color:#998;font-style:italic">// ✔，别忘记 &#39;\0&#39;，使用 &#34;xyzbnm..&#34; 赋值会自动在末尾添加 &#39;\0&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#458;font-weight:bold">char</span> str[<span style="color:#099">7</span>] <span style="color:#000;font-weight:bold">=</span> { <span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;c&#39;</span>, <span style="color:#d14">&#39;1&#39;</span>, <span style="color:#d14">&#39;2&#39;</span>, <span style="color:#d14">&#39;3&#39;</span>, <span style="color:#d14">&#39;\0&#39;</span> }; <span style="color:#998;font-style:italic">// 不嫌烦，你也可以这样
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>*另外，要注意字符数组只有在定义时才能将整个字符串一次性地赋值给它，一旦定义完了，就只能一个字符一个字符地赋值了。如：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#458;font-weight:bold">char</span> str[<span style="color:#099">7</span>];
+</span></span><span style="display:flex;"><span>str <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;abc123&#34;</span>;  <span style="color:#998;font-style:italic">// ✘
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">//正确 ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>str[<span style="color:#099">0</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;a&#39;</span>; str[<span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;b&#39;</span>; str[<span style="color:#099">2</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;c&#39;</span>;
+</span></span><span style="display:flex;"><span>str[<span style="color:#099">3</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;1&#39;</span>; str[<span style="color:#099">4</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;2&#39;</span>; str[<span style="color:#099">5</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;3&#39;</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>所谓 字符串长度 ，就是字符串包含了多少个字符（ <em>不包含最后的结束字符 <code>'\0'</code></em> ），如 <code>&quot;abc&quot;</code> 的长度是 3 ，而不是 4。（注意和定义时的数组长度做区分）</p>
+<p>在 C 语言中，我们使用 <code>string.h</code> 头文件中的 <code>strlen()</code> 函数来求字符串的长度，它的用法为：</p>
+<pre tabindex="0"><code>length strlen(strname);
+// - length   字符串长度，一个整数
+// - strname  字符串的名字或字符数组的名字
+</code></pre><p><strong>6. 指针</strong></p>
+<p>所谓指针，也就是内存的地址；所谓指针变量，也就是保存了内存地址的变量。</p>
+<p><strong>7. 构造类型 - 结构体</strong></p>
+<p>C 语言结构体（Struct）从本质上讲是一种自定义的数据类型，只不过这种数据类型比较复杂，是由 int、char、float 等基本类型组成的。</p>
+<p>结构体定义形式为：</p>
+<pre tabindex="0"><code>struct tag { member-list } variable-list;
+// - tag           结构体名（标签）
+// - member-list   结构体成员（列表）
+// - variable-list 该结构体定义的类型变量
+</code></pre><p>*注意，结构体是一种自定义的数据类型，是创建变量的模板，不占用内存空间；结构体变量才包含了实实在在的数据，需要内存空间来存储。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>() {
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">struct</span> student {
+</span></span><span style="display:flex;"><span>	<span style="color:#458;font-weight:bold">char</span> <span style="color:#000;font-weight:bold">*</span>name;                   <span style="color:#998;font-style:italic">// 姓名
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#458;font-weight:bold">int</span> age;                      <span style="color:#998;font-style:italic">// 年龄
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#458;font-weight:bold">float</span> score;                  <span style="color:#998;font-style:italic">// 成绩
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>} stu1, stu2;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 可以通过 =.= 获取和操作单个结构体成员
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>stu1.name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Tom&#34;</span>;
+</span></span><span style="display:flex;"><span>str1.age <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">18</span>;
+</span></span><span style="display:flex;"><span>stu1.score <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">99.5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>printf(<span style="color:#d14">&#34;%s 的分数是： %d</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>, stu1.name, stu1.score);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>8. 构造类型 - 共用体（联合体）</strong></p>
+<p>联合体定义形式为：</p>
+<pre tabindex="0"><code>union tag { member-list } variable-list;
+// - tag           联合体名（标签）
+// - member-list   联合体成员（列表）
+// - variable-list 该联合体定义的类型变量
+</code></pre><p>结构体和共用体的区别在于：结构体的各个成员会占用不同的内存，互相之间没有影响；而共用体的所有成员占用同一段内存，修改一个成员会影响其余所有成员。</p>
+<h2 id="输入输出-io">输入输出 I/O</h2>
+<p>在控制台程序中，输出一般是指将数据（包括数字、字符等）显示在屏幕上，输入一般是指获取用户在键盘上输入的数据。</p>
+<h3 id="输出">输出</h3>
+<p>在 C 语言中，有三个函数可以用来在显示器上输出数据：</p>
+<ul>
+<li><code>puts()</code> - 只能输出字符串，并且输出结束后自动换行；</li>
+<li><code>putchar()</code> - 只能输出单个字符；</li>
+<li><code>printf()</code> - 格式化输出各种类型的数据。</li>
+</ul>
+<p><code>printf()</code> 格式控制符的完整形式如下：</p>
+<pre tabindex="0"><code>%[flag][width][.precision]type
+// - type  表示输出类型
+// - width 表示最小输出宽度（不足时左边以空格补齐）
+// - .precision 表示输出精度，也就是小数的位数；
+//              也可以用于整数和字符串，但是功能相反：
+//              - 用于整数时，表示最小输出宽度（不足时左边以 0 补齐）
+//              - 用于字符串时，表示最大输出宽度
+// - flag 是标志字符：
+//        - -    表示左对齐（默认右对齐）
+//        - +    表示输出正负号（默认只有负数输出符号）
+//        - 空格 输出正时以空格，输出负时以负号
+//        - #    输出八进制、十六进制前缀；对于小数表示强迫输出小数点
+</code></pre><p><strong>关于 <code>printf()</code> 不能立即输出的问题</strong></p>
+<p>从本质上讲， <code>printf()</code> 执行结束后数据并没有直接输出到显示器上，而是放入了缓冲区，直到遇见换行符 <code>\n</code> 才将缓冲区中的数据输出到显示器上。</p>
+<p><strong>输入输出的“命门”就在于缓存。</strong></p>
+<h3 id="输入">输入</h3>
+<p>在 C 语言中，有多个函数可以从键盘获得用户输入：</p>
+<ul>
+<li><code>gets()</code> - 获取一行数据，并作为字符串处理（可以读取含有空格的字符串）；</li>
+<li><code>getchar()</code> - 用于输入单个字符（就是 <code>scanf(&quot;%c&quot;, c)</code> 的简化版）；</li>
+<li><code>scanf()</code> - 可以格式化输入多种类型的数据。</li>
+</ul>
+<p>对于 <code>scanf()</code> 输入数据的格式要和控制字符串的格式保持一致。</p>
+<p>从本质上讲，从键盘输入的数据并没直接交给 <code>scanf()</code> ，而是放了缓冲区中，直到我们按下回车键， <code>scanf()</code> 才到缓冲区中读取数据。</p>
+<h2 id="文件操作">文件操作</h2>
+<p>C 语言具有操作文件的能力，比如打开文件、读取/追加/插入/删除数据、关闭文件、删除文件等。</p>
+<h3 id="c-语言中的文件是什么">C 语言中的文件是什么</h3>
+<p>文件是数据源的一种，最主要的作用是保存数据。</p>
+<p>在操作系统中，为了统一对各种硬件的操作，简化接口，不同的硬件设备也被看成一个文件。对这些文件的操作，等同于对磁盘上普通文件的操作。如：</p>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>硬件设备</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>stdin</code></td>
+<td>标准输入文件，一般指键盘； <code>scanf()、getchar()</code> 等函数默认从 stdin 获取输入</td>
+</tr>
+<tr>
+<td><code>stdout</code></td>
+<td>标准输出文件，一般指显示器； <code>printf()、putchar()</code> 等函数默认从 stdout 输出数据</td>
+</tr>
+<tr>
+<td><code>stderr</code></td>
+<td>标准错误文件，一般指显示器； <code>perror()</code> 等函数默认向 stderr 输出数据</td>
+</tr>
+<tr>
+<td><code>stdprn</code></td>
+<td>标准打印文件，一般指打印机</td>
+</tr>
+</tbody>
+</table>
+<p><code>&gt; 常见硬件设备所对应的文件</code></p>
+<blockquote>
+<p>此处不去探讨硬件设备是如何被映射成文件的，只需记住，在 C 语言中硬件设备可以看成文件，有些输入输出函数不需要你指明到底读写哪个文件，系统已经为它们设置了默认的文件（当然你也可以更改，如让 printf 向磁盘上的文件输出数据）。</p>
+</blockquote>
+<p>操作文件的正确流程为：打开文件 → 读写文件 → 关闭文件（使用完毕要记得关闭哦）。</p>
+<h3 id="关于文件流">关于文件流</h3>
+<p>所有的文件都要载入内存才能处理，所有的数据必须写入文件才不会丢失。</p>
+<p>数据在文件和内存之间传递的过程叫做<strong>文件流</strong> ，数据从文件复制到内存的过程叫做<strong>输入流</strong>，从内存保存到文件的过程叫做<strong>输出流</strong>。</p>
+<p>文件是数据源的一种，除了文件，还有数据库、网络、键盘等；数据传递到内存也就是保存到 C 语言的变量（如整数、字符串、数组、缓冲区等）。我们把数据在数据源和程序（内存）之间传递的过程叫做 <strong>数据流（Data Stream）</strong> ，相应的，数据从数据源到程序（内存）的过程叫做输入流（Input Stream），从程序（内存）到数据源的过程叫做输出流（Output Stream）。</p>
+<p>输入输出（Input Outpt, IO）是指程序（内存）与外部设备（键盘、显示器、磁盘、其他计算机等）进行交互的操作。</p>
+<p>我们可以说，打开文件就是打开了一个流。</p>
+<h3 id="打开关闭文件">打开/关闭文件</h3>
+<p>在 C 语言中，操作文件之前必须先打开文件。</p>
+<p>所谓 “打开文件” ，就是让程序和文件建立连接的过程，就是获取文件的有关信息，例如文件名、文件状态、当前读写位置等，这些信息会被保存到一个 FILE 类型的结构体变量中； “关闭文件” 就是断开与文件之间的联系，释放结构体变量，同时禁止再对文件进行操作。</p>
+<blockquote>
+<p>标准输入文件 stdin（表示键盘）、标准输出文件 stdout（表示显示器）、标准错误文件 stderr（表示显示器）是由系统打开的，可直接使用。</p>
+</blockquote>
+<p>使用 <code>&lt;stdio.h&gt;</code> 头文件中的 <code>fopen()</code> 函数即可打开文件，它的用法为：</p>
+<pre tabindex="0"><code>FILE *fopen(char *filename, char *mode);
+// - filename  表示文件名称
+// - mode      表示打开方式
+</code></pre><p><code>fopen()</code> 会获取文件信息，包括文件名、文件状态、当前读写位置等，并将这些信息保存到一个 FILE 类型的结构体变量中，然后将该变量的地址返回。</p>
+<p>FILE 是 <code>&lt;stdio.h&gt;</code> 头文件中的一个结构体，它专门用来保存文件信息。如果希望接收 <code>fopen()</code> 的返回值，就需要定义一个 FILE 类型的指针。</p>
+<p>下面我们来看一段文件操作的规范写法：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>FILE <span style="color:#000;font-weight:bold">*</span>fp;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> ((fp <span style="color:#000;font-weight:bold">=</span> fopen(<span style="color:#d14">&#34;D:</span><span style="color:#d14">\\</span><span style="color:#d14">demo.txt&#34;</span>, <span style="color:#d14">&#34;rb&#34;</span>)) <span style="color:#000;font-weight:bold">==</span> <span style="color:#0086b3">NULL</span>) {
+</span></span><span style="display:flex;"><span>printf(<span style="color:#d14">&#34;Fail to open file!</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>exit(<span style="color:#099">0</span>);                      <span style="color:#998;font-style:italic">// 结束程序
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我们在打开文件时 <strong>一定要</strong> 通过判断 <code>fopen()</code> 的返回值是否和 <code>NULL</code> 相等来判断是否打开失败。</p>
+<p>关于文件打开方式 mode</p>
+<p>不同的操作需要不同的文件权限（只读、读写等），另外，文件也有不同的类型，按照数据的存储方式可以分为二进制文件和文本文件，它们的操作细节是不同的。</p>
+<p>在调用 <code>fopen()</code> 函数时，这些信息都必须提供，称为 <strong>文件打开方式</strong> ，具体如下：</p>
+<table>
+<thead>
+<tr>
+<th>打开方式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>控制读写权限的字符串</td>
+<td>必须指明</td>
+</tr>
+<tr>
+<td>————————</td>
+<td>———————————————————————————————————-</td>
+</tr>
+<tr>
+<td>“r” (read)</td>
+<td>以“只读”方式打开文件。文件必须存在，否则打开失败。</td>
+</tr>
+<tr>
+<td>“w” (write)</td>
+<td>以“写入”方式打开文件。文件若不存在，新建；若存在，则清空文件内容。</td>
+</tr>
+<tr>
+<td>“a” (append)</td>
+<td>以“追加”方式打开文件。文件若不存在，新建；若存在，则（保留原有的文件内容）将写入的数据追加到文件的末尾。</td>
+</tr>
+<tr>
+<td>“r+”</td>
+<td>以“读写”方式打开文件。文件必须存在，否则打开失败。</td>
+</tr>
+<tr>
+<td>“w+”</td>
+<td>以“写入/更新”方式打开文件。相当于 w 和 r+ ，文件若不存在，新建；若存在，清空。</td>
+</tr>
+<tr>
+<td>“a+”</td>
+<td>以“追加/更新”方式打开文件。相当于 a 和 r+ ，文件若不存在，新建；若存在，追加。</td>
+</tr>
+<tr>
+<td>————————</td>
+<td>———————————————————————————————————-</td>
+</tr>
+<tr>
+<td>控制读写方式的字符串</td>
+<td>可选</td>
+</tr>
+<tr>
+<td>————————</td>
+<td>———————————————————————————————————-</td>
+</tr>
+<tr>
+<td>“t” (text)</td>
+<td>文本文件（默认）</td>
+</tr>
+<tr>
+<td>“b” (binary)</td>
+<td>二进制文件</td>
+</tr>
+</tbody>
+</table>
+<p>*注意，读写权限和读写方式可以组合使用，但是不能将读写方式放在读写权限的开头（可以放末尾和中间）。</p>
+<p>文件一旦使用完毕，应该使用 <code>fclose()</code> 函数把文件关闭，以释放相关资源，避免数据丢失。文件正常关闭时， <code>fclose()</code> 的返回值 为 0 ，如果返回非零值则表示有错误发生。</p>
+<pre tabindex="0"><code>int fclose(FILE *fp);
+</code></pre><h3 id="读写文件">读写文件</h3>
+<p>在 C 语言中，文件有多种读写方式，可以一个字符一个字符地读取，也可以读写一个字符串，还可以读取若干个字节（数据块）。文件的读写位置也非常灵活，可以从文件开头读取，也可以从中间位置读取。</p>
+<p>先来个完整的轮廓看看，如下：</p>
+<pre tabindex="0"><code>// 以字符形式读、写文件
+int fgetc(FILE *fp);
+int foutc(int ch, FILE *fp);
+
+// 以字符串形式读、写文件
+char *fgets(char *str, int n, FILE *fp);
+int  fputs (char *str, FILE *fp);
+
+// 以数据块形式读、写文件
+size_t fread (void *ptr, size_t size, size_t count, FILE *fp);
+size_t fwrite(void *ptr, size_t size, size_t count, FILE *fp);
+
+// 格式化读、写文件
+int fscanf (FILE *fp, char * format, ... );
+int fprintf(FILE *fp, char * format, ... );
+
+// 随机读、写文件
+void rewind(FILE *fp);                        // 用来将位置指针移动到文件开关
+int fseek(FILE *fp, long offset, int origin); // 用来将指针移动到任意位置
+</code></pre><p><strong>1. 以字符形式读写文件</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// int fgetc(FILE *fp);
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// - 成功时返回读取到的字符；
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// - 读取到文件末尾或读取失败时返回 EOF （一个负数，通常为 -1）
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 从 demo.txt 文件中读取一个字符，并保存到变量 ch 中
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#458;font-weight:bold">char</span> ch;
+</span></span><span style="display:flex;"><span>FILE <span style="color:#000;font-weight:bold">*</span>fp <span style="color:#000;font-weight:bold">=</span> fopen(<span style="color:#d14">&#34;demo.txt&#34;</span>, <span style="color:#d14">&#34;r+&#34;</span>);
+</span></span><span style="display:flex;"><span>ch <span style="color:#000;font-weight:bold">=</span> fgetc(fp);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>关于 EOF （end of line），表示文件末尾，是在 <code>stdio.h</code> 中定义的宏，它的值是一个负数，往往是 -1 。 <code>fgetc()</code> 的返回值类型之所以为 <code>int</code> ，就是为了容纳这个负数（char 不能是负数）。</p>
+<p>在文件内部有一个位置指针，用来指向当前读写到的位置，也就是读写到第几个字节。在文件打开时，该指针总是指向文件的第一个字节。使用 <code>fgetc()</code> 函数后，该指针会向后移动一个字节，所以可以连续多次使用 <code>fgetc()</code> 读取多个字符。</p>
+<p>*注意：这个文件内部的位置指针与 C 语言中的指针不是一回事。位置指针仅仅是一个标志，表示文件读写到的位置，也就是读写到第几个字节，它不表示地址。文件每读写一次，位置指针就会移动一次，它不需要你在程序中定义和赋值，而是由系统自动设置，对用户是隐藏的。</p>
+<p>下面我们来看一个示例，在屏幕上显示 demo.txt 文件的内容。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>() {
+</span></span><span style="display:flex;"><span>FILE <span style="color:#000;font-weight:bold">*</span>fp;
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">char</span> ch;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 如果文件不存在，给出提示并退出
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">if</span> ((fp<span style="color:#000;font-weight:bold">=</span>fopen(<span style="color:#d14">&#34;demo.txt&#34;</span>, <span style="color:#d14">&#34;rt&#34;</span>)) <span style="color:#000;font-weight:bold">==</span> <span style="color:#0086b3">NULL</span>) {
+</span></span><span style="display:flex;"><span>	puts(<span style="color:#d14">&#34;Fail to open file!&#34;</span>);
+</span></span><span style="display:flex;"><span>	exit(<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 每次读取一个字节，直到读取完毕
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">while</span> ((ch<span style="color:#000;font-weight:bold">=</span>fgetc(fp)) <span style="color:#000;font-weight:bold">!=</span> EOF) {
+</span></span><span style="display:flex;"><span>	putchar(ch);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>putchar(<span style="color:#d14">&#39;\n&#39;</span>);                <span style="color:#998;font-style:italic">// 输出换行符
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>fclose(fp);                   <span style="color:#998;font-style:italic">// 关闭文件
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>写字符函数 fputc</strong></p>
+<p>再看一个写入的示例，从键盘输入一行字符，写入文件。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// int foutc(int ch, FILE *fp);
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// - 成功时返回写入的字符
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// - 失败时返回 EOF （一个负数）
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>(){
+</span></span><span style="display:flex;"><span>FILE <span style="color:#000;font-weight:bold">*</span>fp;
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">char</span> ch;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 判断文件是否打开成功
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">if</span> ((fp<span style="color:#000;font-weight:bold">=</span>fopen(<span style="color:#d14">&#34;demo.txt&#34;</span>, <span style="color:#d14">&#34;wt+&#34;</span>)) <span style="color:#000;font-weight:bold">==</span> <span style="color:#0086b3">NULL</span>) {
+</span></span><span style="display:flex;"><span>	puts(<span style="color:#d14">&#34;Fail to open file!&#34;</span>);
+</span></span><span style="display:flex;"><span>	exit(<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>printf(<span style="color:#d14">&#34;Input a string:</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 每次从键盘读取一个字符并写入文件
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">while</span> ((ch<span style="color:#000;font-weight:bold">=</span>getchar()) <span style="color:#000;font-weight:bold">!=</span> <span style="color:#d14">&#39;\n&#39;</span>) {
+</span></span><span style="display:flex;"><span>	fputc(ch, fp);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fclose(fp);
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p><strong>2. 以字符串形式读写文件</strong></p>
+<p><code>fgets()</code> 函数用来从指定的文件中读取一个字符串，并保存到字符数组中，用法如下：</p>
+<pre tabindex="0"><code>char *fgets(char *str, int n, FILE *fp);
+// - str 为字符数组（长度为 n+1 ，不要忘了读取到的字符串会在末尾自动添加 &#39;\0&#39;）
+// - n   为要读取的字符数目
+// - fp  为文件指针
+
+// 读取成功时返回字符数组的首地址，也即 str
+// 读取失败时，返回 NULL
+// 如果开始读取时，文件内部指针已经指向了文件末尾，将读取不到任何字符，也返回 NULL
+</code></pre><p>来看一个示例：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 从 demo.txt 中读取 100 个字符，并保存到字符数组 str 中
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#999;font-weight:bold;font-style:italic">#define N 101
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">char</span> str[N];
+</span></span><span style="display:flex;"><span>FILE <span style="color:#000;font-weight:bold">*</span>fp <span style="color:#000;font-weight:bold">=</span> fopen(<span style="color:#d14">&#34;demo.txt&#34;</span>, <span style="color:#d14">&#34;r&#34;</span>);
+</span></span><span style="display:flex;"><span>fgets(str, N, fp);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>*需要重点说明的是，在读取 <code>n-1</code> 个字符之前如果出现了换行，或者读到了文件末尾，则读取结束。这就意味着，不管 n 的值多大， <code>fgets()</code> 最多只能读取一行数据，不能跨行。</p>
+<blockquote>
+<p>在 C 语言中，没有按行读取文件的函数，我们可以借助 <code>fgets()</code> ，将 n 的值设置地足够大，每次就可以读取到一行数据了。</p>
+</blockquote>
+<p>再来看一个示例，一行一行地读取文件：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;stdlib.h&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#define N 100
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>() {
+</span></span><span style="display:flex;"><span>FILE <span style="color:#000;font-weight:bold">*</span>fp;
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">char</span> str[N<span style="color:#000;font-weight:bold">+</span><span style="color:#099">1</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> ((fp<span style="color:#000;font-weight:bold">=</span>fopen(<span style="color:#d14">&#34;demo.txt&#34;</span>, <span style="color:#d14">&#34;rt&#34;</span>)) <span style="color:#000;font-weight:bold">==</span> <span style="color:#0086b3">NULL</span>) {
+</span></span><span style="display:flex;"><span>	puts(<span style="color:#d14">&#34;Fial to open file!&#34;</span>);
+</span></span><span style="display:flex;"><span>	exit(<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">while</span>(fgets(str, N, fp) <span style="color:#000;font-weight:bold">!=</span> <span style="color:#0086b3">NULL</span>) {
+</span></span><span style="display:flex;"><span>	printf(<span style="color:#d14">&#34;%s&#34;</span>, str);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fclose(fp);
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>写字符串函数 fputs</strong></p>
+<p><code>fputs()</code> 函数用来向指定的文件写入一个字符串，它的用法为：</p>
+<pre tabindex="0"><code>char *fputs(char *str, FILE *fp);
+// - str 为要写入的字符串）
+// - fp  为文件指针
+
+// 写入成功时返回非负数
+// 写入失败时，返回 EOF
+</code></pre><p>来看一个示例，向上例中建立的 demo.txt 文件中追加一个字符串：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>() {
+</span></span><span style="display:flex;"><span>FILE <span style="color:#000;font-weight:bold">*</span>fp;
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">char</span> str[<span style="color:#099">102</span>] <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">0</span>}, strTemp[<span style="color:#099">100</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> ((fp<span style="color:#000;font-weight:bold">=</span>fopen(<span style="color:#d14">&#34;demo.txt&#34;</span>, <span style="color:#d14">&#34;at+&#34;</span>)) <span style="color:#000;font-weight:bold">==</span> <span style="color:#0086b3">NULL</span>) {
+</span></span><span style="display:flex;"><span>	puts(<span style="color:#d14">&#34;Fail to open file!&#34;</span>);
+</span></span><span style="display:flex;"><span>	exit(<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>printf(<span style="color:#d14">&#34;Input a string:&#34;</span>);
+</span></span><span style="display:flex;"><span>gets(strTemp);
+</span></span><span style="display:flex;"><span>strcat(str, <span style="color:#d14">&#34;</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>);
+</span></span><span style="display:flex;"><span>strcat(str, strTemp);
+</span></span><span style="display:flex;"><span>fputs(str, fp);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fclose(fp);
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p><strong>3. 以数据块形式读写文件</strong></p>
+<pre tabindex="0"><code>// 以数据块形式读、写文件
+size_t fread (void *ptr, size_t size, size_t count, FILE *fp);
+size_t fwrite(void *ptr, size_t size, size_t count, FILE *fp);
+
+// - ptr 为内存区块的指针，它可以是数组、变量、结构体等
+//       - fread() 中的 ptr 用来存放读取到的数据
+//       - fwrite() 中的 ptr 用来存放要写入的数据
+// - size  表示每个数据块的字节数
+// - count 表示要读写的数据块的块数
+// - fp    表示文件指针
+
+// 理论上，每次读写 size*count 个字节的数据
+
+// 返回成功读写的块数，即 count
+// 如果返回值小于 count
+// - 对于 fwrite() 来说，不用发生了写入错误，可以用 ferror() 函数检测
+// - 对于 fread() 来说，可能读到了文件末尾，可能发生了错误，可以用 ferror() 或 feof() 检测
+</code></pre><p><code>size_t</code> 是什么呢？</p>
+<p><code>size_t</code> 是在 <code>stdio.h</code> 和 <code>stdlib.h</code> 头文件中使用 <code>typedef</code> 定义的数据类型，表示无符号整数，即非负数，常用来表示数量。</p>
+<p>来看一个示例，从键盘输入一个数组，将数组写入文件，再读取出来：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#define N 5
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>() {
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 从键盘输入的数据放入 a，从文件读取的数据放入 b
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#458;font-weight:bold">int</span> a[N], b[N];
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> i, size <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">sizeof</span>(<span style="color:#458;font-weight:bold">int</span>);
+</span></span><span style="display:flex;"><span>FILE <span style="color:#000;font-weight:bold">*</span>fp;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span>((fp<span style="color:#000;font-weight:bold">=</span>open(<span style="color:#d14">&#34;demo.txt&#34;</span>, <span style="color:#d14">&#34;rb+&#34;</span>)) <span style="color:#000;font-weight:bold">==</span> <span style="color:#0086b3">NULL</span>) { <span style="color:#998;font-style:italic">// 以二进制方式打开
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	puts(<span style="color:#d14">&#34;Fail to pen file!&#34;</span>);
+</span></span><span style="display:flex;"><span>	exit(<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 从键盘输入数据，并保存于数组 a
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">for</span> (i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; i<span style="color:#000;font-weight:bold">&lt;</span>N; i<span style="color:#000;font-weight:bold">++</span>) {
+</span></span><span style="display:flex;"><span>	scanf(<span style="color:#d14">&#34;%d&#34;</span>, <span style="color:#000;font-weight:bold">&amp;</span>a[i]);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 将数组 a 的内容写入到文件
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>fwrite(a, size, N, fp);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 将文件中的位置指针重新定位到文件开头
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>rewind(fp);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 从文件读取内容并保存到数组 b
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>fread(b, size, N, fp);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 在屏幕上显示数组 b 的内容
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">for</span> (i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; i<span style="color:#000;font-weight:bold">&lt;</span>N; i<span style="color:#000;font-weight:bold">++</span>) {
+</span></span><span style="display:flex;"><span>	printf(<span style="color:#d14">&#34;%d&#34;</span>, b[i]);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>printf(<span style="color:#d14">&#34;</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fclose(fp);
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>打开 demo.txt，发现文件内容根本无法阅读。这是因为我们使用 “rb+” 方式打开文件，数组会原封不动地以二进制形式写入文件，一般无法阅读。</p>
+<p>再来看一个示例，从键盘输入两个学生数据，写入一个文件中，再读出这两个学生的数据显示到屏幕上：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#include</span> <span style="color:#999;font-weight:bold;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#999;font-weight:bold;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#define N 2
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">struct</span> stu {
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">char</span> name[<span style="color:#099">10</span>];
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> num;
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> age;
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">float</span> score;
+</span></span><span style="display:flex;"><span>} boya[N], boyb[N], <span style="color:#000;font-weight:bold">*</span>pa, <span style="color:#000;font-weight:bold">*</span>pb;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> <span style="color:#900;font-weight:bold">main</span>() {
+</span></span><span style="display:flex;"><span>FILE <span style="color:#000;font-weight:bold">*</span>fp;
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> i;
+</span></span><span style="display:flex;"><span>pa <span style="color:#000;font-weight:bold">=</span> boya;
+</span></span><span style="display:flex;"><span>pb <span style="color:#000;font-weight:bold">=</span> boyb;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> ((fp<span style="color:#000;font-weight:bold">=</span>fopen(<span style="color:#d14">&#34;demo.txt&#34;</span>, <span style="color:#d14">&#34;wb+&#34;</span>)) <span style="color:#000;font-weight:bold">==</span> <span style="color:#0086b3">NULL</span>) {
+</span></span><span style="display:flex;"><span>	puts(<span style="color:#d14">&#34;Fail to pen file!&#34;</span>);
+</span></span><span style="display:flex;"><span>	exit(<span style="color:#099">0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 从键盘输入数据
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>printf(<span style="color:#d14">&#34;Input data:</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> (i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; i<span style="color:#000;font-weight:bold">&lt;</span>N; i<span style="color:#000;font-weight:bold">++</span>, pa<span style="color:#000;font-weight:bold">++</span>) {
+</span></span><span style="display:flex;"><span>	scanf(<span style="color:#d14">&#34;%s %d %d %f&#34;</span>, pa<span style="color:#000;font-weight:bold">-&gt;</span>name, <span style="color:#000;font-weight:bold">&amp;</span>pa<span style="color:#000;font-weight:bold">-&gt;</span>num, <span style="color:#000;font-weight:bold">&amp;</span>pa<span style="color:#000;font-weight:bold">-&gt;</span>age, <span style="color:#000;font-weight:bold">&amp;</span>pa<span style="color:#000;font-weight:bold">-&gt;</span>score);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 将数组 boya 的数据写入文件
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>fwrite(boya, <span style="color:#000;font-weight:bold">sizeof</span>(<span style="color:#000;font-weight:bold">struct</span> stu), N, fp);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 将文件中的位置指针重置到文件开头
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>rewind(fp);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 从文件读取数据并保存到数据 boyb
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>fread(boyb, <span style="color:#000;font-weight:bold">sizeof</span>(<span style="color:#000;font-weight:bold">struct</span> stu), N, fp);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 输出数组 boyb 中的数据
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">for</span> (i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>; i<span style="color:#000;font-weight:bold">&lt;</span>N; i<span style="color:#000;font-weight:bold">++</span>, pb<span style="color:#000;font-weight:bold">++</span>) {
+</span></span><span style="display:flex;"><span>	printf(<span style="color:#d14">&#34;%s  %d  %d  %f</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>, pb<span style="color:#000;font-weight:bold">-&gt;</span>name, pb<span style="color:#000;font-weight:bold">-&gt;</span>num, pb<span style="color:#000;font-weight:bold">-&gt;</span>age, pb<span style="color:#000;font-weight:bold">-&gt;</span>score);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fclose(fp);
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">return</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p><strong>4. 格式化读写文件</strong></p>
+<p><code>fscanf()</code> 和 <code>fprintf()</code> 函数与前面使用的 <code>scanf()</code> 和 <code>printf()</code> 功能相似，都是格式化读写函数，两者的区别在于 <code>fscanf()</code> 和 <code>fprintf()</code> 的读写对象不是键盘和显示器，而是磁盘文件。</p>
+<pre tabindex="0"><code>// 格式化读、写文件
+int fscanf (FILE *fp, char * format, ... );
+int fprintf(FILE *fp, char * format, ... );
+
+// - fp     为文件指针
+// - format 为格式控制字符串
+// - ...    表示参数列表
+
+// 成功 返回写入的字符的个数
+// 失败 返回负数
+</code></pre><p>来看一个简单的示例：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>FILE <span style="color:#000;font-weight:bold">*</span>fp;
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span> i, j;
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">char</span> <span style="color:#000;font-weight:bold">*</span>str, ch;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fscanf(fp, <span style="color:#d14">&#34;%d %s&#34;</span>, <span style="color:#000;font-weight:bold">&amp;</span>i, str);
+</span></span><span style="display:flex;"><span>fprintf(fp, <span style="color:#d14">&#34;%d %c&#34;</span>, j, ch);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p><strong>5. 随机读写文件</strong></p>
+<p>移动文件内部位置指针的函数主要有两个，即 <code>rewind()</code> 和 <code>fseek()</code> 。</p>
+<pre tabindex="0"><code>// 随机读、写文件
+void rewind(FILE *fp);                          // 用来将位置指针移动到文件开关
+int  fseek (FILE *fp, long offset, int origin); // 用来将指针移动到任意位置
+
+// - fp     为文件指针，也就是被移动的文件
+// - offset 为偏移量，也就是要移动的字节数，正向后移，负向前移
+// - origin 为起始位置，C 语言规定起始位置有三种：
+//          - 文件开头， 常量名 SEEK_SET， 值为 0
+//          - 当前位置， 常量名 SEEK_CUR， 值为 1
+//          - 文件末尾， 常量名 SEEK_END， 值为 2
+</code></pre><p>如 <code>fseek(fp, 100, 0);</code> 表示把位置指针移动到离文件开头 100 个字节处。</p>
+
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="/about" target="_blank">
+            
+            将喜欢的一切留在身边，这便是努力的意义
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

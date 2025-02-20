@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="浏览器的渲染过程 - https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%B8%B2%E6%9F%93%E8%BF%87%E7%A8%8B/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>浏览器的渲染过程</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">浏览器的渲染过程</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/javascript/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：JavaScript <sup>24</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/ajax/">Ajax</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/callapply-%E5%92%8C-bind/">call、apply 和 bind</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/canvas/">Canvas</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/devmaps/frontend/">Frontend</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/js-%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE/">JS 中的拖放</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/js-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%91%98%E5%BD%95/">JS 高级程序设计·摘录</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/react/">React</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/react-%E5%9F%BA%E7%A1%80%E8%84%9A%E6%89%8B%E6%9E%B6%E7%A4%BA%E4%BE%8B/">React 基础脚手架示例</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/source-map/">Source Map</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/typescript-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">TypeScript 那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/web-%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%9A%8F%E6%83%B3/">Web 开发相关体系结构随想</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E-fetch/">关于 fetch</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E-promise/">关于 Promise</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%89%8D%E7%AB%AF%E6%B5%85%E8%B0%88/">前端浅谈</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2/">文件转换</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/">模块化编程</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8/">浏览器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BD%8D%E7%BD%AE/">浏览器中的尺寸大小和位置</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%B8%B2%E6%9F%93%E8%BF%87%E7%A8%8B/">浏览器的渲染过程</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/">滚动条样式</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%94%9F%E6%88%90%E5%99%A8/">生成器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%BD%91%E9%A1%B5%E4%B8%AD%E7%9A%84%E9%94%9A%E7%82%B9%E8%B7%B3%E8%BD%AC/">网页中的锚点跳转</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E8%B7%A8%E5%9F%9F/">跨域</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/">防抖与节流</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2024-12-13&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2024-12-13&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            3796 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            8 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/javascript">JavaScript</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#请先看一张大图">请先看一张大图</a></li>
+    <li><a href="#domtree-的构建">DOMTree 的构建</a></li>
+    <li><a href="#cssomtree-的构建">CSSOMTree 的构建</a></li>
+    <li><a href="#渲染树的构建">渲染树的构建</a></li>
+    <li><a href="#renderobject-和-renderlayer">RenderObject 和 RenderLayer</a></li>
+    <li><a href="#布局">布局</a></li>
+    <li><a href="#渲染">渲染</a></li>
+    <li><a href="#总结">总结</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p>➡️ 本文内容主体部分来自 <a href="https://zhuanlan.zhihu.com/p/74792085">浏览器的渲染过程 - 知乎</a></p>
+<blockquote>
+<p>通常，我们只需要编写 HTML，CSS，JavaScript，浏览器上就能呈现出漂亮的网页了，但是浏览器是如何使用我们的代码在屏幕上渲染像素的呢？</p>
+</blockquote>
+<h2 id="请先看一张大图">请先看一张大图</h2>
+<p>浏览器将 HTML，CSS，JavaScript 代码转换成屏幕上所能呈现的实际像素，这期间所经历的一系列步骤，叫做关键渲染路径（Critical Rendering Path）。其中包含：</p>
+<ul>
+<li>构建 <a href="https://zhida.zhihu.com/search?content_id=104749713&amp;content_type=Article&amp;match_order=1&amp;q=%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B&amp;zhida_source=entity">对象模型</a>（DOM，CSSOM）</li>
+<li>构建渲染树（RenderTree）</li>
+<li>布局</li>
+<li>渲染</li>
+</ul>
+<p>在构建对象模型到构建 <a href="https://zhida.zhihu.com/search?content_id=104749713&amp;content_type=Article&amp;match_order=2&amp;q=%E6%B8%B2%E6%9F%93%E6%A0%91&amp;zhida_source=entity">渲染树</a>的这一过程，还穿插着 JS 脚本的加载和执行。如下图所示：</p>
+<p>![[assets/Pasted image 20241213170156.png]]</p>
+<h2 id="domtree-的构建">DOMTree 的构建</h2>
+<p>浏览器的渲染从解析 HTML 文档开始，宏观上，可以分为下面几个步骤：</p>
+<p><img src="https://picx.zhimg.com/v2-83434af2563829bbe05d677ce33e3033_1440w.jpg" alt=""></p>
+<p><strong>第一步（解析）</strong>：从网络或者磁盘下读取的 HTML 原始 <a href="https://zhida.zhihu.com/search?content_id=104749713&amp;content_type=Article&amp;match_order=1&amp;q=%E5%AD%97%E8%8A%82%E7%A0%81&amp;zhida_source=entity">字节码</a>，通过设置的 charset 编码，转换成相应字符。</p>
+<p>![[assets/Pasted image 20241213170126.png]]</p>
+<p><strong>第二步（token 化）</strong>：通过 <a href="https://zhida.zhihu.com/search?content_id=104749713&amp;content_type=Article&amp;match_order=1&amp;q=%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90%E5%99%A8&amp;zhida_source=entity">词法分析器</a>，将字符串解析成 Token，Token 中会标注出当前的 Token 是 <code>开始标签</code>，还是 <code>结束标签</code>，或者 <code>文本标签</code> 等。</p>
+<p><img src="https://pic1.zhimg.com/v2-ccaacbf35961ff61f30be90ac5b1be10_1440w.jpg" alt=""></p>
+<p><strong>第三步（生成 Nodes 并构建 DOM 树）</strong>：浏览器会根据 Tokens 里记录的 <code>开始标签</code>，<code>结束标签</code>，将 Tokens 之间相互串联起来（带有结束标签的 Token 不会生成 Node）。</p>
+<p>Node 包含了这个节点的所有属性。例如 <code>&lt;img src=&quot;xxx.png&quot; &gt;</code> 标签最终生成出的节点对象中会保存图片地址等信息。</p>
+<p>事实上，在构建 DOM 树时，不是要等所有的 Tokens 都转换成 Nodes 后才开始，而是一边生成 Token 一边采取 <code>深度遍历算法</code> 消耗 Token 来生成 Node，如下图所示：</p>
+<p>图中有颜色的小数字代表构建的具体步骤，可以看出，首先生成出 <code>html Token</code>,并消耗 Token 创建出 <code>html 节点对象</code>，接着生成 <code>head Token</code> 并消耗 Token 创建出 <code>head节点对象</code>&hellip;&hellip;，当所有的 Tokens 都消耗完了，紧接着 DOM 树也就构建完了。</p>
+<p>![[assets/Pasted image 20241213170055.png]]</p>
+<p>这里抛出个小问题，为什么有时在 js 中访问 DOM 时浏览器会报错呢？</p>
+<p>因为在上述的解析的过程中，如果碰到了 <code>script</code> 或者 <code>link</code> 标签，就会根据 <code>src</code> 对应的地址去加载资源，在 <code>script</code> 标签没有设置 <code>async/defer</code> 属性时，这个加载过程是 <code>下载并执行完全部的代码</code>，此时，DOM 树还没有完全创建完毕，这个时候如果 js 企图访问 script 标签后面的 <a href="https://zhida.zhihu.com/search?content_id=104749713&amp;content_type=Article&amp;match_order=1&amp;q=DOM%E5%85%83%E7%B4%A0&amp;zhida_source=entity">DOM 元素</a>，浏览器就会抛出<strong>找不到该 DOM 元素</strong>的错误。</p>
+<p>值得注意的是：从 bytes 到 Tokens 的这个过程，浏览器都可以交给其他单独的线程去处理，不会堵塞浏览器的 <a href="https://zhida.zhihu.com/search?content_id=104749713&amp;content_type=Article&amp;match_order=1&amp;q=%E6%B8%B2%E6%9F%93%E7%BA%BF%E7%A8%8B&amp;zhida_source=entity">渲染线程</a>。但是后面的部分就都在渲染线程下进行了，也就是我们常说的 js 单线程环境。</p>
+<h2 id="cssomtree-的构建">CSSOMTree 的构建</h2>
+<p>DOM 会记录页面的内容，但是浏览器还需要知道这些内容该用什么样式去展示，所以还需要构建 CSSOMTree。CSSOM 的生成过程和 DOM 的生成过程十分相似，也是：1.解析，2. <a href="https://zhida.zhihu.com/search?content_id=104749713&amp;content_type=Article&amp;match_order=1&amp;q=Token%E5%8C%96&amp;zhida_source=entity">Token 化</a>，3.生成 Nodes 并构建 CSSOMTree：</p>
+<p>假设浏览器收到了下面这样一段 css:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#000080">body</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">font-size</span>: <span style="color:#099">16</span><span style="color:#458;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#000080">p</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">font-weight</span>: <span style="color:#000;font-weight:bold">bold</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#000080">p</span> <span style="color:#000080">span</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">display</span>: <span style="color:#000;font-weight:bold">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#000080">span</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">color</span>: <span style="color:#000;font-weight:bold">red</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#000080">img</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">float</span>: <span style="color:#000;font-weight:bold">right</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最终会生成如下的 CSSOMTree:</p>
+<p><img src="https://picx.zhimg.com/v2-f256433f72ea22db26e4baa02cecac19_1440w.jpg" alt=""></p>
+<p>从图中可以看出，最开始 <code>body</code> 有一个样式规则是 <code>font-size:16px</code>，之后，在 body 这个样式基础上每个 <a href="https://zhida.zhihu.com/search?content_id=104749713&amp;content_type=Article&amp;match_order=1&amp;q=%E5%AD%90%E8%8A%82%E7%82%B9&amp;zhida_source=entity">子节点</a>还会添加自己单独的样式规则，比如 <code>span</code> 又添加了一个样式规则 <code>color:red</code>。正是因为样式这种类似于继承的特性，浏览器设定了一条规则：<strong>CSSOMTree 需要等到完全构建后才可以被使用，因为后面的属性可能会覆盖掉前面的设置</strong>。比如在上面的 css 代码基础上再添加一行代码 <code>p {font-size:12px}</code>，那么之前设置的 <code>16px</code> 将会被覆盖成 <code>12px</code>。</p>
+<p>下面是官方给的一种解释：</p>
+<blockquote>
+<p>未构建完的 CSSOMTree 是不准确的，浏览器必须等到 CSSOMTree 构建完毕后才能进入下一阶段。<br>
+所以，CSS 的加载速度与构建 CSSOMTree 的速度将直接影响首屏渲染速度，因此在默认情况下 CSS 被视为阻塞渲染的资源，需要将它尽早、尽快地下载到客户端，以便缩短首次渲染的时间。</p>
+</blockquote>
+<p>那么回到上面生成 DOM 时提到的 JS 问题：<strong>在标签没有设置 <code>async/defer</code> 属性时，js 会阻塞 DOM 的生成</strong>。原因是 js 会改变 DOMTree 的内容，如果不阻塞，会出现一边生成 DOM 内容，一边修改 DOM 内容的情况，无法确保最终生成的 DOMTree 是确定唯一的。</p>
+<p>同理，JS 也会可以修改 CSS 样式，影响 CSSOMTree 最终的结果。而我们前面提到，不完整的 CSSOMTree 是不可以被使用的，如果 JS 试图在<strong>浏览器还未完成 CSSOMTree 的下载和构建</strong>时去操作 CSS 样式，浏览器会<strong>暂停脚本的运行和 DOM 的构建</strong>，直至浏览器完成了 CSSOM 的下载和构建。也就是说，<strong>JS 脚本的出现会让 CSSOM 的构建阻塞 DOM 的构建</strong>。</p>
+<blockquote>
+<p>平时谈及页面性能优化，经常会强调 css 文件应该放在 html 文档中的前面引入，js 文件应该放在后面引入，这么做的原因是什么呢？</p>
+</blockquote>
+<p>举个例子：本来，DOM 构建和 CSSOM 构建是两个过程，井水不犯河水。假设 DOM 构建完成需要 1s，CSSOM 构建也需要 1s，在 DOM 构建了 0.2s 时发现了一个 <code>link</code> 标签，此时完成这个操作需要的时间大概是 1.2s，如下图所示：</p>
+<p><img src="https://picx.zhimg.com/v2-7609e46b2ec5b36f010f6967092f7f67_1440w.jpg" alt=""></p>
+<p>而此时我们在 HTML 文档的中间插中入了一段 JS 代码，在 DOM 构建中间的过程中发现了这个 <code>script</code> 标签，假设这段 JS 代码只需要执行 0.0001s，那么完成这个操作需要的时间就会变成：</p>
+<p>![[assets/Pasted image 20241213170001.png]]</p>
+<p>那如果我们把 css 放到前面，js 放到最后引入时，构建时间会变成：</p>
+<p>![[assets/Pasted image 20241213165908.png|600]]</p>
+<p>由此可见，虽然只是插入了小小的一段只运行 0.0001s 的 <a href="https://zhida.zhihu.com/search?content_id=104749713&amp;content_type=Article&amp;match_order=1&amp;q=js%E4%BB%A3%E7%A0%81&amp;zhida_source=entity">js 代码</a>，不同的引入时机也会严重影响 DOMTree 的构建速度。</p>
+<p>简而言之，如果在 DOM，CSSOM 和 JavaScript 执行之间引入大量的依赖关系，可能会导致浏览器在处理渲染资源时出现大幅度延迟：</p>
+<ul>
+<li>当浏览器遇到一个 script 标签时，DOMTree 的构建将被暂停，直至脚本执行完毕</li>
+<li>JavaScript 可以查询和修改 DOMTree 与 CSSOMTree</li>
+<li>直至 CSSOM 构建完毕，JavaScript 才会执行</li>
+<li>脚本在文档中的位置很重要</li>
+</ul>
+<h2 id="渲染树的构建">渲染树的构建</h2>
+<p>现在，我们已经拥有了完整的 <a href="https://zhida.zhihu.com/search?content_id=104749713&amp;content_type=Article&amp;match_order=5&amp;q=DOM%E6%A0%91&amp;zhida_source=entity">DOM 树</a>和 CSSOM 树。DOM 树上每一个节点对应着网页里每一个元素，CSSOM 树上每个节点对应着网页里每个元素的样式，并且此时浏览器也可以通过 JavaScript 操作 DOM/CSSOM 树，动态改变它的结构。但是 DOM/ <a href="https://zhida.zhihu.com/search?content_id=104749713&amp;content_type=Article&amp;match_order=4&amp;q=CSSOM%E6%A0%91&amp;zhida_source=entity">CSSOM 树</a>本身并不能直接用于排版和渲染，浏览器还会生成另外一棵树：Render 树。</p>
+<p><img src="https://pic3.zhimg.com/v2-08c458e16aa42f339a7730df0679d334_1440w.jpg" alt=""></p>
+<p>接下来我们来谈几条概念</p>
+<ul>
+<li>Render 树上的每一个节点被称为：<code>RenderObject</code>。</li>
+<li>RenderObject 跟 DOM 节点几乎是一一对应的，当一个 <code>可见的 DOM 节点</code> 被添加到 DOM 树上时，内核就会为它生成对应的 RenderOject 添加到 Render 树上。</li>
+<li>其中，可见的 <a href="https://zhida.zhihu.com/search?content_id=104749713&amp;content_type=Article&amp;match_order=1&amp;q=DOM%E8%8A%82%E7%82%B9&amp;zhida_source=entity">DOM 节点</a>不包括：
+<ul>
+<li>一些不会体现在渲染输出中的节点（<code>&lt;html&gt;&lt;script&gt;&lt;link&gt;….</code>），会直接被忽略掉。</li>
+<li>通过 CSS 隐藏的节点。例如上图中的 <code>span</code> 节点，因为有一个 CSS 显式规则在该节点上设置了 <code>display:none</code> 属性，那么它在生成 RenderObject 时会被直接忽略掉。</li>
+</ul>
+</li>
+<li>Render 树是衔接浏览器排版引擎和渲染引擎之间的<strong>桥梁</strong>，它是<strong>排版引擎的输出，渲染引擎的输入</strong>。</li>
+</ul>
+<p>此时的 Render 树上，已经包含了网页上所有可见元素的内容和位置信息 排版引擎会根据 Render 树的内容和结构，准确的计算出元素该在网页上的什么位置。到此，我们已经具备进入布局的一切准备条件，但是通过上面我们知道，布局后面还有一个渲染过程，那么 Render 树是衔接浏览器排版引擎和渲染引擎之间的桥梁，它是排版引擎的输出，渲染引擎的输入。这句话是什么意思呢？</p>
+<h2 id="renderobject-和-renderlayer">RenderObject 和 RenderLayer</h2>
+<blockquote>
+<p>浏览器渲染引擎并不是直接使用 Render 树进行绘制，为了方便处理 <code>Positioning,Clipping,Overflow-scroll,CSS Transfrom/Opacrity/Animation/Filter,Mask or Reflection,Z-indexing</code> 等属性，浏览器需要生成另外一棵树：<strong>Layer 树</strong> 。</p>
+</blockquote>
+<p><img src="https://pica.zhimg.com/v2-2346d826eab4d7c9a73547341da569ec_1440w.jpg" alt=""></p>
+<p>浏览器会为一些<strong>特定</strong>的 <code>RenderObject</code> 生成对应的 <code>RenderLayer</code>，其中的规则是：</p>
+<ul>
+<li>是否是页面的根节点</li>
+<li>是否有 css 的一些布局属性</li>
+<li>是否透明</li>
+<li>是否有溢出</li>
+<li>是否有 css 滤镜</li>
+<li>是否包含一个 canvas 元素使得节点拥有视图上下文</li>
+<li>是否包含一个 video 元素</li>
+</ul>
+<p>当满足上面其中一个条件时，这个 <code>RrenderObject</code> 就会被浏览器选中生成对应的 <code>RenderLayer</code>。至于那些没有被命运选中的 RrenderObject，会从属与父节点的 RenderLayer。最终，每个 RrenderObject 都会直接或者间接的属于一个 RenderLayer。</p>
+<p>浏览器渲染引擎在布局和渲染时会遍历整个 Layer 树，访问每一个 <code>RenderLayer</code>，再遍历从属于这个 RenderLayer 的  <code>RrenderObject</code>，将每一个 RenderObject 绘制出来。可以理解为：Layer 树决定了网页绘制的层次顺序，而从属于 RenderLayer 的 RrenderObject 决定了这个 Layer 的内容，所有的  <code>RenderLayer</code>  和  <code>RrenderObject</code>  一起就决定了网页在屏幕上最终呈现出来的内容。</p>
+<h2 id="布局">布局</h2>
+<p>到目前为止，浏览器计算出了哪些节点是可见的以及它的信息和样式，接下来就需要计算这些节点在设备视口内的确切位置和大小，这个过程我们称之为“布局”。</p>
+<p>布局最后的输出是一个“盒模型”：将所有相对测量值都转换成屏幕上的绝对像素。</p>
+<p><img src="https://picx.zhimg.com/v2-7be8070b492d7e4d8b665ca69aebf01b_1440w.jpg" alt=""></p>
+<h2 id="渲染">渲染</h2>
+<p>最后，既然我们知道了哪些节点可见、它们的计算样式以及几何信息，我们终于可以将这些信息传递给最后一个阶段：将渲染树中的每个节点转换成屏幕上的实际像素：浏览器通过发出“Paint Setup”和“Paint”事件，将渲染树转换成屏幕上的像素。</p>
+<p><img src="https://picx.zhimg.com/v2-ba543502c46c36bd36a562b6e8f999c5_1440w.jpg" alt="|400"></p>
+<p>至此，我们就能够在浏览器上看到漂亮的网页了</p>
+<blockquote>
+<p>谈及页面性能优化，我们也常说要尽量减少浏览器的重排和重绘，浏览器重排和重绘时究竟做了哪些工作呢？</p>
+</blockquote>
+<p>我们平时常说的重排，其实就是浏览器计算 render 树，布局到渲染的这个过程，而重绘就是计算 layer 树到渲染的这个过程，每当触发一次重绘和重排时，浏览器都需要重新经过一遍上述的计算。很显然，重排会产生比重绘更大的开销，但无论是重排还是重绘，都会给浏览器渲染线程造成很大的负担，所以，我们在实际生产中要严格注意减少重排和重绘的触发。至于如何减少重排和重绘的次数，这里就不多做展开了，详细请听下回分解~</p>
+<h2 id="总结">总结</h2>
+<p>经过 <code>1.构建对象模型（DOM，CSSOM），2.构建渲染树（RenderTree），3.布局，4.渲染 </code> 这几个步骤后，我们就能在浏览器上看到漂亮的网页啦。</p>
+<p>CSS 被视为阻塞渲染的资源，应放到代码的头部尽快加载。</p>
+<p>同步的 JavaScript 会暂停 DOMTree 的构建，应放到代码的尾部最后加载，或者使用 <code>async/defer 属性</code> 异步加载 JavaScript。</p>
+<p>重排和重绘会给浏览器渲染线程造成很大的负担，尽量减少重排和重绘的触发次数。</p>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="/about" target="_blank">
+            
+            将喜欢的一切留在身边，这便是努力的意义
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

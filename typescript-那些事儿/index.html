@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="TypeScript 那些事儿 - https://aituyaa.com/typescript-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>TypeScript 那些事儿</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">TypeScript 那些事儿</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/javascript/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：JavaScript <sup>24</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/ajax/">Ajax</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/callapply-%E5%92%8C-bind/">call、apply 和 bind</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/canvas/">Canvas</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/devmaps/frontend/">Frontend</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/js-%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE/">JS 中的拖放</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/js-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%91%98%E5%BD%95/">JS 高级程序设计·摘录</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/react/">React</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/react-%E5%9F%BA%E7%A1%80%E8%84%9A%E6%89%8B%E6%9E%B6%E7%A4%BA%E4%BE%8B/">React 基础脚手架示例</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/source-map/">Source Map</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/typescript-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">TypeScript 那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/web-%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%9A%8F%E6%83%B3/">Web 开发相关体系结构随想</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E-fetch/">关于 fetch</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E-promise/">关于 Promise</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%89%8D%E7%AB%AF%E6%B5%85%E8%B0%88/">前端浅谈</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2/">文件转换</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/">模块化编程</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8/">浏览器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BD%8D%E7%BD%AE/">浏览器中的尺寸大小和位置</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%B8%B2%E6%9F%93%E8%BF%87%E7%A8%8B/">浏览器的渲染过程</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/">滚动条样式</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%94%9F%E6%88%90%E5%99%A8/">生成器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%BD%91%E9%A1%B5%E4%B8%AD%E7%9A%84%E9%94%9A%E7%82%B9%E8%B7%B3%E8%BD%AC/">网页中的锚点跳转</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E8%B7%A8%E5%9F%9F/">跨域</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/">防抖与节流</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2024-10-25&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2025-01-29&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            6032 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            13 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/javascript">JavaScript</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#为什么需要-typescript">为什么需要 TypeScript</a></li>
+    <li><a href="#类型注解">类型注解</a></li>
+    <li><a href="#有哪些类型">有哪些类型</a></li>
+    <li><a href="#类型别名和接口">类型别名和接口</a></li>
+    <li><a href="#类型断言">类型断言</a></li>
+    <li><a href="#字面量类型">字面量类型</a></li>
+    <li><a href="#类型收窄">类型收窄</a></li>
+    <li><a href="#函数">函数</a>
+      <ul>
+        <li><a href="#可选参数">可选参数</a></li>
+        <li><a href="#回调中的可选参数">回调中的可选参数</a></li>
+        <li><a href="#剩余参数">剩余参数</a></li>
+      </ul>
+    </li>
+    <li><a href="#对象类型">对象类型</a></li>
+    <li><a href="#类和模块">类和模块</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p>TypeScript 闪念随手记……</p>
+<blockquote>
+<p>:: 不要试图把一门语言的边边角角都一次性都搞清楚，没啥用，你又不准备成为“参考书”。一则平时使用的部分并没有那么多，二则脱离了实际应用的抽象文字并不容易记忆。</p>
+</blockquote>
+<h2 id="为什么需要-typescript">为什么需要 TypeScript</h2>
+<p>JavaScript 的每个值执行不同的操作时会有不同的行为。这听起来有点抽象，所以让我们举个例子，假设我们有一个名为 <code>message</code> 的变量，试想我们可以做哪些操作：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// Accessing the property &#39;toLowerCase&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// on &#39;message&#39; and then calling it
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>message.toLowerCase();
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// Calling &#39;message&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>message();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>第一行代码是获取属性 <code>toLowerCase</code> ，然后调用它。第二行代码则是直接调用 <code>message</code> 。</p>
+<p>但其实我们连 <code>message</code> 的值都不知道呢，自然也不知道这段代码的执行结果。每一个操作行为都先取决于我们有什么样的值。</p>
+<ul>
+<li><code>message</code> 是可调用的吗？</li>
+<li><code>message</code> 有一个名为 <code>toLowerCase</code> 的属性吗？</li>
+<li>如果有，<code>toLowerCase</code> 是可以被调用的吗？</li>
+<li>如果这些值都可以被调用，它们会返回什么？</li>
+</ul>
+<p>当我们写 JavaScript 的时候，这些问题的答案我们需要谨记在心，同时还要期望处理好所有的细节。</p>
+<p>让我们假设 <code>message</code> 是这样定义的：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> message <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Hello World!&#34;</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>你完全可以猜到这段代码的结果，如果我们尝试运行 <code>message.toLowerCase()</code> ，我们可以得到这段字符的小写形式。</p>
+<p>那第二段代码呢？如果你对 JavaScript 比较熟悉，你肯定知道会报如下错误：</p>
+<pre tabindex="0"><code>TypeError: message is not a function
+</code></pre><p>如果我们能避免这样的报错就好了。</p>
+<p><strong>当我们运行代码的时候，JavaScript 会在运行时先算出值的类型（type），然后再决定干什么。所谓值的类型，也包括了这个值有什么行为和能力。</strong> 当然 <code>TypeError</code> 也会暗示性的告诉我们一点，比如在这个例子里，它告诉我们字符串 <code>Hello World</code> 不能作为函数被调用。</p>
+<p>对于一些值，比如基本值 <code>string</code> 和 <code>number</code>，我们可以使用 <code>typeof</code> 运算符确认他们的类型。但是对于其他的比如函数，就没有对应的方法可以确认他们的类型了，举个例子，思考这个函数：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> fn(x) {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span> x.flip();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我们通过阅读代码可以知道，函数只有被传入一个拥有可调用的 <code>flip</code> 属性的对象，才会正常执行。但是 JavaScript 在代码执行时，并不会把这个信息体现出来。<strong>在 JavaScript 中，唯一可以知道 <code>fn</code> 在被传入特殊的值时会发生什么，就是调用它，然后看会发生什么。这种行为让你很难在代码运行前就预测代码执行结果，这也意味着当你写代码的时候，你会更难知道你的代码会发生什么。</strong></p>
+<p>从这个角度来看，类型就是描述什么样的值可以被传递给 <code>fn</code>，什么样的值则会导致崩溃。JavaScript 仅仅提供了动态类型（dynamic typing），这需要你先运行代码然后再看会发生什么。</p>
+<p>替代方案就是<strong>使用静态类型系统（static type system），在代码运行之前就预测需要什么样的代码</strong>。</p>
+<p>在代码运行之前就找到错误，这就是静态类型检查器比如 TypeScript 做的事情。<strong>静态类型系统（Static types systems）描述了值应有的结构和行为。一个像 TypeScript 的类型检查器会利用这个信息，并且在可能会出错的时候告诉我们。</strong></p>
+<p>TypeScript 不仅在我们犯错的时候，可以找出错误，还可以防止我们犯错。</p>
+<p>类型检查器因为有类型信息，可以检查比如说是否正确获取了一个变量的属性。也正是因为有这个信息，它也可以在你输入的时候，列出你可能想要使用的属性。</p>
+<p>这意味着 TypeScript 对你编写代码也很有帮助，核心的类型检查器不仅可以提供错误信息，还可以提供代码补全功能。</p>
+<p>TypeScript 的功能很强大，除了在你输入的时候提供补全和错误信息。还可以支持“快速修复”功能，即自动的修复错误，重构成组织清晰的代码。同时也支持导航功能，比如跳转到变量定义的地方，或者找到一个给定的变量所有的引用。</p>
+<p>所有这些功能都建立在类型检查器上，并且跨平台支持。</p>
+<h2 id="类型注解">类型注解</h2>
+<p>记住，我们并不需要总是写类型注解，大部分时候，TypeScript 可以自动推断出类型。这是一个特性，如果类型系统可以正确的推断出类型，最好就不要手动添加类型注解了。</p>
+<p><strong>类型注解并不是 JavaScript 的一部分</strong>。所以并没有任何浏览器或者运行环境可以直接运行 TypeScript 代码。这就是为什么 TypeScript 需要一个编译器，它需要将 TypeScript 代码转换为 JavaScript 代码，然后你才可以运行它。</p>
+<blockquote>
+<p>谨记：类型注解并不会更改程序运行时的行为。</p>
+</blockquote>
+<h2 id="有哪些类型">有哪些类型</h2>
+<p>类型可以出现在很多地方，不仅仅是在类型注解 (type annotations)中。我们不仅要学习类型本身，也要学习在什么地方使用这些类型产生新的结构。</p>
+<p>我们先复习下最基本和常见的类型，这些是构建更复杂类型的基础。</p>
+<p><strong>原始类型</strong>， JavaScript 有三个非常常用的<a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">原始类型</a> ：<code>string</code>，<code>number</code> 和 <code>boolean</code>，每一个类型在 TypeScript 中都有对应的类型。它们的名字跟你在 JavaScript 中使用 <code>typeof</code> 操作符得到的结果是一样的。</p>
+<pre tabindex="0"><code>7 种原始数据类型：number bigint string boolean undefined null symbol
+</code></pre><p><strong>数组类型</strong> - <code>string[]</code> 或 <code>Array&lt;string&gt;</code> 。</p>
+<p><strong>any</strong>, TypeScript 有一个特殊的类型，<code>any</code>，当你不希望一个值导致类型检查错误的时候，就可以设置为 <code>any</code> 。</p>
+<p>当你使用 <code>const</code>、<code>var</code> 或 <code>let</code> 声明一个变量时，你可以选择性的添加一个类型注解，显式指定变量的类型。不过大部分时候，这不是必须的，因为 TypeScript 会自动推断类型。</p>
+<p><strong>函数类型</strong>，是 JavaScript 传递数据的主要方法。TypeScript 允许你指定函数的输入值和输出值的类型(参数类型注解和返回值类型注解)。</p>
+<p><strong>对象类型</strong>，定义一个对象类型，我们只需要简单的列出它的属性和对应的类型。多个属性之间可以使用 <code>,</code> 或者 <code>;</code> 分开属性，最后一个属性的分隔符加不加都行。</p>
+<p>除了原始类型，最常见的类型就是对象类型了。</p>
+<p>其中， 对象类型可以指定一些甚至所有的属性为可选的，你只需要在属性名后添加一个 <code>?</code> 。</p>
+<p><strong>联合类型</strong>，TypeScript 类型系统允许你使用一系列的操作符，基于已经存在的类型构建新的类型。</p>
+<blockquote>
+<p>注意，TypeScript 会要求 <strong>你做的事情，必须对每个联合的成员都是有效的</strong>。解决方案是用代码收窄联合类型。</p>
+</blockquote>
+<p>后面，我们还会提到[[#字面量类型]] 。</p>
+<h2 id="类型别名和接口">类型别名和接口</h2>
+<p>我们已经学会在类型注解里直接使用对象类型和联合类型，这很方便，但有的时候，一个类型会被使用多次，此时我们更希望通过一个单独的名字来引用它。</p>
+<blockquote>
+<p>:: 本质上都是为了方便复用。</p>
+</blockquote>
+<p>你可以使用<strong>类型别名</strong>给任意类型一个名字。如：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 为对象类型设置别名
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">type</span> Point <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  x: <span style="color:#458;font-weight:bold">number</span>;
+</span></span><span style="display:flex;"><span>  y: <span style="color:#458;font-weight:bold">number</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 为联合类型设置别名
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">type</span> ID <span style="color:#000;font-weight:bold">=</span> <span style="color:#458;font-weight:bold">number</span> <span style="color:#000;font-weight:bold">|</span> <span style="color:#458;font-weight:bold">string</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>注意，别名是唯一的别名，你不能使用类型别名创建同一个类型的不同版本。</p>
+</blockquote>
+<p><strong>接口声明</strong>（interface declaration）是命名对象类型的另一种方式，如下：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">interface</span> Point {
+</span></span><span style="display:flex;"><span>  x: <span style="color:#458;font-weight:bold">number</span>;
+</span></span><span style="display:flex;"><span>  y: <span style="color:#458;font-weight:bold">number</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>类型别名和接口有什么不同呢？</strong></p>
+<p>大部分时候，你可以任意选择使用。两者最关键的差别在于类型别名本身无法添加新的属性，而接口是可以扩展的。</p>
+<blockquote>
+<p>但其实我们也可以通过组合类型别名来实现类似扩展的效果。</p>
+</blockquote>
+<h2 id="类型断言">类型断言</h2>
+<p>有的时候，你知道一个值的类型，但 TypeScript 不知道。<strong>TypeScript 仅仅允许类型断言转换为一个更加具体或者更不具体的类型。</strong> 就像类型注解一样，类型断言也会被编译器移除，并且不会影响任何运行时的行为。</p>
+<blockquote>
+<p>谨记：因为类型断言会在编译的时候被移除，所以运行时并不会有类型断言的检查，即使类型断言是错误的，也不会有异常或者 <code>null</code> 产生。</p>
+</blockquote>
+<p>前面说过，TypeScript 仅仅允许类型断言转换为一个更加具体或者更不具体的类型。有的时候，这条规则会显得非常保守，阻止了你原本有效的类型转换。如果发生了这种事情，你可以使用双重断言，先断言为 <code>any</code> （或者是 <code>unknown</code>），然后再断言为期望的类型。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> a <span style="color:#000;font-weight:bold">=</span> (expr <span style="color:#000;font-weight:bold">as</span> <span style="color:#458;font-weight:bold">any</span>) <span style="color:#000;font-weight:bold">as</span> T;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>非空断言操作符 <code>!</code></strong>, TypeScript 提供了一个特殊的语法，可以在不做任何检查的情况下，从类型中移除 <code>null</code> 和 <code>undefined</code>，这就是在任意表达式后面写上 <code>!</code> ，这是一个有效的类型断言，表示它的值不可能是 <code>null</code> 或者 <code>undefined</code>。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> liveDangerously(x?: <span style="color:#458;font-weight:bold">number</span> <span style="color:#000;font-weight:bold">|</span> <span style="color:#000;font-weight:bold">null</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// No error
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  console.log(x<span style="color:#000;font-weight:bold">!</span>.toFixed());
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>就像其他的类型断言，这也不会更改任何运行时的行为。重要的事情说一遍，只有当你明确的知道这个值不可能是 <code>null</code> 或者 <code>undefined</code> 时才使用 <code>!</code> 。</p>
+</blockquote>
+<h2 id="字面量类型">字面量类型</h2>
+<p>除了常见的类型 <code>string</code> 和 <code>number</code> ，我们也可以将类型声明为更具体的数字或者字符串。</p>
+<p>字面量类型本身并没有什么太大用，如果结合联合类型，就显得有用多了。举个例子，当函数只能传入一些固定的字符串时：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> printText(s: <span style="color:#458;font-weight:bold">string</span>, alignment<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;left&#34;</span> <span style="color:#000;font-weight:bold">|</span> <span style="color:#d14">&#34;right&#34;</span> <span style="color:#000;font-weight:bold">|</span> <span style="color:#d14">&#34;center&#34;</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>printText(<span style="color:#d14">&#34;Hello, world&#34;</span>, <span style="color:#d14">&#34;left&#34;</span>);
+</span></span><span style="display:flex;"><span>printText(<span style="color:#d14">&#34;G&#39;day, mate&#34;</span>, <span style="color:#d14">&#34;centre&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// Argument of type &#39;&#34;centre&#34;&#39; is not assignable to parameter of type &#39;&#34;left&#34; | &#34;right&#34; | &#34;center&#34;&#39;.
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>当你初始化变量为一个对象的时候，TypeScript 会假设这个对象的属性的值未来会被修改，举个例子，如果你写下这样的代码：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> obj <span style="color:#000;font-weight:bold">=</span> { counter: <span style="color:#458;font-weight:bold">0</span> };
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> (someCondition) {
+</span></span><span style="display:flex;"><span>  obj.counter <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>TypeScript 并不会认为 <code>obj.counter</code> 之前是 <code>0</code>， 现在被赋值为 <code>1</code> 是一个错误。换句话说，<code>obj.counter</code> 必须是 <code>number</code> 类型，但不要求一定是 <code>0</code>，因为类型可以决定读写行为。</p>
+<p>这也同样应用于字符串:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">declare</span> <span style="color:#000;font-weight:bold">function</span> handleRequest(url: <span style="color:#458;font-weight:bold">string</span>, method<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;GET&#34;</span> <span style="color:#000;font-weight:bold">|</span> <span style="color:#d14">&#34;POST&#34;</span>)<span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">void</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> req <span style="color:#000;font-weight:bold">=</span> { url<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;https://example.com&#34;</span>, method<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;GET&#34;</span> };
+</span></span><span style="display:flex;"><span>handleRequest(req.url, req.method);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// Argument of type &#39;string&#39; is not assignable to parameter of type &#39;&#34;GET&#34; | &#34;POST&#34;&#39;.
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>在上面这个例子里，<code>req.method</code> 被推断为 <code>string</code> ，而不是 <code>&quot;GET&quot;</code>，因为在创建 <code>req</code> 和 调用 <code>handleRequest</code> 函数之间，可能还有其他的代码，或许会将 <code>req.method</code> 赋值一个新字符串比如 <code>&quot;Guess&quot;</code> 。所以 TypeScript 就报错了。</p>
+<blockquote>
+<p>:: 这里写的多少是有点绕了，其实，就是 <code>req</code> 的类型没有确定导致的。在 <code>req</code> 中，<code>method</code> 属性只会被 TypeScript 推断为 <code>string</code> ，因为并没有根据知道它应该用在哪里，自然无从推断。只需要在定义和使用的时候，给它一个明确的类型就可以了。</p>
+</blockquote>
+<p>有两种方式可以解决：</p>
+<p><strong>1.添加一个类型断言改变推断结果：</strong></p>
+<pre tabindex="0"><code>// Change 1:
+const req = { url: &#34;https://example.com&#34;, method: &#34;GET&#34; as &#34;GET&#34; };
+// Change 2
+handleRequest(req.url, req.method as &#34;GET&#34;);
+</code></pre><p>修改 1 表示“我有意让 <code>req.method</code> 的类型为字面量类型 <code>&quot;GET&quot;</code>，这会阻止未来可能赋值为 <code>&quot;GUESS&quot;</code> 等字段”。修改 2 表示“我知道 <code>req.method</code> 的值是 <code>&quot;GET&quot;</code>”.</p>
+<p><strong>2.你也可以使用 <code>as const</code> 把整个对象转为一个类型字面量</strong>：</p>
+<pre tabindex="0"><code>const req = { url: &#34;https://example.com&#34;, method: &#34;GET&#34; } as const;
+handleRequest(req.url, req.method);
+</code></pre><p><code>as const</code> 效果跟 <code>const</code> 类似，但是对类型系统而言，它可以确保所有的属性都被赋予一个字面量类型，而不是一个更通用的类型比如 <code>string</code> 或者 <code>number</code> 。</p>
+<h2 id="类型收窄">类型收窄</h2>
+<p>在上一个章节，我们已经提到这方面的知识。也不准备多讲，基本上是符合直觉的。</p>
+<h2 id="函数">函数</h2>
+<p>让我们来学习一下如何书写描述函数的类型（types）。</p>
+<p>最简单描述一个函数的方式是使用 <strong>函数类型表达式（function type expression）。</strong> 它的写法有点类似于箭头函数：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> greeter(fn<span style="color:#000;font-weight:bold">:</span> (a: <span style="color:#458;font-weight:bold">string</span>) <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000;font-weight:bold">void</span>) {
+</span></span><span style="display:flex;"><span>  fn(<span style="color:#d14">&#34;Hello, World&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> printToConsole(s: <span style="color:#458;font-weight:bold">string</span>) {
+</span></span><span style="display:flex;"><span>  console.log(s);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>greeter(printToConsole);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>语法 <code>(a: string) =&gt; void</code> 表示一个函数有一个名为 <code>a</code> ，类型是字符串的参数，这个函数并没有返回任何值。</p>
+<p>如果一个函数参数的类型并没有明确给出，它会被隐式设置为 <code>any</code>。</p>
+<p>当然了，我们也可以使用类型别名（type alias）定义一个函数类型：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">type</span> GreetFunction <span style="color:#000;font-weight:bold">=</span> (a: <span style="color:#458;font-weight:bold">string</span>) <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000;font-weight:bold">void</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> greeter(fn: <span style="color:#458;font-weight:bold">GreetFunction</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>函数类型表达式并不能支持声明属性，如果我们想描述一个带有属性的函数，我们可以在一个对象类型中写一个 <strong>调用签名（call signature）</strong>。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">type</span> DescribableFunction <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  description: <span style="color:#458;font-weight:bold">string</span>;
+</span></span><span style="display:flex;"><span>  (someArg: <span style="color:#458;font-weight:bold">number</span>)<span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">boolean</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> doSomething(fn: <span style="color:#458;font-weight:bold">DescribableFunction</span>) {
+</span></span><span style="display:flex;"><span>  console.log(fn.description <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34; returned &#34;</span> <span style="color:#000;font-weight:bold">+</span> fn(<span style="color:#099">6</span>));
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意这个语法跟函数类型表达式稍有不同，在参数列表和返回的类型之间用的是 <code>:</code> 而不是 <code>=&gt;</code>。</p>
+<p>JavaScript 函数也可以使用 <code>new</code> 操作符调用，当被调用的时候，TypeScript 会认为这是一个构造函数(constructors)，因为他们会产生一个新对象。你可以写一个 <strong>构造签名（Construct Signatures）</strong>，方法是在调用签名前面加一个 <code>new</code> 关键词：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">type</span> SomeConstructor <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">new</span> (s: <span style="color:#458;font-weight:bold">string</span>)<span style="color:#000;font-weight:bold">:</span> SomeObject;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> fn(ctor: <span style="color:#458;font-weight:bold">SomeConstructor</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span> <span style="color:#000;font-weight:bold">new</span> ctor(<span style="color:#d14">&#34;hello&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一些对象，比如 <code>Date</code> 对象，可以直接调用，也可以使用 <code>new</code> 操作符调用，而你可以将调用签名和构造签名合并在一起：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">interface</span> CallOrConstruct {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">new</span> (s: <span style="color:#458;font-weight:bold">string</span>)<span style="color:#000;font-weight:bold">:</span> <span style="color:#0086b3">Date</span>;
+</span></span><span style="display:flex;"><span>  (n?: <span style="color:#458;font-weight:bold">number</span>)<span style="color:#000;font-weight:bold">:</span> <span style="color:#458;font-weight:bold">number</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>:: 实际应用场景中，函数表达式是最常用的，调用签名可能会用，构造签名基本不用卅~</p>
+</blockquote>
+<p><strong>泛型函数</strong>，我们经常需要写这种函数，即函数的输出类型依赖函数的输入类型，或者两个输入的类型以某种形式相互关联。</p>
+<p>让我们考虑这样一个函数，它返回数组的第一个元素：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> firstElement(arr: <span style="color:#458;font-weight:bold">any</span>[]) {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span> arr[<span style="color:#099">0</span>];
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意此时函数返回值的类型是 <code>any</code>，如果能返回第一个元素的具体类型就更好了。</p>
+<p>在 TypeScript 中，泛型就是被用来描述两个值之间的对应关系。我们需要在函数签名里声明一个<strong>类型参数 (type parameter)</strong>：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> firstElement&lt;<span style="color:#000080">Type</span>&gt;(arr: <span style="color:#458;font-weight:bold">Type</span>[])<span style="color:#000;font-weight:bold">:</span> Type <span style="color:#000;font-weight:bold">|</span> <span style="color:#000;font-weight:bold">undefined</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span> arr[<span style="color:#099">0</span>];
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>通过给函数添加一个类型参数 <code>Type</code>，并且在两个地方使用它，我们就在函数的输入(即数组)和函数的输出(即返回值)之间创建了一个关联。现在当我们调用它，一个更具体的类型就会被判断出来。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// s is of type &#39;string&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">const</span> s <span style="color:#000;font-weight:bold">=</span> firstElement([<span style="color:#d14">&#34;a&#34;</span>, <span style="color:#d14">&#34;b&#34;</span>, <span style="color:#d14">&#34;c&#34;</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// n is of type &#39;number&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">const</span> n <span style="color:#000;font-weight:bold">=</span> firstElement([<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// u is of type undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">const</span> u <span style="color:#000;font-weight:bold">=</span> firstElement([]);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>尽管写泛型函数很有意思，但也容易翻车。如果你使用了太多的类型参数，或者使用了一些并不需要的约束，都可能会导致不正确的类型推断。如何写好泛型函数是一个值得进一步学习的问题，好在实际应用场景中，并不怎么需要我们书写泛型函数。</p>
+<h3 id="可选参数">可选参数</h3>
+<p>JavaScript 中的函数经常会被传入非固定数量的参数，我们可以使用 <code>?</code> 表示这个参数是可选的：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> f(x?: <span style="color:#458;font-weight:bold">number</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>f(); <span style="color:#998;font-style:italic">// OK
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>f(<span style="color:#099">10</span>); <span style="color:#998;font-style:italic">// OK
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>需要注意的是，尽管这个参数被声明为 <code>number</code> 类型，<code>x</code> 实际上的类型为 <code>number | undefiend</code>，这是因为在 JavaScript 中未指定的函数参数就会被赋值 <code>undefined</code>。</p>
+<h3 id="回调中的可选参数">回调中的可选参数</h3>
+<p>在你学习过可选参数和函数类型表达式后，你很容易在包含了回调函数的函数中，犯下面这种错误：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> myForEach(arr: <span style="color:#458;font-weight:bold">any</span>[], callback<span style="color:#000;font-weight:bold">:</span> (arg: <span style="color:#458;font-weight:bold">any</span>, index?: <span style="color:#458;font-weight:bold">number</span>) <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000;font-weight:bold">void</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">for</span> (<span style="color:#000;font-weight:bold">let</span> i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>; i <span style="color:#000;font-weight:bold">&lt;</span> arr.length; i<span style="color:#000;font-weight:bold">++</span>) {
+</span></span><span style="display:flex;"><span>    callback(arr[i], i);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>将 <code>index?</code> 作为一个可选参数，本意是希望下面这些调用是合法的：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>myForEach([<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>], (a) <span style="color:#000;font-weight:bold">=&gt;</span> console.log(a));
+</span></span><span style="display:flex;"><span>myForEach([<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>], (a, i) <span style="color:#000;font-weight:bold">=&gt;</span> console.log(a, i));
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>但 TypeScript 并不会这样认为，TypeScript 认为想表达的是回调函数可能只会被传入一个参数！</p>
+<blockquote>
+<p>:: TypeScript：“我不要你以为，按我以为的来！” 😂</p>
+</blockquote>
+<p>换句话说，<code>myForEach</code> 函数也可能是这样的：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> myForEach(arr: <span style="color:#458;font-weight:bold">any</span>[], callback<span style="color:#000;font-weight:bold">:</span> (arg: <span style="color:#458;font-weight:bold">any</span>, index?: <span style="color:#458;font-weight:bold">number</span>) <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000;font-weight:bold">void</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">for</span> (<span style="color:#000;font-weight:bold">let</span> i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>; i <span style="color:#000;font-weight:bold">&lt;</span> arr.length; i<span style="color:#000;font-weight:bold">++</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// I don&#39;t feel like providing the index today
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    callback(arr[i]);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>TypeScript 会按照这个意思理解并报错，尽管实际上这个错误并无可能。</p>
+<p>那如何修改呢？不设置为可选参数其实就可以：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> myForEach(arr: <span style="color:#458;font-weight:bold">any</span>[], callback<span style="color:#000;font-weight:bold">:</span> (arg: <span style="color:#458;font-weight:bold">any</span>, index: <span style="color:#458;font-weight:bold">number</span>) <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000;font-weight:bold">void</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">for</span> (<span style="color:#000;font-weight:bold">let</span> i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>; i <span style="color:#000;font-weight:bold">&lt;</span> arr.length; i<span style="color:#000;font-weight:bold">++</span>) {
+</span></span><span style="display:flex;"><span>    callback(arr[i], i);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>myForEach([<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>], (a, i) <span style="color:#000;font-weight:bold">=&gt;</span> {
+</span></span><span style="display:flex;"><span>  console.log(a);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在 JavaScript 中，如果你调用一个函数的时候，传入了比需要更多的参数，额外的参数就会被忽略。TypeScript 也是同样的做法。</p>
+<blockquote>
+<p>当你写一个回调函数的类型时,不要写一个可选参数, 除非你真的打算调用函数的时候不传入实参。</p>
+</blockquote>
+<h3 id="剩余参数">剩余参数</h3>
+<p>不准备多讲~</p>
+<h2 id="对象类型">对象类型</h2>
+<p>在 JavaScript 中，最基本的将数据成组和分发的方式就是通过对象。在 TypeScript 中，我们通过对象类型（object types）来描述对象。</p>
+<p>对象类型可以是匿名的：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> greet(person<span style="color:#000;font-weight:bold">:</span> { name: <span style="color:#458;font-weight:bold">string</span>; age: <span style="color:#458;font-weight:bold">number</span> }) {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#34;Hello &#34;</span> <span style="color:#000;font-weight:bold">+</span> person.name;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>也可以使用接口进行定义：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">interface</span> Person {
+</span></span><span style="display:flex;"><span>  name: <span style="color:#458;font-weight:bold">string</span>;
+</span></span><span style="display:flex;"><span>  age: <span style="color:#458;font-weight:bold">number</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> greet(person: <span style="color:#458;font-weight:bold">Person</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#34;Hello &#34;</span> <span style="color:#000;font-weight:bold">+</span> person.name;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>或者通过类型别名：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">type</span> Person <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  name: <span style="color:#458;font-weight:bold">string</span>;
+</span></span><span style="display:flex;"><span>  age: <span style="color:#458;font-weight:bold">number</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> greet(person: <span style="color:#458;font-weight:bold">Person</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#34;Hello &#34;</span> <span style="color:#000;font-weight:bold">+</span> person.name;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>:: 实际应用场景中，对象类型用的最多，单独拎出来重视一下。</p>
+</blockquote>
+<p><strong>对象类型中的每个属性可以说明它的类型、属性是否可选、属性是否只读等信息。</strong></p>
+<p><strong>可选属性</strong>， 我们可以在属性名后面加一个 <code>?</code> 标记表示这个属性是可选的。</p>
+<p><strong>只读属性</strong>，在 TypeScript 中，属性可以被标记为 <code>readonly</code>，这不会改变任何运行时的行为，但在类型检查的时候，一个标记为 <code>readonly</code> 的属性是不能被写入的。</p>
+<p><strong>属性继承</strong>，对接口使用 <code>extends</code> 关键字允许我们有效的从其他声明过的类型中拷贝成员，并且随意添加新成员。</p>
+<p><strong>交叉类型</strong>，TypeScript 也提供了名为交叉类型（Intersection types）的方法，用于合并已经存在的对象类型。交叉类型的定义需要用到 <code>&amp;</code> 操作符。</p>
+<blockquote>
+<p>:: 一直感觉这里叫 “交叉” 很奇怪，因为明明应该是两个类型组合的，结果，它指的是两个类型组合时，其内部属性相同时，取其类型的交集。如此，便合理了。</p>
+</blockquote>
+<p><strong>泛型对象类型</strong>，见泛型。</p>
+<h2 id="类和模块">类和模块</h2>
+<p>类就不多说了，基本不用系列。模块详见另一篇博文 「 [[模块化编程]] 」。</p>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="/about" target="_blank">
+            
+            将喜欢的一切留在身边，这便是努力的意义
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

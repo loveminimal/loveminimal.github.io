@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="前端浅谈 - https://aituyaa.com/%E5%89%8D%E7%AB%AF%E6%B5%85%E8%B0%88/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>前端浅谈</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">前端浅谈</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/javascript/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：JavaScript <sup>24</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/ajax/">Ajax</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/callapply-%E5%92%8C-bind/">call、apply 和 bind</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/canvas/">Canvas</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/devmaps/frontend/">Frontend</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/js-%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE/">JS 中的拖放</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/js-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%91%98%E5%BD%95/">JS 高级程序设计·摘录</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/react/">React</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/react-%E5%9F%BA%E7%A1%80%E8%84%9A%E6%89%8B%E6%9E%B6%E7%A4%BA%E4%BE%8B/">React 基础脚手架示例</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/source-map/">Source Map</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/typescript-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">TypeScript 那些事儿</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/web-%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%9A%8F%E6%83%B3/">Web 开发相关体系结构随想</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E-fetch/">关于 fetch</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E-promise/">关于 Promise</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/%E5%89%8D%E7%AB%AF%E6%B5%85%E8%B0%88/">前端浅谈</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2/">文件转换</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/">模块化编程</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8/">浏览器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BD%8D%E7%BD%AE/">浏览器中的尺寸大小和位置</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%B8%B2%E6%9F%93%E8%BF%87%E7%A8%8B/">浏览器的渲染过程</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/">滚动条样式</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%94%9F%E6%88%90%E5%99%A8/">生成器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E7%BD%91%E9%A1%B5%E4%B8%AD%E7%9A%84%E9%94%9A%E7%82%B9%E8%B7%B3%E8%BD%AC/">网页中的锚点跳转</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E8%B7%A8%E5%9F%9F/">跨域</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/">防抖与节流</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2023-05-25&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2025-01-29&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            4502 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            9 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/javascript">JavaScript</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前端是什么">前端是什么</a></li>
+    <li><a href="#浏览器">浏览器</a></li>
+    <li><a href="#页面文件">页面文件</a>
+      <ul>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#javascript">JavaScript</a></li>
+      </ul>
+    </li>
+    <li><a href="#框架">框架</a>
+      <ul>
+        <li><a href="#jquery">JQuery</a></li>
+        <li><a href="#vue--react">Vue &amp; React</a></li>
+      </ul>
+    </li>
+    <li><a href="#其他">其他</a>
+      <ul>
+        <li><a href="#模块和组件">模块和组件</a></li>
+        <li><a href="#预编译器">预编译器</a></li>
+        <li><a href="#后端是什么">后端是什么</a></li>
+        <li><a href="#关于-node">关于 Node</a></li>
+        <li><a href="#学习路线">学习路线</a></li>
+      </ul>
+    </li>
+    <li><a href="#结语">结语</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p>本文不涉及具体的细节，浅谈一下 Web 前端的 1 2 3 ……</p>
+<h2 id="前端是什么">前端是什么</h2>
+<p>在当下的产品开发流程中，大致分为以下几个过程：</p>
+<pre tabindex="0"><code>1. 产品设计（需求分析）
+2. 技术选型
+3. 前端负责界面渲染、交互 &amp; 后端负责数据处理
+4. 测试（功能）
+5. 运维部署
+</code></pre><p>这里，我们只关注第 3 点，即具体的开发过程。</p>
+<p>要理解‘什么是前端’，最好回顾一下 Web 的发展史。这是世界上第一个网站 <a href="http://info.cern.ch/">http://info.cern.ch/</a> ，于 1991.8.6 上网，它解释了万维网是什么，如何使用网页浏览器和如何建立一个网页服务器等等。</p>
+<p>你会发现，这个页面就是一份简单的 <code>.html</code> 文件，让我们来看一下它的实现过程。</p>
+<pre tabindex="0"><code>- 伯纳斯·李（互联网之父）写了一个 HTML 文档，
+- 然后把这个文档放在连接着网络的一台电脑上（服务器），
+- 用户电脑通过客户端（通常是浏览器）连网访问它。
+</code></pre><p>看，最初的时候，只有 HTML ，它就是一个文本文件，没有交互，用户只能浏览。这个时候，也没有什么前后端的概念。开发人员需要做的，就是编写 HTML 文档，并把它放到可以被访问的服务器上。</p>
+<p>用户或开发人员，感觉单纯的 HTML 文件在浏览器上显示出来不好看，于是有了 CSS 来装饰样式（1995），我们进入了 <code>HTML + CSS</code> 的时代。</p>
+<p>目前为止，用户还是只能看啊，用户说：“我要交互！我要交互！我要交互！”</p>
+<p>伯纳斯说：“给你表单！给你表单！给你表单！”</p>
+<p>现在用户可以通过表单，输入一些信息（比如登录），点击按钮，来和服务器进行一定的交互了。同样，服务器端也有同样的程序来处理用户提交的表单信息。此时，一切都还是简单的！</p>
+<p>直到有一天，用户又不满意了，大声说：“我要更多的交互！更多！更多！”</p>
+<p>网景公司（火狐浏览器前身）委托 Brendan Eich 开发了 JavaScript 语言，用于满足用户的需求。 Brendan 只花了 10 天时间，太快了，所以 JavaScript 有许多的语言缺陷，但又阴差阳错地成了浏览器最钟爱的（内置了的）脚本语言，简直了。有些事，就是那么不讲道理。</p>
+<p>我们现在进入了 <code>HTML + CSS + JS</code> 的时代！</p>
+<blockquote>
+<p>你还没说什么是前端呢？</p>
+</blockquote>
+<p>别着急，就要说了。最初的时候，开发任务不算很重，一个开发人员就可以完成 <code>.html、 .css、 .js</code> 文件及服务器上处理用户请求的程序的编写。</p>
+<p>这时，还是没有区分前端、后端，因为都是一个人写的！</p>
+<p>后来，网页内容越来越丰富，用户的交互越来越多，服务器端处理的请求越来越复杂。于是，程序员 B 对程序员 F 说：“我来处理用户提交的信息，生成展示所需的数据，你负责编写文档（html、css、js 等）文件，把数据插入到 html 中，返回给用户的浏览器来展示。”</p>
+<p>于是乎，程序员 B 只负责处理用户请求，程序员 F 负责页面渲染，提高了效率。慢慢地，也就有了专职于后端（Back End）和专职于前端（Front End）的方向。</p>
+<p>现在，我们明白了，所谓‘前端’，主要就是负责展示部分，最终的交付便是用于用户端浏览器可以识别的页面文件。</p>
+<p>近些年来，前端发展可谓是如火如荼，页面的交互也越来越复杂，各种框架层出不穷，让人眼花缭乱。但它的本质，从来就没有改变过。最终， <strong>前端的核心，就是生成用户浏览器可以渲染的页面文件</strong>。</p>
+<p>重点来了，一是浏览器，二是页面文件。</p>
+<h2 id="浏览器">浏览器</h2>
+<p>说起浏览器，大家肯定都不陌生，如 Chrome、 Edge、 Firefox、 IE ……</p>
+<p><strong>浏览器只认识 HTML ！</strong></p>
+<p>如果，深入了解，就会发现浏览器实在是一个复杂的软件，好在我们只需要应用它。更多关于浏览器的渲染细节，可以参考 <a href="https://ovirgo.com/posts/browser/">浏览器</a> 这篇文章。</p>
+<p>对于一位前端开发人员来说，现在是幸福的，因为有了浏览器开发工具（一般现代浏览器通过 <code>F12</code> 打开），你可查看页面的请求过程和渲染细节，很方便地开发和调试项目页面。</p>
+<h2 id="页面文件">页面文件</h2>
+<p><strong>再厉害的框架，最终都要编译打包成 <code>html + css + js</code> ，</strong> 因为浏览器只认这个组合！</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#000080">html</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#000080">head</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#000080">title</span>&gt;页面文件&lt;/<span style="color:#000080">title</span>&gt;
+</span></span><span style="display:flex;"><span>		……
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#000080">link</span> <span style="color:#008080">href</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;/path/to/style.css&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#000080">head</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#000080">body</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#000080">h1</span>&gt;关于页面文件&lt;/<span style="color:#000080">h1</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#000080">div</span> <span style="color:#008080">class</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;description&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#000080">p</span>&gt;再厉害的框架，最终都要编译打包成 `html + css + js` 组合。&lt;/<span style="color:#000080">p</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#000080">p</span>&gt;……&lt;/<span style="color:#000080">p</span>&gt;
+</span></span><span style="display:flex;"><span>			……
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#000080">div</span>&gt;
+</span></span><span style="display:flex;"><span>		……
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#000080">script</span> <span style="color:#008080">src</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;/path/to/main.js&#34;</span>&gt;&lt;/<span style="color:#000080">script</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#000080">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#000080">html</span>&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一个 <code>.html</code> 文件，通过 <code>&lt;link&gt;</code> 标签引入 <code>.css</code> 文件，通过 <code>&lt;script&gt;</code> 标签引入 <code>.js</code> 文件，这就是页面文件的基本结构。</p>
+<h3 id="html">HTML</h3>
+<p>HTML ，全称‘超文本标记语言’（Hyperext Markup Language） ，是一种用于创建网页的标准标记语言。</p>
+<p><strong>为什么需要‘标记’呢？</strong></p>
+<p>你直接对浏览器讲中文，它是听不懂的！你必须跟它讲 html 语言，它才能懂你要干什么。</p>
+<p>HTML 语言很简单，你只需要用相应的标签来包裹你想要浏览器渲染的内容，就可以了。比如，段落标签 <code>&lt;p&gt;</code> ，分割线标签 <code>&lt;hr&gt;</code>，标题标签 <code>&lt;title&gt;</code> ，引入样式文件的标签 <code>&lt;link&gt;</code> ，引入脚本文件的标签 <code>&lt;script&gt;</code> 等等。</p>
+<p>在实际学习的过程中，有一些标签很常用，有一些标签几乎不用，边学边用即可！</p>
+<h3 id="css">CSS</h3>
+<p>CSS，全称‘层叠样式表’（Cascading Style Sheets），是一种用来为结构化文档（如 HTML）添加样式（字体、间距和颜色等）的计算机语言。</p>
+<p>CSS 中最重要的一个概念就是‘选择器’了，即选中你要添加样式的页面元素！ ……</p>
+<h3 id="javascript">JavaScript</h3>
+<p>前端领域， JavaScript 可谓是绝对的主角（后续简称 JS），它是目前主流浏览器（所有）指定的唯一脚本语言。</p>
+<p>最初，它只是为了满足用户日益俱增的交互需求，现在也是，只不过更加的强大和复杂。但本质上，仍然是服务于 HTML 的，这一点从未改变。</p>
+<p>JS 的核心语法很简单，如变量、函数及日常应用过程中常用到的数组、对象等数据结构。</p>
+<p>缺陷很多，但不影响 JS 登大雅之堂！可以这样说，精通 JS 的过程，就是一场学习如何‘踩坑’的旅程，开个玩笑，其实现在好多了。</p>
+<h2 id="框架">框架</h2>
+<p>JS 是通过什么来指挥浏览器的呢？</p>
+<p>浏览器提供了一系列的接口 API ，与 JS 最紧密的便是 DOM 了。最初的时候，开发人员也是这样做的，通过 HTML 编写好页面内容，通过 CSS 来添加样式，通过 JS 操作浏览器提供的 API 接口来操作 DOM 。</p>
+<blockquote>
+<p>DOM （Document Object Model） 文档对象模型，是浏览器解析 .html 文件后生成的一个树形结构，用于渲染页面。</p>
+</blockquote>
+<p>简单的页面，这样做很容易。</p>
+<p>问题就在于，现在的页面越来越不简单了……</p>
+<p>于是框架就上场了！看，有‘需求’，就有‘市场’！</p>
+<h3 id="jquery">JQuery</h3>
+<p>与其说 JQuery 是一个框架，不如说，它是一个函数库。本质上来说，它是对原生 JS 的一种封装，用来更方便地操作 DOM 。对，你仍然需要操作 DOM ！</p>
+<p>现在用的不多了，在使用中了解即可。</p>
+<h3 id="vue--react">Vue &amp; React</h3>
+<p>这两个前端框架，是目前最热门、最流行的前端框架了。除了，实现原理的某些部分有些不同外，其余应用都是大同小异。学习了其中一种，再学习另一种，也会很快。</p>
+<p>这里，我们以 Vue 为主，某些方面对比 React 来说。不得不说，Vue 对于初学者是更加友好的，性能也很不错！国内来说，流行程度更胜一筹。</p>
+<p>首先，需要明白，Vue 本身并没有为 <code>html + css + js</code> 引入什么新的东西，你所编写的 Vue 相关的模板文件 <code>.vue</code>、 样式文件 <code>.scss</code>、 逻辑文件 <code>.js</code> ，最终经过编译打包后，还是 <code>html + css + js</code> 这一套组合！</p>
+<p>也就是说，你最终，放在服务器上，供用户访问的页面文件，始终都是 HTML ！</p>
+<p>学习 Vue ，究竟学什么？ <strong>模板语法！！！</strong></p>
+<p>是的，和你学习 HTML ，没什么太大的区别，正如你学习 html 是为了让浏览器知道你的说什么，学习 Vue 的模板语法也是为了让 Vue 相关的编译器、打包器知道你要它们干什么！仅此而已！</p>
+<p>你按着它规定的语法来编写 <code>.vue、 .scss、 .js</code> ，对应的编译器、打包器就知道如何把你编写的内容转成 <code>html + css + js</code> 供浏览器渲染绘制页面。</p>
+<p>我们不止一次提到了编译器和打包器，它们是什么呢？有什么作用？</p>
+<p><strong>编译器</strong></p>
+<p>拿 Vue 来说，你编写的是组件是 <code>App.vue</code> ，浏览器是不认识的，经过编译器编译就成了 <code>*.js</code> ，就可以引入到 <code>*.html</code> 中供浏览器解析了。可以认为编译器就是一个‘加工厂’，进去的是 <code>.vue</code> ，出来的是 <code>.js</code> 。</p>
+<p>看，编译器并不是什么神奇的东东，它本质上来说，就是个‘翻译机’。</p>
+<p>编译器不需要应用开发者参与，它是由框架实现的，开发者只需要按着框架给出的‘写法’，编译器就能读懂，并正确转译。</p>
+<p><strong>打包器</strong></p>
+<p>打包器呢？为什么需要打包器？因为随着前端内容越来越复杂，把所有的逻辑写在一个 <code>.js</code> 文件中对于程序员来说是不友好的。比较典型的方式，就是通过模块化编程来避开这一点。也就是说，我们会把交互逻辑分散到不同的 <code>.js</code> 文件中，方便编写和复用。如此，在一个项目中，我们使用的资源分分散在项目的不同层级之中，有 <code>.js</code> ，有 <code>.css</code> 等等。最终使用的时候，打包器会根据它们之间的依赖关系，将这些资源再合并到一起，引入到 <code>.html</code> 中，供浏览器渲染。</p>
+<p>是的，打包器就像一个‘拼接手’，按照资源（模块）的依赖关系，把零碎的‘资源’合成一个整体。</p>
+<p>当前，比较流行的打包器仍然是 Webpack ，你需要学习并了解它，同样的，边学习，边使用，在使用中学习。</p>
+<p>另外，你可能也需要了解一下 Rollup ，它也是一种打包工具，最新的 Vue3 推荐的脚手架 Vite （项目初始化工具）就是集成了 Rollup 。</p>
+<p>同样的，所有的打包工具，实现方式可能各有不同，但其最终目的和思想，都是大同小异的。</p>
+<h2 id="其他">其他</h2>
+<h3 id="模块和组件">模块和组件</h3>
+<p>在 <a href="https://ovirgo.com/posts/modular-programming/">模块化编程</a> 中，我们具体说明过模块相关的概念，可以参考一下。</p>
+<p>什么是模块？什么是组件？</p>
+<p>很多时候，这两个概念的划分不是很清楚，甚至是通用的。比如，一个 <code>.vue</code> 文件，可以称为是一个组件，一个完全的 Vue 应用其实就是许多组件组成的‘组件树’。</p>
+<p>模块，多是缩写的 <code>.js</code> 文件，每个模块实现了不同的功能，可以通过相应的方式引入别的模块，及暴露自身供外部模块使用的功能。它是一个封装的概念，比如模块 A 引入了模块 B（当然也可不引入），并包含 <code>1、 2、 3</code> 三个功能，模块 A 可以选择只暴露 <code>1、 3</code> 两个功能给外部使用。</p>
+<p>在编写 Vue 组件的过程中，我们常会引用到不同的功能模块，比如，我们引入一个时间模块，用来格式化当前的时间，引入一个排序模块，用来给某个数组进行排序等等。</p>
+<h3 id="预编译器">预编译器</h3>
+<p>什么是预编译器？顾名思义，它也是一种编译器，一般用于资源打包前，比如将 <code>.scss</code> 样式文件编译成 <code>.css</code> 文件。 Dart 就是目前使用最多的一种 SCSS 的预编译器，只需要在打包工具中，配置好，打包过程中，就会自动完成这个转译的过程。</p>
+<p>扩展一下，就会发现，程序这个东东经常做这种转来转去的东西。一方面为了程序员编写方便，维护方便，另一方面为了编译器、计算机能理解执行。</p>
+<p>一度连 <code>.html</code> 文件都有相应的编译器，如 Jade ，现在不怎么使用了。</p>
+<h3 id="后端是什么">后端是什么</h3>
+<p>在前后端分离之后，后端方面主要就是接受用户在前端发出的请求，分析处理，该请求数据库的请求数据库，该拒绝响应的拒绝响应，把相应的处理结果返回给前端，前端使用这些数据进行页面渲染或其它处理。</p>
+<p>有一点需要注意的是，无论是后端的服务包，还是前端的项目包，都是需要部署在服务器端的，用户只是通过浏览器访问它们。</p>
+<p>当然，后端开发也经历了一系列的变革，有了不少好用的框架工具，比如 Java 领域集大成的 Spring 家族框架。</p>
+<h3 id="关于-node">关于 Node</h3>
+<p>Node 让 JS 也可以在服务器端大展拳脚，它与用在浏览器中的 JS 有什么区别呢？其实，语言本身没有什么很大的区别，毕竟基本上都遵守 ECMAScript 标准。它们主要是宿主（运行环境）不同，NodeJS 的宿主是 V8 ，前端 JS 的宿主则是浏览器，仅些而已。</p>
+<p>内容看着不少，其实，刚开始的时候，只需要学习一下 NPM 包管理方面的知识就可以了。多数时候，只需要使用它安装项目所需要的第三方工具包。</p>
+<h3 id="学习路线">学习路线</h3>
+<pre tabindex="0"><code>- html、 css、 js 的基本使用
+- npm 的相关概念
+- vuejs 的模板语法及结构
+- webpack 的了解
+</code></pre><h2 id="结语">结语</h2>
+<p>以上内容，只是一个大概的、过程性的描述，并没有牵扯到具体的开发细节。但是，理解需要学习什么，为什么学习，也是一件重要的事情。我们对于不熟悉的事物，多数时候有些过于‘敬畏’，这是正常的，一旦揭开了它的面纱，就会发现，一切不过如此。</p>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="/about" target="_blank">
+            
+            将喜欢的一切留在身边，这便是努力的意义
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

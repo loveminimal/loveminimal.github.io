@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on 爱涂鸦啊</title>
+    <link>https://aituyaa.com/tags/javascript/</link>
+    <description>Recent content in JavaScript on 爱涂鸦啊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 13 Dec 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>call、apply 和 bind</title>
+      <link>https://aituyaa.com/callapply-%E5%92%8C-bind/</link>
+      <pubDate>Fri, 13 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/callapply-%E5%92%8C-bind/</guid>
+      <description>&lt;p&gt;&lt;code&gt;call&lt;/code&gt;、&lt;code&gt;apply&lt;/code&gt; 和 &lt;code&gt;bind&lt;/code&gt; 是 JavaScript 中用于控制函数执行上下文（即 &lt;code&gt;this&lt;/code&gt; 的值）的三个重要方法。它们的主要作用是允许你显式地指定函数内部的 &lt;code&gt;this&lt;/code&gt; 指向。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>浏览器的渲染过程</title>
+      <link>https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%B8%B2%E6%9F%93%E8%BF%87%E7%A8%8B/</link>
+      <pubDate>Fri, 13 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%B8%B2%E6%9F%93%E8%BF%87%E7%A8%8B/</guid>
+      <description>&lt;p&gt;➡️ 本文内容主体部分来自 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/74792085&#34;&gt;浏览器的渲染过程 - 知乎&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;通常，我们只需要编写 HTML，CSS，JavaScript，浏览器上就能呈现出漂亮的网页了，但是浏览器是如何使用我们的代码在屏幕上渲染像素的呢？&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>网页中的锚点跳转</title>
+      <link>https://aituyaa.com/%E7%BD%91%E9%A1%B5%E4%B8%AD%E7%9A%84%E9%94%9A%E7%82%B9%E8%B7%B3%E8%BD%AC/</link>
+      <pubDate>Fri, 13 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%BD%91%E9%A1%B5%E4%B8%AD%E7%9A%84%E9%94%9A%E7%82%B9%E8%B7%B3%E8%BD%AC/</guid>
+      <description>&lt;p&gt;如何设置锚点，使得我们可以跳转到网页的指定位置呢？往下看。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Source Map</title>
+      <link>https://aituyaa.com/source-map/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/source-map/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Source Map&lt;/code&gt; 是一种文件格式，用于将压缩、混淆或转换后的代码映射回原始代码。它通常用于调试生产环境中的 JavaScript 代码，帮助开发者在浏览器中查看和调试原始源代码，而不是压缩或混淆后的代码。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于 fetch</title>
+      <link>https://aituyaa.com/%E5%85%B3%E4%BA%8E-fetch/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%85%B3%E4%BA%8E-fetch/</guid>
+      <description>&lt;p&gt;&lt;code&gt;fetch&lt;/code&gt; 是现代 JavaScript 中用于发起网络请求的一个全局 API。它提供了一种简单、灵活的方式来与服务器进行通信，基于 &lt;code&gt;Promise&lt;/code&gt;，因此非常适合处理异步操作。&lt;code&gt;fetch&lt;/code&gt; 是 &lt;code&gt;XMLHttpRequest&lt;/code&gt; 的替代品，广泛用于前端开发中。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于 Promise</title>
+      <link>https://aituyaa.com/%E5%85%B3%E4%BA%8E-promise/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%85%B3%E4%BA%8E-promise/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Promise&lt;/code&gt; 是 JavaScript 中用于处理异步操作的一种对象。它&lt;strong&gt;代表了一个异步操作的最终完成（或失败）及其结果值&lt;/strong&gt;。&lt;code&gt;Promise&lt;/code&gt; 提供了一种更清晰、更结构化的方式来处理异步代码，避免了传统的回调地狱（callback hell）问题。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>生成器</title>
+      <link>https://aituyaa.com/%E7%94%9F%E6%88%90%E5%99%A8/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%94%9F%E6%88%90%E5%99%A8/</guid>
+      <description>&lt;p&gt;在 Node.js 中，&lt;code&gt;generator&lt;/code&gt; 是一种特殊的函数，它允许你通过 &lt;code&gt;yield&lt;/code&gt; 关键字暂停和恢复函数的执行。&lt;code&gt;generator&lt;/code&gt; 函数使用 &lt;code&gt;function*&lt;/code&gt; 语法来定义，并且返回一个 &lt;code&gt;Generator&lt;/code&gt; 对象。这个 &lt;code&gt;Generator&lt;/code&gt; 对象可以通过 &lt;code&gt;next()&lt;/code&gt; 方法来控制函数的执行流程。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Frontend</title>
+      <link>https://aituyaa.com/devmaps/frontend/</link>
+      <pubDate>Tue, 26 Nov 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/devmaps/frontend/</guid>
+      <description>&lt;p&gt;你可以在这里找到完整的路线图 &lt;a href=&#34;https://roadmap.sh/frontend&#34;&gt;Frontend Developer Roadmap&lt;/a&gt; ~ 注册了账号后，还可以同步进度，Nice ~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TypeScript 那些事儿</title>
+      <link>https://aituyaa.com/typescript-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/typescript-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;TypeScript 闪念随手记……&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: 不要试图把一门语言的边边角角都一次性都搞清楚，没啥用，你又不准备成为“参考书”。一则平时使用的部分并没有那么多，二则脱离了实际应用的抽象文字并不容易记忆。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>React 基础脚手架示例</title>
+      <link>https://aituyaa.com/react-%E5%9F%BA%E7%A1%80%E8%84%9A%E6%89%8B%E6%9E%B6%E7%A4%BA%E4%BE%8B/</link>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/react-%E5%9F%BA%E7%A1%80%E8%84%9A%E6%89%8B%E6%9E%B6%E7%A4%BA%E4%BE%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>浏览器中的尺寸大小和位置</title>
+      <link>https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BD%8D%E7%BD%AE/</link>
+      <pubDate>Thu, 09 May 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BD%8D%E7%BD%AE/</guid>
+      <description>&lt;p&gt;在页面渲染的过程中，获取一个窗口或元素的尺寸大小及位置信息是必要的。鉴于市面上浏览器的多种多样以及某些历史原因，相关的一些元素属性和 API 可能有差异，这里我们以它们在 Chrome 中的表现为准，展开聊一下相关方面的东东 ~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web 开发相关体系结构随想</title>
+      <link>https://aituyaa.com/web-%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%9A%8F%E6%83%B3/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/web-%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%9A%8F%E6%83%B3/</guid>
+      <description>&lt;p&gt;与其它领域相比，Web 开发更像是一个全栈化的工程，其使用的技术基本上涵盖了目前大部分应用所需。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS 高级程序设计·摘录</title>
+      <link>https://aituyaa.com/js-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%91%98%E5%BD%95/</link>
+      <pubDate>Mon, 04 Sep 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/js-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%91%98%E5%BD%95/</guid>
+      <description>内容一览 封面 作者简介 数字版权声明 扉页 版权页 献词 译者序 序 前言 致谢 目录 第1章 什么是JavaScript 1.1 简短的历史回顾 1.2 JavaScript实现 1.3 JavaScrip</description>
+    </item>
+    
+    <item>
+      <title>Ajax</title>
+      <link>https://aituyaa.com/ajax/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/ajax/</guid>
+      <description>&lt;p&gt;什么是 Ajax ?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Canvas</title>
+      <link>https://aituyaa.com/canvas/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/canvas/</guid>
+      <description>&lt;p&gt;&lt;code&gt;&amp;gt; 近来要开发一个手写板程序，顺便来系统回顾一下 Canvas 这个东东……&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;🔔 本篇摘录自 &lt;a href=&#34;https://www.runoob.com/w3cnote/html5-canvas-intro.html&#34;&gt;《学习 HTML5 Canvas 这一篇文章就够了》&lt;/a&gt; ，写的真不错。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt; 是 HTML5 新增的一个可以使用脚本（通常为 JavaScript）在其中绘制图像的 HTML 元素。&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20230525170231.png|400]]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 上图就是使用 canvas 绘制出来的&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Canvas 是由 HTML 代码配合高度和宽度属性而定义出的可绘制区域。JavaScript 代码可以访问该区域，类似于其他通用的二维 API，通过一套完整的绘图函数来动态生成图形。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS 中的拖放</title>
+      <link>https://aituyaa.com/js-%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/js-%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE/</guid>
+      <description>&lt;p&gt;拖放是一种常见的特性，即抓取对象以后拖到另一个位置。在 HTML5 中，拖放是标准的一部分，任何元素都能够拖放。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;*注：Internet Explorer 9+, Firefox, Opera, Chrome, 和 Safari 支持拖动。&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>https://aituyaa.com/react/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/react/</guid>
+      <description>&lt;p&gt;📔 &lt;a href=&#34;https://zh-hans.react.dev/learn&#34;&gt;快速入门 – React 中文文档&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;具体安装及引入细节，请直接参考官方文档。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: React 的出新文档了，内容的组织结构也有所变化，整体来说更加突出函数式组件的作用了，毕竟有了 Hooks 嘛~ 来一个新的章节来摘录一下，准备在新的项目中应用 React ，反正用什么我说了算，哈哈~ ↗️ 「 [[#新文档]] 」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;React 是一个用于构建用户界面的 JavaScript 库，你可以用它给简单的 HTML 页面增加一点交互，也可以开始一个完全由 React 驱动的复杂应用。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 对的，它只是一个 UI 库而已 ！！！&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>前端浅谈</title>
+      <link>https://aituyaa.com/%E5%89%8D%E7%AB%AF%E6%B5%85%E8%B0%88/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%89%8D%E7%AB%AF%E6%B5%85%E8%B0%88/</guid>
+      <description>&lt;p&gt;本文不涉及具体的细节，浅谈一下 Web 前端的 1 2 3 ……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>文件转换</title>
+      <link>https://aituyaa.com/%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2/</guid>
+      <description>&lt;p&gt;JavaScript 中的 file、blob 和 base64 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>模块化编程</title>
+      <link>https://aituyaa.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;每一个领域的内容，都要有先问一下 – 是什么？为什么？做什么？怎么做？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;是什么？简述概念；&lt;/li&gt;
+&lt;li&gt;为什么？历史发展，出现的原因，优缺点；&lt;/li&gt;
+&lt;li&gt;做什么？主要应用场景；&lt;/li&gt;
+&lt;li&gt;怎么做？具体使用方法步骤。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>浏览器</title>
+      <link>https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;了解浏览器，它已经成为主流的信息传递方式，并将持续壮大！&lt;br&gt;
+了解它的内核、构成及动作方式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;![[assets/Pasted image 20230525174227.png|300]]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 蒂姆·伯纳斯·李 （1955.06.08 - ）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2017 年，他因 “发明万维网、第一个浏览器和使万维网得以扩展的基本协议和算法” 而获得 2016 年度的图灵奖。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>滚动条样式</title>
+      <link>https://aituyaa.com/%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</guid>
+      <description>&lt;p&gt;🔔 参考 &lt;a href=&#34;https://www.cnblogs.com/wjw1014/p/13564175.html&#34;&gt;https://www.cnblogs.com/wjw1014/p/13564175.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>跨域</title>
+      <link>https://aituyaa.com/%E8%B7%A8%E5%9F%9F/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%B7%A8%E5%9F%9F/</guid>
+      <description>&lt;p&gt;i.e. Cross Domain&lt;/p&gt;
+&lt;p&gt;🔔 本文摘录自 &lt;a href=&#34;http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html&#34;&gt;浏览器同源政策及其规避方法&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>防抖与节流</title>
+      <link>https://aituyaa.com/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/</guid>
+      <description>&lt;p&gt;i.e. Debounce and Throttle&lt;/p&gt;
+&lt;p&gt;为什么需要防抖和节流？它们是什么？有什么区别？适用场景是什么？&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

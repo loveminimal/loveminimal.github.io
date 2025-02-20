@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编辑器 on 爱涂鸦啊</title>
+    <link>https://aituyaa.com/tags/%E7%BC%96%E8%BE%91%E5%99%A8/</link>
+    <description>Recent content in 编辑器 on 爱涂鸦啊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/%E7%BC%96%E8%BE%91%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neovim 那些事儿</title>
+      <link>https://aituyaa.com/neovim-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/neovim-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;好嘛，让我们来试一下 Neovim ~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emacs 那些事儿</title>
+      <link>https://aituyaa.com/emacs-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Sat, 09 Nov 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/emacs-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;一些关于 Emacs 配置和使用的……&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/loveminimal/emacs.d&#34;&gt;loveminimal/emacs.d: All in emacs.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VSCode 那些事儿</title>
+      <link>https://aituyaa.com/vscode-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Sat, 09 Nov 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/vscode-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;一些关于 VSCode 配置和使用的……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一款简约的 Obsidian 主题</title>
+      <link>https://aituyaa.com/%E4%B8%80%E6%AC%BE%E7%AE%80%E7%BA%A6%E7%9A%84-obsidian-%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Thu, 31 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E6%AC%BE%E7%AE%80%E7%BA%A6%E7%9A%84-obsidian-%E4%B8%BB%E9%A2%98/</guid>
+      <description>📘 loveminimal/obsidian-theme-virgo: A obsidian theme. 更新日志 - 2024-04-12 15:29 重构主题，精简冗余代码 快速使用 后续你可以直接从 Obsidian 的主题仓库中直接搜索 Virgo 安装即可（上传中，待官方合并 限制太多，不允许上传自定义字体，不再上</description>
+    </item>
+    
+    <item>
+      <title>Emacs Lisp</title>
+      <link>https://aituyaa.com/emacs-lisp/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/emacs-lisp/</guid>
+      <description>&lt;p&gt;📕 转载自 &lt;a href=&#34;http://smacs.github.io/elisp/&#34;&gt;Emacs Lisp 简明教程 - 水木社区 Emacs 版&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这是 叶文彬（水木 ID: happierbee) 写的一份 Emacs Lisp 的教程，深入浅出，非常适合初学者。文档的 TeX 代码及 PDF 文档可在&lt;a href=&#34;http://www.newsmth.net/nForum/article/Emacs/58338?s=58338&#34;&gt;此处下载&lt;/a&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;emacs 的高手不能不会 elisp。但是对于很多人来说 elisp 学习是一个痛苦的历程，至少我是有这样一段经历。因此，我写了这一系列文章，希望能为后来者提供一点捷径。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VSCode 插件 CVE Keymap 的开发记录</title>
+      <link>https://aituyaa.com/vscode-%E6%8F%92%E4%BB%B6-cve-keymap-%E7%9A%84%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/vscode-%E6%8F%92%E4%BB%B6-cve-keymap-%E7%9A%84%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;当前博文以 &lt;code&gt;Org Mode&lt;/code&gt; 格式编辑。&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I have a vim, I have a emacs.&lt;br&gt;
+Eh~ vim-emacs!&lt;br&gt;
+I have a code, I have a vim-emacs.&lt;br&gt;
+Eh~ code-vim-emacs!&lt;br&gt;
+CVE!&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>一款 Typora 主题</title>
+      <link>https://aituyaa.com/%E4%B8%80%E6%AC%BE-typora-%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E6%AC%BE-typora-%E4%B8%BB%E9%A2%98/</guid>
+      <description>&lt;p&gt;为什么会制作这款 Typora 的主题呢？&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://theme.typora.io/theme/Virgo/&#34;&gt;📙 Virgo&lt;/a&gt; , 仓库地址 &lt;a href=&#34;https://github.com/loveminimal/typora-theme-virgo&#34;&gt;loveminimal/typora-theme-virgo: A typora theme for relative hugo.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vim  那些事儿</title>
+      <link>https://aituyaa.com/vim-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/vim-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;Vim 是 Vi 的升级版，一款功能强大、高度可定制的文本编辑器，它只有一个对手 – Emacs 。那么，它来自哪里？&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

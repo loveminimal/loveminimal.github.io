@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="12 编程原理 - 语句和函数 - https://aituyaa.com/cscc/12-%E7%BC%96%E7%A8%8B%E5%8E%9F%E7%90%86-%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%87%BD%E6%95%B0/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>12 编程原理 - 语句和函数</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">12 编程原理 - 语句和函数</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E9%80%9F%E6%88%90%E8%AF%BE/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：计算机科学速成课 <sup>17</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/00-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E9%80%9F%E6%88%90%E8%AF%BE/">00 计算机科学速成课</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/01-%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%97%A9%E6%9C%9F%E5%8E%86%E5%8F%B2/">01 计算机早期历史</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/02-%E7%94%B5%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA/">02 电子计算机</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/03-%E5%B8%83%E5%B0%94%E9%80%BB%E8%BE%91%E5%92%8C%E9%80%BB%E8%BE%91%E9%97%A8/">03 布尔逻辑和逻辑门</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/04-%E4%BA%8C%E8%BF%9B%E5%88%B6/">04 二进制</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/05-%E7%AE%97%E6%95%B0%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83/">05 算数逻辑单元</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/06-%E5%AF%84%E5%AD%98%E5%99%A8%E5%92%8C%E5%86%85%E5%AD%98/">06 寄存器和内存</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/07-%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/">07 中央处理器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/08-%E6%8C%87%E4%BB%A4%E5%92%8C%E7%A8%8B%E5%BA%8F/">08 指令和程序</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/09-%E9%AB%98%E7%BA%A7-cpu-%E8%AE%BE%E8%AE%A1/">09 高级 CPU 设计</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/10-%E6%97%A9%E6%9C%9F%E7%9A%84%E7%BC%96%E7%A8%8B%E6%96%B9%E5%BC%8F/">10 早期的编程方式</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/11-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%8F%91%E5%B1%95%E5%8F%B2/">11 编程语言发展史</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/cscc/12-%E7%BC%96%E7%A8%8B%E5%8E%9F%E7%90%86-%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%87%BD%E6%95%B0/">12 编程原理 - 语句和函数</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/13-%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/">13 算法入门</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/14-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">14 数据结构</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/15-cscc-%E5%85%B6%E4%BB%961/">15 CSCC 其他1</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/16-cscc-%E5%85%B6%E4%BB%962/">16 CSCC 其他2</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2023-05-26&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2024-11-08&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            3568 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            8 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E9%80%9F%E6%88%90%E8%AF%BE">计算机科学速成课</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#语句">语句</a></li>
+    <li><a href="#函数">函数</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p>i.e. Programming Basics - Statements &amp; Functions</p>
+<p>上集讲到用机器码写程序，还要处理那么多底层细节，对写大型程序是个巨大障碍。为了脱离底层细节，开发了编程语言，让程序员专心解决问题，不用管硬件细节。</p>
+<blockquote>
+<p>:: 底层各类太多了，编写麻烦，调试麻烦，改动麻烦……</p>
+</blockquote>
+<h2 id="语句">语句</h2>
+<p>今天我们讨论大多数编程语言都有的基本元素，就像口语一样，编程语言有&quot;语句&quot;。语句表达单个完整思想，比如&quot;我想要茶&quot;或者&quot;在下雨&quot;，用不同词汇可以代表不同含义，比如&quot;我想要茶&quot;变成&quot;我想要独角兽&quot;，但没法把&quot;我想要茶&quot;改成&quot;我想要雨&quot;- 语法毫无意义。</p>
+<p>规定句子结构的一系列规则叫 <strong>语法</strong> （syntax），英语有语法，所有编程语言也都有语法。 <code>a = 5</code> 是一个编程语言语句，意思是创建一个叫 a 的变量，把数字 5 放里面，这叫&quot;赋值语句&quot;，把一个值赋给一个变量。</p>
+<p>为了表达更复杂的含义，需要更多语句，比如 <code>a = 5 b = 10 c = a + b</code> ，意思是，变量 a 设为 5，变量 b 设为 10 ，把 a 和 b 加起来，把结果 15 放进变量 c 。注意，变量名可以随意取。除了 a b c，也可以叫苹果、梨、水果。计算机不在乎你取什么名，只要不重名就行，当然取名最好还是有点意义，方便别人读懂。</p>
+<p><strong>程序由一个个指令组成</strong> ，有点像菜谱：烧水、加面，等 10 分钟，捞出来就可以吃了。程序也是这样，从第一条语句开始，一句一句运行到结尾。</p>
+<p>刚才我们只是把两个数字加在一起，无聊，我们来做一款游戏吧 ！🤖🔫 当然，现在这个学习阶段，来编写一整个游戏还太早了，所以我们只写一小段一小段的代码，来讲解一些基础知识。</p>
+<p>假设我们在写一款老派街机游戏：Grace Hopper 拍虫子，阻止虫子飞进计算机造成故障，关卡越高，虫子越多。Grace 要在虫子损坏继电器之前抓住虫子，好消息是她有几个备用继电器。</p>
+<p>开始编写时，我们需要一些值来保存游戏数据，比如当前关卡数、分数、剩余虫子数、Grace 还剩几个备用继电器，所以我们要&quot;初始化&quot;变量 ，“初始化&quot;的意思是设置最开始的值。</p>
+<pre tabindex="0"><code>关卡=1  分数=0  虫子数=5  备用继电器=4   玩家名=Andre
+</code></pre><p>为了做成交互式游戏，程序的执行顺序要更灵活，不只是从上到下执行，因此用 “控制流语句”。控制流语句有好几种，最常见的是 if 语句，可以想成是 “如果 X 为真，那么执行 Y”，用英语举例就是 “如果累了，就去喝茶”，如果 “累了” 为真，就去喝茶，如果 “累了” 为假，就不喝茶。</p>
+<p>if 语句就像岔路口，走哪条路取决于 “表达式” 的真假，因此这些表达式又叫 “条件语句”。在大多数编程语言中，if 语句看起来像这样： <code>if [条件], then [一些代码]，结束 if 语句</code> 。比如， <code>if [第一关]，then [分数设为 0]</code> ，因为玩家才刚开始游戏，同时把虫子数设为 1，让游戏简单些。</p>
+<p>注意，依赖于 if 条件的代码，要放在 IF 和 END IF 之间，当然，条件表达式 可以改成别的，比如： <code>&quot;分数 &gt;10&quot; 或者 &quot;虫子数 &lt;1&quot;</code> 。</p>
+<p>if 还可以和 else 结合使用，条件为假会执行 else 里的代码。如果不是第 1 关，else 里的指令就会被执行，Grace 要抓的虫子数，是当前关卡数 * 3 ，所以第 2 关有 6 个虫子，第 3 关有 9 个虫子，以此类推。else 中没有改分数，所以 Grace 的分数不会变。</p>
+<p>![[assets/Pasted image 20230526124545.png]]</p>
+<p>这里列了一些热门编程语言 if-then-else 的具体语法。具体语法略有不同，但主体结构一样。</p>
+<p>if 语句 根据条件执行一次。如果希望根据条件执行多次，需要&quot;条件循环”。比如 while 语句，也叫 “while 循环”，当 while 条件为真，代码会重复执行。不管是哪种编程语言，结构都是这样。假设到达一定分数会冒出一个同事，给 Grace 补充继电器，棒极了！把继电器补满到最大数 4 个 ， 我们可以用 while 语句来做。</p>
+<p>来过一遍代码。</p>
+<p>假设同事入场时， Grace 只剩一个继电器。当执行 while 循环，第一件事是检查条件 - <code>继电器数量&lt;4?</code> ，继电器数量现在是 1，所以是真，进入循环！</p>
+<p>碰到这一行： <code>继电器数量 = 继电器数量 + 1</code> 。看起来有点怪，变量的赋值用到了自己。</p>
+<p>我们讲下这个，总是从等号右边开始，<code>&quot;继电器数量+1&quot;</code> 是多少？ 当前值是 1，所以 1+1=2 ，结果存到&quot;继电器数量&quot;，覆盖旧的值，所以现在继电器数量是 2 。</p>
+<p>现在到了结尾，跳回开始点。和之前一样，先判断条件，看要不要进入循环 - <code>继电器数量&lt;4？</code> 。是，继电器数量是 2，所以再次进入循环！ 2+1=3 ，3 存入&quot;继电器数量&quot; 。回到开头 。<code>3&lt;4？</code> 是！进入循环。 3+1=4 ，4 存入&quot;继电器数量&quot;，回到开头。 <code>4&lt;4?</code> ，不！现在条件为假，退出循环，执行后面的代码。</p>
+<p>while 循环就是这样运作的！</p>
+<p>另一种常见的叫 “for 循环”，不判断条件，判断次数，会循环特定次数，看起来像上图。现在放些真正的值进去，上图例子会循环 10 次，因为设了变量 i ，从 1 开始，一直到 10 。for 的特点是，每次结束， i 会 +1 ，当 i 等于 10，就知道循环了 10 次，然后退出。我们可以用任何数字，10, 42, 10 亿 。</p>
+<p>假设每关结束后给玩家一些奖励分，奖励分多少取决于继电器剩余数量，随着难度增加，剩下继电器会越来越难。因此奖励分会根据当前关卡数，指数级增长，我们要写一小段代码来算指数。指数是一个数乘自己，乘特定次数。用循环来实现简直完美！</p>
+<p>首先，创建一个叫&quot;奖励分&quot;的新变量，设为 1 （看上图），然后 for 循环，从 1 到 [当前关卡数] ，[奖励分] x [继电器剩余数]，结果存入 [奖励分] ，比如继电器数是 2，关卡数是 3 ，for 会循环 3 次，奖励分会乘 <code>继电器数量 x 继电器数量 x 继电器数量</code> ，也就是 1×2×2×2，奖励分是 8，2 的 3 次方。这个指数代码很实用，其他地方可能会用到。如果每次想用就复制粘贴，会很麻烦，每次都要改变量名。如果代码发现问题，要补漏洞时，要把每一个复制黏贴过的地方都找出来改，而且会让代码更难懂。</p>
+<p>少即是多！</p>
+<p>我们想要某种方法，把代码&quot;打包&quot;，可以直接使用，得出结果，不用管内部复杂度。</p>
+<p>这又提升了一层抽象！</p>
+<h2 id="函数">函数</h2>
+<p>为了隐藏复杂度，可以把代码打包成 “函数”，也叫 “方法” 或 “子程序”（有些编程语言这么叫）。其他地方想用这个函数，直接写函数名就可以了。</p>
+<p>现在我们把指数代码变成函数。</p>
+<p>第一步，取名。叫什么都行，比如&quot;快乐独角兽&quot;，但因为是算指数，直接叫&quot;指数&quot;合适一些。</p>
+<p>还有，与其用特定变量名，比如 “继电器” 和 “关卡数”，用更通用的名字，比如 底数 (Base) 和 指数 (Exp)，Base 和 Exp 的初始值需要外部传入，剩余代码和之前一样。现在完成了，有函数名和新变量名。</p>
+<p>最后，我们还需要把结果 交给使用这个函数的代码，所以用 RETURN 语句，指明返回什么。</p>
+<p>完整版代码是这样！</p>
+<p>现在可以随意用这个函数，只需要写出名字 然后传入 2 个数字就可以了。如果要算 2 的 44 次方，写 <code>exponent(2,44)</code> ，结果是 18 万亿左右。幕后原理是，2 和 44 存进 Base 和 Exp ，跑循环，然后返回结果。我们来用这个新函数 算奖励分，首先，奖励分初始化为 0 ，然后用 if 语句，看剩不剩继电器（看上图的 &gt; 0），如果还剩，用指数函数，传入 <code>[继电器数]</code> 和 <code>[关卡数]</code> ，它会算 <code>[继电器数]</code> 的 <code>[关卡数]</code> 次方，存入奖励分。这段算奖励分的代码，之后可能还会用，也打包成一个函数。没错，这个函数 (CalcBonus) 会调用另一个函数 (Exponent) 。还有！这个 CalcBonus 函数，可以用在其他更复杂的函数 。</p>
+<p>我们来写一个函数，每一关结束后都会调用，叫 LevelFinished （关卡结束）- 需要传入 <code>[剩余继电器数] 、 [关卡数] 、[当前分]</code> ，这些数据必须传入。里面用 CalcBonus 算奖励分，并加进总分，还有，如果 <code>当前分 &gt; 游戏最高分</code> ，把新高分和玩家名 存起来，现在代码变得蛮&quot;花哨&quot;了。函数调函数调函数。</p>
+<p>我们写这样一行代码时，复杂度都隐藏起来了，不需要知道内部的循环和变量，只知道结果会像魔术一样返回，总分 53 。 <strong>但是这不是魔术，是抽象的力量！</strong> 如果你理解了这个例子，就明白了函数的强大之处和现代编程的核心。</p>
+<p>比如浏览器这样的复杂程序，用一长串语句来写是不可能的，会有几百万行代码，没人能理解。所以现代软件由上千个函数组成，每个负责不同的事。如今超过 100 行代码的函数很少见，如果多于 100 行，应该有东西可以拆出来做成一个函数。模块化编程不仅可以让单个程序员独立制作 App，也让团队协作可以写更大型的程序。不同程序员写不同函数，只需要确保自己的代码工作正常，把所有人的拼起来，整个程序也应该能正常运作！</p>
+<p>现实中，程序员不会浪费时间写指数函数这种东西，现代编程语言有很多预先写好的函数集合，叫 <strong>“库”</strong> ，由专业人员编写，不仅效率高，而且经过了仔细检查。几乎做所有事情都有库，网络、图像、声音。</p>
+<p>我们之后会讲这些主题。</p>
+<p>但在此之前，我们先讲算法。好奇吗？应该！</p>
+<p>下周见</p>
+<blockquote>
+<p>:: 该章节其实没有多少内容，简单介绍了语句和函数，其中的例子用语言描述起来简直‘累’，还是动画来的直观。</p>
+</blockquote>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="/about" target="_blank">
+            
+            将喜欢的一切留在身边，这便是努力的意义
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="源码编译安装 - https://aituyaa.com/%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>源码编译安装</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">源码编译安装</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/linux/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：Linux <sup>5</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/manjaro-linux/">Manjaro Linux</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/nginx/">Nginx</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/nginx-%E9%87%8D%E5%AE%9A%E5%90%91/">Nginx 重定向</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%8D%81%E5%88%86%E9%92%9F%E6%8E%8C%E6%8F%A1-tmux/">十分钟掌握 TMUX</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85/">源码编译安装</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2023-05-26&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2023-09-07&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            1564 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            4 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/linux">Linux</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#如何编译安装">如何编译安装 </a></li>
+    <li><a href="#如何理解编译过程">如何理解编译过程 </a>
+      <ul>
+        <li><a href="#configure">./configure</a></li>
+        <li><a href="#make">make</a></li>
+        <li><a href="#cmake">cmake</a></li>
+        <li><a href="#make-install">make install</a></li>
+      </ul>
+    </li>
+    <li><a href="#扩展---cc-编译过程">扩展 - C/C++ 编译过程 </a>
+      <ul>
+        <li><a href="#相关名词">相关名词</a></li>
+        <li><a href="#编译过程">编译过程</a></li>
+        <li><a href="#链接过程">链接过程</a></li>
+      </ul>
+    </li>
+    <li><a href="#todo-进阶---linux-下源码编译安装详解">TODO 进阶 - Linux 下源码编译安装详解 </a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p>Linux 下源代码的编译安装，及其编译过程和可能遇到的问题。</p>
+<p>![[assets/Pasted image 20230526085019.png]]</p>
+<h2 id="如何编译安装">如何编译安装 </h2>
+<p><a href="https://www.jianshu.com/p/39101098ebbe">1</a></p>
+<p>下载源码包，解压、进入源代码目录后，执行以下命令：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>./configure
+</span></span><span style="display:flex;"><span>make
+</span></span><span style="display:flex;"><span>make install
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 多数时候需要 `sudo`</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>以上是典型的使用 GNU 的 AUTOCONF 和 AUTOMAKE 产生的程序的安装步骤。</p>
+<h2 id="如何理解编译过程">如何理解编译过程 </h2>
+<p><a href="https://my.oschina.net/surjur/blog/349464">2</a> <a href="https://www.linuxidc.com/Linux/2018-12/155637.htm">3</a></p>
+<h3 id="configure">./configure</h3>
+<p><code>configure</code> 脚本是用来检查当前安装平台的开发环境，比如是不是有 CC 或 GCC ，也用来供用户指定程序包的编译参数、启用特性、安装路径等等。</p>
+<p><em>一般用来生成 <code>Makefile</code> ，为下一步的编译做准备。</em> 如下所示，可以通过在 <code>configure</code> 后加上参数来对安装进行控制，比如：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>./configure --prefix<span style="color:#000;font-weight:bold">=</span>/usr
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>意味着将该软件安装在 <code>/usr</code> 下面，执行文件就会安装在 <code>/usr/bin</code> （而不是默认的 <code>/usr/local/bin</code> ），资源文件就会安装在 <code>/usr/share</code> （而不是默认的 <code>/usr/local/share</code> ）。</p>
+<pre tabindex="0"><code># 通用的几个选项
+--prefix=                      # 指定安装的路径
+--sysconfdir=                  # 指定配置文件目录
+--enable-feature=              # 启用某个特性
+--disable-feature              # 禁用某个特性
+--with-function                # 启用某个功能
+--without-function             # 禁用某个功能
+</code></pre><p>你可以通过 <code>./configure --help</code> 查看更多。</p>
+<h3 id="make">make</h3>
+<p><code>make</code> 是 Linux 开发套件里面自动化编译的一个控制程序。每个源代码都有专用的 <code>Makefile</code> ，在执行 <code>make</code> 时依据 <code>Makefile</code> 这个配置文件，调用指定的预处理器做处理、调用指定的编译器做处理、编译文件的顺序操作等。</p>
+<p>一般情况下，它所使用的 <code>Makefile</code> 控制代码是由 <code>configure</code> 这个设置脚本根据给定的参数和系统环境生成的。</p>
+<h3 id="cmake">cmake</h3>
+<p><a href="https://www.cnblogs.com/benwu/articles/8436209.html">5</a></p>
+<p><code>cmake</code> 就是一个与 <code>make</code> 同级别的编译工具，只不过它依靠的不是 <code>Makefile</code> 作为编译规则，而是根据 <code>CMakeLists.txt</code> 来编译的。它比 <code>make</code> 更高级，可以根据不同平台、不同的编译器，通过编写 <code>CMakeLists.txt</code> ，可以控制生成的 <code>Makefile</code> ，从而控制编译过程。</p>
+<p>![[assets/Pasted image 20230526085142.png]]</p>
+<p>如果有嵌套目录，子目录下可以有自己的 <code>CMakeLists.txt</code> 。</p>
+<h3 id="make-install">make install</h3>
+<p>这条命令用来进行安装（当然有些软件需要先运行 <code>make check</code> 或 <code>make test</code> 来进行一些测试），一般需要你有 root 权限（因为要向系统写入文件）。</p>
+<blockquote>
+<p>其实是一些脚本，根据 <code>Makefile</code> 文件中的设置将编译完成的文件安装到预定目录，如将创建出的二进制文件放到指定的二进制目录、库文件放到指定的库目录等等。</p>
+</blockquote>
+<h2 id="扩展---cc-编译过程">扩展 - C/C++ 编译过程 </h2>
+<p><a href="https://www.cnblogs.com/dongdongweiwu/p/4743709.html">4</a></p>
+<p>![[assets/Pasted image 20230526085149.png]]</p>
+<h3 id="相关名词">相关名词</h3>
+<p>编译 ，是读取源程序（字符流），对之进行词法和语法的分析，将高级语言转换为等效的汇编代码，再转换为机器代码，保存到目标文件 <code>*.obj </code>中（如果编译通过）。</p>
+<p>链接，是将有关的目标文件（库文件、 <code>.o</code> 文件）彼此互相连接，即在一个文件中引用的符号同在另一个文件中的定义连接起来，使得所有的这些目标文件成为一个能够被操作系统装入执行的统一整体。</p>
+<h3 id="编译过程">编译过程</h3>
+<p>编译分为两个过程： 预处理阶段和编译、优化阶段 。</p>
+<p>预处理阶段：</p>
+<ul>
+<li>宏 <code>#define</code> ；</li>
+<li>条件编译指令，如 <code>#ifdef, #ifndef, #else, #elif, #endif</code> 等；</li>
+<li>头文件包含 <code>#include &lt;iostream&gt;</code> ；</li>
+<li>特殊符号，如 <code>LINE</code> 标识被解释为当前行号， <code>FILE</code> 被解释为当前被编译的 C 源程序的名称。</li>
+</ul>
+<p>编译、优化阶段：</p>
+<ul>
+<li>针对代码优化，不依赖具体计算机；</li>
+<li>针对计算机的优化。</li>
+</ul>
+<p>汇编把汇编语言代码翻译成目标机器指令，生成目标文件（ <code>.o</code> 或 <code>.obj</code> 文件），至少需要表提供 3 张表：</p>
+<ul>
+<li>导出符号表 - 该目标文件可以提供的符号及地址；</li>
+<li>未解决符号表 - 该目标文件告诉链接器哪些符号没找到地址；</li>
+<li>地址重定向表。</li>
+</ul>
+<p>链接的时候，链接器会为目标文件的 <em>未解决符号表</em> 里的符号在其他文件里寻找地址，但是每个目标文件的地址都是从 <code>0x0000</code> 开始的，这就导致直接将对方文件中符号拿过来用会是不正确的。为了区分不同的文件，链接器在链接时就会结每个目标文件的地址进行调整，如为 <code>.o</code> 导出的符号地址都加上起始地址。然而，因为加上了起始地址，符号在自身文件中的实际地址就不对了，需要再用一张地址重定向表记录符号相对自身文件的地址。</p>
+<h3 id="链接过程">链接过程</h3>
+<p>链接方式分为：静态链接和动态链接。</p>
+<p>静态链接 ，函数的代码将从其所在的静态链接库中被拷贝到最终的可执行程序中，这样该程序在被执行时这些代码将被装入到该进程的虚拟地址空间中。</p>
+<p>动态链接 ，函数的代码被放到称作是动态链接库或共享对象的某个目标文件中。链接程序此时所做的只是在最终的可执行程序中记录下共享对象的名字以及其它少量的登记信息。在此可执行文件被执行时，动态链接库的全部内容将被映射到运行时相应进程的虚拟地址空间。动态链接程序将根据可执行程序中记录的信息找到相应的函数代码。</p>
+<h2 id="todo-进阶---linux-下源码编译安装详解">TODO 进阶 - Linux 下源码编译安装详解 </h2>
+<p><a href="https://blog.csdn.net/u012501054/article/details/77880139">6</a></p>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="/about" target="_blank">
+            
+            将喜欢的一切留在身边，这便是努力的意义
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

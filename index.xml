@@ -1,0 +1,1734 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>爱涂鸦啊</title>
+    <link>https://aituyaa.com/</link>
+    <description>Recent content on 爱涂鸦啊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>编程水平是怎么训练出来的</title>
+      <link>https://aituyaa.com/%E7%BC%96%E7%A8%8B%E6%B0%B4%E5%B9%B3%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%AD%E7%BB%83%E5%87%BA%E6%9D%A5%E7%9A%84/</link>
+      <pubDate>Fri, 14 Feb 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%BC%96%E7%A8%8B%E6%B0%B4%E5%B9%B3%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%AD%E7%BB%83%E5%87%BA%E6%9D%A5%E7%9A%84/</guid>
+      <description>&lt;p&gt;源自知乎问答 &lt;a href=&#34;https://www.zhihu.com/question/351504112&#34;&gt;那些编程水平很高的程序员是怎么训练出来的?&lt;/a&gt; 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Neovim 那些事儿</title>
+      <link>https://aituyaa.com/neovim-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/neovim-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;好嘛，让我们来试一下 Neovim ~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Poetry 的简要说明</title>
+      <link>https://aituyaa.com/poetry-%E7%9A%84%E7%AE%80%E8%A6%81%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/poetry-%E7%9A%84%E7%AE%80%E8%A6%81%E8%AF%B4%E6%98%8E/</guid>
+      <description>&lt;p&gt;Poetry 是一个现代的 Python 包管理工具，它不仅能够管理依赖，还可以构建和发布 Python 包。Poetry 的目标是简化 Python 项目的管理，替代传统的 &lt;code&gt;requirements.txt&lt;/code&gt;、&lt;code&gt;setup.py&lt;/code&gt; 和 &lt;code&gt;pip&lt;/code&gt; 等工具。下面是 Poetry 的简要教程说明，包括安装、常用命令和基本使用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shell 那些事儿</title>
+      <link>https://aituyaa.com/shell-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Sat, 11 Jan 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/shell-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>小鹤双拼及形辅</title>
+      <link>https://aituyaa.com/%E5%B0%8F%E9%B9%A4%E5%8F%8C%E6%8B%BC%E5%8F%8A%E5%BD%A2%E8%BE%85/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%B0%8F%E9%B9%A4%E5%8F%8C%E6%8B%BC%E5%8F%8A%E5%BD%A2%E8%BE%85/</guid>
+      <description>&lt;p&gt;经过一段时间地体验后，最终选择了小鹤双拼，无它，体验好 🥳&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rime 那些事儿</title>
+      <link>https://aituyaa.com/rime-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Mon, 06 Jan 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/rime-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;说是“输入法那些事儿”，其实主要就是 Rime 那些事儿。商业输入法不怎么用，也就没有什么太多好说的，不过做为参照物可能会略有提及。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: 目前可以看成是 Rime Home Wiki 的汇总。 &amp;ndash; 🤣 好嘛，经过两三天的噼里啪啦，终于整合在了一起。原 Wiki 毕竟是 wiki ，内容有些凌乱，后续有时间再慢慢整理、删减、补充吧。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lua 那些事儿</title>
+      <link>https://aituyaa.com/lua-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/lua-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;最近配置 [[Rime_JK 指尖上的旋律|Rime]] 的时候遇到了不少 lua 脚本，加上比较流行的 Neovim 也是使用的这个嵌入式脚本，Java 和一些游戏中也使用了这个脚本语言……&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20250103183548.png|500]]&lt;/p&gt;
+&lt;p&gt;这难免让人想要多了解一下她，不是吗？所以，让我们开始吧 🎉&lt;/p&gt;
+&lt;p&gt;📘 &lt;a href=&#34;https://www.runoob.com/manual/lua53doc/&#34;&gt;Lua 5.3 参考手册&lt;/a&gt;&lt;br&gt;
+📗 &lt;a href=&#34;https://www.runoob.com/lua/lua-tutorial.html&#34;&gt;Lua 教程 | 菜鸟教程&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里我们以实用性为中心，简要了解一下其基本用法 ~&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>一种获取五笔大词库的方式</title>
+      <link>https://aituyaa.com/%E4%B8%80%E7%A7%8D%E8%8E%B7%E5%8F%96%E4%BA%94%E7%AC%94%E5%A4%A7%E8%AF%8D%E5%BA%93%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Wed, 25 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E7%A7%8D%E8%8E%B7%E5%8F%96%E4%BA%94%E7%AC%94%E5%A4%A7%E8%AF%8D%E5%BA%93%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
+      <description>&lt;p&gt;一种获取五笔大词库的方式 ~&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20241225110558.png]]&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python 那些事儿</title>
+      <link>https://aituyaa.com/python-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/python-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;![[assets/Pasted image 20241215124829.png]]&lt;/p&gt;
+&lt;p&gt;官方文档请参阅 📖 &lt;a href=&#34;https://docs.python.org/zh-cn/3/tutorial/index.html&#34;&gt;Python 教程 — Python 3.13.1 文档&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;本语言的命名源自 BBC 的 “Monty Python 飞行马戏团”，与爬行动物无关（Python 原义为“蟒蛇”）。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>call、apply 和 bind</title>
+      <link>https://aituyaa.com/callapply-%E5%92%8C-bind/</link>
+      <pubDate>Fri, 13 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/callapply-%E5%92%8C-bind/</guid>
+      <description>&lt;p&gt;&lt;code&gt;call&lt;/code&gt;、&lt;code&gt;apply&lt;/code&gt; 和 &lt;code&gt;bind&lt;/code&gt; 是 JavaScript 中用于控制函数执行上下文（即 &lt;code&gt;this&lt;/code&gt; 的值）的三个重要方法。它们的主要作用是允许你显式地指定函数内部的 &lt;code&gt;this&lt;/code&gt; 指向。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>浏览器的渲染过程</title>
+      <link>https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%B8%B2%E6%9F%93%E8%BF%87%E7%A8%8B/</link>
+      <pubDate>Fri, 13 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%B8%B2%E6%9F%93%E8%BF%87%E7%A8%8B/</guid>
+      <description>&lt;p&gt;➡️ 本文内容主体部分来自 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/74792085&#34;&gt;浏览器的渲染过程 - 知乎&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;通常，我们只需要编写 HTML，CSS，JavaScript，浏览器上就能呈现出漂亮的网页了，但是浏览器是如何使用我们的代码在屏幕上渲染像素的呢？&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>网页中的锚点跳转</title>
+      <link>https://aituyaa.com/%E7%BD%91%E9%A1%B5%E4%B8%AD%E7%9A%84%E9%94%9A%E7%82%B9%E8%B7%B3%E8%BD%AC/</link>
+      <pubDate>Fri, 13 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%BD%91%E9%A1%B5%E4%B8%AD%E7%9A%84%E9%94%9A%E7%82%B9%E8%B7%B3%E8%BD%AC/</guid>
+      <description>&lt;p&gt;如何设置锚点，使得我们可以跳转到网页的指定位置呢？往下看。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Source Map</title>
+      <link>https://aituyaa.com/source-map/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/source-map/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Source Map&lt;/code&gt; 是一种文件格式，用于将压缩、混淆或转换后的代码映射回原始代码。它通常用于调试生产环境中的 JavaScript 代码，帮助开发者在浏览器中查看和调试原始源代码，而不是压缩或混淆后的代码。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于 fetch</title>
+      <link>https://aituyaa.com/%E5%85%B3%E4%BA%8E-fetch/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%85%B3%E4%BA%8E-fetch/</guid>
+      <description>&lt;p&gt;&lt;code&gt;fetch&lt;/code&gt; 是现代 JavaScript 中用于发起网络请求的一个全局 API。它提供了一种简单、灵活的方式来与服务器进行通信，基于 &lt;code&gt;Promise&lt;/code&gt;，因此非常适合处理异步操作。&lt;code&gt;fetch&lt;/code&gt; 是 &lt;code&gt;XMLHttpRequest&lt;/code&gt; 的替代品，广泛用于前端开发中。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于 Promise</title>
+      <link>https://aituyaa.com/%E5%85%B3%E4%BA%8E-promise/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%85%B3%E4%BA%8E-promise/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Promise&lt;/code&gt; 是 JavaScript 中用于处理异步操作的一种对象。它&lt;strong&gt;代表了一个异步操作的最终完成（或失败）及其结果值&lt;/strong&gt;。&lt;code&gt;Promise&lt;/code&gt; 提供了一种更清晰、更结构化的方式来处理异步代码，避免了传统的回调地狱（callback hell）问题。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>函数柯里化</title>
+      <link>https://aituyaa.com/%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;函数柯里化（Currying）&lt;/strong&gt; 是一种将多参数函数转换为一系列单参数函数的技术。通过柯里化，可以将一个接受多个参数的函数分解为多个只接受一个参数的函数，每个函数返回一个新的函数，直到所有参数都被传递完毕。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>生成器</title>
+      <link>https://aituyaa.com/%E7%94%9F%E6%88%90%E5%99%A8/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%94%9F%E6%88%90%E5%99%A8/</guid>
+      <description>&lt;p&gt;在 Node.js 中，&lt;code&gt;generator&lt;/code&gt; 是一种特殊的函数，它允许你通过 &lt;code&gt;yield&lt;/code&gt; 关键字暂停和恢复函数的执行。&lt;code&gt;generator&lt;/code&gt; 函数使用 &lt;code&gt;function*&lt;/code&gt; 语法来定义，并且返回一个 &lt;code&gt;Generator&lt;/code&gt; 对象。这个 &lt;code&gt;Generator&lt;/code&gt; 对象可以通过 &lt;code&gt;next()&lt;/code&gt; 方法来控制函数的执行流程。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>自然码辅助码入门教程</title>
+      <link>https://aituyaa.com/%E8%87%AA%E7%84%B6%E7%A0%81%E8%BE%85%E5%8A%A9%E7%A0%81%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%87%AA%E7%84%B6%E7%A0%81%E8%BE%85%E5%8A%A9%E7%A0%81%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;p&gt;&lt;code&gt;&amp;gt; 自然码双拼键位&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20241210160722.png]]&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
+本文链接：https://blog.csdn.net/liuchuo/article/details/53932679
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java 那些事儿</title>
+      <link>https://aituyaa.com/java-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/java-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;code&gt;&amp;gt; Hello, Java!&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;![[assets/Obsidian 调整透明度.png]]&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于“那些事儿”系列</title>
+      <link>https://aituyaa.com/%E5%85%B3%E4%BA%8E%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF%E7%B3%BB%E5%88%97/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%85%B3%E4%BA%8E%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF%E7%B3%BB%E5%88%97/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;为什么会有这个“那些事儿”系列？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因为许多时候其实是碎片化的学习，对内容深度并没有什么需求，但需要记录一些学习过程中遇到的问题及其解决方案。&lt;/p&gt;
+&lt;p&gt;之前是全部记录在 [[百科]] 中，然后定期整理成专项的内容，但实际上有些知识就是碎片化的，把它们分散到不同的文章中不仅没有解决其“碎片化”的本质，反而让它们更加“分散”了。&lt;/p&gt;
+&lt;p&gt;所以，每一个标签项中都创建一个“那些事儿”，用以折衷“过于分散”和“潜在集中化”的需求。可以这么认为，“那些事儿”中内容是分散的，但整体框架是集中的。&lt;/p&gt;
+&lt;p&gt;相信我，没有什么知识管理体系是毕其功于一役的，都需要周期性的去整理。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Frontend</title>
+      <link>https://aituyaa.com/devmaps/frontend/</link>
+      <pubDate>Tue, 26 Nov 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/devmaps/frontend/</guid>
+      <description>&lt;p&gt;你可以在这里找到完整的路线图 &lt;a href=&#34;https://roadmap.sh/frontend&#34;&gt;Frontend Developer Roadmap&lt;/a&gt; ~ 注册了账号后，还可以同步进度，Nice ~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>哲学那些事儿</title>
+      <link>https://aituyaa.com/%E5%93%B2%E5%AD%A6%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Thu, 21 Nov 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%93%B2%E5%AD%A6%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;哲学常被理解为 “爱智慧”，这一概念源于古希腊语 “philosophia”。它意味着对智慧的热爱与追求，并非简单地掌握某种具体知识，而是不断探索关乎世界、人生等根本性问题背后的深刻道理，试图站在更为宏观、抽象的层面去洞察万物。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>实践论</title>
+      <link>https://aituyaa.com/%E5%AE%9E%E8%B7%B5%E8%AE%BA/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%AE%9E%E8%B7%B5%E8%AE%BA/</guid>
+      <description>&lt;p&gt;论认识和实践的关系——知和行的关系。（写于 1937.7）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在中国共产党内，曾经有一部分教条主义的同志长期拒绝中国革命的经验，否认“马克思主义不是教条而是行动的指南”这个真理，而只生吞活剥马克思主义书籍中的只言片语，去吓唬人们。还有另一部分经验主义的同志长期拘守于自身的片断经验，不了解理论对于革命实践的重要性，看不见革命的全局，虽然也是辛苦地——但却是盲目地在工作。这两类同志的错误思想，特别是教条主义思想，曾经在一九三一年至一九三四年使得中国革命受了极大的损失，而教条主义者却是披着马克思主义的外衣迷惑了广大的同志。毛泽东的《实践论》，是为着用马克思主义的认识论观点去揭露党内的教条主义和经验主义——特别是教条主义这些主观主义的错误而写的。因为重点是揭露看轻实践的教条主义这种主观主义，故题为《实践论》。毛泽东曾以这篇论文的观点在延安的抗日军事政治大学作过讲演。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: 教条主义❌，经验主义❌。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>矛盾论</title>
+      <link>https://aituyaa.com/%E7%9F%9B%E7%9B%BE%E8%AE%BA/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%9F%9B%E7%9B%BE%E8%AE%BA/</guid>
+      <description>&lt;p&gt;写于 1937.8&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这篇哲学论文，是毛泽东继《实践论》之后，为了同一的目的，即为了克服存在于中国共产党内的严重的教条主义思想而写的，曾在延安的抗日军事政治大学作过讲演。在收入本书第一版的时候，作者作了部分的补充、删节和修改。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>辩证法唯物论</title>
+      <link>https://aituyaa.com/%E8%BE%A9%E8%AF%81%E6%B3%95%E5%94%AF%E7%89%A9%E8%AE%BA/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%BE%A9%E8%AF%81%E6%B3%95%E5%94%AF%E7%89%A9%E8%AE%BA/</guid>
+      <description>&lt;p&gt;——（讲授提纲） 内含《实践论》与《矛盾论》的原始版本。&lt;/p&gt;
+&lt;p&gt;按：《辩证法唯物论（讲授提纲）》写于1937年，曾在《抗战大学》第6期至第8期（1938年4月至6月）连载。据以录入的中国人民解放军政治学院训练部翻印本，年代不详。第二章第十一节和第三章中的部分章节分别为《实践论》与《矛盾论》的最初版本，与后来的毛选版本有较多出入。 文中所有注释均为录入者所加，文中不再说明。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>文学体裁</title>
+      <link>https://aituyaa.com/%E6%96%87%E5%AD%A6%E4%BD%93%E8%A3%81/</link>
+      <pubDate>Thu, 14 Nov 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%96%87%E5%AD%A6%E4%BD%93%E8%A3%81/</guid>
+      <description>&lt;p&gt;&lt;code&gt;&amp;gt; 该文章内容由豆包 AI 驱动 ^_^&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;文章体裁主要分为文学体裁和实用体裁两大类，如下：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;文学体裁：
+- 诗歌：古体诗、近体诗、词、曲、现代诗歌（-自由诗、-散文诗）
+- 散文：叙事散文、抒情散文、哲理散文、写景散文
+- 小说：长篇小说、中篇小说、短篇小说、微型小说（小小说）、按体裁分类（武侠、科幻、言情、历史）
+- 戏剧：话剧、歌剧、舞剧、戏曲、按题材分类（历史、现代、童话）、按结构分类（多幕、独幕）
+
+实用体裁：
+- 记叙文：写人、记事、写景、状物、新闻
+- 说明文：事物、事理、文艺性（科学小品）
+- 议论文：立论文、驳论文、政论文、评论文章
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emacs 那些事儿</title>
+      <link>https://aituyaa.com/emacs-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Sat, 09 Nov 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/emacs-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;一些关于 Emacs 配置和使用的……&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/loveminimal/emacs.d&#34;&gt;loveminimal/emacs.d: All in emacs.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VSCode 那些事儿</title>
+      <link>https://aituyaa.com/vscode-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Sat, 09 Nov 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/vscode-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;一些关于 VSCode 配置和使用的……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TypeScript 那些事儿</title>
+      <link>https://aituyaa.com/typescript-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/typescript-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;TypeScript 闪念随手记……&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: 不要试图把一门语言的边边角角都一次性都搞清楚，没啥用，你又不准备成为“参考书”。一则平时使用的部分并没有那么多，二则脱离了实际应用的抽象文字并不容易记忆。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Git 提交消息约定</title>
+      <link>https://aituyaa.com/git-%E6%8F%90%E4%BA%A4%E6%B6%88%E6%81%AF%E7%BA%A6%E5%AE%9A/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/git-%E6%8F%90%E4%BA%A4%E6%B6%88%E6%81%AF%E7%BA%A6%E5%AE%9A/</guid>
+      <description>&lt;p&gt;规范一下 Git 的提交方式 ~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>React 基础脚手架示例</title>
+      <link>https://aituyaa.com/react-%E5%9F%BA%E7%A1%80%E8%84%9A%E6%89%8B%E6%9E%B6%E7%A4%BA%E4%BE%8B/</link>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/react-%E5%9F%BA%E7%A1%80%E8%84%9A%E6%89%8B%E6%9E%B6%E7%A4%BA%E4%BE%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>拥抱清爽，远离湿气</title>
+      <link>https://aituyaa.com/%E6%8B%A5%E6%8A%B1%E6%B8%85%E7%88%BD%E8%BF%9C%E7%A6%BB%E6%B9%BF%E6%B0%94/</link>
+      <pubDate>Wed, 05 Jun 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%8B%A5%E6%8A%B1%E6%B8%85%E7%88%BD%E8%BF%9C%E7%A6%BB%E6%B9%BF%E6%B0%94/</guid>
+      <description>&lt;p&gt;身体“湿”的很哦，疲惫的紧，真是年龄上来了，问题陆陆续续地都浮现了出来…… 学习一些相关方面的知识吧 ~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>嗨，虎码</title>
+      <link>https://aituyaa.com/%E5%97%A8%E8%99%8E%E7%A0%81/</link>
+      <pubDate>Sun, 02 Jun 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%97%A8%E8%99%8E%E7%A0%81/</guid>
+      <description>&lt;p&gt;之前一直使用五笔 86，现在，我们来跟 &lt;a href=&#34;https://tiger-code.com/&#34;&gt;虎码&lt;/a&gt; 打个招呼吧 ~&lt;/p&gt;
+&lt;p&gt;![[assets/tc.jpg]]&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RIME_JK 指尖上的旋律</title>
+      <link>https://aituyaa.com/rime_jk-%E6%8C%87%E5%B0%96%E4%B8%8A%E7%9A%84%E6%97%8B%E5%BE%8B/</link>
+      <pubDate>Wed, 29 May 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/rime_jk-%E6%8C%87%E5%B0%96%E4%B8%8A%E7%9A%84%E6%97%8B%E5%BE%8B/</guid>
+      <description>&lt;p&gt;这个是迟来的 &lt;a href=&#34;https://github.com/loveminimal/rime-jk&#34;&gt;loveminimal/rime-jk&lt;/a&gt; 的 &lt;code&gt;README&lt;/code&gt; ，照例单开一篇，方便记录和更新~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows 那些事儿</title>
+      <link>https://aituyaa.com/windows-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Mon, 13 May 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/windows-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;不可否认，Windows 是一款非常优秀的操作系统，但日常使用起来仍有不少可以改善的地方，尤其是当它偶尔抽风开倒车的时候。在这篇文章中，我会列出自己经常使用并感觉比较舒服的一些软件，分享给大家试一试，或许你也会有意想不到的收获~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>浏览器中的尺寸大小和位置</title>
+      <link>https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BD%8D%E7%BD%AE/</link>
+      <pubDate>Thu, 09 May 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BD%8D%E7%BD%AE/</guid>
+      <description>&lt;p&gt;在页面渲染的过程中，获取一个窗口或元素的尺寸大小及位置信息是必要的。鉴于市面上浏览器的多种多样以及某些历史原因，相关的一些元素属性和 API 可能有差异，这里我们以它们在 Chrome 中的表现为准，展开聊一下相关方面的东东 ~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>云盘那些事儿</title>
+      <link>https://aituyaa.com/%E4%BA%91%E7%9B%98%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Mon, 06 May 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%BA%91%E7%9B%98%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;云盘？很长一段时间内，它对于我来说都不是一个问题，直到我渐渐习惯了多端同步……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一个修改浏览器默认字体的油猴脚本</title>
+      <link>https://aituyaa.com/%E4%B8%80%E4%B8%AA%E4%BF%AE%E6%94%B9%E6%B5%8F%E8%A7%88%E5%99%A8%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93%E7%9A%84%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/</link>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E4%B8%AA%E4%BF%AE%E6%94%B9%E6%B5%8F%E8%A7%88%E5%99%A8%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93%E7%9A%84%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/</guid>
+      <description>&lt;p&gt;Windows 系统的默认字体很丑！浏览器中的字体也不好看！如何方便地修改浏览器的各个页面的默认字体呢？如果你有这个需求，接着向下看。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web 开发相关体系结构随想</title>
+      <link>https://aituyaa.com/web-%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%9A%8F%E6%83%B3/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/web-%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%9A%8F%E6%83%B3/</guid>
+      <description>&lt;p&gt;与其它领域相比，Web 开发更像是一个全栈化的工程，其使用的技术基本上涵盖了目前大部分应用所需。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>乔布斯·斯坦福大学演讲</title>
+      <link>https://aituyaa.com/%E4%B9%94%E5%B8%83%E6%96%AF-%E6%96%AF%E5%9D%A6%E7%A6%8F%E5%A4%A7%E5%AD%A6%E6%BC%94%E8%AE%B2/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B9%94%E5%B8%83%E6%96%AF-%E6%96%AF%E5%9D%A6%E7%A6%8F%E5%A4%A7%E5%AD%A6%E6%BC%94%E8%AE%B2/</guid>
+      <description>&lt;p&gt;文章转载自作者：肆拾貳_ &lt;a href=&#34;https://www.bilibili.com/read/cv16298195/&#34;&gt;https://www.bilibili.com/read/cv16298195/&lt;/a&gt; 。（部分翻译问题，已作堪误。）&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20240228115412.png]]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; Stay Hungry, Stay Foolish.&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>时间管理</title>
+      <link>https://aituyaa.com/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/</guid>
+      <description>&lt;p&gt;夕阳西下之时，除了暮色和晚霞，回顾一天的生活，是否充实呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MCLogs</title>
+      <link>https://aituyaa.com/mclogs/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/mclogs/</guid>
+      <description>&lt;p&gt;我的世界（Minecraft）记录 123 &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>太上老君常清静经</title>
+      <link>https://aituyaa.com/%E5%A4%AA%E4%B8%8A%E8%80%81%E5%90%9B%E5%B8%B8%E6%B8%85%E9%9D%99%E7%BB%8F/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%A4%AA%E4%B8%8A%E8%80%81%E5%90%9B%E5%B8%B8%E6%B8%85%E9%9D%99%E7%BB%8F/</guid>
+      <description>&lt;p&gt;《太上老君说常清静经》仅三百九十一字。是道教炼养术重要资料之一。《清静经》正文起首一句就是“大道无形”而定了全经格调。经文不讲有为的修养方法，而是要人从心地下手，以“清静”法门去澄心遣欲，去参悟大道。经中以发挥“清静”两字为主，简明地叙述了道家修心养性的基本原则。&lt;/p&gt;
+&lt;p&gt;“夫人神好清，而心扰之；人心好静，而欲牵之。”要去除这些牵扰，获得“清静”，必须“遣其欲而心自静，澄其心而神自清”。达到“心无其心”、“形无其形”、“物无其物”，“唯见于空”的境界。但是，有“空”存在，还不究竟，还要“观空亦空”、“所空既无”、“无无既无”才能“湛然常寂”。“寂无所寂，欲岂能生，欲既不生，即是真静”，直至进入“常清静”的境界，如此“渐入真道”“名为得道”。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>高上玉皇心印妙经</title>
+      <link>https://aituyaa.com/%E9%AB%98%E4%B8%8A%E7%8E%89%E7%9A%87%E5%BF%83%E5%8D%B0%E5%A6%99%E7%BB%8F/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E9%AB%98%E4%B8%8A%E7%8E%89%E7%9A%87%E5%BF%83%E5%8D%B0%E5%A6%99%E7%BB%8F/</guid>
+      <description>&lt;p&gt;《高上玉皇心印妙经》，也称《无上玉皇心印妙经》，简称《玉皇心印经》或《心印经》。《玉皇心印经》是道士每日功课必诵经典，是修道之径路，是“命功”修炼功法。按照经中所讲悉心做去，小则有益身心，大则证道登真。诵持不退，不但能开通妙理，渐悟真诠，且能感格高真上圣，资助道力。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;吕祖曰“只修性，不修命，此是修行第一病；只修祖性不修丹，万劫阴灵难入圣”。本经便是命功修行之法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;此经阐明中华道家修炼学的理法，为中华道家丹法“修命”的代表作。此经与《[[太上老君常清静经]]》珠连壁合，为中华道家修炼学“性命双修”的重要经典。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2023 工作总结</title>
+      <link>https://aituyaa.com/docs/2023-%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Thu, 28 Dec 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/docs/2023-%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;2023 年相关工作整理及总结。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>乔布斯·遗失的访谈</title>
+      <link>https://aituyaa.com/%E4%B9%94%E5%B8%83%E6%96%AF-%E9%81%97%E5%A4%B1%E7%9A%84%E8%AE%BF%E8%B0%88/</link>
+      <pubDate>Tue, 19 Dec 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B9%94%E5%B8%83%E6%96%AF-%E9%81%97%E5%A4%B1%E7%9A%84%E8%AE%BF%E8%B0%88/</guid>
+      <description>&lt;p&gt;以下为史蒂夫·乔布斯《遗失的访谈》全文。&lt;a href=&#34;https://www.bilibili.com/video/BV1Qp4y1H7TT/?vd_source=a6f6452712ce1cd91d115827d0148715&#34;&gt;视频访谈&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20231219172620.png|400]]&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>图床那些事儿</title>
+      <link>https://aituyaa.com/%E5%9B%BE%E5%BA%8A%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%9B%BE%E5%BA%8A%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;相信每天写博文并且喜欢多平台发布的人，或早或晚都会遇到‘图床’的相关问题。折腾图床好多天了，仅以此篇做一个阶段性的总结或终止符。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CDN 回源流出流量</title>
+      <link>https://aituyaa.com/cdn-%E5%9B%9E%E6%BA%90%E6%B5%81%E5%87%BA%E6%B5%81%E9%87%8F/</link>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cdn-%E5%9B%9E%E6%BA%90%E6%B5%81%E5%87%BA%E6%B5%81%E9%87%8F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://78moban.com/article/2235.html&#34;&gt;📘 CDN回源流出流量是什么意思？&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今天以对象存储 + CDN 为例，跟大家讲下 CDN 回源流出流量是什么意思？我们在使用 CDN 时会在管理后台的资源监控页面中，发现回源流出流量较大，新人可能会不大清楚这个概念，接下来跟大家详细分享。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>枚举</title>
+      <link>https://aituyaa.com/%E6%9E%9A%E4%B8%BE/</link>
+      <pubDate>Wed, 01 Nov 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%9E%9A%E4%B8%BE/</guid>
+      <description>Java 使用 `enum` 定义枚举类型，它被编译器编译为 `final class Xxx extends Enum { … }`； - 通过 `name()` 获取常量定义的字符串，注意不要使用 `toString()`； - 通过 `ordinal()` 返回常量定义的顺序（无实质</description>
+    </item>
+    
+    <item>
+      <title>易经入门</title>
+      <link>https://aituyaa.com/%E6%98%93%E7%BB%8F%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%98%93%E7%BB%8F%E5%85%A5%E9%97%A8/</guid>
+      <description>摘录自 《易经》入门及全文解析 学习易经 《易经》是一个取之不尽用之不竭的智慧源泉，它的思想贯穿于中国古代所有文化中，是中国文化的总枢纽。 《易经》很难学？ 读《易经》之</description>
+    </item>
+    
+    <item>
+      <title>三十六计</title>
+      <link>https://aituyaa.com/%E4%B8%89%E5%8D%81%E5%85%AD%E8%AE%A1/</link>
+      <pubDate>Mon, 18 Sep 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%89%E5%8D%81%E5%85%AD%E8%AE%A1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://so.gushiwen.cn/guwen/book_46653FD803893E4F5BEE801AE7C631E7.aspx&#34;&gt;📘 三十六计&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;《三十六计》或称“三十六策”，是指中国古代三十六个兵法策略，语源于南北朝，成书于明清。它是根据我国古代卓越的军事思想和丰富的斗争经验总结而成的兵书，是中华民族悠久文化遗产之一。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>孙子兵法</title>
+      <link>https://aituyaa.com/%E5%AD%99%E5%AD%90%E5%85%B5%E6%B3%95/</link>
+      <pubDate>Mon, 18 Sep 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%AD%99%E5%AD%90%E5%85%B5%E6%B3%95/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://so.gushiwen.cn/guwen/book_46653FD803893E4F5B7146187204196D.aspx&#34;&gt;📘 孙子兵法&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;孙子兵法，是中国现存最早的兵书，也是世界上最早的军事著作，早于克劳塞维茨《战争论》约2300年，被誉为“兵学圣典”。共有六千字左右，一共十三篇。作者为春秋时祖籍齐国乐安的吴国将军孙武。《孙子兵法》是中国古代军事文化遗产中的璀璨瑰宝，优秀传统文化的重要组成部分，是古代军事思想精华的集中体现。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>艾宾浩斯记忆遗忘曲线</title>
+      <link>https://aituyaa.com/%E8%89%BE%E5%AE%BE%E6%B5%A9%E6%96%AF%E8%AE%B0%E5%BF%86%E9%81%97%E5%BF%98%E6%9B%B2%E7%BA%BF/</link>
+      <pubDate>Mon, 18 Sep 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%89%BE%E5%AE%BE%E6%B5%A9%E6%96%AF%E8%AE%B0%E5%BF%86%E9%81%97%E5%BF%98%E6%9B%B2%E7%BA%BF/</guid>
+      <description>&lt;p&gt;德国心理学家、实验学习心理学的创始人&lt;a href=&#34;https://wiki.mbalib.com/wiki/%E8%B5%AB%E5%B0%94%E6%9B%BC%C2%B7%E8%89%BE%E5%AE%BE%E6%B5%A9%E6%96%AF&#34; title=&#34;赫尔曼·艾宾浩斯&#34;&gt;赫尔曼·艾宾浩斯&lt;/a&gt;(Hermann Ebbinghaus) 1850 年 1 月 24 日 - 1909 年 2 月 26 日)研究发现，&lt;strong&gt;遗忘在学习之后立即开始，而且遗忘的进程并不是均匀的，最初遗忘速度很快，以后逐渐缓慢&lt;/strong&gt;。他认为＂保持和遗忘是时间的函数＂，并根据他的实验结果绘成描述遗忘进程的曲线，即著名的艾宾浩斯记忆遗忘曲线。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>终端 Terminal 字符的多彩输出</title>
+      <link>https://aituyaa.com/%E7%BB%88%E7%AB%AF-terminal-%E5%AD%97%E7%AC%A6%E7%9A%84%E5%A4%9A%E5%BD%A9%E8%BE%93%E5%87%BA/</link>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%BB%88%E7%AB%AF-terminal-%E5%AD%97%E7%AC%A6%E7%9A%84%E5%A4%9A%E5%BD%A9%E8%BE%93%E5%87%BA/</guid>
+      <description>&lt;p&gt;最近在在改进站点的部署脚本，调试的时候有一些中间状态信息想要高亮显示，就需要对终端 Terminal 字符的输出样式进行修改，如何修改呢？往下看。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS 高级程序设计·摘录</title>
+      <link>https://aituyaa.com/js-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%91%98%E5%BD%95/</link>
+      <pubDate>Mon, 04 Sep 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/js-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%91%98%E5%BD%95/</guid>
+      <description>内容一览 封面 作者简介 数字版权声明 扉页 版权页 献词 译者序 序 前言 致谢 目录 第1章 什么是JavaScript 1.1 简短的历史回顾 1.2 JavaScript实现 1.3 JavaScrip</description>
+    </item>
+    
+    <item>
+      <title>一款简约的 Obsidian 主题</title>
+      <link>https://aituyaa.com/%E4%B8%80%E6%AC%BE%E7%AE%80%E7%BA%A6%E7%9A%84-obsidian-%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Thu, 31 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E6%AC%BE%E7%AE%80%E7%BA%A6%E7%9A%84-obsidian-%E4%B8%BB%E9%A2%98/</guid>
+      <description>📘 loveminimal/obsidian-theme-virgo: A obsidian theme. 更新日志 - 2024-04-12 15:29 重构主题，精简冗余代码 快速使用 后续你可以直接从 Obsidian 的主题仓库中直接搜索 Virgo 安装即可（上传中，待官方合并 限制太多，不允许上传自定义字体，不再上</description>
+    </item>
+    
+    <item>
+      <title>01 计算机系统漫游</title>
+      <link>https://aituyaa.com/csapp/01-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%BC%AB%E6%B8%B8/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/csapp/01-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%BC%AB%E6%B8%B8/</guid>
+      <description>&lt;p&gt;计算机系统是由硬件和系统软件组成的，它们共同工作来运行应用程序。虽然系统的具体实现方式随着时间不断变化，但是系统内在的概念却没有改变。所有计算机系统都有相似的硬件和软件组件，它们又执行着相似的功能。一些程序员希望深人了解这些&lt;strong&gt;组件是如何工作的&lt;/strong&gt;以及这些&lt;strong&gt;组件是如何影响程序的正确性和性能的&lt;/strong&gt;，以此来提高自身的技能。本书便是为这些读者而写的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>02 信息的表示和处理</title>
+      <link>https://aituyaa.com/csapp/02-%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%A4%84%E7%90%86/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/csapp/02-%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%A4%84%E7%90%86/</guid>
+      <description>第一部分:程序结构和执行 第 2 章 信息的表示和处理 2.1 信息存储 2.2 整数表示 2.3 整数运算 2.4 浮点数 2.5 小结 参考文献说明 家庭作业 练习题答案</description>
+    </item>
+    
+    <item>
+      <title>03 程序的机器级表示</title>
+      <link>https://aituyaa.com/csapp/03-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BA%A7%E8%A1%A8%E7%A4%BA/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/csapp/03-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BA%A7%E8%A1%A8%E7%A4%BA/</guid>
+      <description>第 3 章 程序的机器级表示 3.1 历史观点 3.2 程序编码 3.3 数据格式 3.4 访问信息 3.5 算数和逻辑操作 3.6 控制 3.7 过程 3.8 数组分配和访问 3.9 异数的数据结构 3.10 在机器级程序中将控制与数据结合起来 3.11</description>
+    </item>
+    
+    <item>
+      <title>04 处理器体系结构</title>
+      <link>https://aituyaa.com/csapp/04-%E5%A4%84%E7%90%86%E5%99%A8%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/csapp/04-%E5%A4%84%E7%90%86%E5%99%A8%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</guid>
+      <description>第 4 章 处理器体系结构 4.1 Y86-64指令集体系结构 4.2 辑设计和硬件控制语言HCL 4.3 Y86-64的顺序现实 4.4 流水线的通用原理 45 Y86-64的流水线实现 4.6 小结 参考文献说</description>
+    </item>
+    
+    <item>
+      <title>05 优化程序性能</title>
+      <link>https://aituyaa.com/csapp/05-%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/csapp/05-%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD/</guid>
+      <description>第 5 章 优化程序性能 5.1 优化编译器的能力和局限性 5.2 表示程序性能 5.3 程序示例 5.4 消除循环的低效率 5.5 减少过程调用 5.6 消除不必要的内存引用 5.7 理解现代处理器 5.8 循环展开 5.9 提高并行性</description>
+    </item>
+    
+    <item>
+      <title>06 存储器层次结构</title>
+      <link>https://aituyaa.com/csapp/06-%E5%AD%98%E5%82%A8%E5%99%A8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/csapp/06-%E5%AD%98%E5%82%A8%E5%99%A8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84/</guid>
+      <description>第 6 章 存储器层次结构 6.1 存储技术 6.2 局部性 6.3 存储器层次结构 6.4 高速缓存存储器 6.5 编写高速缓存友好的代码 6.6 综合:高速缓存对程序性能的影响 6.7 小结 参考文献说明 家庭作业 练习题答</description>
+    </item>
+    
+    <item>
+      <title>07 链接</title>
+      <link>https://aituyaa.com/csapp/07-%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/csapp/07-%E9%93%BE%E6%8E%A5/</guid>
+      <description>第二部分 在系统上运行程序 第 7 章 链接 7.1 编译器驱动程序 7.2 静态链接 7.3目标文件 7.4 可重定位目标文件 7.5 符号和符号表 7.6 符号解析 7.7 重定位 7.8 可执行目标文件 7.9 加载可执行目标文件</description>
+    </item>
+    
+    <item>
+      <title>08 异常控制流</title>
+      <link>https://aituyaa.com/csapp/08-%E5%BC%82%E5%B8%B8%E6%8E%A7%E5%88%B6%E6%B5%81/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/csapp/08-%E5%BC%82%E5%B8%B8%E6%8E%A7%E5%88%B6%E6%B5%81/</guid>
+      <description>第 8 章 异常控制流 8.1异常 8.2 进程 8.3 系统调用错误处理 8.4 进程控制 8.5 信号 8.6 非本地跳转 8.7 操作进程的工具 8.8 小结 参考文献说明 家庭作业 练习题答案</description>
+    </item>
+    
+    <item>
+      <title>09 虚拟内存</title>
+      <link>https://aituyaa.com/csapp/09-%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/csapp/09-%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/</guid>
+      <description>第 9 章 虚拟内存 9.1 物理和虚拟寻址 9.2 地址空间 9.3 虚拟内存作为缓存的工具 9.4 虚拟内存为内存管理的工具 9.5 虚拟内存作为内存保护的工具 9.6 地址翻译 9.7 案例研究: Intel Core i7/Linux</description>
+    </item>
+    
+    <item>
+      <title>10 系统级 I/O</title>
+      <link>https://aituyaa.com/csapp/10-%E7%B3%BB%E7%BB%9F%E7%BA%A7-io/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/csapp/10-%E7%B3%BB%E7%BB%9F%E7%BA%A7-io/</guid>
+      <description>第三部分 程序间的交流和通信 第 10 章 系统级 I/O 10.1 Unix I/0 10.2 文件 10.3 打开和关闭文件 10.4 读和写文件 10.5 用RIO包健壮地读写 10.6 读取文件元数据 10.7 读取目录和内容 10.8 共享文件 10.9 I/0重定向 10.10</description>
+    </item>
+    
+    <item>
+      <title>11 网络编程</title>
+      <link>https://aituyaa.com/csapp/11-%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/csapp/11-%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</guid>
+      <description>第 11 章 网络编程 11.1 客户端-服务器编程模型 11.2 网络 11.3 全球IP因特网 11.4 套接字接口 11.5 Web服务器 11.6 综合: TINY Web服务器 11.7 小结 参考文献说明 家庭作业 练习题答案</description>
+    </item>
+    
+    <item>
+      <title>12 并发编程</title>
+      <link>https://aituyaa.com/csapp/12-%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/csapp/12-%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/</guid>
+      <description>第 12 章 并发编程 12.1 基于进程的并发编程 12.2 基于I/0多路复用的并发编程 12.3 基于线程的并发编程 12.4 多线程程序中的共享变量 12.5 用信号量同步线程 12.6 使用线程提高并行性 12.7 其他并发问题</description>
+    </item>
+    
+    <item>
+      <title>数据密集型应用系统设计</title>
+      <link>https://aituyaa.com/%E6%95%B0%E6%8D%AE%E5%AF%86%E9%9B%86%E5%9E%8B%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Tue, 29 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%95%B0%E6%8D%AE%E5%AF%86%E9%9B%86%E5%9E%8B%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>深入理解计算机系统</title>
+      <link>https://aituyaa.com/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Tue, 29 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/</guid>
+      <description>&lt;p&gt;![[assets/Pasted image 20230525153608.png|150]]&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;系列章节&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;[[01 计算机系统漫游]]&lt;/td&gt;
+&lt;td&gt;[[02 信息的表示和处理]]&lt;/td&gt;
+&lt;td&gt;[[03 程序的机器级表示]]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[[04 处理器体系结构]]&lt;/td&gt;
+&lt;td&gt;[[05 优化程序性能]]&lt;/td&gt;
+&lt;td&gt;[[06 存储器层次结构]]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[[07 链接]]&lt;/td&gt;
+&lt;td&gt;[[08 异常控制流]]&lt;/td&gt;
+&lt;td&gt;[[09 虚拟内存]]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[[10 系统级 IO]]&lt;/td&gt;
+&lt;td&gt;[[11 网络编程]]&lt;/td&gt;
+&lt;td&gt;[[12 并发编程]]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    
+    <item>
+      <title>费曼学习法</title>
+      <link>https://aituyaa.com/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/</link>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/</guid>
+      <description>&lt;p&gt;费曼学习法的灵感源于诺贝尔物理奖获得者理查德•费曼（Richard Feynman），运用费曼技巧, 你只需花上 20 分钟就能深入理解知识点,而且记忆深刻,难以遗忘。&lt;/p&gt;
+&lt;p&gt;知识有两种类型，我们绝大多数人关注的都是错误的那类。第一类知识注重了解某个事物的名称，第二类知识注重了解某件事物，这可不是一回事儿。著名的诺贝尔物理学家理查德·费曼（Richard Feynman）能够理解这二者间的差别，这也是他成功最重要的原因之一。事实上，他创造了一种学习方法，确保他会比别人对事物了解的更透彻。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>生育建档资料</title>
+      <link>https://aituyaa.com/docs/%E7%94%9F%E8%82%B2%E5%BB%BA%E6%A1%A3%E8%B5%84%E6%96%99/</link>
+      <pubDate>Wed, 14 Jun 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/docs/%E7%94%9F%E8%82%B2%E5%BB%BA%E6%A1%A3%E8%B5%84%E6%96%99/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 实体社保卡&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 居住证&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 生育建档&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>游戏</title>
+      <link>https://aituyaa.com/%E6%B8%B8%E6%88%8F/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%B8%B8%E6%88%8F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://dota2.fandom.com/zh/wiki/Dota_2_Wiki&#34;&gt;中文Dota 2 Wiki - 刀塔百科&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>微信小程序</title>
+      <link>https://aituyaa.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+      <pubDate>Thu, 08 Jun 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid>
+      <description>&lt;p&gt;微信小程序开发的一些记录……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>积久而成学</title>
+      <link>https://aituyaa.com/%E7%A7%AF%E4%B9%85%E8%80%8C%E6%88%90%E5%AD%A6/</link>
+      <pubDate>Tue, 30 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%A7%AF%E4%B9%85%E8%80%8C%E6%88%90%E5%AD%A6/</guid>
+      <description>&lt;p&gt;📙 转载自 &lt;a href=&#34;http://dangshi.people.com.cn/n1/2020/1111/c85037-31926429.html&#34;&gt;“积久而成学”&amp;ndash;党史频道-人民网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;毛泽东是伟大的革命家、战略家和理论家，也是一位通晓古今、学贯中西的学者。他一生与书相伴，在长期的读书生涯中，形成了一套科学合理、独具特色的读书观。通过研究和学习毛泽东读书观，对加快学习型政党建设、深化“四史”学习教育以及促进个人自我发展都具有十分重要的意义和价值。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>01 计算机早期历史</title>
+      <link>https://aituyaa.com/cscc/01-%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%97%A9%E6%9C%9F%E5%8E%86%E5%8F%B2/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/01-%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%97%A9%E6%9C%9F%E5%8E%86%E5%8F%B2/</guid>
+      <description>&lt;p&gt;i.e. Early Computing&lt;/p&gt;
+&lt;p&gt;Hello world！我是 Carrie Anne，欢迎收看计算机科学速成课（Crash Course Computer Science）！&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20230526114242.png|350]]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; Carrie Anne 小姐姐&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>02 电子计算机</title>
+      <link>https://aituyaa.com/cscc/02-%E7%94%B5%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/02-%E7%94%B5%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
+      <description>&lt;p&gt;i.e. Electronic Computing&lt;/p&gt;
+&lt;p&gt;上集讲到 20 世纪初，当时的早期计算设备都针对特定用途，比如制表机（tabulating machines），大大推进了政府和企业。它们帮助，甚至代替了人工。然而人类社会的规模在以前所未有的速度增长，20 世纪上半叶，世界人口几乎翻倍。一战动员 7 千万人，二战 1 亿多人。全球贸易和运输更加紧密，工程和科学的复杂度也达到新高。我们甚至开始考虑造访其他行星，复杂度的增高导致数据量暴增，人们需要更多自动化，更强的计算能力。&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20230526114513.png|400]]&lt;/p&gt;
+&lt;p&gt;很快，柜子大小的计算机变成房间大小，维护费用高，而且容易出错，而正是这些机器为未来的创新打下基础。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>03 布尔逻辑和逻辑门</title>
+      <link>https://aituyaa.com/cscc/03-%E5%B8%83%E5%B0%94%E9%80%BB%E8%BE%91%E5%92%8C%E9%80%BB%E8%BE%91%E9%97%A8/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/03-%E5%B8%83%E5%B0%94%E9%80%BB%E8%BE%91%E5%92%8C%E9%80%BB%E8%BE%91%E9%97%A8/</guid>
+      <description>&lt;p&gt;i.e. Boolean Logic and Logic Gates&lt;/p&gt;
+&lt;p&gt;今天我们开始&amp;quot;抽象&amp;quot;（abstraction）的旅程！不用管底层细节，把精力用来构建更复杂的系统。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>04 二进制</title>
+      <link>https://aituyaa.com/cscc/04-%E4%BA%8C%E8%BF%9B%E5%88%B6/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/04-%E4%BA%8C%E8%BF%9B%E5%88%B6/</guid>
+      <description>&lt;p&gt;i.e. Representing Numbers and Letters with Binary&lt;/p&gt;
+&lt;p&gt;今天，我们讲计算机如何存储和表示数字，所以会有一些数学，不过别担心，你们的数学水平绝对够用了。&lt;/p&gt;
+&lt;p&gt;上集我们讲了，怎么用晶体管（transistors）做逻辑门（logic gates），逻辑门可以判断布尔语句，布尔代数只有两个值：&lt;code&gt;True&lt;/code&gt; 和 &lt;code&gt;False&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;但如果只有两个值，我们怎么表达更多东西 ❓ 这就需要数学了！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>05 算数逻辑单元</title>
+      <link>https://aituyaa.com/cscc/05-%E7%AE%97%E6%95%B0%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/05-%E7%AE%97%E6%95%B0%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83/</guid>
+      <description>&lt;p&gt;i.e. How Computers Calculate-the ALU&lt;/p&gt;
+&lt;p&gt;上集，我们谈了如何用二进制表示数字，比如二进制 &lt;code&gt;00101010&lt;/code&gt; 是十进制的 42，表示和存储数字是计算机的重要功能。但&lt;strong&gt;真正的目标是计算（computation）&lt;/strong&gt;，有意义的处理数字，比如把两个数字相加，这些操作由计算机的 “算术逻辑单元 （Arithmetic and Logic Unit）“处理，但大家会简称：ALU。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ALU 是计算机的数学大脑，等你理解了 ALU 的设计和功能之后，你就理解了现代计算机的基石。&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>06 寄存器和内存</title>
+      <link>https://aituyaa.com/cscc/06-%E5%AF%84%E5%AD%98%E5%99%A8%E5%92%8C%E5%86%85%E5%AD%98/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/06-%E5%AF%84%E5%AD%98%E5%99%A8%E5%92%8C%E5%86%85%E5%AD%98/</guid>
+      <description>&lt;p&gt;i.e. Registers and RAM&lt;/p&gt;
+&lt;p&gt;上集，我们用逻辑门做了个简单 ALU，它能执行算术 (Arithmetic) 和逻辑 (Logic) 运算 ，ALU 里的 A 和 L 因此得名。当然，算出来之后如果扔掉就没什么意义了，得找个方法存起来，可能还要进行多个连续操作，这就用到计算机内存了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>07 中央处理器</title>
+      <link>https://aituyaa.com/cscc/07-%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/07-%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/</guid>
+      <description>&lt;p&gt;i.e. The Central Processing Unit(CPU)&lt;/p&gt;
+&lt;p&gt;今天我们讲 处理器（processors），提示下 - 这集可能是最难的一集，所以一旦你理解了，就会变得超厉害 der~ 😈&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>08 指令和程序</title>
+      <link>https://aituyaa.com/cscc/08-%E6%8C%87%E4%BB%A4%E5%92%8C%E7%A8%8B%E5%BA%8F/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/08-%E6%8C%87%E4%BB%A4%E5%92%8C%E7%A8%8B%E5%BA%8F/</guid>
+      <description>&lt;p&gt;i.e. Instructions &amp;amp; Programs&lt;/p&gt;
+&lt;p&gt;上集我们把 ALU, 控制单元，RAM, 时钟 结合在一起，做了个基本，但可用的&amp;quot;中央处理单元&amp;quot;, 简称 CPU ，它是计算机的核心。&lt;/p&gt;
+&lt;p&gt;我们已经用电路做了很多组件，这次我们给 CPU 一些指令来运行！ CPU 之所以强大，是因为它是可编程的（programmable）- 如果写入不同指令，就会执行不同任务。CPU 是一块硬件，可以被软件控制！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>09 高级 CPU 设计</title>
+      <link>https://aituyaa.com/cscc/09-%E9%AB%98%E7%BA%A7-cpu-%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/09-%E9%AB%98%E7%BA%A7-cpu-%E8%AE%BE%E8%AE%A1/</guid>
+      <description>&lt;p&gt;i.e. Advanced CPU Designs&lt;/p&gt;
+&lt;p&gt;随着本系列进展，我们知道计算机进步巨大，从 1 秒 1 次运算，到现在有千赫甚至兆赫的 CPU ，你现在看视频的设备八成也有 GHz 速度 ，1 秒十亿条指令 ，这是很大的计算量！&lt;/p&gt;
+&lt;p&gt;早期计算机的提速方式是减少晶体管的切换时间 ，晶体管组成了逻辑门，ALU 以及前几集的其他组件，但这种提速方法最终会碰到瓶颈，所以处理器厂商发明各种新技术来提升性能，不但让简单指令运行更快，也让它能进行更复杂的运算。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>10 早期的编程方式</title>
+      <link>https://aituyaa.com/cscc/10-%E6%97%A9%E6%9C%9F%E7%9A%84%E7%BC%96%E7%A8%8B%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/10-%E6%97%A9%E6%9C%9F%E7%9A%84%E7%BC%96%E7%A8%8B%E6%96%B9%E5%BC%8F/</guid>
+      <description>&lt;p&gt;i.e. Early Programming&lt;/p&gt;
+&lt;p&gt;前几集我们把重点放在计算机的原理，怎么从内存读写数据，执行操作，比如把两个数字加在一起，还简单讲了下指令的执行，也就是计算机程序。&lt;/p&gt;
+&lt;p&gt;但我们还没讲的是：程序如何&amp;quot;进入&amp;quot;计算机。你应该记得在第 7, 8 集，我们一步步讲了例子程序，当时为了简单，我们假设程序已经魔法般在内存里了，但事实是，程序需要加载进内存，这不是魔法，是计算机科学！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>11 编程语言发展史</title>
+      <link>https://aituyaa.com/cscc/11-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%8F%91%E5%B1%95%E5%8F%B2/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/11-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%8F%91%E5%B1%95%E5%8F%B2/</guid>
+      <description>&lt;p&gt;i.e. The First Programming Languages&lt;/p&gt;
+&lt;p&gt;之前我们把重点放在硬件 - 组成计算机的物理组件，比如电，电路，寄存器，RAM，ALU，CPU ，但在硬件层面编程非常麻烦。&lt;/p&gt;
+&lt;p&gt;所以程序员想要一种更通用的方法编程 - 一种&amp;quot;更软的&amp;quot;媒介。&lt;/p&gt;
+&lt;p&gt;没错，我们要讲软件！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>12 编程原理 - 语句和函数</title>
+      <link>https://aituyaa.com/cscc/12-%E7%BC%96%E7%A8%8B%E5%8E%9F%E7%90%86-%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/12-%E7%BC%96%E7%A8%8B%E5%8E%9F%E7%90%86-%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%87%BD%E6%95%B0/</guid>
+      <description>&lt;p&gt;i.e. Programming Basics - Statements &amp;amp; Functions&lt;/p&gt;
+&lt;p&gt;上集讲到用机器码写程序，还要处理那么多底层细节，对写大型程序是个巨大障碍。为了脱离底层细节，开发了编程语言，让程序员专心解决问题，不用管硬件细节。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: 底层各类太多了，编写麻烦，调试麻烦，改动麻烦……&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>13 算法入门</title>
+      <link>https://aituyaa.com/cscc/13-%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/13-%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/</guid>
+      <description>&lt;p&gt;i.e. Intro to Algorithms&lt;/p&gt;
+&lt;p&gt;前两集，我们&amp;quot;初尝&amp;quot;了高级编程语言（比如 Python 和 Java），我们讨论了几种语句 - 赋值语句，if 语句，循环语句，以及把代码打包成 “函数”，比如算指数。重要的是，之前写的指数函数只是无数解决方案的一种，还有其它方案 - 用不同顺序写不同语句，也能得到一样结果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;不同的是&amp;quot;算法&amp;quot;，意思是：解决问题的具体步骤，即使结果一致，有些算法会更好。&lt;/strong&gt; 一般来说，所需步骤越少越好，不过有时我们也会关心其他因素，比如占多少内存。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>14 数据结构</title>
+      <link>https://aituyaa.com/cscc/14-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/14-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
+      <description>&lt;p&gt;i.e. Data Structures&lt;/p&gt;
+&lt;p&gt;上集讲了一些经典算法，比如给数组排序，找图的最短路径，而上集没讲的是 算法处理的数据 存在内存里的格式是什么。&lt;/p&gt;
+&lt;p&gt;你肯定不想数据像 John Green 的大学宿舍一样乱 ，到处都是食物，衣服和纸，我们希望数据是结构化的，方便读取，因此计算机科学家发明了 “数据结构”！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>15 CSCC 其他1</title>
+      <link>https://aituyaa.com/cscc/15-cscc-%E5%85%B6%E4%BB%961/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/15-cscc-%E5%85%B6%E4%BB%961/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;后续章节为概念性章节，统一汇总在该章节内。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>16 CSCC 其他2</title>
+      <link>https://aituyaa.com/cscc/16-cscc-%E5%85%B6%E4%BB%962/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/16-cscc-%E5%85%B6%E4%BB%962/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;好吧，内容不少，为了后续插入图片之后，页面太大，我们这里拆分到两个页面中。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Simple Bookmark Copying</title>
+      <link>https://aituyaa.com/a-simple-bookmark-copying/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/a-simple-bookmark-copying/</guid>
+      <description>&lt;p&gt;感谢小伙伴 Whatacold 的创意 &lt;a href=&#34;https://whatacold.io/blog/2022-08-08-org-link-bookmarklet/&#34;&gt;A Bookmarklet for Copying a Link as an Org-mode Link - whatacold’s space - whatacold.io&lt;/a&gt; ，可以方便地复制当前页面的地址并格式化 &lt;code&gt;.md&lt;/code&gt; 链接格式，当然，也可以格式化成 &lt;code&gt;.org&lt;/code&gt; 链接格式。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C</title>
+      <link>https://aituyaa.com/c/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/c/</guid>
+      <description>:: 好的吧，我承认，对于 C 语言，我有一种莫名其妙的偏爱！是因为可以直接操作内存吗？或许是！可能吧，计算机有什么神奇的东西呢？最终就是围绕那几个概念在来回打转！ 编译</description>
+    </item>
+    
+    <item>
+      <title>Emacs Lisp</title>
+      <link>https://aituyaa.com/emacs-lisp/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/emacs-lisp/</guid>
+      <description>&lt;p&gt;📕 转载自 &lt;a href=&#34;http://smacs.github.io/elisp/&#34;&gt;Emacs Lisp 简明教程 - 水木社区 Emacs 版&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这是 叶文彬（水木 ID: happierbee) 写的一份 Emacs Lisp 的教程，深入浅出，非常适合初学者。文档的 TeX 代码及 PDF 文档可在&lt;a href=&#34;http://www.newsmth.net/nForum/article/Emacs/58338?s=58338&#34;&gt;此处下载&lt;/a&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;emacs 的高手不能不会 elisp。但是对于很多人来说 elisp 学习是一个痛苦的历程，至少我是有这样一段经历。因此，我写了这一系列文章，希望能为后来者提供一点捷径。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emojings</title>
+      <link>https://aituyaa.com/emojings/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/emojings/</guid>
+      <description>&lt;p&gt;Emoji（えもじ 绘文字），就是表情符号，来自日语词汇“絵文字”（假名为“えもじ”，读音即 emoji）。最早是由栗穰崇于 1999 年创作，并在日本网络及手机用户中流行。自苹果公司发布的 ios5 输入法中加入 emoji 后，这种表情符号开始席卷全球，现已被大多数计算机系统所兼容的 Unicode 编码采纳，得以普遍运用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Json Web Tokens</title>
+      <link>https://aituyaa.com/json-web-tokens/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/json-web-tokens/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://jwt.io/&#34;&gt;https://jwt.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;相关参考：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jwt.io/introduction&#34;&gt;JSON Web Token Introduction - jwt.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html&#34;&gt;JSON Web Token 入门教程 - 阮一峰的网络日志&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/ittranslator/p/14595165.html&#34;&gt;JWT 介绍 - Step by Step - 技术译民 - 博客园&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Manjaro Linux</title>
+      <link>https://aituyaa.com/manjaro-linux/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/manjaro-linux/</guid>
+      <description>&lt;p&gt;Manjaro Linux 安装之后的初始化配置。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://aituyaa.com/markdown/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/markdown/</guid>
+      <description>这里是 Hugo 解析 Markdown 内容的展示，如果你使用的是 Org Mode ，可以跳转 Org Mode 查看相关样式。 以下 markdown 正文内容，摘自 Markdown 测试文本 ，并添加、修改了一些章节。 This post is originated from here and is used for testing markdown style. This post contains</description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://aituyaa.com/sql/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/sql/</guid>
+      <description>&lt;p&gt;🔔 摘录自 &lt;a href=&#34;https://www.liaoxuefeng.com/wiki/1177760294764384&#34;&gt;廖雪峰老师的 SQL 教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SQL，结构化查询语言（Structured Query Language ），是一种数据库查询和程序设计语言，用于访问和操作数据库系统。SQL 语句既可以查询数据库中的数据，也可以插入、更新和删除数据库中的数据，还可以对数据库进行管理和维护操作。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: 数据库能听懂的语言 – SQL&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>VSCode 插件 CVE Keymap 的开发记录</title>
+      <link>https://aituyaa.com/vscode-%E6%8F%92%E4%BB%B6-cve-keymap-%E7%9A%84%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/vscode-%E6%8F%92%E4%BB%B6-cve-keymap-%E7%9A%84%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;当前博文以 &lt;code&gt;Org Mode&lt;/code&gt; 格式编辑。&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I have a vim, I have a emacs.&lt;br&gt;
+Eh~ vim-emacs!&lt;br&gt;
+I have a code, I have a vim-emacs.&lt;br&gt;
+Eh~ code-vim-emacs!&lt;br&gt;
+CVE!&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>一场疲惫的主题制作之旅</title>
+      <link>https://aituyaa.com/%E4%B8%80%E5%9C%BA%E7%96%B2%E6%83%AB%E7%9A%84%E4%B8%BB%E9%A2%98%E5%88%B6%E4%BD%9C%E4%B9%8B%E6%97%85/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E5%9C%BA%E7%96%B2%E6%83%AB%E7%9A%84%E4%B8%BB%E9%A2%98%E5%88%B6%E4%BD%9C%E4%B9%8B%E6%97%85/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;哎，这让人费解的强迫症……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;博客没写几篇，博客系统倒是折腾了不少，哎，有点本末倒置了，希望这次是最后一次啦（不可能的），单开一篇碎碎念一下前前后后的那些事儿。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一款 Typora 主题</title>
+      <link>https://aituyaa.com/%E4%B8%80%E6%AC%BE-typora-%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E6%AC%BE-typora-%E4%B8%BB%E9%A2%98/</guid>
+      <description>&lt;p&gt;为什么会制作这款 Typora 的主题呢？&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://theme.typora.io/theme/Virgo/&#34;&gt;📙 Virgo&lt;/a&gt; , 仓库地址 &lt;a href=&#34;https://github.com/loveminimal/typora-theme-virgo&#34;&gt;loveminimal/typora-theme-virgo: A typora theme for relative hugo.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一种简单的 Hugo 本地搜索实现</title>
+      <link>https://aituyaa.com/%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E7%9A%84-hugo-%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E7%9A%84-hugo-%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%AE%9E%E7%8E%B0/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;🚨 后又陆陆续续加了些辅助功能，可以点击下载最新完整的 &lt;a href=&#34;https://github.com/loveminimal/hugo-theme-virgo/blob/1.x/static/js/search.js&#34;&gt;search.js&lt;/a&gt;  源码（另存后使用编辑器打开就不中文乱码了）。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>中文技术文档</title>
+      <link>https://aituyaa.com/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/</guid>
+      <description>&lt;p&gt;🔔 参考 &lt;a href=&#34;https://www.ruanyifeng.com/blog/2016/10/document_style_guide.html&#34;&gt;中文技术文档的写作规范&lt;/a&gt; ，及个人写作习惯。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>五笔那些事儿</title>
+      <link>https://aituyaa.com/%E4%BA%94%E7%AC%94%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%BA%94%E7%AC%94%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;📖 本文主要摘录自 &lt;a href=&#34;http://www.wubizi.net/xuewubi/&#34;&gt;问问学五笔&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;![[assets/201910301744wubi.jpg]]&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>你可能需要学一些医学知识</title>
+      <link>https://aituyaa.com/%E4%BD%A0%E5%8F%AF%E8%83%BD%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B8%80%E4%BA%9B%E5%8C%BB%E5%AD%A6%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%BD%A0%E5%8F%AF%E8%83%BD%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B8%80%E4%BA%9B%E5%8C%BB%E5%AD%A6%E7%9F%A5%E8%AF%86/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;“圣人不治已病，治未病；不治已乱，治未乱。”&lt;br&gt;
+&lt;code&gt;-- 《黄帝内经·素问·四气调神大论》&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;生老病死，成住坏空，古往皆如是。生命的前几十年，身体是在上升期，经得起小风小浪小消耗。然岁月不饶人，专治各种不服 …… 😅&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>保护好你的手</title>
+      <link>https://aituyaa.com/%E4%BF%9D%E6%8A%A4%E5%A5%BD%E4%BD%A0%E7%9A%84%E6%89%8B/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%BF%9D%E6%8A%A4%E5%A5%BD%E4%BD%A0%E7%9A%84%E6%89%8B/</guid>
+      <description>&lt;p&gt;约两个月前，午休后的一个小意外不小心拉伤了右手姆指，当时也没有太注意，想着过几天就好了。俗话说，“伤筋动骨一百天嘛”。一周又一周，情况并没有得到好转。正好周末安排了体检，就顺带就诊一下。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>再谈“个人管理”</title>
+      <link>https://aituyaa.com/%E5%86%8D%E8%B0%88%E4%B8%AA%E4%BA%BA%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%86%8D%E8%B0%88%E4%B8%AA%E4%BA%BA%E7%AE%A1%E7%90%86/</guid>
+      <description>&lt;p&gt;在 [[GTD 管理系统]] 和 [[极简主义生活]] 中，我们已经聊过类似的内容，然而“个人管理”终究是个没有止境的话题……&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 这里不妨抛弃‘结构’，想到哪儿，说到哪儿……&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>冴羽写博客之深入系列</title>
+      <link>https://aituyaa.com/%E5%86%B4%E7%BE%BD%E5%86%99%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%B7%B1%E5%85%A5%E7%B3%BB%E5%88%97/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%86%B4%E7%BE%BD%E5%86%99%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%B7%B1%E5%85%A5%E7%B3%BB%E5%88%97/</guid>
+      <description>&lt;p&gt;🔔 摘录自 &lt;a href=&#34;https://github.com/mqyqingfeng/Blog&#34;&gt;冴羽写博客之深入系列&lt;/a&gt; ，写的很不错。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>十分钟掌握 TMUX</title>
+      <link>https://aituyaa.com/%E5%8D%81%E5%88%86%E9%92%9F%E6%8E%8C%E6%8F%A1-tmux/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%8D%81%E5%88%86%E9%92%9F%E6%8E%8C%E6%8F%A1-tmux/</guid>
+      <description>&lt;p&gt;![[assets/Pasted image 20230802145832.png|300]]&lt;/p&gt;
+&lt;p&gt;🔔 &lt;a href=&#34;http://localhost:1313/posts/tmux/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5&#34;&gt;http://www.ruanyifeng.com/blog/2019/10/tmux.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何维护更新日志</title>
+      <link>https://aituyaa.com/%E5%A6%82%E4%BD%95%E7%BB%B4%E6%8A%A4%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%A6%82%E4%BD%95%E7%BB%B4%E6%8A%A4%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</guid>
+      <description>&lt;p&gt;![[assets/Pasted image 20230526111442.png|325]]&lt;/p&gt;
+&lt;p&gt;🔔 本文摘录自 &lt;a href=&#34;https://keepachangelog.com/zh-CN/1.0.0/&#34;&gt;如何维护更新日志 – 更新日志绝对不应该是 git 日志的堆砌物&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>字符集和字符编码</title>
+      <link>https://aituyaa.com/%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</guid>
+      <description>&lt;p&gt;i.e. Charset and Character Encoding&lt;/p&gt;
+&lt;p&gt;字符是什么？字母、汉字、标点符号、控制字符、假名……&lt;/p&gt;
+&lt;p&gt;计算机中储存的信息都是二进制数表示的，我们在屏幕上看到的英文、汉字等字符都是二进制转换之后的结果。按照何种规则将字符存储在计算机中，如 &lt;code&gt;a&lt;/code&gt; 用什么表示，称为“编码”；反之，将存储在计算机中的二进制数解析显示出来，称为“解码”。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>当然我在扯淡</title>
+      <link>https://aituyaa.com/%E5%BD%93%E7%84%B6%E6%88%91%E5%9C%A8%E6%89%AF%E6%B7%A1/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%BD%93%E7%84%B6%E6%88%91%E5%9C%A8%E6%89%AF%E6%B7%A1/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;我并不喜欢王垠这个人，甚至有些反感，但他的某些博文我很喜欢，也因此而受益，Emm…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Tip. 非原文摘录，各别语句进行了删减和改动，建议看原文（点击章节标题）。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>手写板</title>
+      <link>https://aituyaa.com/%E6%89%8B%E5%86%99%E6%9D%BF/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%89%8B%E5%86%99%E6%9D%BF/</guid>
+      <description>&lt;p&gt;在 &lt;a href=&#34;http://localhost:1313/posts/canvas/&#34;&gt;Canvas&lt;/a&gt; 中，我们介绍了画布的基本概念和使用方式，现在，我们来用它实现一个基本的手写板 - 你可以在 &lt;a href=&#34;https://github.com/loveminimal/tablet&#34;&gt;Tablet&lt;/a&gt; 查看源码。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 原生 JS 实现一下喽 ~&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>打造 SDK</title>
+      <link>https://aituyaa.com/%E6%89%93%E9%80%A0-sdk/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%89%93%E9%80%A0-sdk/</guid>
+      <description>&lt;p&gt;🔔 转载自 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/272614462&#34;&gt;如何打造一款标准的 JS-SDK&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20230526111947.png|350]]&lt;/p&gt;
+&lt;p&gt;SDK（Software Development Kit，软件开发工具包），一般都是一些软件工程师为特定的软件包、软件框架、硬件平台、操作系统等建立应用软件的开发工具的集合。简单讲， &lt;strong&gt;面向开发者，针对特定领域的软件包&lt;/strong&gt; ，基于它，开发人员可以快速构建自己的应用 App 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>易经杂说</title>
+      <link>https://aituyaa.com/%E6%98%93%E7%BB%8F%E6%9D%82%E8%AF%B4/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%98%93%E7%BB%8F%E6%9D%82%E8%AF%B4/</guid>
+      <description>🔔 文中内容，多数摘录自南怀瑾先生的《易经杂说》。 书不尽言，言不尽意。自觉圣智，完成人格。 – 南怀瑾 洁净精微 “洁净精微，易教也。” “洁净”包括了宗教的、哲学的含义，</description>
+    </item>
+    
+    <item>
+      <title>极简主义生活</title>
+      <link>https://aituyaa.com/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89%E7%94%9F%E6%B4%BB/</guid>
+      <description>&lt;p&gt;我理解中的极简主义，核心“断、舍、离”，理念“少即是多”，重点“有序”。&lt;/p&gt;
+&lt;p&gt;极简主义是一种生活和思考模式，实现它的方式有很多， [[GTD 管理系统]] 是其中一种，也是目前我感觉比较好的一种。它很有趣，但并不容易坚持，毕竟形成一种全新的生活习惯是一个长期的过程。开始很容易，难在持续。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>正则表达式</title>
+      <link>https://aituyaa.com/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;很强大，也让人很头大…… 这只是一个精简的摘要，相信我，即使总结的再全面，一段时间之后，也需要借助参考手册，才能正确的使用它。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>源码编译安装</title>
+      <link>https://aituyaa.com/%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85/</guid>
+      <description>&lt;p&gt;Linux 下源代码的编译安装，及其编译过程和可能遇到的问题。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>简谱</title>
+      <link>https://aituyaa.com/%E7%AE%80%E8%B0%B1/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%AE%80%E8%B0%B1/</guid>
+      <description>&lt;p&gt;简谱 &lt;a href=&#34;https://baike.baidu.com/item/%E7%AE%80%E8%B0%B1&#34;&gt;2&lt;/a&gt; 是指一种简易的记谱法，在字母简谱和数字简谱两种。其起源于 18 世纪的法国，后经德国人改良，遂成今日之貌。一般所称的简谱，系指数字简谱。&lt;/p&gt;
+&lt;p&gt;数字简谱以可动唱名法为基础，用 &lt;code&gt;1、2、3、4、5、6、7&lt;/code&gt; 代表音阶中的 7 个基本级，读音为 &lt;code&gt;do、re、mi、fa、sol、la、si&lt;/code&gt; ，英文由 &lt;code&gt;C、D、E、F、G、A、B&lt;/code&gt; 表示，休止以 &lt;code&gt;0&lt;/code&gt; 表示。每一个数字的时值相当于五线谱的 4 分音符。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>语义化版本</title>
+      <link>https://aituyaa.com/%E8%AF%AD%E4%B9%89%E5%8C%96%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%AF%AD%E4%B9%89%E5%8C%96%E7%89%88%E6%9C%AC/</guid>
+      <description>&lt;p&gt;![[assets/Pasted image 20230526111634.png|300]]&lt;/p&gt;
+&lt;p&gt;i.e.Semantic Versioning&lt;/p&gt;
+&lt;p&gt;🔔 本文摘录自 &lt;a href=&#34;https://semver.org/lang/zh-CN/&#34;&gt;语义化版本 2.0.0 | Semantic Versioning - semver.org&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: Emm… 直接借用文章中的一段话 – 为供他人使用的软件编写适当的文档，是你作为一名专业开发者应尽的职责。*&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>跑步</title>
+      <link>https://aituyaa.com/%E8%B7%91%E6%AD%A5/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%B7%91%E6%AD%A5/</guid>
+      <description>&lt;p&gt;健身训练的项目有很多，而有一些运动是大多数人所热爱的。跑步 🏃 就是一项大众所熟悉的，门槛比较低的运动项目，无论男女老少都可以跑起来。&lt;/p&gt;
+&lt;p&gt;那么，每天坚持跑步，身材可以瘦下来吗？可以 ❗ 跑步的可以实现的目标很多，想要达到减肥的目的，需要注意以下一些方面。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>进制及转换</title>
+      <link>https://aituyaa.com/%E8%BF%9B%E5%88%B6%E5%8F%8A%E8%BD%AC%E6%8D%A2/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%BF%9B%E5%88%B6%E5%8F%8A%E8%BD%AC%E6%8D%A2/</guid>
+      <description>&lt;p&gt;i.e. Base and Conversion&lt;/p&gt;
+&lt;p&gt;👉 推荐一个不错的网站 - &lt;a href=&#34;http://c.biancheng.net/&#34;&gt;C 语言中文网&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>道德经</title>
+      <link>https://aituyaa.com/%E9%81%93%E5%BE%B7%E7%BB%8F/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E9%81%93%E5%BE%B7%E7%BB%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;道法自然！&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>键位映射那些事儿</title>
+      <link>https://aituyaa.com/%E9%94%AE%E4%BD%8D%E6%98%A0%E5%B0%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E9%94%AE%E4%BD%8D%E6%98%A0%E5%B0%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;Vim 的键位不错，无论是移动光标还是进行编辑操作，但是如果是使用中文输入的话，就很尬 – 中文状态下命令模式不能用，虽然通过一些方式可以使得在切换为非插入模式时自动切换为英文状态，但总是不那么尽如人意。&lt;/p&gt;
+&lt;p&gt;Emacs 的键位模式，就很适应中英文的混合输入，唯一的缺点就是有点费小手指。在 Emacs 中，我一般会启用 Evil 插件，如此，可以实现如果是只读文件和做一些删减工作的时候，就直接使用 Vim 的键位模式，而在插入模式下，就使用 Emacs 的键位模式，很不错，附上一份个人的 Evil 插件的配置 &lt;a href=&#34;https://github.com/loveminimal/emacs.d/blob/master/lisp/init-evil.el&#34;&gt;init-evil.el&lt;/a&gt; 。唯一不足的是，这种方式只有在 Emacs 中才是可用的，如果你使用其他编辑器时，就没有这份待遇了。不过，单纯的 Emacs 键位也足够好用了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>饮食调整</title>
+      <link>https://aituyaa.com/%E9%A5%AE%E9%A3%9F%E8%B0%83%E6%95%B4/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E9%A5%AE%E9%A3%9F%E8%B0%83%E6%95%B4/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;:: 饮食调整，贵在平衡。保证必需营养吸收，减少不必要的食物摄入。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;![[assets/Pasted image 20230526101545.png|300]]&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>马克思主义简览</title>
+      <link>https://aituyaa.com/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E7%AE%80%E8%A7%88/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E7%AE%80%E8%A7%88/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;认识世界，改造世界。 &lt;a href=&#34;http://ys-g.ysepan.com/627140855/015120531/jfgLjKm8J435I6I4XP4Gf0/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA%E6%95%99%E6%9D%90%E7%94%B5%E5%AD%90%E7%89%88.pdf&#34;&gt;⬇️ 马克思主义基本原理概论&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>工作资料</title>
+      <link>https://aituyaa.com/docs/%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99/</link>
+      <pubDate>Thu, 25 May 2023 16:10:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/docs/%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99/</guid>
+      <description>&lt;p&gt;开发环境 Jenkins 的 Git Branches 和项目名称对照表及其说明和备忘。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>⭐️如何学习计算机科学</title>
+      <link>https://aituyaa.com/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</guid>
+      <description>&lt;p&gt;i.e. Teach Yourself Computer Science&lt;/p&gt;
+&lt;p&gt;🔔 转载 &lt;a href=&#34;https://teachyourselfcs.com/&#34;&gt;英文原文&lt;/a&gt;、&lt;a href=&#34;https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md&#34;&gt;中文译本&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ajax</title>
+      <link>https://aituyaa.com/ajax/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/ajax/</guid>
+      <description>&lt;p&gt;什么是 Ajax ?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Canvas</title>
+      <link>https://aituyaa.com/canvas/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/canvas/</guid>
+      <description>&lt;p&gt;&lt;code&gt;&amp;gt; 近来要开发一个手写板程序，顺便来系统回顾一下 Canvas 这个东东……&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;🔔 本篇摘录自 &lt;a href=&#34;https://www.runoob.com/w3cnote/html5-canvas-intro.html&#34;&gt;《学习 HTML5 Canvas 这一篇文章就够了》&lt;/a&gt; ，写的真不错。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt; 是 HTML5 新增的一个可以使用脚本（通常为 JavaScript）在其中绘制图像的 HTML 元素。&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20230525170231.png|400]]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 上图就是使用 canvas 绘制出来的&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Canvas 是由 HTML 代码配合高度和宽度属性而定义出的可绘制区域。JavaScript 代码可以访问该区域，类似于其他通用的二维 API，通过一套完整的绘图函数来动态生成图形。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CPU 是如何制造出来的</title>
+      <link>https://aituyaa.com/cpu-%E6%98%AF%E5%A6%82%E4%BD%95%E5%88%B6%E9%80%A0%E5%87%BA%E6%9D%A5%E7%9A%84/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cpu-%E6%98%AF%E5%A6%82%E4%BD%95%E5%88%B6%E9%80%A0%E5%87%BA%E6%9D%A5%E7%9A%84/</guid>
+      <description>&lt;p&gt;好吧，试了，但真的没找到 “佚名” 是谁 😂 ，希望原作者能感受到我的原力感谢吧…… 不少网站都有转载该篇文章，以下是图片较清晰的几个页面链接。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sohu.com/a/255397866_468626&#34;&gt;https://www.sohu.com/a/255397866_468626&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jb51.net/hardware/cpu/611229.html&#34;&gt;https://www.jb51.net/hardware/cpu/611229.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jb51.net/hardware/cpu/610350.html&#34;&gt;https://www.jb51.net/hardware/cpu/610350.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;1 寸 = 33.3333 mm&lt;/code&gt; &lt;code&gt;集成电路 ic (integrated circuit )&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CPU 缓存是什么</title>
+      <link>https://aituyaa.com/cpu-%E7%BC%93%E5%AD%98%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cpu-%E7%BC%93%E5%AD%98%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&#34;https://www.jb51.net/hardware/cpu/610074.html&#34;&gt;https://www.jb51.net/hardware/cpu/610074.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我们知道，CPU 性能是主要由 CPU 构架、核心线程数量、主频、缓存等诸多因素共同决定，而“缓存”是很多网友容易忽视的一个地方。那么，CPU 缓存是什么？在电脑 CPU 中，一二三级缓存究竟谁对 CPU 性能影响最重要呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSS 中的动效</title>
+      <link>https://aituyaa.com/css-%E4%B8%AD%E7%9A%84%E5%8A%A8%E6%95%88/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/css-%E4%B8%AD%E7%9A%84%E5%8A%A8%E6%95%88/</guid>
+      <description>&lt;p&gt;CSS 中的 &lt;code&gt;transform&lt;/code&gt;（变换）、&lt;code&gt;transition&lt;/code&gt;（过渡） 和 &lt;code&gt;animation&lt;/code&gt;（动画） ，简称 TTA。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: CSS 什么的这种逻辑性略弱、规则性很强的领域，边用边深入就好，不常用的记了也会忘。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://aituyaa.com/git/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/git/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;不可或缺的工具！！！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本文旨在记录个人使用过程中遇到的相关 Git 命令，非教程式的，详细学习请参阅 &lt;a href=&#34;https://git-scm.com/book/zh/v2&#34;&gt;《Pro Git》 的中文文档&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS 中的拖放</title>
+      <link>https://aituyaa.com/js-%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/js-%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE/</guid>
+      <description>&lt;p&gt;拖放是一种常见的特性，即抓取对象以后拖到另一个位置。在 HTML5 中，拖放是标准的一部分，任何元素都能够拖放。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;*注：Internet Explorer 9+, Firefox, Opera, Chrome, 和 Safari 支持拖动。&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nginx</title>
+      <link>https://aituyaa.com/nginx/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/nginx/</guid>
+      <description>&lt;p&gt;在认识、学习 Nginx 之前，我们先来看一下代理是什么，如果你已经非常熟悉代理，可以直接跳到第二个章节。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nginx 重定向</title>
+      <link>https://aituyaa.com/nginx-%E9%87%8D%E5%AE%9A%E5%90%91/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/nginx-%E9%87%8D%E5%AE%9A%E5%90%91/</guid>
+      <description>&lt;p&gt;博客系统迁移好多次了，多少次？详见《[[一场疲惫的主题制作之旅]]》。域名啊、博客文章的层级结构啊，都难免存在差异。这就导致了一个问题，之前在别的网站发布的一些页面链接就成了“死链”。虽然，可以简单地重写向到 404 ，体验却不好，最好是可以重定向到变化后的页面。&lt;/p&gt;
+&lt;p&gt;周末无聊，简单实现了一下，做个记录。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 2024-02-29 14:17&lt;/code&gt; 新情况 - 关于 博客多个域名使用一级域名（如 &lt;code&gt;example.com&lt;/code&gt;）还是 www 二级域名 （如 &lt;code&gt;www.example.com&lt;/code&gt; ）及其使用 HTTP 和 HTTPs 访问的相关问题。详见 [[#域名重写向问题]] 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>https://aituyaa.com/react/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/react/</guid>
+      <description>&lt;p&gt;📔 &lt;a href=&#34;https://zh-hans.react.dev/learn&#34;&gt;快速入门 – React 中文文档&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;具体安装及引入细节，请直接参考官方文档。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: React 的出新文档了，内容的组织结构也有所变化，整体来说更加突出函数式组件的作用了，毕竟有了 Hooks 嘛~ 来一个新的章节来摘录一下，准备在新的项目中应用 React ，反正用什么我说了算，哈哈~ ↗️ 「 [[#新文档]] 」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;React 是一个用于构建用户界面的 JavaScript 库，你可以用它给简单的 HTML 页面增加一点交互，也可以开始一个完全由 React 驱动的复杂应用。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 对的，它只是一个 UI 库而已 ！！！&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>https://aituyaa.com/spring/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/spring/</guid>
+      <description>&lt;p&gt;🔔 摘录自 &lt;a href=&#34;http://c.biancheng.net/spring/&#34;&gt;http://c.biancheng.net/spring/&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;虽然我们在生产环境中基本上使用 &lt;a href=&#34;http://localhost:1313/posts/spring-boot/&#34;&gt;Spring Boot&lt;/a&gt; 了，但是深入了解 Spring 是非常必要的，因为它是“地基”。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Spring Boot</title>
+      <link>https://aituyaa.com/spring-boot/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/spring-boot/</guid>
+      <description>&lt;p&gt;🔔 相关内容请参阅 &lt;a href=&#34;https://www.liaoxuefeng.com/wiki/1252599548343744/1266265175882464&#34;&gt;https://www.liaoxuefeng.com/wiki/1252599548343744/1266265175882464&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Spring Boot 是什么？它是一个基于 &lt;a href=&#34;../spring/&#34;&gt;Spring&lt;/a&gt; 的套件，它帮助我们预组装了一系列组件，以便以尽可能少的代码和配置来开发基于 Spring 的 Java 应用程序。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vim  那些事儿</title>
+      <link>https://aituyaa.com/vim-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/vim-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description>&lt;p&gt;Vim 是 Vi 的升级版，一款功能强大、高度可定制的文本编辑器，它只有一个对手 – Emacs 。那么，它来自哪里？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web 开发</title>
+      <link>https://aituyaa.com/web-%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/web-%E5%BC%80%E5%8F%91/</guid>
+      <description>&lt;p&gt;开个坑，大点的……&lt;/p&gt;
+&lt;p&gt;🔔 摘录自 &lt;a href=&#34;https://www.liaoxuefeng.com/wiki/1252599548343744/1255945497738400&#34;&gt;廖雪峰老师的 Java 教程&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>前端浅谈</title>
+      <link>https://aituyaa.com/%E5%89%8D%E7%AB%AF%E6%B5%85%E8%B0%88/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%89%8D%E7%AB%AF%E6%B5%85%E8%B0%88/</guid>
+      <description>&lt;p&gt;本文不涉及具体的细节，浅谈一下 Web 前端的 1 2 3 ……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>反射与泛型</title>
+      <link>https://aituyaa.com/%E5%8F%8D%E5%B0%84%E4%B8%8E%E6%B3%9B%E5%9E%8B/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%8F%8D%E5%B0%84%E4%B8%8E%E6%B3%9B%E5%9E%8B/</guid>
+      <description>&lt;p&gt;i.e. Reflection and Generic&lt;/p&gt;
+&lt;p&gt;反射与泛型那些事儿……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>文件转换</title>
+      <link>https://aituyaa.com/%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2/</guid>
+      <description>&lt;p&gt;JavaScript 中的 file、blob 和 base64 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>模块化编程</title>
+      <link>https://aituyaa.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;每一个领域的内容，都要有先问一下 – 是什么？为什么？做什么？怎么做？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;是什么？简述概念；&lt;/li&gt;
+&lt;li&gt;为什么？历史发展，出现的原因，优缺点；&lt;/li&gt;
+&lt;li&gt;做什么？主要应用场景；&lt;/li&gt;
+&lt;li&gt;怎么做？具体使用方法步骤。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>注解</title>
+      <link>https://aituyaa.com/%E6%B3%A8%E8%A7%A3/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%B3%A8%E8%A7%A3/</guid>
+      <description>&lt;p&gt;🔔 以下内容主要摘录自 &lt;a href=&#34;https://www.liaoxuefeng.com/wiki/1252599548343744/1255945389098144&#34;&gt;廖雪峰老师的博客&lt;/a&gt;，具体示例请跳到原文参考。&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20230525163525.png]]&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: 好吧，廖老师配图一直可以的。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>浏览器</title>
+      <link>https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%B5%8F%E8%A7%88%E5%99%A8/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;了解浏览器，它已经成为主流的信息传递方式，并将持续壮大！&lt;br&gt;
+了解它的内核、构成及动作方式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;![[assets/Pasted image 20230525174227.png|300]]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 蒂姆·伯纳斯·李 （1955.06.08 - ）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2017 年，他因 “发明万维网、第一个浏览器和使万维网得以扩展的基本协议和算法” 而获得 2016 年度的图灵奖。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>滚动条样式</title>
+      <link>https://aituyaa.com/%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</guid>
+      <description>&lt;p&gt;🔔 参考 &lt;a href=&#34;https://www.cnblogs.com/wjw1014/p/13564175.html&#34;&gt;https://www.cnblogs.com/wjw1014/p/13564175.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>用沙子造的 CPU 凭什么卖的那么贵</title>
+      <link>https://aituyaa.com/%E7%94%A8%E6%B2%99%E5%AD%90%E9%80%A0%E7%9A%84-cpu-%E5%87%AD%E4%BB%80%E4%B9%88%E5%8D%96%E7%9A%84%E9%82%A3%E4%B9%88%E8%B4%B5/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%94%A8%E6%B2%99%E5%AD%90%E9%80%A0%E7%9A%84-cpu-%E5%87%AD%E4%BB%80%E4%B9%88%E5%8D%96%E7%9A%84%E9%82%A3%E4%B9%88%E8%B4%B5/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&#34;https://www.jb51.net/hardware/cpu/610350.html&#34;&gt;https://www.jb51.net/hardware/cpu/610350.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2018 年 4 月 3 日，Intel 在北京举办了第八代酷睿移动处理器全球发布会，正式发布了全新的第八代酷睿移动处理器。很多小伙伴其实对 intel 的芯片很感兴趣，但是一但深入了解，很快就会被扑面而来的晶体管，微架构，纳米，CPI，睿频，超频，缓存等概念搞疯………&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>跨域</title>
+      <link>https://aituyaa.com/%E8%B7%A8%E5%9F%9F/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%B7%A8%E5%9F%9F/</guid>
+      <description>&lt;p&gt;i.e. Cross Domain&lt;/p&gt;
+&lt;p&gt;🔔 本文摘录自 &lt;a href=&#34;http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html&#34;&gt;浏览器同源政策及其规避方法&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>防抖与节流</title>
+      <link>https://aituyaa.com/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/</guid>
+      <description>&lt;p&gt;i.e. Debounce and Throttle&lt;/p&gt;
+&lt;p&gt;为什么需要防抖和节流？它们是什么？有什么区别？适用场景是什么？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>嗨，PC</title>
+      <link>https://aituyaa.com/%E5%97%A8pc/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%97%A8pc/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;近来，准备组装一台 PC 主机，做个记录 ~&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>计划</title>
+      <link>https://aituyaa.com/docs/%E8%AE%A1%E5%88%92/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/docs/%E8%AE%A1%E5%88%92/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;凡事，预则立，不预则废。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://aituyaa.com/%E5%85%B3%E4%BA%8E/</link>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%85%B3%E4%BA%8E/</guid>
+      <description>🍹 &amp;gt; 对自己说： 法于阴阳，合于术数。食饮有节，起居有常。 恬淡虚无，真气从之，精神内守，病安从来？ 我们应该用一种真心让自己感觉到舒适的方式去生活， 不就奢华，不饰节俭</description>
+    </item>
+    
+    <item>
+      <title>如何使用 hugo-theme-virgo 主题</title>
+      <link>https://aituyaa.com/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-hugo-theme-virgo-%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Fri, 06 May 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-hugo-theme-virgo-%E4%B8%BB%E9%A2%98/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-virgo/&#34;&gt;🎨 hugo-theme-virgo&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;为什么要把使用指南单独列出，而不是放在 README 中？&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;一方面，内容更新频繁（虽然没有必要），把更改放在 &lt;code&gt;README&lt;/code&gt; 中需要每次都提交主题更新，然而有时候只是单纯的更新 &lt;code&gt;README&lt;/code&gt; 而已。&lt;/p&gt;
+&lt;p&gt;另一方面，国内网络推送到 Github 仓库的时候经常抽风 (如下图)，速度也慢。&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20230815144943.png]]&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>00 计算机科学速成课</title>
+      <link>https://aituyaa.com/cscc/00-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E9%80%9F%E6%88%90%E8%AF%BE/</link>
+      <pubDate>Sat, 26 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/cscc/00-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E9%80%9F%E6%88%90%E8%AF%BE/</guid>
+      <description>&lt;p&gt;i.e. cs &lt;code&gt;(computer science)&lt;/code&gt; crash course&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20230526113630.png]]&lt;/p&gt;
+&lt;p&gt;这个系列来自于 &lt;a href=&#34;https://thecrashcourse.com/&#34;&gt;CRASH COURSE&lt;/a&gt; 的一个视频系列课程（共有 40 课程，每个课程 10 分钟左右），多谢热心的 CRASH COURSE 字幕组配上了优质的字幕 - &lt;a href=&#34;https://www.bilibili.com/video/BV1EW411u7th?p=1&amp;amp;vd_source=a6f6452712ce1cd91d115827d0148715&#34;&gt;B 站地址 📺&lt;/a&gt; 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GTD 管理系统</title>
+      <link>https://aituyaa.com/gtd-%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Fri, 26 Mar 2021 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/gtd-%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;:: &lt;strong&gt;怎能让利剑空悬于高阁之上！？&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>导航</title>
+      <link>https://aituyaa.com/%E5%AF%BC%E8%88%AA/</link>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%AF%BC%E8%88%AA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>百科</title>
+      <link>https://aituyaa.com/%E7%99%BE%E7%A7%91/</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E7%99%BE%E7%A7%91/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;::  &lt;strong&gt;多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。 &amp;ndash; 教员&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

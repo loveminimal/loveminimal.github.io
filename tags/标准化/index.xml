@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>标准化 on 爱涂鸦啊</title>
+    <link>https://aituyaa.com/tags/%E6%A0%87%E5%87%86%E5%8C%96/</link>
+    <description>Recent content in 标准化 on 爱涂鸦啊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 07 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/%E6%A0%87%E5%87%86%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git 提交消息约定</title>
+      <link>https://aituyaa.com/git-%E6%8F%90%E4%BA%A4%E6%B6%88%E6%81%AF%E7%BA%A6%E5%AE%9A/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/git-%E6%8F%90%E4%BA%A4%E6%B6%88%E6%81%AF%E7%BA%A6%E5%AE%9A/</guid>
+      <description>&lt;p&gt;规范一下 Git 的提交方式 ~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>中文技术文档</title>
+      <link>https://aituyaa.com/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/</guid>
+      <description>&lt;p&gt;🔔 参考 &lt;a href=&#34;https://www.ruanyifeng.com/blog/2016/10/document_style_guide.html&#34;&gt;中文技术文档的写作规范&lt;/a&gt; ，及个人写作习惯。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何维护更新日志</title>
+      <link>https://aituyaa.com/%E5%A6%82%E4%BD%95%E7%BB%B4%E6%8A%A4%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%A6%82%E4%BD%95%E7%BB%B4%E6%8A%A4%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</guid>
+      <description>&lt;p&gt;![[assets/Pasted image 20230526111442.png|325]]&lt;/p&gt;
+&lt;p&gt;🔔 本文摘录自 &lt;a href=&#34;https://keepachangelog.com/zh-CN/1.0.0/&#34;&gt;如何维护更新日志 – 更新日志绝对不应该是 git 日志的堆砌物&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>打造 SDK</title>
+      <link>https://aituyaa.com/%E6%89%93%E9%80%A0-sdk/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%89%93%E9%80%A0-sdk/</guid>
+      <description>&lt;p&gt;🔔 转载自 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/272614462&#34;&gt;如何打造一款标准的 JS-SDK&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20230526111947.png|350]]&lt;/p&gt;
+&lt;p&gt;SDK（Software Development Kit，软件开发工具包），一般都是一些软件工程师为特定的软件包、软件框架、硬件平台、操作系统等建立应用软件的开发工具的集合。简单讲， &lt;strong&gt;面向开发者，针对特定领域的软件包&lt;/strong&gt; ，基于它，开发人员可以快速构建自己的应用 App 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>语义化版本</title>
+      <link>https://aituyaa.com/%E8%AF%AD%E4%B9%89%E5%8C%96%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%AF%AD%E4%B9%89%E5%8C%96%E7%89%88%E6%9C%AC/</guid>
+      <description>&lt;p&gt;![[assets/Pasted image 20230526111634.png|300]]&lt;/p&gt;
+&lt;p&gt;i.e.Semantic Versioning&lt;/p&gt;
+&lt;p&gt;🔔 本文摘录自 &lt;a href=&#34;https://semver.org/lang/zh-CN/&#34;&gt;语义化版本 2.0.0 | Semantic Versioning - semver.org&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:: Emm… 直接借用文章中的一段话 – 为供他人使用的软件编写适当的文档，是你作为一名专业开发者应尽的职责。*&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

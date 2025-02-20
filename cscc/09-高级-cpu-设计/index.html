@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="09 高级 CPU 设计 - https://aituyaa.com/cscc/09-%E9%AB%98%E7%BA%A7-cpu-%E8%AE%BE%E8%AE%A1/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>09 高级 CPU 设计</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.46cfd43a02f0d32d5aeda510c2e7c2da418affff301ae11c64f200a1d2b033d3.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">09 高级 CPU 设计</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E9%80%9F%E6%88%90%E8%AF%BE/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：计算机科学速成课 <sup>17</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/00-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E9%80%9F%E6%88%90%E8%AF%BE/">00 计算机科学速成课</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/01-%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%97%A9%E6%9C%9F%E5%8E%86%E5%8F%B2/">01 计算机早期历史</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/02-%E7%94%B5%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA/">02 电子计算机</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/03-%E5%B8%83%E5%B0%94%E9%80%BB%E8%BE%91%E5%92%8C%E9%80%BB%E8%BE%91%E9%97%A8/">03 布尔逻辑和逻辑门</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/04-%E4%BA%8C%E8%BF%9B%E5%88%B6/">04 二进制</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/05-%E7%AE%97%E6%95%B0%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83/">05 算数逻辑单元</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/06-%E5%AF%84%E5%AD%98%E5%99%A8%E5%92%8C%E5%86%85%E5%AD%98/">06 寄存器和内存</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/07-%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/">07 中央处理器</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/08-%E6%8C%87%E4%BB%A4%E5%92%8C%E7%A8%8B%E5%BA%8F/">08 指令和程序</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/cscc/09-%E9%AB%98%E7%BA%A7-cpu-%E8%AE%BE%E8%AE%A1/">09 高级 CPU 设计</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/10-%E6%97%A9%E6%9C%9F%E7%9A%84%E7%BC%96%E7%A8%8B%E6%96%B9%E5%BC%8F/">10 早期的编程方式</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/11-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%8F%91%E5%B1%95%E5%8F%B2/">11 编程语言发展史</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/12-%E7%BC%96%E7%A8%8B%E5%8E%9F%E7%90%86-%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%87%BD%E6%95%B0/">12 编程原理 - 语句和函数</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/13-%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/">13 算法入门</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/14-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">14 数据结构</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/15-cscc-%E5%85%B6%E4%BB%961/">15 CSCC 其他1</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/cscc/16-cscc-%E5%85%B6%E4%BB%962/">16 CSCC 其他2</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2023-05-26&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2024-11-08&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            3080 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            7 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E9%80%9F%E6%88%90%E8%AF%BE">计算机科学速成课</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#缓存">缓存</a></li>
+    <li><a href="#指令流水线">指令流水线</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p>i.e. Advanced CPU Designs</p>
+<p>随着本系列进展，我们知道计算机进步巨大，从 1 秒 1 次运算，到现在有千赫甚至兆赫的 CPU ，你现在看视频的设备八成也有 GHz 速度 ，1 秒十亿条指令 ，这是很大的计算量！</p>
+<p>早期计算机的提速方式是减少晶体管的切换时间 ，晶体管组成了逻辑门，ALU 以及前几集的其他组件，但这种提速方法最终会碰到瓶颈，所以处理器厂商发明各种新技术来提升性能，不但让简单指令运行更快，也让它能进行更复杂的运算。</p>
+<p>上集我们写了个做除法的程序，给 CPU 执行，方法是做一连串减法，比如 16 除 4 会变成 - 16-4 -4 -4 -4 ，碰到 0 或负数才停下 。但这种方法要多个时钟周期，很低效。所以现代 CPU 直接在硬件层面设计了除法，可以直接给 ALU 除法指令，这让 ALU 更大也更复杂一些，但也更厉害 。 <strong>复杂度 vs 速度的平衡</strong> 在计算机发展史上经常出现。</p>
+<p>举例，现代处理器有专门电路来处理图形操作，解码压缩视频，加密文档 等等。如果用标准操作来实现，要很多个时钟周期。你可能听过某些处理器有 MMX, 3DNOW, SSE ，它们有额外电路做更复杂的操作，用于游戏和加密等场景。指令不断增加，人们一旦习惯了它的便利就很难删掉，所以为了兼容旧指令集，指令数量越来越多。</p>
+<p>英特尔 4004，第一个集成 CPU，有 46 条指令，足够做一台能用的计算机，但现代处理器有上千条指令，有各种巧妙复杂的电路，超高的时钟速度带来另一个问题 - 如何快速传递数据给 CPU 。就像有强大的蒸汽机，但无法快速加煤。RAM 成了瓶颈，RAM 是 CPU 之外的独立组件，意味着数据要用线来传递，叫&quot;总线&quot;，总线可能只有几厘米，别忘了电信号的传输接近光速，但 CPU 每秒可以处理上亿条指令，很小的延迟也会造成问题。RAM 还需要时间找地址取数据，配置，输出数据，一条&quot;从内存读数据&quot;的指令可能要多个时钟周期，CPU 空等数据。</p>
+<h2 id="缓存">缓存</h2>
+<p>解决延迟的方法之一是给 CPU 加一点 RAM - 叫 <strong>“缓存”</strong> ，因为处理器里空间不大，所以缓存一般只有 KB 或 MB ，而 RAM 都是 GB 起步。缓存提高了速度，CPU 从 RAM 拿数据时，RAM 不用传一个，<strong>可以传一批</strong>，虽然花的时间久一点，但数据可以存在缓存，这很实用，因为数据常常是一个个按顺序处理。</p>
+<p>![[assets/Pasted image 20230526124024.png|400]]</p>
+<p><code>&gt; CPU 缓存</code></p>
+<p>举个例子，算餐厅的当日收入，先取 RAM 地址 100 的交易额，RAM 与其只给 1 个值，直接给一批值，把地址 100 到 200 都复制到缓存。当处理器要下一个交易额时，地址 101，缓存会说：“我已经有了，现在就给你”，不用去 RAM 取数据，因为缓存离 CPU 近，一个时钟周期就能给数据 - CPU 不用空等！比反复去 RAM 拿数据快得多。如果想要的数据已经在缓存，叫 <strong>缓存命中</strong> ，如果想要的数据不在缓存，叫 <strong>缓存未命中</strong> 。缓存也可以当临时空间，存一些中间值，适合长/复杂的运算。继续餐馆的例子，假设 CPU 算完了一天的销售额，想把结果存到地址 150，就像之前，数据不是直接存到 RAM ，而是存在缓存，这样不但存起来快一些，如果还要接着算，取值也快一些。</p>
+<p>但这样带来了一个有趣的问题，缓存和 RAM 不一致了 😈。这种不一致必须记录下来，之后要同步，因此缓存里每块空间有一个特殊标记，叫 <strong>“脏位”</strong> （dirty bit） - 这可能是计算机科学家取的最贴切的名字。同步一般发生在 当缓存满了而 CPU 又要缓存时，在清理缓存腾出空间之前，会先检查 “脏位”。如果是&quot;脏&quot;的，在加载新内容之前，会把数据写回 RAM 。</p>
+<h2 id="指令流水线">指令流水线</h2>
+<p>另一种提升性能的方法叫 <strong>“指令流水线”</strong> 。</p>
+<p>想象下你要洗一整个酒店的床单，但只有 1 个洗衣机，1 个干燥机，选择 1：按顺序来，放洗衣机等 30 分钟洗完，然后拿出湿床单，放进干燥机等 30 分钟烘干，这样 1 小时洗一批；另外一说：如果你有 30 分钟就能烘干的干燥机，请留言告诉我是什么牌子，我的至少要 90 分钟。即使有这样的神奇干燥机，我们可以用&quot;并行处理&quot;进一步提高效率。就像之前，先放一批床单到洗衣机，等 30 分钟洗完，然后把湿床单放进干燥机，但这次，与其干等 30 分钟烘干，可以放另一批进洗衣机，让两台机器同时工作，30 分钟后，一批床单完成，另一批完成一半，另一批准备开始，效率 x2 ！🎉</p>
+<p>处理器也可以这样设计。</p>
+<p>第 7 集，我们演示了 CPU 按序处理 - 取指 → 解码 → 执行，不断重复。这种设计，三个时钟周期执行 1 条指令，但因为每个阶段用的是 CPU 的不同部分，意味着可以并行处理（parallelize）！“执行&quot;一个指令时，同时&quot;解码&quot;下一个指令，“读取&quot;下下个指令，不同任务重叠进行，同时用上 CPU 里所有部分。</p>
+<p>![[assets/Pasted image 20230526124045.png|550]]</p>
+<p>这样的流水线每个时钟周期执行 1 个指令，吞吐量 x 3 。</p>
+<p>和缓存一样，这也会带来一些问题。</p>
+<p>第一个问题是指令之间的依赖关系，举个例子，你在读某个数据，而正在执行的指令会改这个数据，也就是说拿的是旧数据，因此流水线处理器要先弄清数据依赖性，必要时停止流水线，避免出问题。高端 CPU，比如笔记本和手机里那种，会更进一步，动态排序有依赖关系的指令，最小化流水线的停工时间，这叫 <strong>“乱序执行”</strong> 。和你猜的一样，这种电路非常复杂，但因为非常高效，几乎所有现代处理器都有流水线。</p>
+<p>第二个问题是 “条件跳转”，比如上集的 JUMP NEGATIVE ，这些指令会改变程序的执行流。简单的流水线处理器，看到 JUMP 指令会停一会儿，等待条件值确定下来，一旦 JUMP 的结果出了，处理器就继续流水线。因为空等会造成延迟，所以高端处理器会用一些技巧，可以把 JUMP 想成是 “岔路口”，高端 CPU 会猜哪条路的可能性大一些，然后提前把指令放进流水线，这叫 <strong>“推测执行”</strong> 。当 JUMP 的结果出了，如果 CPU 猜对了，流水线已经塞满正确指令，可以马上运行，如果 CPU 猜错了，就要清空流水线，就像走错路掉头。让 GPS 不要再！叫！了！为了尽可能减少清空流水线的次数，CPU 厂商开发了复杂的方法，来猜测哪条分支更有可能，叫 <strong>“分支预测”</strong> ，现代 CPU 的正确率超过 90% 。</p>
+<p>理想情况下，流水线一个时钟周期完成 1 个指令，然后&quot;超标量处理器&quot;出现了，一个时钟周期完成多个指令。即便有流水线设计，在指令执行阶段，处理器里有些区域还是可能会空闲。比如，执行一个 “从内存取值” 指令期间， ALU 会闲置，所以一次性处理多条指令（取指令+解码） 会更好。如果多条指令要 ALU 的不同部分，就多条同时执行。我们可以再进一步，加多几个相同的电路，执行出现频次很高的指令。举例，很多 CPU 有四个，八个甚至更多完全相同的 ALU ，可以同时执行多个数学运算。</p>
+<p>![[assets/Pasted image 20230526124057.png|550]]</p>
+<p>好了，目前说过的方法，都是优化 1 个指令流的吞吐量。</p>
+<p>另一个提升性能的方法是同时运行多个指令流，用多核处理器。你应该听过双核或四核处理器，意思是一个 CPU 芯片里，有多个独立处理单元，很像是有多个独立 CPU，但因为它们整合紧密，可以共享一些资源，比如缓存，使得多核可以合作运算，但多核不够时，可以用多个 CPU 。高端计算机，比如现在给你传视频的 Youtube 服务器，需要更多马力，让上百人能同时流畅观看，2 个或 4 个 CPU 是最常见的。</p>
+<p>![[assets/Pasted image 20230526124112.png]]</p>
+<p><code>&gt; 多核处理器</code></p>
+<p>但有时人们有更高的性能要求，所以造了超级计算机！如果要做怪兽级运算，比如模拟宇宙形成，你需要强大的计算能力，给普通台式机加几个 CPU 没什么用，你需要很多处理器！ 不…不…还要更多，更多。截止至视频发布，世上最快的计算机在中国无锡的国家超算中心 - 神威·太湖之光有 40960 个 CPU，每个 CPU 有 256 个核心，总共超过 1 千万个核心，每个核心的频率是 1.45GHz ，每秒可以进行 9.3 亿亿次浮点数运算，也叫 每秒浮点运算次数 (FLOPS)。相信我，这个速度很可怕，没人试过跑最高画质的《孤岛危机》但我估计没问题。</p>
+<p>![[assets/Pasted image 20230526124139.png]]</p>
+<p><code>&gt; 神威·太湖之光</code></p>
+<p>长话短说，这些年处理器不但大大提高了速度，而且也变得更复杂，用各种技巧，榨干每个时钟周期 做尽可能多运算。我们的任务是利用这些运算能力，做又酷又实用的事。</p>
+<p>编程就是为了这个，我们下集说。</p>
+<p>下周见。</p>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="/about" target="_blank">
+            
+            将喜欢的一切留在身边，这便是努力的意义
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

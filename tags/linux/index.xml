@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on 爱涂鸦啊</title>
+    <link>https://aituyaa.com/tags/linux/</link>
+    <description>Recent content in Linux on 爱涂鸦啊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manjaro Linux</title>
+      <link>https://aituyaa.com/manjaro-linux/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/manjaro-linux/</guid>
+      <description>&lt;p&gt;Manjaro Linux 安装之后的初始化配置。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>十分钟掌握 TMUX</title>
+      <link>https://aituyaa.com/%E5%8D%81%E5%88%86%E9%92%9F%E6%8E%8C%E6%8F%A1-tmux/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%8D%81%E5%88%86%E9%92%9F%E6%8E%8C%E6%8F%A1-tmux/</guid>
+      <description>&lt;p&gt;![[assets/Pasted image 20230802145832.png|300]]&lt;/p&gt;
+&lt;p&gt;🔔 &lt;a href=&#34;http://localhost:1313/posts/tmux/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5&#34;&gt;http://www.ruanyifeng.com/blog/2019/10/tmux.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>源码编译安装</title>
+      <link>https://aituyaa.com/%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85/</guid>
+      <description>&lt;p&gt;Linux 下源代码的编译安装，及其编译过程和可能遇到的问题。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nginx</title>
+      <link>https://aituyaa.com/nginx/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/nginx/</guid>
+      <description>&lt;p&gt;在认识、学习 Nginx 之前，我们先来看一下代理是什么，如果你已经非常熟悉代理，可以直接跳到第二个章节。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nginx 重定向</title>
+      <link>https://aituyaa.com/nginx-%E9%87%8D%E5%AE%9A%E5%90%91/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/nginx-%E9%87%8D%E5%AE%9A%E5%90%91/</guid>
+      <description>&lt;p&gt;博客系统迁移好多次了，多少次？详见《[[一场疲惫的主题制作之旅]]》。域名啊、博客文章的层级结构啊，都难免存在差异。这就导致了一个问题，之前在别的网站发布的一些页面链接就成了“死链”。虽然，可以简单地重写向到 404 ，体验却不好，最好是可以重定向到变化后的页面。&lt;/p&gt;
+&lt;p&gt;周末无聊，简单实现了一下，做个记录。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 2024-02-29 14:17&lt;/code&gt; 新情况 - 关于 博客多个域名使用一级域名（如 &lt;code&gt;example.com&lt;/code&gt;）还是 www 二级域名 （如 &lt;code&gt;www.example.com&lt;/code&gt; ）及其使用 HTTP 和 HTTPs 访问的相关问题。详见 [[#域名重写向问题]] 。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
