@@ -15,7 +15,7 @@
     
     
     
-    <link rel="stylesheet" href="https://aituyaa.com/style.min.9a0cea23154ac1941e15c25aa2d31b77285a217d2606ec05b55236428cf1c3e6.css">
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.7a1211384e00d894dc501a9708ae5fb349825c010d5348b62a8727d135f41615.css">
     
     <script>const DARK =  false ;</script>
     
@@ -591,7 +591,7 @@
                     d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
                     p-id="23839" fill="#adb5bd"></path>
             </svg>
-            2025-02-10&nbsp;&nbsp;&nbsp;
+            2025-03-18&nbsp;&nbsp;&nbsp;
         </span>
         <span>
             
@@ -604,7 +604,7 @@
                     d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
                     fill="#adb5bd" p-id="33868"></path>
             </svg>
-            11962 字</span>&nbsp;
+            12731 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -616,7 +616,7 @@
                     d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
                     p-id="32894" fill="#adb5bd"></path>
             </svg>
-            24 分钟</span>
+            26 分钟</span>
         <div class="container-ctgtag">
 	<div class="taxonomy">
 		<div class="tag">
@@ -674,6 +674,7 @@
         <li><a href="#python-项目组织结构">python 项目组织结构</a></li>
         <li><a href="#python-中获取时间和格式化">python 中获取时间和格式化</a></li>
         <li><a href="#pyenv-版本管理">pyenv 版本管理</a></li>
+        <li><a href="#venvpyenv-和-poetry-中虚拟环境的区别和联系">venv、pyenv 和 poetry 中虚拟环境的区别和联系</a></li>
         <li><a href="#pypi-换源">PyPI 换源</a></li>
         <li><a href="#切片">切片</a></li>
         <li><a href="#斐波那契数列">斐波那契数列</a></li>
@@ -2040,7 +2041,61 @@ pyenv version
 # 检查 python 是否正常执行
 python -c &#34;import sys; print(sys.executable)&#34;
 # → \path\to\.pyenv\pyenv-win\versions\&lt;version&gt;\python.exe
-</code></pre><h3 id="pypi-换源">PyPI 换源</h3>
+</code></pre><h3 id="venvpyenv-和-poetry-中虚拟环境的区别和联系">venv、pyenv 和 poetry 中虚拟环境的区别和联系</h3>
+<p>在 Python 开发中，<code>venv</code>、<code>pyenv</code> 和 <code>poetry</code> 都是用于管理虚拟环境的工具，但它们的功能和使用场景有所不同。以下是它们的区别和关系：</p>
+<p><strong>① venv</strong></p>
+<p><code>venv</code> 是 Python3.3 及以上版本内置的轻量级虚拟环境工具，用于创建隔离的 Python 环境。</p>
+<p><code>venv</code> 可以创建独立的 Python 虚拟环境，每个环境有自己的一套 Python 解释器和包。它不提供依赖管理功能，通常与 <code>pip</code> 结合使用来安装和管理 Python 包。</p>
+<p>适用于简单的 Python 项目，特别是那些只需要管理 Python 包和虚拟环境的项目。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 -m venv myenv      <span style="color:#998;font-style:italic"># 创建虚拟环境</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">source</span> myenv/bin/activate  <span style="color:#998;font-style:italic"># 激活环境（ linux/macos ）</span>
+</span></span><span style="display:flex;"><span>myenv<span style="color:#d14">\S</span>cripts<span style="color:#d14">\a</span>ctivate     <span style="color:#998;font-style:italic"># 激活环境（ Windows ）</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>② pyenv</strong></p>
+<p><code>pyenv</code> 是一个用于管理多个 Python 版本的工具，允许在同一台机器上安装、切换和使用不同的 Python 版本。</p>
+<p>它本身不直接管理虚拟环境，但可以通过插件 <code>pyenv-virtualenv</code> 来创建和管理虚拟环境。它主要用于解决不同项目需要不同 Python 版本的问题。</p>
+<p>适用于需要在不同项目中使用不同 Python 版本的开发者。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyenv install 3.13.1           <span style="color:#998;font-style:italic"># 安装特定 Python 版本</span>
+</span></span><span style="display:flex;"><span>pyenv virtualenv 3.13.1 myenv  <span style="color:#998;font-style:italic"># 创建虚拟环境</span>
+</span></span><span style="display:flex;"><span>pyenv activate myenv           <span style="color:#998;font-style:italic"># 激活虚拟环境</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>③ poetry</strong></p>
+<p><code>poetry</code> 是一个现代的 Python 包管理和环境管理工具，集成了虚拟环境管理、依赖管理和打包发布功能。</p>
+<p>它会自动为每个项目创建和管理一个独立的虚拟环境，避免不同项目之间的依赖冲突。它使用 <code>pyproject.toml</code> 文件来管理项目的依赖关系，并生成 <code>poetry.lock</code> 文件来锁定依赖版本。</p>
+<p>它适用于需要精细依赖管理和虚拟环境管理的复杂 Python 项目，特别是开源库开发和发布。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>poetry new my_project     <span style="color:#998;font-style:italic"># 创建新项目</span>
+</span></span><span style="display:flex;"><span>poetry add requests       <span style="color:#998;font-style:italic"># 添加依赖</span>
+</span></span><span style="display:flex;"><span>poetry install            <span style="color:#998;font-style:italic"># 创建虚拟环境并安装依赖</span>
+</span></span><span style="display:flex;"><span>poetry shell              <span style="color:#998;font-style:italic"># 激活虚拟环境</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>综上不难看出， <code>venv</code> 是 Python 内置的虚拟环境工具，功能简单，适合基础需求；<code>pyenv</code> 主要用于管理多个 Python 版本，结合 <code>pyenv-virtualenv</code> 可以管理虚拟环境； <code>poetry</code> 是一个更高级的工具，集成了虚拟环境、依赖管理和打包发布功能，适合复杂项目。</p>
+<p>如果你只需要简单的虚拟环境管理，<code>venv</code> 是最轻量、最直接的选择；如果你需要管理多个 Python 版本， <code>pyenv</code> 是更好的选择； 如果你需要强大的依赖管理和项目配置功能， <code>poetry</code> 是最好的选择。</p>
+<h3 id="pypi-换源">PyPI 换源</h3>
 <p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/pypi/">pypi | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a></p>
 <p>在使用 Python 的 <code>pip</code> 安装包时，默认的包下载源是国外的 PyPI（Python Package Index）服务器，可能会因为网络问题导致下载速度慢或失败。为了提高下载速度，可以将 <code>pip</code> 的镜像源设置为国内的镜像站点。</p>
 <p>以下是设置 <code>pip</code> 镜像的几种方法：</p>
