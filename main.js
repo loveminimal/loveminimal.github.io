@@ -9002,6 +9002,10 @@
   function forceSearch() {
     localStorage.removeItem("today");
     map = getDocMap();
+    notyf_default.open({
+      type: "success",
+      message: "\u7AD9\u70B9\u7F13\u5B58\u66F4\u65B0\u6210\u529F"
+    });
   }
   function search2(e2) {
     if (!IS_MOBILE && e2 && e2.keyCode !== 13)
