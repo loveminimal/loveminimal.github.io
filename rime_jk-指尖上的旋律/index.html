@@ -409,6 +409,8 @@
         
         
         
+        
+        
         <div class="curtag-desc">
             <a href="https://aituyaa.com/tags/%E7%8E%A9%E5%85%B7/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：玩具 <sup>11</sup></a>
         </div>
@@ -579,7 +581,7 @@
                     d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
                     p-id="23839" fill="#adb5bd"></path>
             </svg>
-            2025-05-16&nbsp;&nbsp;&nbsp;
+            2025-05-22&nbsp;&nbsp;&nbsp;
         </span>
         <span>
             
@@ -592,7 +594,7 @@
                     d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
                     fill="#adb5bd" p-id="33868"></path>
             </svg>
-            5562 字</span>&nbsp;
+            6706 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -604,7 +606,7 @@
                     d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
                     p-id="32894" fill="#adb5bd"></path>
             </svg>
-            12 分钟</span>
+            14 分钟</span>
         <div class="container-ctgtag">
 	<div class="taxonomy">
 		<div class="tag">
@@ -639,9 +641,15 @@
     <li><a href="#她的由来">“她”的由来</a></li>
     <li><a href="#键位调整">键位调整</a></li>
     <li><a href="#配色方案">配色方案</a></li>
-    <li><a href="#虎码方案">虎码方案</a></li>
-    <li><a href="#双拼方案">双拼方案</a></li>
-    <li><a href="#全拼方案">全拼方案</a></li>
+    <li><a href="#输入方案">输入方案</a>
+      <ul>
+        <li><a href="#拼音方案">拼音方案</a></li>
+        <li><a href="#五笔方案">五笔方案</a></li>
+        <li><a href="#虎码方案">虎码方案</a></li>
+        <li><a href="#并击方案">并击方案</a></li>
+      </ul>
+    </li>
+    <li><a href="#脚本指南">脚本指南</a></li>
     <li><a href="#结语">结语</a></li>
   </ul>
 </nav>
@@ -650,7 +658,8 @@
     <div class='content  '>
         <p>这个是迟来的 <a href="https://github.com/loveminimal/rime-jk">loveminimal/rime-jk</a> 的 <code>README</code> ，照例单开一篇，方便记录和更新~</p>
 <h2 id="更新日志">更新日志</h2>
-<pre tabindex="0"><code>- 2025-05-16 15:11 [⭐️] 长期支持大一统版本
+<pre tabindex="0"><code>- 2025-05-22 08:57 辅助脚本更新「详见 ##脚本指南」
+- 2025-05-16 15:11 [⭐️] 长期支持大一统版本
 - 2025-04-24 15:30 [🔮] 仓库满了，重新 Repack
 - 2025-04-15 17:39 发布版本 v6.6.0.lts+.zj++
 - 2025-02-07 15:55 发布版本 v6.6.0.lts
@@ -822,26 +831,21 @@
 <p><strong>鲁迅先生说过：“了解一个 Scheme 的最佳方法，就是去亲自创造一个 Scheme 。”</strong></p>
 <p>这就是 RIME_JK（我称之为 <strong>知心五笔</strong>）的由来了~</p>
 <h2 id="快速开始">快速开始</h2>
-<p>RIME_JK 是基于五笔拼音的混输方案改造、扩展而来的，按需加入了：</p>
-<pre tabindex="0"><code>- 自定义预选项 - opencc/misc.txt
-- 自定义缩写扩展 - custom_phrase.txt
-- 词典库相关扩展 - dicts/wubi86_district.dict.yaml ..
-- 基于 Lua 的日期时间插入 - lua/data-translator.lua
-- Emoji 候选支持 - opencc/emoji.json ..
-- 简约清爽的定制配色 - jk_wubi.custom.yaml ..
-- 新增了虎码方案支持
-- ……
-</code></pre><p>OK，你可以安装好 Rime 并加载了 RIME_JK 之后慢慢体验 ~</p>
+<p>RIME_JK 最初是以五笔拼音混输方案为核心的输入方案配置，随着了解的深入和使用习惯的变化，现在她已经涵盖了几乎所有的主流输入方案。可以依照自己的喜好，按需选用。</p>
+<p>OK，你可以安装好 Rime 并加载了 RIME_JK 之后慢慢体验 ~</p>
 <p><strong>1.安装 Rime</strong></p>
 <p>Windows 平台上 Weasel 小狼毫的版本 -  <a href="https://github.com/rime/weasel/releases">Releases · rime/weasel</a>，目前最新版本为 <a href="https://github.com/rime/weasel/releases/download/0.16.3/weasel-0.16.3.0-installer.exe">⬇️ 0.16.3</a>。</p>
+<p>最新版本 0.17.0 已于 <code>2025-05-17</code> 更新，目前尚未稳定，可以过一段时间再更新。</p>
 <p><strong>2.部署 RIME_JK</strong></p>
 <p>一般安装 Rime 后，其用户文件夹为 <code>%APPDATA%\Rime</code> ，在我的电脑上为 <code>C:\Users\jack\AppData\Roaming\Rime</code> （其他平台详见 <a href="https://github.com/rime/home/wiki/UserData">Rime 用户文件夹 </a>）。跳转到 <code>Roaming</code> 目录后，删除或备份已有的 <code>Rime</code> 文件夹，然后执行以下操作：</p>
-<pre tabindex="0"><code>git clone https://github.com/loveminimal/rime-jk.git Rime
+<pre tabindex="0"><code>git clone --depth=1 https://github.com/loveminimal/rime-jk.git Rime
 
 # 或者通过 Gitee 镜像
-git clone https://gitee.com/loveminimal/rime-jk.git Rime
+git clone --depth=1 https://gitee.com/loveminimal/rime-jk.git Rime
 </code></pre><p>之后，<strong>重新部署</strong> 即可。</p>
-<p>💡 这里我们假设你已经具备了基础的 Rime 使用经验，如果你是刚接触 Rime 的朋友，可以先阅读  <a href="https://github.com/rime/home/wiki">Rime Wiki</a> 了解一下 Rime 的基础概念，或者你可以接着往下看。</p>
+<p>💡 这里我们假设你已经具备了基础的 Rime 使用经验，如果你是刚接触 Rime 的朋友，可以先阅读 [[Rime 那些事儿]] 了解一下 Rime 的基础概念，或者你可以接着往下看。</p>
+<p><strong>3.关于整句词库</strong></p>
+<p>由于配置方案是托管在 github/gitee 上的，拼音词库的体积相对较大（100M 左右），故整句词库（拼音、五笔整句、虎码整句）不在 github/gitee 中托管，提供了初始化脚本，可在初次使用时获取最新的整句词库，后续也可使用该脚本获取最近更新。详见 [[#脚本指南]] 章节。</p>
 <h2 id="她的由来">“她”的由来</h2>
 <p>RIME_JK 的文件层级结构（详见 <a href="https://github.com/loveminimal/rime-jk">loveminimal/rime-jk</a> 仓库）。</p>
 <p>知心五笔的 schema 主要基于 <code>wubi_pinyin.schema.yaml</code> 修改而来，并参考雾淞拼音和极点五笔的相关配置精简、添加了一些所需功能。如，我们引用了雾淞拼音方案中对于 Emoji 的设置、修改了其时间日期插入脚本，引用了极点五笔中行政区域相关的附属词典等等。</p>
@@ -852,23 +856,28 @@ git clone https://gitee.com/loveminimal/rime-jk.git Rime
 <p>详见 <a href="https://github.com/loveminimal/rime-jk/blob/master/default.custom.yaml#L16">rime-jk/default.custom.yaml</a> 。</p>
 <p>我们在保留 Rime 部分原生支持键位的情况下，添加了一些新热键。如可以快速切换输入方案的 <code>.next</code> 和中英文状态的 <code>ascii_mode</code> ，分别绑定到 <code>C-o</code>（others） 和 <code>C-i</code>（input schema）。虽然，我们对 4 个候选项都做了对应的按键映射，但还是新增了 <code>C-j/k</code> 用于在候选词之间移动，它比默认的 <code>C-n/p</code> 要好按（它们也得到了保留支持）。</p>
 <p>按照你的心意和习惯去调整即可 ~</p>
+<p>也提供了帮助菜单，可以通过 <code>~help</code> 或 <code>hH</code> 调出。</p>
 <h2 id="配色方案">配色方案</h2>
 <p>在〔v5.0.0 〕中，我将之前陆陆续续制作的一些方案配色提取出来，放在了 <code>style.yaml</code> 文件中，自左至右依次是 <code>pujk、orjk、skjk、sljk、emjk</code> （绛紫色 - 默认、橙黄色、天蓝色、板岩灰、翠绿色），目前它们分别应用于五笔、虎码、小鹤双拼、自然码双拼、全拼。</p>
 <p>![[assets/Pasted image 20241206103538.png|130]]  ![[assets/Pasted image 20241206103556.png|130]] ![[assets/Pasted image 20241206103616.png|130]] ![[assets/Pasted image 20241206103635.png|130]] ![[assets/Pasted image 20241206120555.png|130]]</p>
 <p>下面这个配色方案是最初魔改的第一个配色方案，它是基于 Aque 修改而来的，所以就把它命名为 <code>aqjk</code> 碧水色保留，目前它应用在知心字符方案。</p>
 <p>![[assets/Pasted image 20241206103651.png|130]]</p>
-<h2 id="虎码方案">虎码方案</h2>
-<p>几天前，我开始学习虎码的旅程 - 「 [[嗨，虎码]] 」，它也是一种形码方案。在 <a href="http://huma.ysepan.com/">虎码E盘</a> 中有官方托管的各类教程、码表及软件包。</p>
-<p>虎码在各个平台也有相应的实现，Windows 平台下有一个绿色免安装的软件 - <a href="http://ys-l.ysepan.com/620946418/916715735/k8J3I466HG7PH2TIUHjIa2/Bime%E8%99%8E%E7%A0%812024_06_03.7z?lx=xz">Bime 虎码</a>。当然，最吸引我的地方还是在于它可以挂载在 Rime 中。</p>
-<p>切换输入法难以避免有阵痛期，但是工作需要又不可能总是慢悠悠的。因为我已经有了心爱的 RIME_JK，我并不想直接切换到官方提供的挂载方案，所以做了个简单的移植方案 - TIGER_RIME_JK（ 知心老虎 🐯 放心 ~ 功能是 100% 的）。</p>
-<p>![[assets/Pasted image 20240605142725.png|150]]</p>
-<p>TIGER_RIME_JK 保留了完整的官方词库，精简了不必要的冗文件，反查和 Emoji 保持了和 RIME_JK 的一致性。当然，同样制作了一个贴近虎码 Bime 原色的简约风格的配色方案。Nice ~</p>
-<h2 id="双拼方案">双拼方案</h2>
+<p>当前的新版本中，主题资源也得到了丰富，包含了内置的 34 款、个人制定的 11 款及魔改内置的 13 款。详见 <a href="https://github.com/loveminimal/rime-jk/blob/master/style.yaml">RIME_JK 主题库</a> 。</p>
+<h2 id="输入方案">输入方案</h2>
+<h3 id="拼音方案">拼音方案</h3>
+<p>在最新的版本中，所有拼音方案同一为 <code>jk_pinyin.scheme.yaml</code> 「 拼音·知心 」，默认使用 <code>小鹤双拼 + 虎豹首末辅助码</code> 。</p>
+<p>![[assets/Pasted image 20250522093808.png|350]]</p>
+<p>在方案中可以通过切换运算规则，重新部署后使用你想使用的拼音方案，如全拼、自然码双拼等。配合脚本生成特定辅助码的词库（墨奇、鹤形、自然码、简单鹤、仓颉、虎码首末、五笔前二、汉心、纯拼音），你可以实现更多的组合。</p>
+<p>&mdash; <strong>【 全拼方案 】</strong> &mdash;</p>
+<p>鉴于通用性，制作了全拼方案。现在拼音方案（双拼、全拼）统一应用万象词库。</p>
+<p>![[assets/Pasted image 20241120105541.png|150]]</p>
+<p>全拼方案和双拼方案的词库是共用的，都是 <code>jk_pinyin.dict.yaml</code> ，因为双拼本质上使用的就是拼音的词库。</p>
+<p>&mdash; <strong>【 双拼方案 】</strong> &mdash;</p>
 <p>随着把拼音的字典换成了万象词库，对双拼方案也做了一些修改，如：</p>
 <pre tabindex="0"><code>- 合并了小鹤、大鹤方案 →（同一为）知心小鹤
 - 增加了自然码双拼方案
 </code></pre><p>万象词库同时支持多个辅助码，如墨奇、五笔前二、虎码首末、鹤形、自然辅助码等。如此，我们就不用同时维护多个拼音词库，如之前我们就同时使用雾淞拼音词库和墨奇词库。</p>
-<p>另一方面，万象词库的作者更新很不错，目前正在测试 3.0 的优化词库和大模型，期待一下吧~</p>
+<p>另一方面，万象词库的作者更新很不错，目前<del>正在测试 3.0 的</del> 优化词库和大模型，期待一下吧~ 已经发布性长期维护中。</p>
 <p>![[assets/Pasted image 20241206103616.png|150]] ![[assets/Pasted image 20241206103635.png|150]]</p>
 <pre tabindex="0"><code class="language-__v5.0.0之前内容" data-lang="__v5.0.0之前内容">
 &gt; :: `&gt; 2024-12-02 10:32` 人生充满着“打脸”，我一个习惯了使用五笔的人，入门了双拼之后浪费了整个周末去折腾辅助码的配置……
@@ -891,10 +900,67 @@ git clone https://gitee.com/loveminimal/rime-jk.git Rime
 
 好嘛，双拼全靠养成不是个事，引入了雾凇拼音的词典的子库。实际上，`py_rime_jk.dict.yaml` 就是 `rime_ice.dict.yaml` 的拷贝修改。制作双拼方案的时候，借鉴了 rime 的小鹤双拼方案并在此基础上做了精简优化，新增了一些功能。
 </code></pre><p>感兴趣的朋友可以学习一下小鹤双拼 - <a href="https://flypy.com/help/#/">小鹤入门</a>。</p>
-<h2 id="全拼方案">全拼方案</h2>
-<p>鉴于通用性，~~在朙月拼音的基础上，~~制作了全拼方案。现在拼音方案（双拼、全拼）统一应用万象词库。</p>
-<p>![[assets/Pasted image 20241120105541.png|150]]</p>
-<p>全拼方案和双拼方案的词库是共用的，都是 <code>py.dict.yaml</code> ，因为双拼本质上使用的就是拼音的词库。</p>
+<h3 id="五笔方案">五笔方案</h3>
+<p>五笔方案一度是 RIME_JK 的唯一选项，也是我个人使用了多年的输入方案，在形码输入法这个小众领域里五笔的用户算是比较多的。</p>
+<p>&mdash; <strong>【 五笔常规 】</strong> &mdash;</p>
+<p>……</p>
+<p>&mdash; <strong>【 五笔整句 】</strong> &mdash;</p>
+<p>……</p>
+<h3 id="虎码方案">虎码方案</h3>
+<p>几天前，我开始学习虎码的旅程 - 「 [[嗨，虎码]] 」，它也是一种形码方案。在 <a href="http://huma.ysepan.com/">虎码E盘</a> 中有官方托管的各类教程、码表及软件包。</p>
+<p>虎码在各个平台也有相应的实现，Windows 平台下有一个绿色免安装的软件 - <a href="http://ys-l.ysepan.com/620946418/916715735/k8J3I466HG7PH2TIUHjIa2/Bime%E8%99%8E%E7%A0%812024_06_03.7z?lx=xz">Bime 虎码</a>。当然，最吸引我的地方还是在于它可以挂载在 Rime 中。</p>
+<p>切换输入法难以避免有阵痛期，但是工作需要又不可能总是慢悠悠的。因为我已经有了心爱的 RIME_JK，我并不想直接切换到官方提供的挂载方案，所以做了个简单的移植方案 - <code>jk_tiger.schema.yaml</code> 「 老虎·知心 」（  🐯 放心 ~ 功能是 100% 的）。</p>
+<p>![[assets/Pasted image 20240605142725.png|150]]</p>
+<p>它保留了完整的官方词库，精简了不必要的冗文件，反查和 Emoji 保持了一致性。当然，同样制作了一个贴近虎码 Bime 原色的简约风格的配色方案 <code>orjk</code> 。Nice ~</p>
+<p>&mdash; <strong>【 虎码常规 】</strong> &mdash;</p>
+<p>……</p>
+<p>&mdash; <strong>【 虎码整句 】</strong> &mdash;</p>
+<p>……</p>
+<h3 id="并击方案">并击方案</h3>
+<p>……</p>
+<h2 id="脚本指南">脚本指南</h2>
+<p><code>&gt; 脚本目录</code></p>
+<pre tabindex="0"><code>scripts
+├── fetch_any_dict.py           # 🔥词库转换「 交互式、命令式 」
+├── sync_user_dict.py           # 🔥转换及累积式合并用户词库 「 交互式、命令式 」
+├──
+├── --- 其它脚本 ---
+├── deploy_rime.py              # 重新部署
+├── sync_rime.py                # 用户资料同步
+├── sync_wubi_user_dict.py      # 转换及累积式合并五笔用户词库
+├── sync_tiger_user_dict.py     # 转换及累积式合并虎码用户词库
+├── sync_en_aliases_dict.py     # 转换本地 .bash_aliases 别名
+├── sort_dict.py                # 转换指定词典
+├──
+├── --- 工具脚本 ---
+├── is_chinese_char.py          # 判断是否中文字符
+├── progress.py                 # 进度条
+├── three_level_8105.py         # 通规字三级字串
+├── header.py                   # 头部说明
+├── timer.py                    # 时间统计
+├── tiger_map.py                # 虎码编码映射表
+└── wubi86_8105_map.py          # 五笔编码映射表
+</code></pre><p>&ndash; 进入〔 scripts 〕目录，执行相关脚本即可：</p>
+<p>➭ 词库更新转换<br>
+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; ① 使用方法 &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;<br>
+&ndash; 目标转码类型：<br>
+&ndash; ¹ 拼音：¹1 moqi 墨奇, ¹2 flypy 鹤形, ¹3 zrm 自然码, ¹4 jdh 简单鹤, ¹5 cj 仓颉,<br>
+&ndash; ¹6 tiger 虎码首末, ¹7 wubi 五笔前二, ¹8 hanxin 汉心，¹0 纯拼音</p>
+<p>&ndash; ² 五笔：²1 五笔整句，²0 五笔常规<br>
+&ndash; ³ 虎码：³1 虎码整句，³0 虎码常规<br>
+&ndash; 如：16 ➭ 拼音+虎码首末；20 ➭ 五笔常规；31 ➭ 虎码整句</p>
+<p>&ndash; ¹ <code>python fetch_any_dict.py</code> 默认交互式「 需要交互输入编码类型及使用网络仓库 」<br>
+&ndash; ² <code>python fetch_any_dict.py 31</code> 直接指定编码类型(31)<br>
+&ndash; ³ <code>python fetch_any_dict.py 31 1</code> 直接指定编码类型(31) + 使用本地仓库(1)<br>
+&ndash; ³ <code>python fetch_any_dict.py 31 0 1</code> 直接指定编码类型(31) + 不使用本地仓库(1) + 直接下载词库及模型</p>
+<pre tabindex="0"><code>$ ➭ python fetch_any_dict.py
+</code></pre><p>➭ 用户词库同步<br>
+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; ② 使用方法 &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;<br>
+&ndash; 用户词典类型 1 拼音；20 五笔常规；21 五笔整句；30 虎码常规；31 虎码整句<br>
+&ndash; ¹ python sync_user_dict.py 默认交互式「 需要交互输入用户词典类型 」<br>
+&ndash; ² python sync_user_dict.py 31 直接指定用户词典类型(31)</p>
+<pre tabindex="0"><code>$ ➭ python sync_user_dict.py
+</code></pre><p>如上所示，<code>fetch_any_dict.py</code> 和 <code>sync_user_dict.py</code> 是两个核心的脚本，前者更最是获取整句词库的关键。</p>
 <h2 id="结语">结语</h2>
 <p>Rime 真的是挺方便的，熟悉它比想象中的简单，不要被其看似内容很多的 wiki 吓到。使用它，你就只需要了解一小部分知识就行了，定制它就再多一点点。 Hack Rime ，她越来越懂你。</p>
     </div>
