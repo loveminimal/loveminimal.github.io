@@ -6,7 +6,17 @@
     <description>Recent content on 爱涂鸦啊</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 29 May 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Jun 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一种 Rime 中添加形码自造词的方式</title>
+      <link>https://aituyaa.com/%E4%B8%80%E7%A7%8D-rime-%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%BD%A2%E7%A0%81%E8%87%AA%E9%80%A0%E8%AF%8D%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E7%A7%8D-rime-%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%BD%A2%E7%A0%81%E8%87%AA%E9%80%A0%E8%AF%8D%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
+      <description>&lt;p&gt;在使用小狼毫（Rime 的 PC 端实现）形码方案的过程中遇到这样的困扰 —— 开启自动调频之后才会自动造词，自动造词会导致词频变化，形码使用者往往喜欢固定词频……&lt;/p&gt;
+&lt;p&gt;那么，有没有一种方式，既可以实现固定词频，又能方便地添加自造词呢？是的，往下看~&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>输入法的使用回顾及阶段性总结</title>
       <link>https://aituyaa.com/%E8%BE%93%E5%85%A5%E6%B3%95%E7%9A%84%E4%BD%BF%E7%94%A8%E5%9B%9E%E9%A1%BE%E5%8F%8A%E9%98%B6%E6%AE%B5%E6%80%A7%E6%80%BB%E7%BB%93/</link>
@@ -15,17 +25,6 @@
       <guid>https://aituyaa.com/%E8%BE%93%E5%85%A5%E6%B3%95%E7%9A%84%E4%BD%BF%E7%94%A8%E5%9B%9E%E9%A1%BE%E5%8F%8A%E9%98%B6%E6%AE%B5%E6%80%A7%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;:: 输入法折腾地多了，打的字反而少了 👻 ~&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>Rime 折腾旅程之从入门到懵比</title>
-      <link>https://aituyaa.com/rime-%E6%8A%98%E8%85%BE%E6%97%85%E7%A8%8B%E4%B9%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%87%B5%E6%AF%94/</link>
-      <pubDate>Tue, 20 May 2025 00:00:00 +0800</pubDate>
-      
-      <guid>https://aituyaa.com/rime-%E6%8A%98%E8%85%BE%E6%97%85%E7%A8%8B%E4%B9%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%87%B5%E6%AF%94/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;笔者水平有限，本文仅供参考 🐌。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     

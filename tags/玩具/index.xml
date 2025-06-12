@@ -6,7 +6,17 @@
     <description>Recent content in 玩具 on 爱涂鸦啊</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Dec 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/%E7%8E%A9%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Jun 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/%E7%8E%A9%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一种 Rime 中添加形码自造词的方式</title>
+      <link>https://aituyaa.com/%E4%B8%80%E7%A7%8D-rime-%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%BD%A2%E7%A0%81%E8%87%AA%E9%80%A0%E8%AF%8D%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E7%A7%8D-rime-%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%BD%A2%E7%A0%81%E8%87%AA%E9%80%A0%E8%AF%8D%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
+      <description>&lt;p&gt;在使用小狼毫（Rime 的 PC 端实现）形码方案的过程中遇到这样的困扰 —— 开启自动调频之后才会自动造词，自动造词会导致词频变化，形码使用者往往喜欢固定词频……&lt;/p&gt;
+&lt;p&gt;那么，有没有一种方式，既可以实现固定词频，又能方便地添加自造词呢？是的，往下看~&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>一种获取五笔大词库的方式</title>
       <link>https://aituyaa.com/%E4%B8%80%E7%A7%8D%E8%8E%B7%E5%8F%96%E4%BA%94%E7%AC%94%E5%A4%A7%E8%AF%8D%E5%BA%93%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
