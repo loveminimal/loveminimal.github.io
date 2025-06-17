@@ -194,6 +194,10 @@
     <div id="data" style="display: none;">
         
         
+        [{"content":"我们日常使用的输入方式可以称之为「 串击 」，即一次只按下一个键，当然功能按键（ctrl、shift、alt）除外。如果你同时按下两个键，是没有办法保证先后顺序的，如 di、id 这种。有没有一种方式可以保证先后顺序呢？有 —— 「 并击 」。\n并击方案 \u0026mdash; 速录机 \u0026mdash;\n最初知道并击这种方式，是从速录机开始的，就是下面这个玩意儿。它是速录工作者使用的专业设备，熟练使用之后可以极大地提高打字速度（\u0026gt; 300 字/分钟）。b 站上的一个 up 主 - 书记员速录备考 - 阿金 使用熟稿打出了近 600 字/分钟 的速度，简直了。\n![[assets/pasted image 20250617150631.png|400]]\n然而，这些专业的速录设备往往价格不菲，四五千入门…… 这使得不少想要尝鲜的用户望而却步。\n\u0026mdash; 速录宝 \u0026mdash;\n有没有使用普通键盘就可以体验并击的方法呢？答案是显然的！最简单的方式就是使用「 速录宝 」这个软件工具。它不仅内置了多种并击方案和指法（也可以自定义指法），还提供了「 速录助手 」模式，可以让你现在使用的输入法秒变并击。\n![[assets/pasted image 20250617153718.png|375]] ![[assets/pasted image 20250617153944.png|120]]\n相关资源可以在 速录宝-完美平台-空明码 中获取，也可以加入 q群:374971723 学习交流。其中，速录宝、空明码的作者 - 努力练打字的空明 在 b 站上也发布了一些演示视频，感兴趣的朋友可以看一看。\n\u0026mdash; rime 方案 \u0026mdash;\n或许是 rime 的开发者 居戎氏 使用 宫保拼音 的缘故，在 rime 中也是可以实现并击方案的，这也是我目前正在使用的并击方式。\n![[assets/pasted image 20250617155557.png|375]]\n呵~ 神奇的 rime ~ 令人赞叹的神器！\n我在 rime 中实现了一套空明码的键位映射，但因为我不使用其中的大写字母，所以在此基础上魔改了一下 ➭ 镜像键位 。我添加了一些中文输入中常用的标点符号，如 ，。：“” ？！、空格 等，使用起来非常方便。当然，只有你自己尝试过，体验过，才知道那种方式最适合自己。然后，你就可以按照自己喜欢的方式去修改出一套自己感觉最舒服的键位映射。\n镜像键位 \u0026gt; 空明码小写字母键位映射\n![[assets/并击指法1.png]]\n我很喜欢空明码的这种镜像映射方式，有一种对称的美感（虽然限于键盘布局手感上不绝对对称），但也相差无几，习惯之后基本上是无感的。\n有一点需要注意的是，并击和双拼简直是绝配，一次按下一字出，节奏感相当的好。如：sdl → 空 、cvkl → 明 、cv; → 码 ，每次按下你就得到一个字。\n结语 说一千，道一万，还是要用过才知道 ~\n","date":"2025-06-17","permalink":"https://aituyaa.com/%E8%BE%93%E5%85%A5%E6%B3%95%E4%B9%8B%E5%B9%B6%E5%87%BB%E6%96%B9%E6%A1%88/","summary":"\u003cp\u003e我们日常使用的输入方式可以称之为「 串击 」，即一次只按下一个键，当然功能按键（\u003ccode\u003ectrl、shift、alt\u003c/code\u003e）除外。如果你同时按下两个键，是没有办法保证先后顺序的，如 \u003ccode\u003edi、id\u003c/code\u003e 这种。有没有一种方式可以保证先后顺序呢？有 —— 「 并击 」。\u003c/p\u003e","title":"输入法之并击方案"},]
+        
+        
+        
         [{"content":"在使用小狼毫（rime 的 pc 端实现）形码方案的过程中遇到这样的困扰 —— 开启自动调频之后才会自动造词，自动造词会导致词频变化，形码使用者往往喜欢固定词频……\n那么，有没有一种方式，既可以实现固定词频，又能方便地添加自造词呢？是的，往下看~\n快速开始 以下是需要的 lua 脚本，你可以在 loveminimal/rime-jk 中获取，如下：\nlua ├── handle_user_words.lua # 主脚本 ├── user_words.lua # 存储自造词 table ├── tiger_code_table.lua # 虎码单字元表 └── wubi86_code_table.lua # 五笔单字元表 将上述脚本添加至 根目录/lua 中后，在方案中启用该功能即可，如下：\n1 2 3 4 5 6 7 8 9 engine: processors: - lua_processor@*handle_user_words*p - ascii_composer - ... filters: - lua_filter@*handle_user_words*f - simplifier - ... 重新部署，完毕。\n如何使用该功能呢？先构造出你想添加的自造词，在选中的状态下，按下 ctrl+i 即可添加至 user_words.lua 中，供下次读取。\n![[assets/pasted image 20250612110640.png|300]]\n你还可以使用 ctrl+o 删除已添加的自造词。\n需要注意的是在添加或是删除操作后，你需要 重启服务 或重新部署。后续的章节中，我们会给出推荐的重启服务的方式。\n基础配置 我们提供了一些简单的配置项，最佳推荐配置如下：\n1 2 3 4 5 6 7 8 -- 配制项 -- -- ① ➭ auto_reload_service -- ¹ true 添加、删除操作之后「自动重启」服务，卡顿 -- ² false 添加、删除操作之「手动重启」服务，不卡顿 -- - ²¹ 手动点击重启服务选项 -- - ²² rime_jk 方案可通过 ~rrr 触发重启服务「 不推荐 」新版本会崩溃 -- - ²³🎉〔 推荐 〕好消息，已经引入 ahk 调用外部命令（通过绑定 ctrl+p）解决重启服务 local auto_reload_service = false 既然不推荐在执行添加、删除操作之后重启服务，那应该使用什么方式呢？\n在试用了不同方式之后，最终决定引入 ahk 来实现。我们提供了编译好的二进制文件 —— 根目录/ahk/rime.exe，双击启用即可。\n启用 ahk 后，使用 ctrl+p 就可以快速重启服务了。\n1 2 3 4 -- ② ➭ auto_generate_dict -- ¹ true 同步生成与 user_words.lua 相对应的字典 - user_words.dict.yaml -- ² false 不生成 local auto_generate_dict = false 该项配置用来控制是否同步生成字典。一般来说，你不需要开启它，候选项会从 user_words.lua 中读取。只有当你想要导出自造词，固化成词典的时候，开启即可，它和 user_words.lua 中的自造词是完全同步的。\n1 2 3 4 -- ③ ➭ keep_user_words_top -- ¹ true 自造词升序排在前面 -- ² false 排在后面 local keep_user_words_top = true 该项配置用来指出自造词位于候选项的位置。\n1 2 3 4 5 -- ④ 此处可以指定你的方案 schema_id local schema_id_table = { [\u0026#34;tiger\u0026#34;] = \u0026#34;jk_tiger\u0026#34;, [\u0026#34;wubi\u0026#34;] = \u0026#34;jk_wubi\u0026#34;, } 该项配置用来指定你使用的输入方案 schema_id ，如我使用虎码方案的 schema_id 为 jk_tiger ，五笔方案的 schema_id 为 jk_wubi 。\n它会根据你当前使用是方案，自动切换为 user_words.lua 中的编码类型（虎码或五笔）。\n结语 理论上，这种方式可以支持所有编码方案，感兴趣的朋友可以按需自行扩展。\n","date":"2025-06-12","permalink":"https://aituyaa.com/%E4%B8%80%E7%A7%8D-rime-%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%BD%A2%E7%A0%81%E8%87%AA%E9%80%A0%E8%AF%8D%E7%9A%84%E6%96%B9%E5%BC%8F/","summary":"\u003cp\u003e在使用小狼毫（Rime 的 PC 端实现）形码方案的过程中遇到这样的困扰 —— 开启自动调频之后才会自动造词，自动造词会导致词频变化，形码使用者往往喜欢固定词频……\u003c/p\u003e\n\u003cp\u003e那么，有没有一种方式，既可以实现固定词频，又能方便地添加自造词呢？是的，往下看~\u003c/p\u003e","title":"一种 rime 中添加形码自造词的方式"},]
         
         
@@ -342,7 +346,7 @@
         
         
         
-        [{"content":"不可否认，windows 是一款非常优秀的操作系统，但日常使用起来仍有不少可以改善的地方，尤其是当它偶尔抽风开倒车的时候。在这篇文章中，我会列出自己经常使用并感觉比较舒服的一些软件，分享给大家试一试，或许你也会有意想不到的收获~\n优秀软件 \u0026gt; 快捷一览\n软件 官网、文档 场景、描述 收费？ listary 官网 、中文文档 本地检索、网络搜索 snipaste 官网、 中文文档 截图 7-zip 官网 压缩 todesk 官网 远程控制 window centering helper 官网 窗口居中 wgestures 官网 系统级鼠标手势 mydockfinder 官网 类 mac 桌面 是 carnac github 桌面按键显示、用于录屏 lively wallpaper 官网 动态桌面 freefilesync 官网 同步备份 autohotkey 官网 开源的脚本语言和自动化工具 screentogif 官网 gif 录制工具 ……\n附录 windows 终端怎么自动滚动日志 在 windows 终端（windows terminal）中，自动滚动日志通常是指在查看日志文件时，终端能够自动滚动到文件的末尾，以便实时查看最新的日志内容。这在监控应用程序日志或系统日志时非常有用。以下是一些常用的方法来实现这一功能：\n❶ 使用 tail 命令（适用于 windows 10/11）\nwindows 10 和 windows 11 自带了 tail 命令，可以用来实时查看日志文件的最新内容。\n打开 windows 终端。 使用以下命令来查看日志文件，并自动滚动到最新内容： 1 2 # tail -f \u0026lt;日志文件路径\u0026gt; tail -f c:\\logs\\app.log ❷ 使用 get-content 命令（适用于 powershell）\n如果你使用的是 powershell，可以使用 get-content 命令来实现类似的功能。\n打开 powershell。 使用以下命令来查看日志文件，并自动滚动到最新内容： 1 2 # get-content \u0026lt;日志文件路径\u0026gt; -wait get-content c:\\logs\\app.log -wait ❸ 使用 notepad++（适用于简单需求）\n如果你只是偶尔需要查看日志文件，可以使用 notepad++ 的 “always on top” 和 “follow tail” 功能。\n下载并安装 notepad++。 打开 notepad++，点击 “view” \u0026gt; “always on top”。 打开日志文件，点击 “view” \u0026gt; “follow tail”。 notepad++ 会自动滚动到文件的末尾，并实时更新最新的日志内容。 通过以上方法，你可以根据自己的需求选择最适合的方式来实现 windows 终端自动滚动日志的功能。\n关于 windows 睡眠、休眠禁止鼠标、键盘的唤醒问题 📘 一劳永逸解决win10所有睡眠问题 - 知乎]\n❶ 查看上次唤醒电脑的设备\n# 查看上次唤醒电脑的设备 powercfg -lastwake c:\\users\\jack\u0026gt;powercfg -lastwake 唤醒历史记录计数 - 1 唤醒历史记录 [0] 唤醒源计数 - 1 唤醒源 [0] 类型: 固定功能 电源按钮 ❷ 查看哪些硬件能唤醒电脑\n# 查看哪些硬件能唤醒电脑 powercfg /devicequery wake_armed c:\\users\\jack\u0026gt;powercfg /devicequery wake_armed hid-compliant mouse hid keyboard device realtek gaming 2.5gbe family controller hid-compliant mouse (001) hid keyboard device (001) ❸ 禁止指定硬件唤醒主机\npowercfg /devicedisablewake \u0026#34;hid-compliant mouse\u0026#34; powercfg /devicedisablewake \u0026#34;hid-compliant mouse (001)\u0026#34; powercfg /devicedisablewake \u0026#34;hid keyboard device\u0026#34; powercfg /devicedisablewake \u0026#34;hid keyboard device (001)\u0026#34; 如何再次允许指定硬件唤醒主机呢？\npowercfg /deviceenablewake \u0026#34;hid-compliant mouse\u0026#34; powercfg /deviceenablewake \u0026#34;hid-compliant mouse (001)\u0026#34; powercfg /deviceenablewake \u0026#34;hid keyboard device\u0026#34; powercfg /deviceenablewake \u0026#34;hid keyboard device (001)\u0026#34; 这两条允许和禁止命令与 右键开始菜单 » 设备管理器 » 鼠标 » 电源管理 » 取消勾选允许鼠标唤醒电脑 的效果是一样的。如下：\n![[assets/pasted image 20250105195143.png|500]]\n❹ 禁止后再次查看哪些硬件能唤醒电脑\npowercfg /devicequery wake_armed c:\\users\\jack\u0026gt;powercfg /devicequery wake_armed realtek gaming 2.5gbe family controller 当前，鼠标、键盘都无法主机唤醒主机的休眠、睡眠状态了。\n如何解决华硕主板（b760m）关机 usb 仍带电？ 📘 华硕主板关机usb仍带电？轻松几步教你解决问题\n❶ bios〔高级模式 〕» 高级选项 » 高级电源管理（apm）» erp 支持 设置为 关闭 。\nerp（energy related products）是欧洲的一项能源相关产品指令，它要求设备在关机或待机状态下减少能耗。将erp支持禁用，可以使得主板在关机后不再遵循这一指令，从而实现usb接口的断电。\n本机默认为关闭状态。\n❷ bios〔高级模式 〕 » 内置设备 » usb power delivery in soft off state （s5） 设置为 关闭 。\n这一设置控制的是在主机关闭（s5状态）时，是否继续为usb接口供电。将其禁用后，主板在关机状态下将不再为usb接口供电。\n❸ 控制面板 » 系统和安全 » 更改电源按钮的功能 » 更改当前不可用的设置 » 启用快速启动（推荐） 取消勾选。\n快速启动是一项加速开机速度的功能，但它可能会导致关机后usb接口仍然带电。（本机开启也不影响）\n","date":"2024-05-13","permalink":"https://aituyaa.com/windows-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/","summary":"\u003cp\u003e不可否认，Windows 是一款非常优秀的操作系统，但日常使用起来仍有不少可以改善的地方，尤其是当它偶尔抽风开倒车的时候。在这篇文章中，我会列出自己经常使用并感觉比较舒服的一些软件，分享给大家试一试，或许你也会有意想不到的收获~\u003c/p\u003e","title":"windows 那些事儿"},]
+        [{"content":"不可否认，windows 是一款非常优秀的操作系统，但日常使用起来仍有不少可以改善的地方，尤其是当它偶尔抽风开倒车的时候。在这篇文章中，我会列出自己经常使用并感觉比较舒服的一些软件，分享给大家试一试，或许你也会有意想不到的收获~\n优秀软件 \u0026gt; 快捷一览\n软件 官网、文档 场景、描述 收费？ listary 官网 、中文文档 本地检索、网络搜索 snipaste 官网、 中文文档 截图 7-zip 官网 压缩 todesk 官网 远程控制 window centering helper 官网 窗口居中 wgestures 官网 系统级鼠标手势 mydockfinder 官网 类 mac 桌面 是 carnac github 桌面按键显示、用于录屏 lively wallpaper 官网 动态桌面 freefilesync 官网 同步备份 autohotkey 官网 开源的脚本语言和自动化工具 screentogif 官网 gif 录制工具 autodarkmode github 自动切换浅色、深色模式 mas(ms activation scripts) 官网 微软系激活工具 ……\n附录 windows 终端怎么自动滚动日志 在 windows 终端（windows terminal）中，自动滚动日志通常是指在查看日志文件时，终端能够自动滚动到文件的末尾，以便实时查看最新的日志内容。这在监控应用程序日志或系统日志时非常有用。以下是一些常用的方法来实现这一功能：\n❶ 使用 tail 命令（适用于 windows 10/11）\nwindows 10 和 windows 11 自带了 tail 命令，可以用来实时查看日志文件的最新内容。\n打开 windows 终端。 使用以下命令来查看日志文件，并自动滚动到最新内容： 1 2 # tail -f \u0026lt;日志文件路径\u0026gt; tail -f c:\\logs\\app.log ❷ 使用 get-content 命令（适用于 powershell）\n如果你使用的是 powershell，可以使用 get-content 命令来实现类似的功能。\n打开 powershell。 使用以下命令来查看日志文件，并自动滚动到最新内容： 1 2 # get-content \u0026lt;日志文件路径\u0026gt; -wait get-content c:\\logs\\app.log -wait ❸ 使用 notepad++（适用于简单需求）\n如果你只是偶尔需要查看日志文件，可以使用 notepad++ 的 “always on top” 和 “follow tail” 功能。\n下载并安装 notepad++。 打开 notepad++，点击 “view” \u0026gt; “always on top”。 打开日志文件，点击 “view” \u0026gt; “follow tail”。 notepad++ 会自动滚动到文件的末尾，并实时更新最新的日志内容。 通过以上方法，你可以根据自己的需求选择最适合的方式来实现 windows 终端自动滚动日志的功能。\n关于 windows 睡眠、休眠禁止鼠标、键盘的唤醒问题 📘 一劳永逸解决win10所有睡眠问题 - 知乎]\n❶ 查看上次唤醒电脑的设备\n# 查看上次唤醒电脑的设备 powercfg -lastwake c:\\users\\jack\u0026gt;powercfg -lastwake 唤醒历史记录计数 - 1 唤醒历史记录 [0] 唤醒源计数 - 1 唤醒源 [0] 类型: 固定功能 电源按钮 ❷ 查看哪些硬件能唤醒电脑\n# 查看哪些硬件能唤醒电脑 powercfg /devicequery wake_armed c:\\users\\jack\u0026gt;powercfg /devicequery wake_armed hid-compliant mouse hid keyboard device realtek gaming 2.5gbe family controller hid-compliant mouse (001) hid keyboard device (001) ❸ 禁止指定硬件唤醒主机\npowercfg /devicedisablewake \u0026#34;hid-compliant mouse\u0026#34; powercfg /devicedisablewake \u0026#34;hid-compliant mouse (001)\u0026#34; powercfg /devicedisablewake \u0026#34;hid keyboard device\u0026#34; powercfg /devicedisablewake \u0026#34;hid keyboard device (001)\u0026#34; 如何再次允许指定硬件唤醒主机呢？\npowercfg /deviceenablewake \u0026#34;hid-compliant mouse\u0026#34; powercfg /deviceenablewake \u0026#34;hid-compliant mouse (001)\u0026#34; powercfg /deviceenablewake \u0026#34;hid keyboard device\u0026#34; powercfg /deviceenablewake \u0026#34;hid keyboard device (001)\u0026#34; 这两条允许和禁止命令与 右键开始菜单 » 设备管理器 » 鼠标 » 电源管理 » 取消勾选允许鼠标唤醒电脑 的效果是一样的。如下：\n![[assets/pasted image 20250105195143.png|500]]\n❹ 禁止后再次查看哪些硬件能唤醒电脑\npowercfg /devicequery wake_armed c:\\users\\jack\u0026gt;powercfg /devicequery wake_armed realtek gaming 2.5gbe family controller 当前，鼠标、键盘都无法主机唤醒主机的休眠、睡眠状态了。\n如何解决华硕主板（b760m）关机 usb 仍带电？ 📘 华硕主板关机usb仍带电？轻松几步教你解决问题\n❶ bios〔高级模式 〕» 高级选项 » 高级电源管理（apm）» erp 支持 设置为 关闭 。\nerp（energy related products）是欧洲的一项能源相关产品指令，它要求设备在关机或待机状态下减少能耗。将erp支持禁用，可以使得主板在关机后不再遵循这一指令，从而实现usb接口的断电。\n本机默认为关闭状态。\n❷ bios〔高级模式 〕 » 内置设备 » usb power delivery in soft off state （s5） 设置为 关闭 。\n这一设置控制的是在主机关闭（s5状态）时，是否继续为usb接口供电。将其禁用后，主板在关机状态下将不再为usb接口供电。\n❸ 控制面板 » 系统和安全 » 更改电源按钮的功能 » 更改当前不可用的设置 » 启用快速启动（推荐） 取消勾选。\n快速启动是一项加速开机速度的功能，但它可能会导致关机后usb接口仍然带电。（本机开启也不影响）\n","date":"2024-05-13","permalink":"https://aituyaa.com/windows-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/","summary":"\u003cp\u003e不可否认，Windows 是一款非常优秀的操作系统，但日常使用起来仍有不少可以改善的地方，尤其是当它偶尔抽风开倒车的时候。在这篇文章中，我会列出自己经常使用并感觉比较舒服的一些软件，分享给大家试一试，或许你也会有意想不到的收获~\u003c/p\u003e","title":"windows 那些事儿"},]
         
         
         
@@ -826,7 +830,7 @@
         
         
         
-        [{"content":"🍹 \u0026gt; 对自己说：\n法于阴阳，合于术数。食饮有节，起居有常。 恬淡虚无，真气从之，精神内守，病安从来？ 我们应该用一种真心让自己感觉到舒适的方式去生活，\n不就奢华，不饰节俭，\n爽不爽的，只有自己的心最清楚。\n强健的体魄，有趣的灵魂，平和的内心。\n心向光明，天地皆宽。\n![[assets/nuli_cr1.jpg|300]]\n你的一切作为都应该以你的核心目标为中心，\n否则，你的生活很容易陷入“瞎忙”的状态，\n最最重要的是你可能越来越感觉不到愉悦和快乐。\n人，改变的只是自己。\n唯心和唯物从来都是对立统一的，唯物在外，唯心在我！\n\u0026gt; 2024-10-06 23:37\n拼搏应该是快乐的，\n奋斗应该是快乐的，\n这其中，“吃苦”也应该是快乐的，\n如果你感觉不快乐，\n那一定是什么地方出现了问题。\n一个人，\n很难在自己感觉不到价值的地方有太大建树，\n无论意识到了还是没意识到，\n欣怡于付出的人，\n其内心的满足是常在的，\n这个，\n自己也骗不了自己。\n","date":"2022-07-18","permalink":"https://aituyaa.com/%E5%85%B3%E4%BA%8E/","summary":"🍹 \u0026gt; 对自己说： 法于阴阳，合于术数。食饮有节，起居有常。 恬淡虚无，真气从之，精神内守，病安从来？ 我们应该用一种真心让自己感觉到舒适的方式去生活， 不就奢华，不饰节俭","title":"关于"},]
+        [{"content":"🍹 \u0026gt; 对自己说：\n法于阴阳，合于术数。食饮有节，起居有常。 恬淡虚无，真气从之，精神内守，病安从来？ 我们应该用一种真心让自己感觉到舒适的方式去生活，\n不就奢华，不饰节俭，\n爽不爽的，只有自己的心最清楚。\n强健的体魄，有趣的灵魂，平和的内心。\n心向光明，天地皆宽。\n![[assets/nuli_cr1.jpg|300]]\n你的一切作为都应该以你的核心目标为中心，\n否则，你的生活很容易陷入“瞎忙”的状态，\n最最重要的是你可能越来越感觉不到愉悦和快乐。\n人，改变的只是自己。\n唯心和唯物从来都是对立统一的，唯物在外，唯心在我！\n\u0026gt; 2024-10-06 23:37\n拼搏应该是快乐的，\n奋斗应该是快乐的，\n这其中，“吃苦”也应该是快乐的，\n如果你感觉不快乐，\n那一定是什么地方出现了问题。\n一个人，\n很难在自己感觉不到价值的地方有太大建树，\n无论意识到了还是没意识到，\n欣怡于付出的人，\n其内心的满足是常在的，\n这个，\n自己也骗不了自己。\n\u0026gt; 2025-06-16 14:16\n“行有不得者，皆反求诸己，其身正而天下归之。” —— 《孟子》\n凡是行为得不到预期的效果，都应该反过来检查自己，自身行为端正了，天下的人自然就会归服。\n是所谓，行有不得，反求诸己。\n苟日新，日日新，又日新。\n吾日三省吾身，随心所欲不逾矩。\n","date":"2022-07-18","permalink":"https://aituyaa.com/%E5%85%B3%E4%BA%8E/","summary":"🍹 \u0026gt; 对自己说： 法于阴阳，合于术数。食饮有节，起居有常。 恬淡虚无，真气从之，精神内守，病安从来？ 我们应该用一种真心让自己感觉到舒适的方式去生活， 不就奢华，不饰节俭","title":"关于"},]
         
         
         
@@ -894,6 +898,33 @@
             
             <div class="rec-post">
                 <div class="rec-post-item">
+                    <a href="https://aituyaa.com/%E8%BE%93%E5%85%A5%E6%B3%95%E4%B9%8B%E5%B9%B6%E5%87%BB%E6%96%B9%E6%A1%88/">输入法之并击方案</a>
+                </div>
+            </div>
+            
+            
+            
+            
+            <div class="rec-post">
+                <div class="rec-post-item">
+                    <a href="https://aituyaa.com/%E5%85%B3%E4%BA%8E/">关于</a>
+                </div>
+            </div>
+            
+            
+            
+            
+            <div class="rec-post">
+                <div class="rec-post-item">
+                    <a href="https://aituyaa.com/windows-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">Windows 那些事儿</a>
+                </div>
+            </div>
+            
+            
+            
+            
+            <div class="rec-post">
+                <div class="rec-post-item">
                     <a href="https://aituyaa.com/%E4%B8%80%E7%A7%8D-rime-%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%BD%A2%E7%A0%81%E8%87%AA%E9%80%A0%E8%AF%8D%E7%9A%84%E6%96%B9%E5%BC%8F/">一种 Rime 中添加形码自造词的方式</a>
                 </div>
             </div>
@@ -927,33 +958,6 @@
             
             
             
-            
-            
-            
-            
-            <div class="rec-post">
-                <div class="rec-post-item">
-                    <a href="https://aituyaa.com/%E7%99%BE%E7%A7%91/">百科</a>
-                </div>
-            </div>
-            
-            
-            
-            
-            <div class="rec-post">
-                <div class="rec-post-item">
-                    <a href="https://aituyaa.com/rime-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">Rime 那些事儿</a>
-                </div>
-            </div>
-            
-            
-            
-            
-            <div class="rec-post">
-                <div class="rec-post-item">
-                    <a href="https://aituyaa.com/%E5%9B%BD%E9%99%85%E6%AD%8C/">国际歌</a>
-                </div>
-            </div>
             
             
         </div>
