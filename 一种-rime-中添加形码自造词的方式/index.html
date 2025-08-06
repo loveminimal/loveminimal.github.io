@@ -464,7 +464,7 @@
         
         
         <div class="curtag-desc">
-            <a href="https://aituyaa.com/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：输入法 <sup>14</sup></a>
+            <a href="https://aituyaa.com/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：输入法 <sup>15</sup></a>
         </div>
 
         <div class="curtag-post">
@@ -472,7 +472,7 @@
             
             
                 <div class="curtag-post-item ">
-                    <a href="https://aituyaa.com/rime-%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">Rime 那些事儿</a>
+                    <a href="https://aituyaa.com/rime-%E5%AE%98%E6%96%B9%E6%95%99%E7%A8%8B%E7%AE%80%E4%BD%93%E6%95%B4%E5%90%88%E7%89%88/">Rime 官方教程简体整合版</a>
                 </div>
                 
                 
@@ -567,7 +567,16 @@
                 </div>
                 
                 
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E8%BE%93%E5%85%A5%E6%B3%95%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">输入法那些事儿</a>
+                </div>
+                
+                
         </div>
+        
+        
         
         
         
@@ -614,7 +623,7 @@
                     d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
                     p-id="23839" fill="#adb5bd"></path>
             </svg>
-            2025-07-04&nbsp;&nbsp;&nbsp;
+            2025-08-06&nbsp;&nbsp;&nbsp;
         </span>
         <span>
             
@@ -627,7 +636,7 @@
                     d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
                     fill="#adb5bd" p-id="33868"></path>
             </svg>
-            1018 字</span>&nbsp;
+            1108 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -680,7 +689,8 @@
         <p>在使用小狼毫（Rime 的 PC 端实现）形码方案的过程中遇到这样的困扰 —— 开启自动调频之后才会自动造词，自动造词会导致词频变化，形码使用者往往喜欢固定词频……</p>
 <p>那么，有没有一种方式，既可以实现固定词频，又能方便地添加自造词呢？是的，往下看~</p>
 <h2 id="更新日志">更新日志</h2>
-<pre tabindex="0"><code>- 2025-07-04 09:26 添加了对小鹤音形的支持
+<pre tabindex="0"><code>- 2025-08-04 10:17 优化自造词添加（自动上屏当前候选）、删除逻辑
+- 2025-07-04 09:26 添加了对小鹤音形的支持
 - 2025-06-12 11:28 一种新的添加形码自造词的方式
 </code></pre><h2 id="快速开始">快速开始</h2>
 <p>以下是需要的 lua 脚本，你可以在 <a href="https://github.com/loveminimal/rime-jk">loveminimal/rime-jk</a> 中<strong>获取</strong>，如下：</p>
@@ -719,7 +729,8 @@
 <p>如何使用该功能呢？先构造出你想添加的自造词，在选中的状态下，按下 <code>Ctrl+i</code> 即可添加至 <code>user_words.lua</code> 中，供下次读取。</p>
 <p>![[assets/Pasted image 20250612110640.png|300]]</p>
 <p>你还可以使用 <code>ctrl+o</code> 删除已添加的自造词。</p>
-<p>需要注意的是在添加或是删除操作后，你需要 <strong>重启服务</strong> 或重新部署。后续的章节中，我们会给出推荐的重启服务的方式。</p>
+<p><del>需要注意的是在添加或是删除操作后，你需要 <strong>重启服务</strong> 或重新部署。后续的章节中，我们会给出推荐的重启服务的方式。</del></p>
+<p><code>&gt; 2025-08-04 10:20</code> 最新版本已通过 AHK 实现自动重启服务。</p>
 <h2 id="基础配置">基础配置</h2>
 <p>我们提供了一些简单的配置项，最佳推荐配置如下：</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -734,19 +745,19 @@
 </span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 配制项 --</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- ① ➭ auto_reload_service</span>
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- ① ➭ auto_reload_service</span>
 </span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- ¹ true 添加、删除操作之后「自动重启」服务，卡顿 </span>
 </span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- ² false  添加、删除操作之「手动重启」服务，不卡顿</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- - ²¹ 手动点击重启服务选项</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- - ²² rime_jk 方案可通过 ~rrr 触发重启服务「 不推荐 」新版本会崩溃</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- - ²³🎉〔 推荐 〕好消息，已经引入 ahk 调用外部命令（通过绑定 ctrl+p）解决重启服务</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- - ²¹ ❌ 手动点击重启服务选项</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- - ²² ❌ rime_jk 方案可通过 ~rrr 触发重启服务「 不推荐 」新版本会崩溃</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- - ²³ ❌ 已经引入 ahk 调用外部命令（通过绑定 ctrl+p）解决重启服务</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- - ²⁴ 🎉〔 推荐 〕好消息，已经升级 ahk ，监听到文件变化后会自动重启服务</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> auto_reload_service <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">false</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>既然不推荐在执行添加、删除操作之后重启服务，那应该使用什么方式呢？</p>
 <p>在试用了不同方式之后，最终决定引入 ahk 来实现。我们提供了编译好的二进制文件 —— <code>根目录/ahk/rime.exe</code>，双击启用即可。</p>
-<p>启用 ahk 后，使用 <code>ctrl+p</code> 就可以快速重启服务了。</p>
+<p>启用 ahk 后，使用 <code>ctrl+p</code> 就可以快速重启服务了。（最新版已实现自动监听文件改动，重启服务。）</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
