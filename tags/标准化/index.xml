@@ -6,7 +6,16 @@
     <description>Recent content in 标准化 on 爱涂鸦啊</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 07 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/%E6%A0%87%E5%87%86%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Aug 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/tags/%E6%A0%87%E5%87%86%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>开发日志浅谈</title>
+      <link>https://aituyaa.com/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97%E6%B5%85%E8%B0%88/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97%E6%B5%85%E8%B0%88/</guid>
+      <description>&lt;p&gt;日志作为程序运行过程中的“黑匣子”，记录了系统行为的每一个关键细节，是开发者和运维人员诊断问题、优化性能、保证系统稳定性的重要工具。本文将系统性地介绍程序日志的核心知识，包括日志的基本概念与分类、日志级别体系、日志内容的最佳实践、日志管理工具与技术，以及日志在分布式系统中的应用策略。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Git 提交消息约定</title>
       <link>https://aituyaa.com/git-%E6%8F%90%E4%BA%A4%E6%B6%88%E6%81%AF%E7%BA%A6%E5%AE%9A/</link>

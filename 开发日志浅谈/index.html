@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="开发日志浅谈 - https://aituyaa.com/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97%E6%B5%85%E8%B0%88/">
+    <meta name="author" content="Jack - https://aituyaa.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>开发日志浅谈</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://aituyaa.com/style.min.7a1211384e00d894dc501a9708ae5fb349825c010d5348b62a8727d135f41615.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        
+        <div class="cool-before" style="background: url('/imgs/bg/color.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">开发日志浅谈</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="https://aituyaa.com/tags/%E6%A0%87%E5%87%86%E5%8C%96/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：标准化 <sup>6</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/git-%E6%8F%90%E4%BA%A4%E6%B6%88%E6%81%AF%E7%BA%A6%E5%AE%9A/">Git 提交消息约定</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/">中文技术文档</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E5%A6%82%E4%BD%95%E7%BB%B4%E6%8A%A4%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/">如何维护更新日志</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="https://aituyaa.com/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97%E6%B5%85%E8%B0%88/">开发日志浅谈</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E6%89%93%E9%80%A0-sdk/">打造 SDK</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="https://aituyaa.com/%E8%AF%AD%E4%B9%89%E5%8C%96%E7%89%88%E6%9C%AC/">语义化版本</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2025-08-07&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2025-08-07&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            3822 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            8 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/%E6%A0%87%E5%87%86%E5%8C%96">标准化</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#日志概述与核心价值">日志概述与核心价值</a></li>
+    <li><a href="#日志级别体系与分类">日志级别体系与分类</a></li>
+    <li><a href="#日志内容的最佳实践">日志内容的最佳实践</a>
+      <ul>
+        <li><a href="#日志必备元素">日志必备元素</a></li>
+        <li><a href="#信息组织原则">信息组织原则</a></li>
+        <li><a href="#性能与安全考量">性能与安全考量</a></li>
+        <li><a href="#日志记录时机">日志记录时机</a></li>
+      </ul>
+    </li>
+    <li><a href="#日志管理与分析工具">日志管理与分析工具</a></li>
+    <li><a href="#结语">结语</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p>日志作为程序运行过程中的“黑匣子”，记录了系统行为的每一个关键细节，是开发者和运维人员诊断问题、优化性能、保证系统稳定性的重要工具。本文将系统性地介绍程序日志的核心知识，包括日志的基本概念与分类、日志级别体系、日志内容的最佳实践、日志管理工具与技术，以及日志在分布式系统中的应用策略。</p>
+<h2 id="日志概述与核心价值">日志概述与核心价值</h2>
+<p>日志是程序运行时产生的结构化或半结构化记录，用于跟踪系统活动、状态变更和异常情况。</p>
+<p>不同于系统的核心功能模块，日志常常被视为辅助性组件，但它的重要性在系统上线后或排查复杂问题时变得<strong>无可替代</strong>。良好的日志系统能帮助开发运维人员清晰地了解系统运行状态，<strong>快速定位问题</strong>，发现性能瓶颈，预警潜在风险，甚至通过分析用户行为数据来优化产品体验。</p>
+<p>从技术角度看，日志主要服务于三类场景：开发调试，运行监控，问题排查。</p>
+<p><strong>开发调试</strong>，在多线程、异步或分布式环境中，传统调试方法（如断点）可能改变程序时序，而日志可以提供无干扰的运行轨迹记录。</p>
+<p><strong>运行监控</strong>，系统上线后，日志成为洞察“黑盒”内部状态的主要窗口，通过记录关键操作耗时、任务状态和变量值等信息，帮助识别瓶颈和风险。</p>
+<p><strong>问题排查</strong>，生产环境中的异常诊断几乎完全依赖日志，好的日志应当“不多不少” - 既能精确定位问题，又不会因信息过载而影响分析效率。</p>
+<p>现代日志系统已经发展处丰富的类型，包括：统计日志，审计日志，诊断日志。</p>
+<p>统计日志，记录访问 IP、请求量、耗时等指标，用于分析用户行为和系统负载；审计日志，记录系统变更事件，包括操作者、操作内容和结果，满足安全合规要求；诊断日志，专注于程序异常和错误信息，帮助技术人员快速修复故障。</p>
+<p>随着分布式系统和微服务架构的普及，日志的作用从单一节点的问题排查扩展到全链路追踪和性能分析，成为可观测性体系的重要支柱。</p>
+<p>一个设计良好的日志系统能够显著降低系统维护成本，提高故障恢复速度，是专业软件开发不可或缺的组成部分。</p>
+<h2 id="日志级别体系与分类">日志级别体系与分类</h2>
+<p><strong>日志级别是日志系统的核心组织原则</strong>，它通过对信息重要性和紧急程度的分类，帮助开发者和管理者有效过滤和优先处理日志数据。不同的日志框架可能在级别名称和数量上略有差异，但通常遵循从最严重到最详细的层级结构。</p>
+<p><strong>FATAL（致命）</strong>，是最高级别的日志，表示系统遇到了无法恢复的灾难性错误，通常会导致应用程序立即终止。这类日志应该极其罕见，例如数据库连接池完全耗尽、JVM 内存溢出或关键系统文件丢失等情况。在 Java 的 Log4j/SLF4J 框架中，<code>FATAL</code> 可能被归入 <code>ERROR</code> 级别作为最高级，而 Python 的 logging 模块则明确区分 <code>CRITICAL</code> 和 <code>FATAL</code> 。</p>
+<p><strong>ERROR（错误）</strong>，表示系统功能已经受损但尚未完全崩溃，需要人工干预，但不必立即停止服务。典型的 ERROR 场景包括：数据库查询失败、权限不足、第三方 API 调用异常等。需要注意的是，用户输入错误（如密码错误）不应标记为 <code>ERROR</code>，而属于业务逻辑的正常流程。</p>
+<p><strong>INFO（信息)</strong>，记录系统正常运行时的关键状态变更和里程碑事件，如服务启动/停止、配置加载完成、用户注册成功等。这类日志提供了系统运行的健康状况概览，是监控系统正常行为的主要依据。值得注意的是，INFO 日志不应包含任何问题提示，而只反映预期的程序流程。</p>
+<p><strong>DEBUG（调试）</strong>，包含详细的程序执行信息，主要用于开发和测试阶段的问题诊断，如方法参数值、循环迭代状态、SQL 查询语句等。由于会产生大量输入，生产环境通常关闭 DEBUG 日志，旨在调查特定问题时临时开启。</p>
+<p><strong>TRACE（跟踪）</strong>，提供最底层的系统运行细节，比 DEBUG 更加详尽，通常记录高频事件或底层库的内部状态转换，如网络数据包的字节内容、线程调度的精确时间戳等。这类日志会产生极大性能开销，仅在极端情况下短暂启用。</p>
+<p><code>&gt; 日志级别使用场景建议</code></p>
+<table>
+<thead>
+<tr>
+<th>​<strong>​日志级别​</strong>​</th>
+<th>​<strong>​生产环境​</strong>​</th>
+<th>​<strong>​开发环境​</strong>​</th>
+<th>​<strong>​监控报警​</strong>​</th>
+<th>​<strong>​典型场景​</strong>​</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FATAL</td>
+<td>必录</td>
+<td>必录</td>
+<td>立即报警</td>
+<td>系统崩溃、不可恢复错误</td>
+</tr>
+<tr>
+<td>ERROR</td>
+<td>必录</td>
+<td>必录</td>
+<td>及时报警</td>
+<td>功能异常、操作失败</td>
+</tr>
+<tr>
+<td>WARNING</td>
+<td>必录</td>
+<td>必录</td>
+<td>可选报警</td>
+<td>潜在问题、异常情况</td>
+</tr>
+<tr>
+<td>INFO</td>
+<td>选录</td>
+<td>必录</td>
+<td>不报警</td>
+<td>系统状态变更、关键流程</td>
+</tr>
+<tr>
+<td>DEBUG</td>
+<td>不录</td>
+<td>选录</td>
+<td>不适用</td>
+<td>调试信息、变量值</td>
+</tr>
+<tr>
+<td>TRACE</td>
+<td>不录</td>
+<td>选录</td>
+<td>不适用</td>
+<td>底层跟踪、高频事件</td>
+</tr>
+</tbody>
+</table>
+<p>在实际项目中，日志级别的配置应当灵活调整。典型的做法是通过配置文件（如 INI、JSON 或 YAML）控制日志输出，允许在不同环境中动态修改级别阈值而不需要重新编译代码。例如，在 <code>[LOG]</code> 配置段中只设置 <code>LogLevel = INFO</code> 表示只记录该级别及更严重（WARNING、ERROR 等）的日志。</p>
+<p>理解并正确应用日志级别体系，是构建高效日志系统的第一步，也是平衡信息量、性能开销和存储成本的关键。开发者应当根据信息的重要性和紧迫性谨慎选择级别，避免常见的“过度日志”和“日志不足”问题。</p>
+<h2 id="日志内容的最佳实践">日志内容的最佳实践</h2>
+<p>高质量的日志内容应当像侦探的破案线索一样，提供足够的信息还原事件全貌，同时避免无关细节的干扰。编写有价值的日志需要遵循一系列原则和技巧，这些实践直接影响到故障诊断的效率和系统维护的成本。</p>
+<h3 id="日志必备元素">日志必备元素</h3>
+<p>每条日志都应包含一组 <strong>核心字段</strong>，这些字段构成了日志分析的基础维度。</p>
+<p><strong>时间戳是最关键的字段</strong>，它记录了时间发生的准确时间（通常是事件发生时间而非日志写入时间），对于计算耗时、分析时序问题至关重要。在分布式系统中，必须确保所有节点的时间同步，否则跨主机日志分析将失去参考价值。</p>
+<p><strong>唯一标识符</strong>是另一个关键字段，在并发系统中，没有唯一标识（如请求 ID、用户 ID 或任务 ID）的日志就像没有线索的案件，无法串联起单个请求的完整处理流程。例如，一个订单 ID 可以将前端请求、后端处理、支付系统等多个组件的日志关联起来，形成完整的调用链。</p>
+<p><strong>代码位置信息（模块名、文件名、行号）</strong> 帮助开发者快速定位日志对应的源代码，特别是大型项目中。</p>
+<p>日志级别（如 ERROR、WARN 等）则便于过滤和优先处理重要事件。此外，线程 ID 在多线程环境中非常有用，可以跟踪单个线程的执行路径。</p>
+<p><code>&gt; 看一条包含这些核心字段的日志示例</code></p>
+<pre tabindex="0"><code>2025-08-07 11:32:45.678 [INFO] [OrderService:42] [thread-123] [ReqId=ORD-20250807-042] - 订单创建成功，金额：$299.00
+</code></pre><h3 id="信息组织原则">信息组织原则</h3>
+<p>日志消息本身应当 <strong>清晰准确</strong>，采用简单易懂的语言，避免专业术语或晦涩缩写。狄仁杰式的“神探”不需要从日志中解读密码，好的日志应当直指问题核心。例如，<code>“用户认证失败：token 过期（用户 ID：123，IP：1.2.3.4）”</code> 比 <code>“认证错误”</code> 包含更多可操作信息。当记录异常时，除了异常类型，还应包含关键参数和详细原因，比如 <code>“权限认证失败：token 不对/超期/黑名单”</code>，而不是简单的<code>“认证失败”</code>。</p>
+<p><strong>原子性</strong>原则要求相关信息应当集中在一个日志条目中，而非分散在多条日志里。如果某些信息必须组合才有意义，应当将它们原子化地记录在一起，或者通过唯一 ID 关联。例如，不要分开记录 <code>开始处理订单</code> 和 <code>订单处理完成</code>，而应该在一行中记录完整信息： <code>“订单处理耗时：350ms，状态：成功，订单 ID：ORD-123”</code> 。这一原则在分布式系统中尤为重要，因为日志聚合工具可能对日志进行重新排序甚至丢失部分日志消息。</p>
+<h3 id="性能与安全考量">性能与安全考量</h3>
+<p>日志记录需要考虑<strong>性能影响</strong>，特别是在高频操作中。字符串拼接和格式化应当在日志实际写入前完成，对于 DEBUG/TRACE 级别的日志，可以使用参数化日志或延迟求值技术避免不必要的字符串操作。异步日志记录是另一种常见优化，它将日志写入操作放入独立线程，减少对主业务线程的影响。需要注意的是，改变日志级别配置有时候会暴露隐藏的竞争条件和 bug ，因为降低日志级别可能改变程序的时间特性。</p>
+<p><strong>安全</strong>，是另一个重要方面。日志中绝不能包含密码、API 密钥、信用卡号等敏感信息，即使是加密数据也应避免，以防止信息泄露。电子邮件地址、身份证号等个人数据也需要脱敏处理，可以采用部分隐藏（如 <code>user@xxx.com</code>）或哈希化处理。某些框架支持基于规则的字符串替换，但这些不应作为唯一防护手段，敏感信息最好从一开始就不进入日志系统。</p>
+<h3 id="日志记录时机">日志记录时机</h3>
+<p>知道在代码中 <strong>何时记录日志</strong> 同样重要。以下是一些应该记录日志的关键位置：</p>
+<p><strong>1.程序异常/错误</strong>：任何异常捕获点都应记录日志，包括错误详情和上下文信息。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// 业务代码
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">catch</span> <span style="color:#000;font-weight:bold">(</span>IOException e<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    logger<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">error</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;文件读取失败：{}, 路径：{}&#34;</span><span style="color:#000;font-weight:bold">,</span> e<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getMessage</span><span style="color:#000;font-weight:bold">(),</span> filePath<span style="color:#000;font-weight:bold">,</span> e<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>2.非预期情况</strong>：当程序进入非预期分支时，即使无须特殊处理也应记录。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">not</span> user<span style="color:#000;font-weight:bold">.</span>is_active:
+</span></span><span style="display:flex;"><span>    logger<span style="color:#000;font-weight:bold">.</span>warning(<span style="color:#d14">&#34;非活跃用户尝试登录，用户ID：</span><span style="color:#d14">%d</span><span style="color:#d14">&#34;</span>, user<span style="color:#000;font-weight:bold">.</span>id)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>3.关键参数</strong>：记录影响业务逻辑的重要参数值，便于后续问题复现。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>serverLog(LL_DEBUG, <span style="color:#d14">&#34;[psync] slave request offset: %lld&#34;</span>, offset);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>4.状态变化</strong>：当系统状态发生重要转变时，如从主备切换、配置重载等。</p>
+<p><strong>5.重要事件</strong>：业务上的关键操作，如支付成功、权限变更等。</p>
+<p><strong>6.外部调用</strong>：在调用第三方服务或底层组件时，记录请求和相应摘要（注意脱敏)。</p>
+<p>避免记录无意义的日志，如大量重复的成功信息，或者过于琐碎的流程步骤。同时，警惕日志空洞化问题 —— 看似记录了很多内容，实际上缺乏有价值的信息。一个好的测试方法是：假设系统出现故障，仅凭这些日志能否快速定位问题根源？如果答案是否定的，就需要重新审视日志内容和记录位置。</p>
+<p>通过遵循这些最佳实践，开发者可以构建出高效、安全、信息丰富的日志系统，大幅提升系统的可维护性和故障诊断效率。记住，好的日志不是偶然产生的，而是通过精心设计和不断优化获得的。</p>
+<h2 id="日志管理与分析工具">日志管理与分析工具</h2>
+<p>随着系统规模扩大和复杂度增加，原始的日志文件查看方式已无法满足现代运维需求。高效的日志管理系统需要解决日志的集中收集、实时处理、快速检索和可视化分析等问题，这催生了一系列功能强大的日志管理工具和技术栈。</p>
+<p>本文中，不做详述，读者可以自行了解。</p>
+<h2 id="结语">结语</h2>
+<p>是骡子是马，拉出来溜溜~</p>
+    </div>
+
+    
+
+    <div class="container-comment-giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="loveminimal/comment"
+        data-repo-id="R_kgDOJNJQ8g"
+        data-category="General"
+        data-category-id="DIC_kwDOJNJQ8s4CYl0m"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+</div>
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="/about" target="_blank">
+            
+            将喜欢的一切留在身边，这便是努力的意义
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

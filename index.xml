@@ -6,7 +6,57 @@
     <description>Recent content on 爱涂鸦啊</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 31 Jul 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://aituyaa.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>输入法之为什么在打“单”的路上一路狂奔</title>
+      <link>https://aituyaa.com/%E8%BE%93%E5%85%A5%E6%B3%95%E4%B9%8B%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%A8%E6%89%93%E5%8D%95%E7%9A%84%E8%B7%AF%E4%B8%8A%E4%B8%80%E8%B7%AF%E7%8B%82%E5%A5%94/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E8%BE%93%E5%85%A5%E6%B3%95%E4%B9%8B%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%A8%E6%89%93%E5%8D%95%E7%9A%84%E8%B7%AF%E4%B8%8A%E4%B8%80%E8%B7%AF%E7%8B%82%E5%A5%94/</guid>
+      <description>&lt;p&gt;你目前使用的是什么输入法方案？主词，还是主单？为什么？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>声笔初识</title>
+      <link>https://aituyaa.com/%E5%A3%B0%E7%AC%94%E5%88%9D%E8%AF%86/</link>
+      <pubDate>Thu, 14 Aug 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%A3%B0%E7%AC%94%E5%88%9D%E8%AF%86/</guid>
+      <description>&lt;p&gt;一切为了顶功，冲啊 ~ 更多参考 &lt;a href=&#34;https://sbxlm.github.io/&#34;&gt;声笔输入法&lt;/a&gt; ，个人使用作了一些改动，详见 [[#魔改篇]] ~&lt;/p&gt;
+&lt;p&gt;![[assets/Pasted image 20250814120408.png|455]] ![[assets/Pasted image 20250814120507.png|225]]&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一款实用的 Rime 系 lua 日志输出插件</title>
+      <link>https://aituyaa.com/%E4%B8%80%E6%AC%BE%E5%AE%9E%E7%94%A8%E7%9A%84-rime-%E7%B3%BB-lua-%E6%97%A5%E5%BF%97%E8%BE%93%E5%87%BA%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E6%AC%BE%E5%AE%9E%E7%94%A8%E7%9A%84-rime-%E7%B3%BB-lua-%E6%97%A5%E5%BF%97%E8%BE%93%E5%87%BA%E6%8F%92%E4%BB%B6/</guid>
+      <description>&lt;p&gt;使用 Rime 的过程中，如果你想按照自己的需求开发一款 lua 插件，调试过程中难以避免地需要查看一下相关逻辑的输出。&lt;/p&gt;
+&lt;p&gt;Rime 自身有一套日志记录系统，也划分了等级，它适合在软件本身出现故障的时候做为参考，但不适合开发过程中的调试操作。为什么呢？因为它的修改 lua 文件后重启服务或重新部署时会生成新的日志文件，并把内容输出在新的日志文件中…… 这就导致你不能方便地实时监控输出！&lt;/p&gt;
+&lt;p&gt;有没有更好的方式呢？当然，本文给大家介绍一款比较不错的 lua 日志插件，往下看~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一种过滤大字集的方式</title>
+      <link>https://aituyaa.com/%E4%B8%80%E7%A7%8D%E8%BF%87%E6%BB%A4%E5%A4%A7%E5%AD%97%E9%9B%86%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Tue, 12 Aug 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E4%B8%80%E7%A7%8D%E8%BF%87%E6%BB%A4%E5%A4%A7%E5%AD%97%E9%9B%86%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
+      <description>&lt;p&gt;目前在编汉字大概有十几万，拥有读音的约有四万多，国标通规字（共三级）总计 8105 个。其实，我们日常使用的 &lt;code&gt;gb2312&lt;/code&gt; 单字有 6763 个左右。&lt;/p&gt;
+&lt;p&gt;在制作词库的过程中，如果只包含了通规字集，那么当你要输入生僻字的时候就会束手无策（当然，一般情况下，一般人很少有输入生僻字的需求）。如果包含了所有字集，日常输入的时候又会列出生僻字选项（不常用），徒增候选难度。&lt;/p&gt;
+&lt;p&gt;有没有一种方式可以方便地开启和关闭大字集呢？有的，往下看~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>开发日志浅谈</title>
+      <link>https://aituyaa.com/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97%E6%B5%85%E8%B0%88/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://aituyaa.com/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97%E6%B5%85%E8%B0%88/</guid>
+      <description>&lt;p&gt;日志作为程序运行过程中的“黑匣子”，记录了系统行为的每一个关键细节，是开发者和运维人员诊断问题、优化性能、保证系统稳定性的重要工具。本文将系统性地介绍程序日志的核心知识，包括日志的基本概念与分类、日志级别体系、日志内容的最佳实践、日志管理工具与技术，以及日志在分布式系统中的应用策略。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>输入法那些事儿</title>
       <link>https://aituyaa.com/%E8%BE%93%E5%85%A5%E6%B3%95%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
