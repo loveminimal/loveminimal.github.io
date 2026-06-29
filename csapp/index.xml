@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Csapps on 爱涂鸦啊</title>
+    <link>https://aituyaa.com/csapp/</link>
+    <description>Recent content in Csapps on 爱涂鸦啊</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 30 Aug 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://aituyaa.com/csapp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>01 计算机系统漫游</title>
+      <link>https://aituyaa.com/csapp/01-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%BC%AB%E6%B8%B8/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>https://aituyaa.com/csapp/01-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%BC%AB%E6%B8%B8/</guid>
+      <description>&lt;p&gt;计算机系统是由硬件和系统软件组成的，它们共同工作来运行应用程序。虽然系统的具体实现方式随着时间不断变化，但是系统内在的概念却没有改变。所有计算机系统都有相似的硬件和软件组件，它们又执行着相似的功能。一些程序员希望深人了解这些&lt;strong&gt;组件是如何工作的&lt;/strong&gt;以及这些&lt;strong&gt;组件是如何影响程序的正确性和性能的&lt;/strong&gt;，以此来提高自身的技能。本书便是为这些读者而写的。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>02 信息的表示和处理</title>
+      <link>https://aituyaa.com/csapp/02-%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%A4%84%E7%90%86/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>https://aituyaa.com/csapp/02-%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%A4%84%E7%90%86/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;第一部分:程序结构和执行&#xD;&#xA;第 2 章 信息的表示和处理&#xD;&#xA;2.1 信息存储&#xD;&#xA;2.2 整数表示&#xD;&#xA;2.3 整数运算&#xD;&#xA;2.4 浮点数&#xD;&#xA;2.5 小结&#xD;&#xA;参考文献说明&#xD;&#xA;家庭作业&#xD;&#xA;练习题答案&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>03 程序的机器级表示</title>
+      <link>https://aituyaa.com/csapp/03-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BA%A7%E8%A1%A8%E7%A4%BA/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>https://aituyaa.com/csapp/03-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BA%A7%E8%A1%A8%E7%A4%BA/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;第 3 章 程序的机器级表示&#xD;&#xA;3.1 历史观点&#xD;&#xA;3.2 程序编码&#xD;&#xA;3.3 数据格式&#xD;&#xA;3.4 访问信息&#xD;&#xA;3.5 算数和逻辑操作&#xD;&#xA;3.6 控制&#xD;&#xA;3.7 过程&#xD;&#xA;3.8 数组分配和访问&#xD;&#xA;3.9 异数的数据结构&#xD;&#xA;3.10 在机器级程序中将控制与数据结合起来&#xD;&#xA;3.11 浮点代码&#xD;&#xA;3.12 小结&#xD;&#xA;参考文献说明&#xD;&#xA;家庭作业&#xD;&#xA;练习题答案&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>04 处理器体系结构</title>
+      <link>https://aituyaa.com/csapp/04-%E5%A4%84%E7%90%86%E5%99%A8%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>https://aituyaa.com/csapp/04-%E5%A4%84%E7%90%86%E5%99%A8%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;第 4 章 处理器体系结构&#xD;&#xA;4.1 Y86-64指令集体系结构&#xD;&#xA;4.2 辑设计和硬件控制语言HCL&#xD;&#xA;4.3 Y86-64的顺序现实&#xD;&#xA;4.4 流水线的通用原理&#xD;&#xA;45 Y86-64的流水线实现&#xD;&#xA;4.6 小结&#xD;&#xA;参考文献说明&#xD;&#xA;家庭作业&#xD;&#xA;练习题答案&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>05 优化程序性能</title>
+      <link>https://aituyaa.com/csapp/05-%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>https://aituyaa.com/csapp/05-%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;第 5 章 优化程序性能&#xD;&#xA;5.1 优化编译器的能力和局限性&#xD;&#xA;5.2 表示程序性能&#xD;&#xA;5.3 程序示例&#xD;&#xA;5.4 消除循环的低效率&#xD;&#xA;5.5 减少过程调用&#xD;&#xA;5.6 消除不必要的内存引用&#xD;&#xA;5.7 理解现代处理器&#xD;&#xA;5.8 循环展开&#xD;&#xA;5.9 提高并行性&#xD;&#xA;5.10 优化合并代码的结果小结&#xD;&#xA;5.11 一些限制因素&#xD;&#xA;5.12 理解内存性能&#xD;&#xA;5.13 应用:性能提高技术&#xD;&#xA;5.14 确认和消除性能瓶颈&#xD;&#xA;参考文献说明&#xD;&#xA;家庭作业&#xD;&#xA;练习题答案&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>06 存储器层次结构</title>
+      <link>https://aituyaa.com/csapp/06-%E5%AD%98%E5%82%A8%E5%99%A8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>https://aituyaa.com/csapp/06-%E5%AD%98%E5%82%A8%E5%99%A8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;第 6 章 存储器层次结构&#xD;&#xA;6.1 存储技术&#xD;&#xA;6.2 局部性&#xD;&#xA;6.3 存储器层次结构&#xD;&#xA;6.4 高速缓存存储器&#xD;&#xA;6.5 编写高速缓存友好的代码&#xD;&#xA;6.6 综合:高速缓存对程序性能的影响&#xD;&#xA;6.7 小结&#xD;&#xA;参考文献说明&#xD;&#xA;家庭作业&#xD;&#xA;练习题答案&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>07 链接</title>
+      <link>https://aituyaa.com/csapp/07-%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>https://aituyaa.com/csapp/07-%E9%93%BE%E6%8E%A5/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;第二部分 在系统上运行程序&#xD;&#xA;第 7 章 链接&#xD;&#xA;7.1 编译器驱动程序&#xD;&#xA;7.2 静态链接&#xD;&#xA;7.3目标文件&#xD;&#xA;7.4 可重定位目标文件&#xD;&#xA;7.5 符号和符号表&#xD;&#xA;7.6 符号解析&#xD;&#xA;7.7 重定位&#xD;&#xA;7.8 可执行目标文件&#xD;&#xA;7.9 加载可执行目标文件&#xD;&#xA;7.10 动态链接共享库&#xD;&#xA;7.11 从应用程序中加载和链接共享库&#xD;&#xA;7.12 位置无关代码&#xD;&#xA;7.13 库打桩机制&#xD;&#xA;7.14 处理目标文件的工具&#xD;&#xA;7.15 小结&#xD;&#xA;参考文献说明&#xD;&#xA;家庭作业&#xD;&#xA;练习题答案&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>08 异常控制流</title>
+      <link>https://aituyaa.com/csapp/08-%E5%BC%82%E5%B8%B8%E6%8E%A7%E5%88%B6%E6%B5%81/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>https://aituyaa.com/csapp/08-%E5%BC%82%E5%B8%B8%E6%8E%A7%E5%88%B6%E6%B5%81/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;第 8 章 异常控制流&#xD;&#xA;8.1异常&#xD;&#xA;8.2 进程&#xD;&#xA;8.3 系统调用错误处理&#xD;&#xA;8.4 进程控制&#xD;&#xA;8.5 信号&#xD;&#xA;8.6 非本地跳转&#xD;&#xA;8.7 操作进程的工具&#xD;&#xA;8.8 小结&#xD;&#xA;参考文献说明&#xD;&#xA;家庭作业&#xD;&#xA;练习题答案&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>09 虚拟内存</title>
+      <link>https://aituyaa.com/csapp/09-%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>https://aituyaa.com/csapp/09-%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;第 9 章 虚拟内存&#xD;&#xA;9.1 物理和虚拟寻址&#xD;&#xA;9.2 地址空间&#xD;&#xA;9.3 虚拟内存作为缓存的工具&#xD;&#xA;9.4 虚拟内存为内存管理的工具&#xD;&#xA;9.5 虚拟内存作为内存保护的工具&#xD;&#xA;9.6 地址翻译&#xD;&#xA;9.7 案例研究: Intel Core i7/Linux内存系续&#xD;&#xA;9.8 内存映射&#xD;&#xA;9.9 动态内存分配&#xD;&#xA;9.10 垃圾收集&#xD;&#xA;9.11 C程序中常见的与内存有关的错误&#xD;&#xA;9.12 小结&#xD;&#xA;参考文献说明&#xD;&#xA;家庭作业&#xD;&#xA;练习题答案&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>10 系统级 I/O</title>
+      <link>https://aituyaa.com/csapp/10-%E7%B3%BB%E7%BB%9F%E7%BA%A7-io/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>https://aituyaa.com/csapp/10-%E7%B3%BB%E7%BB%9F%E7%BA%A7-io/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;第三部分 程序间的交流和通信&#xD;&#xA;第 10 章 系统级 I/O&#xD;&#xA;10.1 Unix I/0&#xD;&#xA;10.2 文件&#xD;&#xA;10.3 打开和关闭文件&#xD;&#xA;10.4 读和写文件&#xD;&#xA;10.5 用RIO包健壮地读写&#xD;&#xA;10.6 读取文件元数据&#xD;&#xA;10.7 读取目录和内容&#xD;&#xA;10.8 共享文件&#xD;&#xA;10.9 I/0重定向&#xD;&#xA;10.10 标准I/0&#xD;&#xA;10.11 综合:我该使用哪些I/O函数?&#xD;&#xA;10.12 小结&#xD;&#xA;参考文献说明&#xD;&#xA;家庭作业&#xD;&#xA;练习题答案&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>11 网络编程</title>
+      <link>https://aituyaa.com/csapp/11-%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>https://aituyaa.com/csapp/11-%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;第 11 章 网络编程&#xD;&#xA;11.1 客户端-服务器编程模型&#xD;&#xA;11.2 网络&#xD;&#xA;11.3 全球IP因特网&#xD;&#xA;11.4 套接字接口&#xD;&#xA;11.5 Web服务器&#xD;&#xA;11.6 综合: TINY Web服务器&#xD;&#xA;11.7 小结&#xD;&#xA;参考文献说明&#xD;&#xA;家庭作业&#xD;&#xA;练习题答案&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>12 并发编程</title>
+      <link>https://aituyaa.com/csapp/12-%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>https://aituyaa.com/csapp/12-%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;第 12 章 并发编程&#xD;&#xA;12.1 基于进程的并发编程&#xD;&#xA;12.2 基于I/0多路复用的并发编程&#xD;&#xA;12.3 基于线程的并发编程&#xD;&#xA;12.4 多线程程序中的共享变量&#xD;&#xA;12.5 用信号量同步线程&#xD;&#xA;12.6 使用线程提高并行性&#xD;&#xA;12.7 其他并发问题&#xD;&#xA;12.8 小结&#xD;&#xA;参考文献说明&#xD;&#xA;家庭作业&#xD;&#xA;练习题答案&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>
